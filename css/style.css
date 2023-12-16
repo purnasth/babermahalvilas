@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-coffee-400;
+    font-family: "Merriweather", serif;
+  }
+  .nav-link {
+    @apply relative w-full text-coffee-400 hover:bg-coffee-400 py-3 px-6 text-base md:text-lg rounded-xl hover:text-coffee-700 transition-all duration-200 ease-linear;
+  }
+  .nav-link-dropdown {
+    @apply w-full hover:bg-pink-400 py-3 px-6 text-base md:text-lg rounded-xl text-white;
+  }
+}

@@ -1,0 +1,11 @@
+/* Slick carousel */
+@import url("https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css");
+
+/* Slick carousel theme */
+@import url("https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css");
+
+/* font awesome cdn */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+/* Merriweather font */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/links.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/component.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-gray-200 p-4 md:p-0 sticky top-0 z-[99]">
+      <div class="container mx-auto">
+        <!-- Hamburger Menu for Mobile -->
+        <div
+          class="md:hidden flex items-center justify-between md:justify-evenly p-4"
+        >
+          <a href="#" class="text-gray-800 text-lg font-semibold bg-red-500">
+            <img
+              src="https://www.babermahalvilas.com/images/preference/5gjq2-2020-01-24.png"
+              alt=""
+              class="w-20 h-20 object-contain"
+            />
+          </a>
+          <button
+            id="mobileMenuBtn"
+            class="text-gray-800 focus:outline-none"
+            aria-label="Open Mobile Menu"
+          >
+            <i class="fa-solid fa-bars" onclick="Menu(this)"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="flex flex-col md:flex-row md:items-center justify-between p-4 md:p-0 gap-4 lg:visible"
+          id="navLinks"
+        >
+          <a href="#" class="text-gray-800">Home</a>
+
+          <div class="relative text-left">
+            <button
+              id="aboutDropdownBtn"
+              type="button"
+              class="text-gray-800 focus:outline-none"
+            >
+              About
+              <svg
+                class="ml-1 h-4 w-4 inline-block"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- Dropdown Content -->
+            <div
+              id="aboutDropdownContent"
+              class="hidden absolute z-50 mt-2 bg-white rounded-md shadow-lg dropdown-content"
+            >
+              <!-- Dropdown Items -->
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Our Story</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >The History</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >The Property</a
+              >
+            </div>
+          </div>
+          <div class="relative inline-block text-left">
+            <button
+              id="roomDropdownBtn"
+              type="button"
+              class="text-gray-800 focus:outline-none"
+            >
+              Rooms
+              <svg
+                class="ml-1 h-4 w-4 inline-block"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- Dropdown Content -->
+            <div
+              id="roomDropdownContent"
+              class="hidden absolute z-50 mt-2 bg-white rounded-md shadow-lg"
+            >
+              <!-- Dropdown Items -->
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Traditional Room</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Traditional Suite</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Heritage Suite</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Royal Suite</a
+              >
+            </div>
+          </div>
+
+          <div class="relative inline-block text-left">
+            <button
+              id="diningDropdownBtn"
+              type="button"
+              class="text-gray-800 focus:outline-none"
+            >
+              Dining
+              <svg
+                class="ml-1 h-4 w-4 inline-block"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- Dropdown Content -->
+            <div
+              id="diningDropdownContent"
+              class="hidden absolute z-50 mt-2 bg-white rounded-md shadow-lg"
+            >
+              <!-- Dropdown Items -->
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Jyunar</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Surya Bar</a
+              >
+            </div>
+          </div>
+          <!-- Logo -->
+          <a
+            href="#"
+            class="hidden md:block text-gray-800 text-lg font-semibold"
+          >
+            <img
+              src="https://www.babermahalvilas.com/images/preference/5gjq2-2020-01-24.png"
+              alt=""
+              class="w-20 h-20 object-contain"
+            />
+          </a>
+          <a href="#" class="text-gray-800">SPA</a>
+          <a href="#" class="text-gray-800">Facilities</a>
+          <a href="#" class="text-gray-800">Gallery</a>
+          <a href="#" class="text-gray-800">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="slick-carousel overflow-hidden">
+      <div class="swiper-slide">
+        <img
+          src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
+          alt="Slide 1"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://www.babermahalvilas.com/images/slideshow/EjoB5-untitled-2.jpg"
+          alt="Slide 2"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+          alt="Slide 3"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://www.babermahalvilas.com/images/articles/hqAc5-property.jpg"
+          alt="Slide 4"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://www.babermahalvilas.com/images/slideshow/exHm4-quaint.jpg"
+          alt="Slide 5"
+        />
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+
+    <section>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut eum rem
+      sint commodi reiciendis, nam amet dolorem aperiam minus quidem, ratione,
+      aliquam eveniet nesciunt corporis. Harum accusantium hic mollitia
+      doloribus deserunt aut repellat suscipit quisquam facilis quaerat
+      laudantium quibusdam esse illo voluptates assumenda iusto laborum
+      expedita, soluta nostrum earum quos? Minus rem, placeat eius doloremque
+      obcaecati officiis nihil perspiciatis ex quidem aliquid. Repudiandae
+      dolorum consequuntur odit perferendis dolore? Ipsa adipisci neque,
+      distinctio dolores assumenda saepe corporis est eius enim! Sunt itaque
+      nulla fugiat molestias facere dolorem eum id? Minima aliquam quae soluta
+      nihil exercitationem officia molestias laboriosam quo laudantium eum
+      tenetur natus omnis in, adipisci rerum amet totam iure aut quis itaque
+      corrupti ducimus dignissimos at voluptates. Magnam dolorum dicta quos
+      delectus eius quod perspiciatis? Est quisquam aut voluptatem vero minima
+      pariatur itaque laboriosam. Voluptas fugiat facilis dolore vitae deserunt
+      inventore fuga consequatur, omnis mollitia? Laudantium mollitia tempora
+      recusandae repellendus, temporibus qui blanditiis, sed aliquam molestias
+      totam aspernatur dolorum. Cum et reprehenderit natus hic nemo optio, eos
+      minima, doloribus eligendi accusamus laboriosam quaerat doloremque
+      corporis. Ab facere voluptate, quisquam magni suscipit reprehenderit
+      dolore impedit deserunt. Laborum porro maiores quaerat? Doloribus
+      quibusdam quidem itaque libero beatae enim quaerat alias numquam explicabo
+      officiis omnis ex, temporibus quia odit dolores dolore nemo assumenda
+      aliquid. Necessitatibus hic ad officiis ducimus cum? Distinctio accusamus
+      quasi quia aliquid explicabo, nulla et officiis recusandae, at ipsam
+      nesciunt sed error soluta blanditiis nobis ab tempore, architecto ut vel
+      est similique harum eveniet! Recusandae maxime, nulla autem nemo ea,
+      beatae placeat nihil molestias in ipsa atque dolorum doloribus provident
+      quam? Doloremque eos suscipit delectus impedit voluptates est voluptatum
+      ipsam nisi maiores tempore molestias officia dolorem, aut soluta ullam
+      assumenda accusantium porro neque eum numquam expedita temporibus illo! Id
+      rerum earum asperiores qui harum at consequuntur neque corrupti fugit
+      voluptate, temporibus dolore quas laudantium officia? Repudiandae quas
+      provident quis officiis saepe necessitatibus sunt itaque distinctio ut
+      nesciunt nostrum repellendus quae praesentium animi qui quam illum nihil
+      consectetur maiores cupiditate, harum aspernatur consequuntur soluta?
+      Quibusdam aperiam, veniam suscipit saepe at natus earum quos laudantium
+      voluptate quaerat voluptatem velit quis aut a dignissimos commodi facere
+      cum inventore quod nemo cumque. At omnis sed, minima, impedit aliquam
+      officia laborum suscipit nulla reprehenderit, commodi eius nesciunt neque
+      hic possimus molestiae corrupti dolorem vero reiciendis. Nesciunt
+      voluptatum ipsum quos, maxime omnis alias expedita! Amet temporibus
+      deserunt dignissimos molestiae nulla quis aliquid. Incidunt quo eum
+      consequuntur ex recusandae culpa at nam placeat sequi nihil! Odio eveniet
+      et quaerat numquam libero at ducimus dignissimos obcaecati officia ipsum.
+      Quis incidunt praesentium deleniti mollitia facere adipisci, ipsa beatae
+      ipsum possimus, a at officia, id quae laboriosam? Nostrum necessitatibus
+      accusantium reprehenderit esse. Velit autem vitae aliquam eligendi
+      asperiores tempore eos fugiat saepe est, eius minus doloremque assumenda
+      suscipit! Debitis consectetur deleniti rem commodi maxime, unde quasi
+      nostrum dignissimos ex distinctio aut quia voluptates laudantium fuga
+      ratione, alias facere repellat dolorum cum? In itaque dolores ex corporis
+      eligendi ea cum quia, sunt odio commodi, beatae excepturi, magnam nemo
+      repellendus modi.
+    </section>
+
+    <!-- hero carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
