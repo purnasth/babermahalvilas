@@ -3,276 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Babar Mahal Vilas</title>
+    <title>Naikap Village Resort</title>
     <link rel="stylesheet" href="./css/links.css" />
     <link rel="stylesheet" href="./css/component.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link href="dist/output.css" rel="stylesheet" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="dist/output.css" />
+
+    <style>
+      /* fontawesome */
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+      /* testimonials carousel */
+      @import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css");
+    </style>
   </head>
-
   <body>
-    <header class="bg-transparent sticky top-0 z-50">
-      <div
-        class="blur-bg absolute w-full p-4 transition-all duration-200 ease-linear bg-gradient-to-t from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)]"
-      >
-        <div class="container mx-auto">
-          <div class="flex justify-between items-center h-14">
-            <div class="flex items-center">
-              <a href="#" target="_blank">
-                <img
-                  src="https://www.babermahalvilas.com/images/preference/5gjq2-2020-01-24.png"
-                  alt="Logo"
-                  class="w-24 md:w-32 h-auto object-contain rounded-full p-2"
-                />
-              </a>
-            </div>
-            <div class="flex items-center justify-center gap-2">
-              <a href="#" target="_blank">
-                <img
-                  alt="Babermahal Revisited"
-                  src="https://www.babermahal.com/images/preference/KIs6r-logo.png"
-                  class="w-20 md:w-24 h-auto object-contain rounded-full p-2"
-                />
-              </a>
-              <button
-                id="toggleButton"
-                class="text-coffee-400 focus:outline-none"
-              >
-                <i
-                  id="hamburgerIcon"
-                  class="fa-solid fa-bars text-coffee-400 text-2xl"
-                ></i>
-                <i
-                  id="closeIcon"
-                  class="hidden fa-solid fa-xmark text-coffee-400 text-3xl"
-                ></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div
-      id="overlay"
-      class="fixed inset-0 bg-black opacity-50 z-10 hidden"
-    ></div>
-    <nav
-      id="navLinks"
-      class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-coffee-700 transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full"
-    >
-      <div class="flex items-center justify-center md:pb-2">
-        <a href="#" target="_blank">
-          <img
-            src="https://www.babermahalvilas.com/images/preference/5gjq2-2020-01-24.png"
-            alt="Logo"
-            class="w-full h-auto object-contain rounded-full p-2"
-          />
-        </a>
-      </div>
-      <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
-        <li class="nav-link">
-          <a href="#">Home</a>
-        </li>
-
-        <li class="dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full"
-            >About <i class="fa-solid fa-chevron-right"></i
-          ></a>
-          <ul
-            class="drop absolute -top-full left-full bg-coffee-400 text-coffee-700 flex items-start justify-center gap-4 flex-col p-4 invisible w-full ml-8 rounded-xl"
-          >
-            <li class="hover:underline"><a href="#">Our Story</a></li>
-            <li class="hover:underline"><a href="#">The History</a></li>
-            <li class="hover:underline"><a href="#">The Property</a></li>
-          </ul>
-        </li>
-        <li class="dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full"
-            >Rooms <i class="fa-solid fa-chevron-right"></i
-          ></a>
-          <ul
-            class="drop absolute -top-[200%] md:-top-full left-full bg-coffee-400 text-coffee-700 flex items-start justify-center gap-4 flex-col md:flex-row p-4 invisible w-full md:w-[50vw] z-[99] ml-8 rounded-xl"
-          >
-            <div
-              class="flex items-center justify-between flex-col md:flex-row gap-2"
-            >
-              <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="./test.html">Traditional Room</a>
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-60 h-auto object-cover"
-                />
-                <button>Visit Now</button>
-              </div>
-              <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="#">Traditional Room</a>
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-60 h-auto object-cover"
-                />
-                <button>Visit Now</button>
-              </div>
-              <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="#">Traditional Room</a>
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-60 h-auto object-cover"
-                />
-                <button>Visit Now</button>
-              </div>
-              <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="#">Traditional Room</a>
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-60 h-auto object-cover"
-                />
-                <button>Visit Now</button>
-              </div>
-            </div>
-          </ul>
-        </li>
-        <li class="dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full"
-            >Dining <i class="fa-solid fa-chevron-right"></i
-          ></a>
-          <ul
-            class="drop absolute -top-[200%] md:-top-full left-full bg-coffee-400 text-coffee-700 flex items-start justify-center gap-4 flex-col md:flex-row p-4 invisible w-full md:w-[30vw] z-[99] ml-8 rounded-xl"
-          >
-            <div
-              class="flex items-center justify-between flex-col md:flex-row gap-2"
-            >
-              <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="#">Jyunar</a>
-
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-60 h-auto object-cover"
-                />
-                <button>Visit Now</button>
-              </div>
-              <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="#"> Surya Bar</a>
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-60 h-auto object-cover"
-                />
-                <button>Visit Now</button>
-              </div>
-            </div>
-          </ul>
-        </li>
-        <li class="nav-link">
-          <a href="#">SPA</a>
-        </li>
-        <li class="nav-link">
-          <a href="#">Services</a>
-        </li>
-        <li class="nav-link">
-          <a href="#">Gallery</a>
-        </li>
-        <li class="nav-link">
-          <a href="#">Press</a>
-        </li>
-        <li class="nav-link">
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="slick-carousel overflow-hidden">
-      <div class="swiper-slide">
-        <img
-          src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
-          alt="Slide 1"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="https://www.babermahalvilas.com/images/slideshow/EjoB5-untitled-2.jpg"
-          alt="Slide 2"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-          alt="Slide 3"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="https://www.babermahalvilas.com/images/articles/hqAc5-property.jpg"
-          alt="Slide 4"
-        />
-      </div>
-      <!-- Add more slides as needed -->
-    </div>
-
-    <section>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-      architecto neque voluptatibus consequatur corporis eius ullam, quod
-      veritatis natus, ratione magni culpa? Asperiores aperiam, eos impedit
-      itaque laborum libero? Numquam deleniti eveniet dicta a iste quasi,
-      possimus illo modi dolorum quisquam cupiditate dolores corrupti mollitia
-      delectus amet ducimus illum sed, fugit ea nam porro nobis rerum dolore
-      explicabo. Rerum eligendi autem aliquam veniam consequatur laboriosam
-      animi, repudiandae delectus tempore soluta maiores amet beatae magni
-      incidunt iste recusandae rem ab maxime perferendis! Quas eius quia sit
-      alias tempora delectus modi perferendis facilis commodi, provident, id
-      dicta qui nihil illum consectetur, ipsa a autem voluptas! Nihil
-      consequatur quia maxime qui? Vitae placeat deleniti expedita labore?
-      Praesentium non sint est dolorem rerum ad. Doloribus nam ullam aspernatur
-      doloremque laborum pariatur excepturi architecto reprehenderit consequatur
-      sint dignissimos cupiditate possimus suscipit magnam, quod expedita
-      sapiente optio autem eaque facilis quae minus dolores. Nesciunt dolores
-      fugit rem deserunt sint ducimus tempora. Ad amet ducimus dolorem nemo
-      nisi, sunt quis sint aperiam est consequatur, voluptatum necessitatibus
-      aut cupiditate voluptate iusto possimus modi non dolore esse ipsa
-      molestiae at accusamus blanditiis. Natus nam praesentium officia ratione
-      asperiores, dicta eaque, veritatis sed numquam fuga aperiam! Ipsa
-      repellendus sit sint tempora commodi, dolorem minus magnam deserunt ipsam
-      deleniti nesciunt aliquid sed, perferendis quaerat, quod corrupti
-      blanditiis eum consectetur? Odit aut nemo molestias totam quae, ipsam
-      placeat laboriosam provident est beatae praesentium eos accusamus!
-      Possimus nemo nesciunt magnam debitis ratione ipsa quidem impedit id
-      blanditiis pariatur voluptatum eos molestiae nobis, odit ex enim hic,
-      dolorem dolorum sunt est. Ullam, exercitationem. Nulla ex, odit quis neque
-      animi ratione harum repellat sit ab expedita quaerat qui excepturi unde,
-      modi ut! Doloribus impedit illo distinctio in itaque, sint ab accusamus
-      velit amet fugiat officiis veniam sapiente nobis id voluptas vitae porro
-      accusantium. Provident in nulla asperiores iusto itaque. Possimus
-      perspiciatis quia nihil cupiditate dicta, enim omnis commodi veritatis
-      dolore accusamus vitae autem maiores ratione ex fuga nemo esse adipisci
-      voluptates rerum et quis, numquam tempore? Voluptates, similique facilis.
-      Velit molestiae consequuntur minima delectus cupiditate error. Quisquam
-      incidunt dicta animi maiores fuga perspiciatis quod eius fugiat alias
-      dolorem officia praesentium necessitatibus doloribus sit tenetur laborum,
-      cumque voluptatem assumenda labore eligendi expedita aliquid odio ipsam
-      laudantium? Perspiciatis repellat deleniti hic culpa, sed harum ab rem
-      quia laudantium cumque at necessitatibus, vel error possimus ipsa vero?
-      Eius ex itaque quae sit voluptas beatae alias provident, voluptatibus
-      molestias distinctio laborum tenetur aperiam error, consequuntur dolorum
-      possimus, similique quod hic tempore neque ab. Esse ipsa, fuga commodi
-      nihil dicta neque perferendis omnis vel? Exercitationem pariatur quisquam,
-      soluta, voluptatum harum deserunt veniam rerum quis possimus cum, eveniet
-      voluptatibus excepturi asperiores modi maiores voluptas dicta illo libero.
-      Officia quae nihil debitis excepturi commodi modi numquam laborum, eaque,
-      iusto magni facilis dolores nobis omnis inventore quasi consectetur
-      veritatis ratione rem facere tenetur quos dolor? Quidem quaerat sapiente
-      deleniti impedit ipsum incidunt, quibusdam laudantium culpa, atque
-      expedita perspiciatis eveniet? Nemo porro culpa tempore ullam odit,
-      voluptatibus explicabo repudiandae architecto commodi ad, officiis
-      quaerat?
-    </section>
-
+    <!-- ====== Testimonials Section -->
     <section
       class="bg-[url('https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg')] bg-no-repeat bg-cover bg-center bg-fixed w-full h-screen relative"
     >
@@ -674,13 +420,31 @@
       </div>
     </section>
 
-    <!-- hero carousel -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-
-    <!-- rooms carousel -->
+    <!-- testimonials carousel -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
-    <script src="./js/app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Glide(".glide", {
+          type: "carousel",
+          startAt: 0,
+          perView: 1,
+          focusAt: "center",
+          autoplay: 5000,
+          hoverpause: true,
+          gap: 0,
+          breakpoints: {
+            768: {
+              perView: 1,
+            },
+            1024: {
+              perView: 1,
+            },
+          },
+        }).mount();
+      });
+    </script>
+
+    <script></script>
   </body>
 </html>

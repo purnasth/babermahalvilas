@@ -9,3 +9,6 @@
 
 /* Merriweather font */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+   /* about us carousel */
+   @import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css");
