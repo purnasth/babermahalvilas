@@ -39,6 +39,8 @@
               <button
                 id="toggleButton"
                 class="text-coffee-400 focus:outline-none"
+                aria-label="Toggle Button"
+                title="Toggle"
               >
                 <i
                   id="hamburgerIcon"
@@ -106,7 +108,7 @@
                   alt=""
                   class="w-60 h-auto object-cover"
                 />
-                <button>Visit Now</button>
+                <button aria-label="Visit" title="Visit">Visit Now</button>
               </div>
               <div class="flex flex-col items-center justify-center md:gap-2">
                 <a href="#">Traditional Room</a>
@@ -115,7 +117,7 @@
                   alt=""
                   class="w-60 h-auto object-cover"
                 />
-                <button>Visit Now</button>
+                <button aria-label="Visit" title="Visit">Visit Now</button>
               </div>
               <div class="flex flex-col items-center justify-center md:gap-2">
                 <a href="#">Traditional Room</a>
@@ -124,7 +126,7 @@
                   alt=""
                   class="w-60 h-auto object-cover"
                 />
-                <button>Visit Now</button>
+                <button aria-label="Visit" title="Visit">Visit Now</button>
               </div>
               <div class="flex flex-col items-center justify-center md:gap-2">
                 <a href="#">Traditional Room</a>
@@ -133,7 +135,7 @@
                   alt=""
                   class="w-60 h-auto object-cover"
                 />
-                <button>Visit Now</button>
+                <button aria-label="Visit" title="Visit">Visit Now</button>
               </div>
             </div>
           </ul>
@@ -156,7 +158,7 @@
                   alt=""
                   class="w-60 h-auto object-cover"
                 />
-                <button>Visit Now</button>
+                <button aria-label="Visit" title="Visit">Visit Now</button>
               </div>
               <div class="flex flex-col items-center justify-center md:gap-2">
                 <a href="#"> Surya Bar</a>
@@ -165,7 +167,7 @@
                   alt=""
                   class="w-60 h-auto object-cover"
                 />
-                <button>Visit Now</button>
+                <button aria-label="Visit" title="Visit">Visit Now</button>
               </div>
             </div>
           </ul>
@@ -306,7 +308,11 @@
               </div>
             </div>
 
-            <button class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl">
+            <button
+              class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl"
+              aria-label="Explore"
+              title="Explore"
+            >
               Explore More
               <i class="ml-2 fa-solid fa-arrow-right"></i>
             </button>
@@ -350,7 +356,7 @@
           class="absolute top-0 left-0 bg-black w-full h-full opacity-50 z-1"
         ></div>
         <div class="container mx-auto p-4 z-50">
-          <div class="glide py-8 md:py-12 md:mt-24">
+          <div class="glide rooms-glide py-8 md:py-12 md:mt-24">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
                 <!-- Room 1 -->
@@ -429,6 +435,8 @@
                           </ul>
                           <button
                             class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
+                            aria-label="Read"
+                            title="Read"
                           >
                             Read More
                             <i class="ml-2 fa-solid fa-arrow-right"></i>
@@ -523,6 +531,8 @@
                           </ul>
                           <button
                             class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
+                            aria-label="Read"
+                            title="Read"
                           >
                             Read More
                             <i class="ml-2 fa-solid fa-arrow-right"></i>
@@ -617,6 +627,8 @@
                           </ul>
                           <button
                             class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
+                            aria-label="Read"
+                            title="Read"
                           >
                             Read More
                             <i class="ml-2 fa-solid fa-arrow-right"></i>
@@ -711,6 +723,8 @@
                           </ul>
                           <button
                             class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
+                            aria-label="Read"
+                            title="Read"
                           >
                             Read More
                             <i class="ml-2 fa-solid fa-arrow-right"></i>
@@ -740,6 +754,8 @@
               <button
                 class="glide__arrow glide__arrow--left"
                 data-glide-dir="<"
+                aria-label="Previous"
+                title="Previous"
               >
                 <i
                   class="fa-solid fa-chevron-left text-2xl bg-coffee-700 text-coffee-400 px-5 py-3 rounded-xl hover:opacity-60 transition-all duration-150 ease-in-out"
@@ -748,6 +764,8 @@
               <button
                 class="glide__arrow glide__arrow--right"
                 data-glide-dir=">"
+                aria-label="Next"
+                title="Next"
               >
                 <i
                   class="fa-solid fa-chevron-right text-2xl bg-coffee-700 text-coffee-400 px-5 py-3 rounded-xl hover:opacity-60 transition-all duration-150 ease-in-out"
@@ -799,7 +817,7 @@
               <img
                 src="https://www.babermahalvilas.com/assets/userfiles/images/spa2(1).jpg"
                 alt="SPA"
-                class="w-full h-72 object-cover shadow-lg"
+                class="w-full h-96 object-cover shadow-lg"
               />
             </div>
             <div
@@ -822,7 +840,7 @@
               <img
                 src="https://www.babermahalvilas.com/assets/userfiles/images/gym1.jpg"
                 alt="GYM"
-                class="w-full h-72 object-cover shadow-lg"
+                class="w-full h-96 object-cover shadow-lg"
               />
             </div>
             <div
@@ -845,7 +863,7 @@
               <img
                 src="https://www.babermahalvilas.com/assets/userfiles/images/pool2.jpg"
                 alt="swimming pool"
-                class="w-full h-72 object-cover shadow-lg"
+                class="w-full h-96 object-cover shadow-lg"
               />
             </div>
             <div
@@ -864,10 +882,320 @@
         </div>
 
         <div class="mt-10 flex items-center justify-center">
-          <button class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl">
+          <button
+            class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl"
+            aria-label="Facilities"
+            title="Facilities"
+          >
             Other facilities
             <i class="ml-2 fa-solid fa-arrow-right"></i>
           </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <div class="container mx-auto">
+        <div
+          class="py-2 flex items-center justify-center flex-col md:mt-6 lg:mt-12"
+        >
+          <h3
+            class="mt-5 text-3xl md:text-4xl font-bold uppercase text-coffee-800"
+          >
+            Reviews
+          </h3>
+          <span class="text-sm md:text-base font-bold text-coffee-800/80"
+            >Lorem ipsum dolor sit amet consectetur.</span
+          >
+          <div class="text-center">
+            <span
+              class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
+            ></span>
+            <span
+              class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
+            ></span>
+            <span
+              class="inline-block w-40 h-1 rounded-full bg-coffee-800"
+            ></span>
+            <span
+              class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
+            ></span>
+            <span
+              class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
+            ></span>
+          </div>
+        </div>
+        <div class="glide testimonials-glide py-8 pt-0">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <!-- Testimonial 1 -->
+              <li class="glide__slide">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4">
+                  <div
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                  >
+                    <div class="w-full flex items-center justify-between">
+                      <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-f/01/2e/70/8d/avatar014.jpg?w=100&amp;h=-1&amp;s=1"
+                        width="100"
+                        height="100"
+                        role="none"
+                        alt="The_eye"
+                        loading="lazy"
+                        class="w-20 h-20 rounded-full shadow-lg object-cover"
+                      />
+                      <div class="flex items-start justify-center flex-col">
+                        <h4
+                          class="text-base md:text-xl text-coffee-800 font-bold"
+                        >
+                          The_eye
+                        </h4>
+                        <span class="text-sm italic text-coffee-800/50"
+                          >via Tripadvisor</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-justify text-black">
+                      Wonderful old style class. <br />
+                      Having travelled the world over many years, this hotel has
+                      to rank up there as one of the most wonderful experiences.
+                      The hotel I discovered is legendary in Kathmandu amongst
+                      the locals, it is steeped in history. There is a selection
+                      of room grades from I will say standard (which is anything
+                      but) to suites. At least five restaurants on site, all
+                      serving different styles of cuisine. As is the custom,
+                      save the best until last, the staff are absolutely beyond
+                      words, nowhere have we encountered better. I would love to
+                      name them all but that would be impossible, so I can only
+                      name those whose names I have (Sudikshya, Abhipsha &
+                      Sweety). Very highly recommended.
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                  >
+                    <div class="w-full flex items-center justify-between">
+                      <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/2a/15/3b/antonio-h.jpg?w=100&amp;h=-1&amp;s=1"
+                        width="100"
+                        height="100"
+                        role="none"
+                        loading="lazy"
+                        alt="Antonio H"
+                        class="w-20 h-20 rounded-full shadow-lg object-cover"
+                      />
+                      <div class="flex items-start justify-center flex-col">
+                        <h4
+                          class="text-base md:text-xl text-coffee-800 font-bold"
+                        >
+                          Antonio H
+                        </h4>
+                        <span class="text-sm italic text-coffee-800/50"
+                          >via Tripadvisor</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-justify text-black">
+                      We stayed at Baber Mahal Vilas during late November 2023
+                      in suite N. 302.The whole property is beautiful with its
+                      traditional architecture, the suite was ample, nice
+                      decorated and well appointed located at the roof top next
+                      to a nice terrasse with flowers and even an Himalayan bees
+                      honeycomb .There is also an small shopping arcade with
+                      nice shops and restaurants, Location is calm and yet close
+                      to points of interest. We ate many times at the hotel
+                      either via room service and at its Indian restaurant, the
+                      food was good but the service must be improved since there
+                      were mistakes all times. The included breakfast was a bit
+                      small but still appropriate with the best coffee of our
+                      whole month trip ,the staff serving it was very attentive
+                      and efficient, also the rest of the staff at the front
+                      desk. Definitely we could come back.
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                  >
+                    <div class="w-full flex items-center justify-between">
+                      <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
+                        width="100"
+                        height="100"
+                        role="none"
+                        alt="Lisa"
+                        loading="lazy"
+                        class="w-20 h-20 rounded-full shadow-lg object-cover"
+                      />
+                      <div class="flex items-start justify-center flex-col">
+                        <h4
+                          class="text-base md:text-xl text-coffee-800 font-bold"
+                        >
+                          Lisa
+                        </h4>
+                        <span class="text-sm italic text-coffee-800/50"
+                          >via Tripadvisor</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-justify text-black">
+                      Nepal's "Wes Anderson-style hotel" <br />
+                      We booked the whole hotel for a conference of three days
+                      and could not have been happier with our selection! It's a
+                      boutique hotel that could easily be the stage of a Wes
+                      Anderson movie due to the beautiful and detailed
+                      combination of different architectural standards. The
+                      managers of the hotel, Sanish and Rupes are extremely
+                      helpful individuals. Overall the staff of the hotel is
+                      very nice. They fed us so well! The food was also beyond
+                      our expectation. The complimentary airport pickup helps a
+                      lot as the airport in Kathmandu can be a bit messy at
+                      times. The rooms were also very nice and gave us an
+                      at-home-feeling. We loved our stay and hope to be back!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- Testimonial 2 -->
+              <li class="glide__slide">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
+                  <div
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                  >
+                    <div class="w-full flex items-center justify-between">
+                      <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/d0/default-avatar-2020-33.jpg?w=100&amp;h=-1&amp;s=1"
+                        width="100"
+                        height="100"
+                        role="none"
+                        alt="10footwave"
+                        loading="lazy"
+                        class="w-20 h-20 rounded-full shadow-lg object-cover"
+                      />
+
+                      <div class="flex items-start justify-center flex-col">
+                        <h4
+                          class="text-base md:text-xl text-coffee-800 font-bold"
+                        >
+                          10footwave
+                        </h4>
+                        <span class="text-sm italic text-coffee-800/50"
+                          >via Tripadvisor</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-justify text-black">
+                      Absolutely Beautiful<br />
+                      I travel quite extensively in five star hotels and this is
+                      not only the best value it also has a charm that is
+                      unsurpassed. The rooms, staff and food were all
+                      exceptional. The food was wonderful both buffet breakfast
+                      and dinner.
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                  >
+                    <div class="w-full flex items-center justify-between">
+                      <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
+                        width="100"
+                        height="100"
+                        role="none"
+                        alt="Rajs676"
+                        loading="lazy"
+                        class="w-20 h-20 rounded-full shadow-lg object-cover"
+                      />
+                      <div class="flex items-start justify-center flex-col">
+                        <h4
+                          class="text-base md:text-xl text-coffee-800 font-bold"
+                        >
+                          Rajs676
+                        </h4>
+                        <span class="text-sm italic text-coffee-800/50"
+                          >via Tripadvisor</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-justify text-black">
+                      10/10 <br />
+                      We had a great time as a family. Very tasteful decor in
+                      Victorian era and comfortable suites! Central location
+                      makes it close to most places of attraction. The staff at
+                      the reception were excellent. Sweetie, Sudikshya and Rupes
+                      thank you for making our Stay comfortable. We certainly
+                      will visit again.
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                  >
+                    <div class="w-full flex items-center justify-between">
+                      <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/a1/ec/0f/filip-r.jpg?w=100&amp;h=-1&amp;s=1"
+                        width="100"
+                        height="100"
+                        role="none"
+                        alt="Filip R"
+                        loading="lazy"
+                        class="w-20 h-20 rounded-full shadow-lg object-cover"
+                      />
+                      <div class="flex items-start justify-center flex-col">
+                        <h4
+                          class="text-base md:text-xl text-coffee-800 font-bold"
+                        >
+                          Filip R
+                        </h4>
+                        <span class="text-sm italic text-coffee-800/50"
+                          >via Tripadvisor</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-justify text-black">
+                      It was my 3rd stay in Baber Mahal, it’s amazing place.
+                      It’s 15 min walk from the center which makes it nicely
+                      separated from busy Kathmandu, yet very close to
+                      everything worth seeing. Staff is fantastic, friendly and
+                      very accommodating to anything you need. The place is
+                      absolutely unique, where else could you sleep in real
+                      Nepalese palace? It’s worth mentioning that breakfasts and
+                      coffee is great.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <div
+            class="mt-5 hidden glide__arrows md:flex items-center justify-center gap-5"
+            data-glide-el="controls"
+          >
+            <button
+              class="glide__arrow glide__arrow--left"
+              data-glide-dir="<"
+              aria-label="Previous"
+              title="Previous"
+            >
+              <i
+                class="fa-solid fa-chevron-left text-2xl bg-coffee-700 text-coffee-400 px-5 py-3 hover:opacity-60 transition-all duration-150 ease-in-out"
+              ></i>
+            </button>
+            <button
+              class="glide__arrow glide__arrow--right"
+              data-glide-dir=">"
+              aria-label="Next"
+              title="Next"
+            >
+              <i
+                class="fa-solid fa-chevron-right text-2xl bg-coffee-700 text-coffee-400 px-5 py-3 hover:opacity-60 transition-all duration-150 ease-in-out"
+              ></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
