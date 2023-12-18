@@ -4,26 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Babar Mahal Vilas</title>
+    <title>Baber Mahal Vilas</title>
     <link rel="stylesheet" href="./css/links.css" />
     <link rel="stylesheet" href="./css/component.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="dist/output.css" rel="stylesheet" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <style>
-      /* .footer-image {
-        background-image: url("https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/378966787_804497145011348_3172057749981268710_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=X5KU8VcLjNgAX9qluwa&_nc_ht=scontent.fktm10-1.fna&oh=00_AfBGBsDywGDahvKW3e7_o1VMtQz6spTu8fNWAEiuBJR8Qg&oe=65842880");
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        background-size: cover;
-        width: 100%;
-        margin: 0 auto;
-        height: 100%;
-      } */
-    </style>
   </head>
 
-  <body>
+  <body class="overflow-x-hidden">
     <header class="bg-transparent sticky top-0 z-50">
       <div
         class="blur-bg absolute w-full p-4 transition-all duration-200 ease-linear bg-gradient-to-t from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)]"
@@ -35,21 +24,31 @@
                 <img
                   src="./img/logo.svg"
                   alt="Logo"
-                  class="w-24 md:w-32 h-auto object-contain rounded-full p-2"
+                  class="w-24 md:w-32 h-auto object-contain"
                 />
               </a>
             </div>
-            <div class="flex items-center justify-center gap-2">
+            <div class="flex items-center justify-center gap-4">
               <a href="#" target="_blank">
                 <img
                   alt="Babermahal Revisited"
                   src="https://www.babermahal.com/images/preference/KIs6r-logo.png"
-                  class="w-20 md:w-24 h-auto object-contain rounded-full p-2"
+                  class="w-20 md:w-24 h-auto object-contain p-2"
                 />
               </a>
+
+              <button
+                class="hidden md:block bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
+                aria-label="Book"
+                title="Book"
+              >
+                <i class="mr-2 fa-solid fa-calendar-check"></i>
+                Book Now
+              </button>
+
               <button
                 id="toggleButton"
-                class="text-coffee-400 focus:outline-none"
+                class="text-coffee-400 focus:outline-none p-2"
                 aria-label="Toggle Button"
                 title="Toggle"
               >
@@ -198,6 +197,14 @@
         <li class="nav-link">
           <a href="#">Contact</a>
         </li>
+        <button
+          class="w-full md:hidden text-coffee-700 bg-coffee-400 px-4 py-2 rounded-xl"
+          aria-label="Book"
+          title="Book"
+        >
+          <i class="mr-2 fa-solid fa-calendar-check"></i>
+          Book Now
+        </button>
       </ul>
     </nav>
 
@@ -229,107 +236,126 @@
       <!-- Add more slides as needed -->
     </div>
 
-    <section class="p-4">
-      <div class="container mx-auto md:my-5 lg:my-10">
+    <section class="md:my-5 lg:my-10">
+      <div class="relative">
         <div
-          class="py-2 flex items-center justify-center flex-col md:my-3 lg:my-6"
-        >
-          <h3
-            class="mt-5 text-2xl md:text-4xl font-bold uppercase text-coffee-800"
+          class="absolute top-0 md:top-1/4 right-0 bg-no-repeat bg-contain w-64 h-72 md:w-72 md:h-96 mix-blend-multiply opacity-20 -z-10"
+          style="background-image: url('./svg/statue.svg')"
+        ></div>
+        <div class="container mx-auto p-4 pt-0 relative">
+          <div
+            class="absolute top-0 left-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-20 -z-10"
+            style="background-image: url('./svg/flower.svg')"
+          ></div>
+          <div
+            class="py-2 flex items-center justify-center flex-col md:my-3 lg:my-6"
           >
-            About Us
-          </h3>
-          <span class="text-xs md:text-base font-bold text-coffee-800/80"
-            >Lorem ipsum dolor sit amet consectetur.</span
-          >
-          <div class="text-center">
-            <span
-              class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-            <span
-              class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-            <span
-              class="inline-block w-40 h-1 rounded-full bg-coffee-800"
-            ></span>
-            <span
-              class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-            <span
-              class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex items-center flex-col md:flex-row justify-between gap-5 md:gap-10"
-        >
-          <div class="hidden lg:block w-full md:w-1/2">
-            <img
-              src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
-              alt=""
-              class="w-full h-[500px] object-cover"
-            />
-          </div>
-
-          <div class="w-full lg:w-1/2 flex flex-col items-start gap-4 py-5">
-            <h4 class="text-coffee-800/90 text-2xl md:text-3xl font-extrabold">
-              <span class="text-coffee-700 text-lg font-light">Welcome to</span>
-              <br />
-              Babar Mahal Vilas
-            </h4>
-            <p class="text-black text-justify text-sm md:text-base">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestias dolorum provident non, atque eum doloremque veritatis,
-              obcaecati ipsam, quos ipsum aliquam corporis aspernatur cumque
-              accusamus commodi quod totam dolor! Sed porro dolores voluptatibus
-              ipsa quod architecto laudantium ea quas est, accusantium rerum
-              repudiandae quae earum et, dolorem facere eos eligendi!
-            </p>
-
-            <div
-              class="flex items-center justify-evenly flex-col md:flex-row gap-5"
+            <h3
+              class="mt-5 text-2xl md:text-4xl font-bold uppercase text-coffee-800"
             >
-              <div
-                class="flex items-center relative overflow-hidden rounded-xl"
-              >
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
-                  alt=""
-                  class="w-full h-48 object-cover rounded-xl hover:scale-110 transition-all duration-200 ease-linear"
-                />
-                <p
-                  class="pt-6 pb-2 w-full bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] absolute bottom-0 left-0 text-center text-coffee-400 rounded-b-xl"
-                >
-                  Our Story
-                </p>
-              </div>
-              <div
-                class="flex items-center relative overflow-hidden rounded-xl"
-              >
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
-                  alt=""
-                  class="w-full h-48 object-cover rounded-xl hover:scale-110 transition-all duration-200 ease-linear"
-                />
-                <p
-                  class="pt-6 pb-2 w-full bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] absolute bottom-0 left-0 text-center text-coffee-400 rounded-b-xl"
-                >
-                  Our History
-                </p>
-              </div>
+              About Us
+            </h3>
+            <span class="text-xs md:text-base font-bold text-coffee-800/80"
+              >Lorem ipsum dolor sit amet consectetur.</span
+            >
+            <div class="text-center">
+              <span
+                class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
+              ></span>
+              <span
+                class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
+              ></span>
+              <span
+                class="inline-block w-40 h-1 rounded-full bg-coffee-800"
+              ></span>
+              <span
+                class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
+              ></span>
+              <span
+                class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
+              ></span>
+            </div>
+          </div>
+          <div
+            class="flex items-center flex-col md:flex-row justify-between gap-5 md:gap-10"
+          >
+            <div class="hidden lg:block w-full md:w-1/2">
+              <img
+                src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
+                alt=""
+                class="w-full h-[500px] object-cover"
+              />
             </div>
 
-            <button
-              class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl"
-              aria-label="Explore"
-              title="Explore"
-            >
-              Explore More
-              <i class="ml-2 fa-solid fa-arrow-right"></i>
-            </button>
+            <div class="w-full lg:w-1/2 flex flex-col items-start gap-4 py-5">
+              <h4
+                class="text-coffee-800/90 text-2xl md:text-3xl font-extrabold"
+              >
+                <span class="text-coffee-700 text-lg font-light"
+                  >Welcome to</span
+                >
+                <br />
+                Baber Mahal Vilas
+              </h4>
+              <p class="text-black text-justify text-sm md:text-base">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias dolorum provident non, atque eum doloremque veritatis,
+                obcaecati ipsam, quos ipsum aliquam corporis aspernatur cumque
+                accusamus commodi quod totam dolor! Sed porro dolores
+                voluptatibus ipsa quod architecto laudantium ea quas est,
+                accusantium rerum repudiandae quae earum et, dolorem facere eos
+                eligendi!
+              </p>
+
+              <div
+                class="flex items-center justify-evenly flex-col md:flex-row gap-5"
+              >
+                <div
+                  class="flex items-center relative overflow-hidden rounded-xl"
+                >
+                  <img
+                    src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
+                    alt=""
+                    class="w-full h-48 object-cover rounded-xl hover:scale-110 transition-all duration-200 ease-linear"
+                  />
+                  <p
+                    class="pt-6 pb-2 w-full bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] absolute bottom-0 left-0 text-center text-coffee-400 rounded-b-xl"
+                  >
+                    Our Story
+                  </p>
+                </div>
+                <div
+                  class="flex items-center relative overflow-hidden rounded-xl"
+                >
+                  <img
+                    src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
+                    alt=""
+                    class="w-full h-48 object-cover rounded-xl hover:scale-110 transition-all duration-200 ease-linear"
+                  />
+                  <p
+                    class="pt-6 pb-2 w-full bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] absolute bottom-0 left-0 text-center text-coffee-400 rounded-b-xl"
+                  >
+                    Our History
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl"
+                aria-label="Explore"
+                title="Explore"
+              >
+                Explore More
+                <i class="ml-2 fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
+      <div
+        class="bg-repeat-x bg-contain w-full min-h-[10vh] md:min-h-[20vh] mix-blend-multiply opacity-20"
+        style="background-image: url('./svg/building.svg')"
+      ></div>
     </section>
 
     <section>
@@ -789,7 +815,12 @@
     </section>
 
     <section class="p-4">
-      <div class="container mx-auto mt-20">
+      <div class="container mx-auto mt-20 relative">
+        <div
+          class="absolute top-0 right-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-20 -z-10"
+          style="background-image: url('./svg/flower.svg')"
+        ></div>
+
         <div
           class="py-2 flex items-center justify-center flex-col md:my-3 lg:my-6"
         >
@@ -820,7 +851,7 @@
           </div>
         </div>
 
-        <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div
             class="flex items-center flex-col gap-5 shadow-xl hover:shadow-2xl transition-all duration-200 ease-linear"
           >
@@ -905,8 +936,12 @@
       </div>
     </section>
 
-    <section class="my-12">
-      <div class="container mx-auto">
+    <section class="my-12 relative">
+      <div
+        class="absolute top-0 lg:top-28 left-0 bg-no-repeat bg-contain w-32 h-40 mix-blend-multiply opacity-20 -z-10 lg:-rotate-90"
+        style="background-image: url('./svg/flower.svg')"
+      ></div>
+      <div class="container mx-auto z-10">
         <div
           class="py-2 flex items-center justify-center flex-col md:mt-6 lg:mt-12"
         >
@@ -943,7 +978,7 @@
               <li class="glide__slide">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4">
                   <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
                   >
                     <div class="w-full flex items-center justify-between">
                       <img
@@ -984,7 +1019,7 @@
                   </div>
 
                   <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
                   >
                     <div class="w-full flex items-center justify-between">
                       <img
@@ -1027,7 +1062,7 @@
                   </div>
 
                   <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
                   >
                     <div class="w-full flex items-center justify-between">
                       <img
@@ -1072,7 +1107,7 @@
               <li class="glide__slide">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
                   <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
                   >
                     <div class="w-full flex items-center justify-between">
                       <img
@@ -1107,7 +1142,7 @@
                   </div>
 
                   <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
                   >
                     <div class="w-full flex items-center justify-between">
                       <img
@@ -1142,7 +1177,7 @@
                   </div>
 
                   <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500/50 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
                   >
                     <div class="w-full flex items-center justify-between">
                       <img
@@ -1211,270 +1246,255 @@
       </div>
     </section>
 
-    <footer class="bg-coffee-700 p-4">
-      <div class="footer-image">
-        <div class="container mx-auto">
-          <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 pb-4">
-            <a
-              href=""
-              class="bg-coffee-400 p-2 rounded-lg flex items-center justify-center"
+    <footer
+      class="bg-gradient-to-b from-coffee-400 via-coffee-600 to-coffee-800 relative"
+    >
+      <div
+        class="absolute top-0 left-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-20"
+        style="background-image: url('./svg/flower.svg')"
+      ></div>
+      <div
+        class="absolute top-1/4 md:top-1/2 right-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 -rotate-180 mix-blend-multiply opacity-30"
+        style="background-image: url('./svg/flower.svg')"
+      ></div>
+      <div class="container mx-auto z-10 p-4 pb-0">
+        <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 pb-4">
+          <a href="" class="p-2 flex items-center justify-center">
+            <img
+              src="./svg/bookingcom.svg"
+              alt="Booking.com"
+              class="w-32 h-8 object-contain"
+            />
+          </a>
+          <a href="" class="p-2 flex items-center justify-center">
+            <img
+              src="./svg/tripadvisor.svg"
+              alt="Tripadvisor"
+              class="w-32 h-8 object-contain"
+            />
+          </a>
+          <a href="" class="p-2 flex items-center justify-center">
+            <img
+              src="./svg/agoda.svg"
+              alt="Agoda"
+              class="w-24 h-9 object-cover scale-75 md:scale-100"
+            />
+          </a>
+          <a href="" class="p-2 flex items-center justify-center">
+            <img
+              src="./svg/expedia.svg"
+              alt="Expedia"
+              class="w-32 h-8 object-cover"
+            />
+          </a>
+          <a href="" class="p-2 flex items-center justify-center">
+            <img
+              src="./svg/makemytrip.svg"
+              alt="Make my trip"
+              class="w-32 h-8 object-contain"
+            />
+          </a>
+          <a href="" class="p-2 flex items-center justify-center">
+            <img
+              src="./svg/goibibo.svg"
+              alt="Goibibo"
+              class="w-32 h-8 object-cover"
+            />
+          </a>
+        </div>
+
+        <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 z-10">
+          <div class="w-full mb-5">
+            <h4
+              class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-800 mb-5"
             >
-              <img
-                src="./svg/bookingcom.svg"
-                alt="Booking.com"
-                class="w-32 h-8 object-contain"
-              />
-            </a>
-            <a
-              href=""
-              class="bg-coffee-400 p-2 rounded-lg flex items-center justify-center"
+              Contact Address
+              <div class="w-1/4 h-1 rounded-full bg-coffee-800/50"></div>
+            </h4>
+            <ul class="flex items-center justify-center flex-col">
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base leading-loose text-coffee-800 hover:underline"
+                  target="_blank"
+                >
+                  <i class="mr-2 fa-solid fa-map-marker-alt"></i>
+                  Tanka Prasad Sadak, Kathmandu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+9774257655"
+                  class="inline-block text-base leading-loose text-coffee-800 hover:underline"
+                  target="_blank"
+                >
+                  <i class="mr-2 fa-solid fa-phone-volume"></i>
+                  +977-01-4257655/4248747
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@babermahal.com"
+                  class="inline-block text-base leading-loose text-coffee-800 hover:underline"
+                  target="_blank"
+                >
+                  <i class="mr-2 fa-solid fa-envelope"></i>
+                  info@babermahal.com
+                </a>
+              </li>
+            </ul>
+            <div
+              class="flex items-center justify-center md:gap-2 flex-row mt-6"
             >
-              <img
-                src="./svg/tripadvisor.svg"
-                alt="Tripadvisor"
-                class="w-32 h-8 object-contain"
-              />
-            </a>
-            <a
-              href=""
-              class="bg-coffee-400 p-2 rounded-lg flex items-center justify-center"
-            >
-              <img
-                src="./svg/agoda.svg"
-                alt="Agoda"
-                class="w-24 h-9 object-cover scale-75 md:scale-100"
-              />
-            </a>
-            <a
-              href=""
-              class="bg-coffee-400 p-2 rounded-lg flex items-center justify-center"
-            >
-              <img
-                src="./svg/expedia.svg"
-                alt="Expedia"
-                class="w-32 h-8 object-cover"
-              />
-            </a>
-            <a
-              href=""
-              class="bg-coffee-400 p-2 rounded-lg flex items-center justify-center"
-            >
-              <img
-                src="./svg/makemytrip.svg"
-                alt="Make my trip"
-                class="w-32 h-8 object-contain"
-              />
-            </a>
-            <a
-              href=""
-              class="bg-coffee-400 p-2 rounded-lg flex items-center justify-center"
-            >
-              <img
-                src="./svg/goibibo.svg"
-                alt="Goibibo"
-                class="w-32 h-8 object-cover"
-              />
-            </a>
+              <a
+                href="#"
+                target="_blank"
+                class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="#"
+                class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
           </div>
 
-          <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
+          <div class="w-full mb-5">
+            <h4
+              class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-800 mb-5"
+            >
+              Gallery
+              <div class="w-1/4 h-1 rounded-full bg-coffee-800/50"></div>
+            </h4>
 
-          <div
-            class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 z-10"
-          >
-            <div class="w-full mb-5">
-              <h4
-                class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-400 mb-5"
+            <div class="grid grid-cols-3 gap-2">
+              <a
+                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                class="relative block overflow-hidden rounded-xl"
               >
-                Contact Address
-                <div class="w-1/4 h-1 rounded-full bg-coffee-500/40"></div>
-              </h4>
-              <ul class="flex items-center justify-center flex-col">
-                <li>
-                  <a
-                    href="#"
-                    class="inline-block text-base leading-loose text-coffee-400 hover:underline"
-                    target="_blank"
-                  >
-                    <i class="mr-2 fa-solid fa-map-marker-alt"></i>
-                    Tanka Prasad Sadak, Kathmandu
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="tel:+9774257655"
-                    class="inline-block text-base leading-loose text-coffee-400 hover:underline"
-                    target="_blank"
-                  >
-                    <i class="mr-2 fa-solid fa-phone-volume"></i>
-                    +977-01-4257655/4248747
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:info@babermahal.com"
-                    class="inline-block text-base leading-loose text-coffee-400 hover:underline"
-                    target="_blank"
-                  >
-                    <i class="mr-2 fa-solid fa-envelope"></i>
-                    info@babermahal.com
-                  </a>
-                </li>
-              </ul>
-              <div
-                class="flex items-center justify-center md:gap-2 flex-row mt-6"
+                <img
+                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                  alt=""
+                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
+                />
+              </a>
+              <a
+                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                class="relative block overflow-hidden rounded-xl"
               >
-                <a
-                  href="#"
-                  target="_blank"
-                  class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-2 rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                >
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-2 rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a
-                  href="#"
-                  class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-2 rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                >
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a
-                  href="#"
-                  class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-2 rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                >
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </div>
+                <img
+                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                  alt=""
+                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
+                />
+              </a>
+              <a
+                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                class="relative block overflow-hidden rounded-xl"
+              >
+                <img
+                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                  alt=""
+                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
+                />
+              </a>
+              <a
+                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                class="relative block overflow-hidden rounded-xl"
+              >
+                <img
+                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                  alt=""
+                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
+                />
+              </a>
+              <a
+                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                class="relative block overflow-hidden rounded-xl"
+              >
+                <img
+                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                  alt=""
+                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
+                />
+              </a>
+              <a
+                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                class="relative block overflow-hidden rounded-xl"
+              >
+                <img
+                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+                  alt=""
+                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
+                />
+              </a>
             </div>
+          </div>
 
-            <div class="w-full mb-5">
-              <h4
-                class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-400 mb-5"
-              >
-                Gallery
-                <div class="w-1/4 h-1 rounded-full bg-coffee-500/40"></div>
-              </h4>
-
-              <div class="grid grid-cols-3 gap-2">
-                <a
-                  href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  class="relative block overflow-hidden rounded-xl"
-                >
-                  <img
-                    src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                    alt=""
-                    class="w-full h-20 object-cover rounded-xl border-coffee-700 border-4 border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                  />
-                </a>
-                <a
-                  href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  class="relative block overflow-hidden rounded-xl"
-                >
-                  <img
-                    src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                    alt=""
-                    class="w-full h-20 object-cover rounded-xl border-coffee-700 border-4 border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                  />
-                </a>
-                <a
-                  href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  class="relative block overflow-hidden rounded-xl"
-                >
-                  <img
-                    src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                    alt=""
-                    class="w-full h-20 object-cover rounded-xl border-coffee-700 border-4 border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                  />
-                </a>
-                <a
-                  href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  class="relative block overflow-hidden rounded-xl"
-                >
-                  <img
-                    src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                    alt=""
-                    class="w-full h-20 object-cover rounded-xl border-coffee-700 border-4 border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                  />
-                </a>
-                <a
-                  href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  class="relative block overflow-hidden rounded-xl"
-                >
-                  <img
-                    src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                    alt=""
-                    class="w-full h-20 object-cover rounded-xl border-coffee-700 border-4 border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                  />
-                </a>
-                <a
-                  href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  class="relative block overflow-hidden rounded-xl"
-                >
-                  <img
-                    src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                    alt=""
-                    class="w-full h-20 object-cover rounded-xl border-coffee-700 border-4 border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="w-full mb-5">
-              <h4
-                class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-400"
-              >
-                Site Map
-                <div class="w-1/4 h-1 rounded-full bg-coffee-500/40 mb-5"></div>
-              </h4>
-              <!-- <iframe
+          <div class="w-full mb-5 hidden md:block">
+            <h4
+              class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-800"
+            >
+              Site Map
+              <div class="w-1/4 h-1 rounded-full bg-coffee-800/50 mb-5"></div>
+            </h4>
+            <!-- <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.734563527526!2d85.31993567558068!3d27.6945976761899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19afde62a401%3A0x859f71fc5ccb7c71!2sBaber%20Mahal%20Vilas%20-%20The%20Heritage%20Hotel!5e0!3m2!1sen!2snp!4v1702840406097!5m2!1sen!2snp"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe> -->
-              <img
-                src="./svg/QRcode.svg"
-                alt="QR Code for google maps"
-                class="w-full h-48"
-              />
-            </div>
-          </div>
-
-          <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
-
-          <div
-            class="flex justify-between items-center flex-col md:flex-row text-coffee-500"
-          >
-            <p class="text-center">
-              Copyright © Naikap Village Resort 2023. All rights reserved.
-              Developed by:
-              <a href="https://longtail.info/" target="_blank" class="underline"
-                >Longtail e-media</a
-              >
-            </p>
-            <p class="flex gap-4">
-              <a href="#" class="hover:underline no-underline"
-                >Terms & Conditions</a
-              >
-              <a href="#" class="hover:underline no-underline"
-                >Privacy Policy</a
-              >
-            </p>
+            <img
+              src="./svg/QRcode.svg"
+              alt="QR Code for google maps"
+              class="w-full h-48"
+            />
           </div>
         </div>
-        <!-- <img
-        src="./img/footer_pattern.webp"
-        alt=""
-        class="absolute bottom-0 footer-pattern"
-      /> -->
+
+        <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
+
+        <div
+          class="flex justify-between items-center flex-col md:flex-row text-coffee-400"
+        >
+          <p class="text-center">
+            Copyright © Naikap Village Resort 2023. All rights reserved.
+            Developed by:
+            <a href="https://longtail.info/" target="_blank" class="underline"
+              >Longtail e-media</a
+            >
+          </p>
+          <p class="flex gap-4">
+            <a href="#" class="hover:underline no-underline"
+              >Terms & Conditions</a
+            >
+            <a href="#" class="hover:underline no-underline">Privacy Policy</a>
+          </p>
+        </div>
       </div>
+      <div
+        class="bg-repeat-x bg-contain w-full h-[15vh] md:h-[20vh] mix-blend-multiply bg-center opacity-50"
+        style="background-image: url('./svg/building.svg')"
+      ></div>
     </footer>
 
     <!-- hero carousel -->
