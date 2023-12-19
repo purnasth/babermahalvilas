@@ -3,6 +3,26 @@
 @tailwind utilities;
 
 @layer components {
+  ::selection {
+    @apply bg-coffee-700 text-coffee-400;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2 rounded-full bg-transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-coffee-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-coffee-800;
+  }
+
   body {
     @apply bg-coffee-400;
     font-family: "Merriweather", serif;

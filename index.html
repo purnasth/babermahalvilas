@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Baber Mahal Vilas</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logo/favicon.ico"
+    />
+    <link rel="manifest" href="./logo/site.webmanifest" />
+
     <link rel="stylesheet" href="./css/links.css" />
     <link rel="stylesheet" href="./css/component.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -94,11 +114,11 @@
             >About <i class="fa-solid fa-chevron-right"></i
           ></a>
           <ul
-            class="drop absolute -top-full left-full bg-coffee-400 text-coffee-700 flex items-start justify-center gap-4 flex-col p-4 invisible w-full ml-2 md:ml-8 rounded-xl"
+            class="drop absolute -top-3/4 left-full bg-coffee-400 text-coffee-700 flex items-start justify-center gap-4 flex-col p-4 invisible w-full ml-2 md:ml-8 rounded-xl"
           >
             <li class="hover:underline"><a href="#">Our Story</a></li>
-            <li class="hover:underline"><a href="#">The History</a></li>
-            <li class="hover:underline"><a href="#">The Property</a></li>
+            <li class="hover:underline"><a href="#">Our History</a></li>
+            <!-- <li class="hover:underline"><a href="#">The Property</a></li> -->
           </ul>
         </li>
         <li class="dropdown nav-link">
@@ -106,46 +126,72 @@
             >Rooms <i class="fa-solid fa-chevron-right"></i
           ></a>
           <ul
-            class="drop absolute -top-40 md:-top-[300%] lg:-top-full left-full bg-coffee-400 text-coffee-700 flex items-start justify-center gap-4 flex-col md:flex-row p-4 invisible w-full md:w-[50vw] z-[99] md:ml-8 rounded-xl"
+            class="drop absolute -top-3/4 lg:-top-full left-full bg-coffee-400 text-coffee-700 flex items-start justify-center gap-4 flex-col md:flex-row p-4 invisible w-full md:w-[50vw] z-[99] ml-2 md:ml-8 rounded-xl"
           >
             <div
-              class="flex items-center justify-between flex-col lg:flex-row gap-2"
+              class="flex items-start md:items-center justify-between flex-col lg:flex-row gap-2"
             >
-              <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="#">Traditional Room</a>
+              <div
+                class="flex flex-col items-center justify-center md:gap-2 text-base"
+              >
+                <a href="#">Traditional room</a>
                 <img
                   src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
                   alt=""
-                  class="w-60 h-auto object-cover"
+                  class="hidden lg:block w-60 h-auto object-cover"
                 />
-                <button aria-label="Visit" title="Visit">Visit Now</button>
+                <button
+                  aria-label="Visit"
+                  title="Visit"
+                  class="hidden lg:block"
+                >
+                  Visit Now
+                </button>
               </div>
               <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="#">Traditional Room</a>
+                <a href="#">Traditional Suite</a>
                 <img
                   src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
                   alt=""
-                  class="w-60 h-auto object-cover"
+                  class="hidden lg:block w-60 h-auto object-cover"
                 />
-                <button aria-label="Visit" title="Visit">Visit Now</button>
+                <button
+                  aria-label="Visit"
+                  title="Visit"
+                  class="hidden lg:block"
+                >
+                  Visit Now
+                </button>
               </div>
               <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="#">Traditional Room</a>
+                <a href="#">Heritage Suite</a>
                 <img
                   src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
                   alt=""
-                  class="w-60 h-auto object-cover"
+                  class="hidden lg:block w-60 h-auto object-cover"
                 />
-                <button aria-label="Visit" title="Visit">Visit Now</button>
+                <button
+                  aria-label="Visit"
+                  title="Visit"
+                  class="hidden lg:block"
+                >
+                  Visit Now
+                </button>
               </div>
               <div class="flex flex-col items-center justify-center md:gap-2">
-                <a href="#">Traditional Room</a>
+                <a href="#">Royal Suite</a>
                 <img
                   src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
                   alt=""
-                  class="w-60 h-auto object-cover"
+                  class="hidden lg:block w-60 h-auto object-cover"
                 />
-                <button aria-label="Visit" title="Visit">Visit Now</button>
+                <button
+                  aria-label="Visit"
+                  title="Visit"
+                  class="hidden lg:block"
+                >
+                  Visit Now
+                </button>
               </div>
             </div>
           </ul>
@@ -307,37 +353,21 @@
                 eligendi!
               </p>
 
-              <div
-                class="flex items-center justify-evenly flex-col md:flex-row gap-5"
-              >
-                <div
-                  class="flex items-center relative overflow-hidden rounded-xl"
+              <div class="grid grid-cols-2 gap-8">
+                <a
+                  href="#"
+                  class="flex items-center justify-center text-coffee-800"
                 >
-                  <img
-                    src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
-                    alt=""
-                    class="w-full h-48 object-cover rounded-xl hover:scale-110 transition-all duration-200 ease-linear"
-                  />
-                  <p
-                    class="pt-6 pb-2 w-full bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] absolute bottom-0 left-0 text-center text-coffee-400 rounded-b-xl"
-                  >
-                    Our Story
-                  </p>
-                </div>
-                <div
-                  class="flex items-center relative overflow-hidden rounded-xl"
+                  <i class="fa-solid fa-book-open-reader text-2xl mr-2"></i>
+                  <h5 class="text-xl">Our Story</h5>
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center justify-center text-coffee-800"
                 >
-                  <img
-                    src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
-                    alt=""
-                    class="w-full h-48 object-cover rounded-xl hover:scale-110 transition-all duration-200 ease-linear"
-                  />
-                  <p
-                    class="pt-6 pb-2 w-full bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] absolute bottom-0 left-0 text-center text-coffee-400 rounded-b-xl"
-                  >
-                    Our History
-                  </p>
-                </div>
+                  <i class="fa-solid fa-timeline text-2xl mr-2"></i>
+                  <h5 class="text-xl">Our History</h5>
+                </a>
               </div>
 
               <button
@@ -352,10 +382,10 @@
           </div>
         </div>
       </div>
-      <div
+      <!-- <div
         class="bg-repeat-x bg-contain w-full min-h-[10vh] md:min-h-[20vh] mix-blend-multiply opacity-20"
         style="background-image: url('./svg/building.svg')"
-      ></div>
+      ></div> -->
     </section>
 
     <section>
@@ -409,11 +439,11 @@
                           class="w-[350px] h-full flex justify-center flex-col gap-5 bg-black/20 md:bg-transparent backdrop-blur-md md:backdrop-filter-none rounded-xl p-4 md:p-0"
                         >
                           <h3
-                            class="text-coffee-600 text-2xl md:text-3xl font-extrabold uppercase"
+                            class="text-coffee-600 text-xl md:text-2xl font-bold uppercase"
                           >
                             Traditional Room
                           </h3>
-                          <p class="text-base text-coffee-400">
+                          <p class="text-sm text-coffee-400">
                             The Traditional Rooms are located in the main
                             building of the resort. These rooms are spacious and
                             have a private balcony with a view of the garden and
@@ -505,11 +535,11 @@
                           class="w-[350px] h-full flex justify-center flex-col gap-5 bg-black/20 md:bg-transparent backdrop-blur-md md:backdrop-filter-none rounded-xl p-4 md:p-0"
                         >
                           <h3
-                            class="text-coffee-600 text-2xl md:text-3xl font-extrabold uppercase"
+                            class="text-coffee-600 text-xl md:text-2xl font-bold uppercase"
                           >
                             Traditional Suite
                           </h3>
-                          <p class="text-base text-coffee-400">
+                          <p class="text-sm text-coffee-400">
                             The Tradition Suite are located in the main building
                             of the resort. These rooms are spacious and have a
                             private balcony with a view of the garden and the
@@ -601,11 +631,11 @@
                           class="w-[350px] h-full flex justify-center flex-col gap-5 bg-black/20 md:bg-transparent backdrop-blur-md md:backdrop-filter-none rounded-xl p-4 md:p-0"
                         >
                           <h3
-                            class="text-coffee-600 text-2xl md:text-3xl font-extrabold uppercase"
+                            class="text-coffee-600 text-xl md:text-2xl font-bold uppercase"
                           >
                             Heritage Suite
                           </h3>
-                          <p class="text-base text-coffee-400">
+                          <p class="text-sm text-coffee-400">
                             The Heritage Suite are located in the main building
                             of the resort. These rooms are spacious and have a
                             private balcony with a view of the garden and the
@@ -697,11 +727,11 @@
                           class="w-[350px] h-full flex justify-center flex-col gap-5 bg-black/20 md:bg-transparent backdrop-blur-md md:backdrop-filter-none rounded-xl p-4 md:p-0"
                         >
                           <h3
-                            class="text-coffee-600 text-2xl md:text-3xl font-extrabold uppercase"
+                            class="text-coffee-600 text-xl md:text-2xl font-bold uppercase"
                           >
                             Royal Suite
                           </h3>
-                          <p class="text-base text-coffee-400">
+                          <p class="text-sm text-coffee-400">
                             The Royal Suite are located in the main building of
                             the resort. These rooms are spacious and have a
                             private balcony with a view of the garden and the
@@ -975,10 +1005,122 @@
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <!-- Testimonial 1 -->
+
+              <li class="glide__slide">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
+                  <div
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
+                  >
+                    <div class="w-full flex items-center justify-between">
+                      <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/d0/default-avatar-2020-33.jpg?w=100&amp;h=-1&amp;s=1"
+                        width="100"
+                        height="100"
+                        role="none"
+                        alt="10footwave"
+                        loading="lazy"
+                        class="w-20 h-20 rounded-full shadow-lg object-cover"
+                      />
+
+                      <div class="flex items-start justify-center flex-col">
+                        <h4
+                          class="text-base md:text-xl text-coffee-800 font-bold"
+                        >
+                          10footwave
+                        </h4>
+                        <span class="text-sm italic text-coffee-800/50"
+                          >via Tripadvisor</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-justify text-black text-sm md:text-base">
+                      Absolutely Beautiful<br />
+                      I travel quite extensively in five star hotels and this is
+                      not only the best value it also has a charm that is
+                      unsurpassed. The rooms, staff and food were all
+                      exceptional. The food was wonderful both buffet breakfast
+                      and dinner.
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
+                  >
+                    <div class="w-full flex items-center justify-between">
+                      <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
+                        width="100"
+                        height="100"
+                        role="none"
+                        alt="Rajs676"
+                        loading="lazy"
+                        class="w-20 h-20 rounded-full shadow-lg object-cover"
+                      />
+                      <div class="flex items-start justify-center flex-col">
+                        <h4
+                          class="text-base md:text-xl text-coffee-800 font-bold"
+                        >
+                          Rajs676
+                        </h4>
+                        <span class="text-sm italic text-coffee-800/50"
+                          >via Tripadvisor</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-justify text-black text-sm md:text-base">
+                      10/10 <br />
+                      We had a great time as a family. Very tasteful decor in
+                      Victorian era and comfortable suites! Central location
+                      makes it close to most places of attraction. The staff at
+                      the reception were excellent. Sweetie, Sudikshya and Rupes
+                      thank you for making our Stay comfortable. We certainly
+                      will visit again.
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
+                  >
+                    <div class="w-full flex items-center justify-between">
+                      <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/a1/ec/0f/filip-r.jpg?w=100&amp;h=-1&amp;s=1"
+                        width="100"
+                        height="100"
+                        role="none"
+                        alt="Filip R"
+                        loading="lazy"
+                        class="w-20 h-20 rounded-full shadow-lg object-cover"
+                      />
+                      <div class="flex items-start justify-center flex-col">
+                        <h4
+                          class="text-base md:text-xl text-coffee-800 font-bold"
+                        >
+                          Filip R
+                        </h4>
+                        <span class="text-sm italic text-coffee-800/50"
+                          >via Tripadvisor</span
+                        >
+                      </div>
+                    </div>
+                    <p class="text-justify text-black text-sm md:text-base">
+                      It was my 3rd stay in Baber Mahal, it’s amazing place.
+                      It’s 15 min walk from the center which makes it nicely
+                      separated from busy Kathmandu, yet very close to
+                      everything worth seeing. Staff is fantastic, friendly and
+                      very accommodating to anything you need. The place is
+                      absolutely unique, where else could you sleep in real
+                      Nepalese palace? It’s worth mentioning that breakfasts and
+                      coffee is great.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Testimonial 2 -->
               <li class="glide__slide">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4">
                   <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
                   >
                     <div class="w-full flex items-center justify-between">
                       <img
@@ -1019,7 +1161,7 @@
                   </div>
 
                   <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
                   >
                     <div class="w-full flex items-center justify-between">
                       <img
@@ -1062,7 +1204,7 @@
                   </div>
 
                   <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
+                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
                   >
                     <div class="w-full flex items-center justify-between">
                       <img
@@ -1099,116 +1241,6 @@
                       lot as the airport in Kathmandu can be a bit messy at
                       times. The rooms were also very nice and gave us an
                       at-home-feeling. We loved our stay and hope to be back!
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <!-- Testimonial 2 -->
-              <li class="glide__slide">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
-                  <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
-                  >
-                    <div class="w-full flex items-center justify-between">
-                      <img
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/d0/default-avatar-2020-33.jpg?w=100&amp;h=-1&amp;s=1"
-                        width="100"
-                        height="100"
-                        role="none"
-                        alt="10footwave"
-                        loading="lazy"
-                        class="w-20 h-20 rounded-full shadow-lg object-cover"
-                      />
-
-                      <div class="flex items-start justify-center flex-col">
-                        <h4
-                          class="text-base md:text-xl text-coffee-800 font-bold"
-                        >
-                          10footwave
-                        </h4>
-                        <span class="text-sm italic text-coffee-800/50"
-                          >via Tripadvisor</span
-                        >
-                      </div>
-                    </div>
-                    <p class="text-justify text-black text-sm md:text-base">
-                      Absolutely Beautiful<br />
-                      I travel quite extensively in five star hotels and this is
-                      not only the best value it also has a charm that is
-                      unsurpassed. The rooms, staff and food were all
-                      exceptional. The food was wonderful both buffet breakfast
-                      and dinner.
-                    </p>
-                  </div>
-
-                  <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
-                  >
-                    <div class="w-full flex items-center justify-between">
-                      <img
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
-                        width="100"
-                        height="100"
-                        role="none"
-                        alt="Rajs676"
-                        loading="lazy"
-                        class="w-20 h-20 rounded-full shadow-lg object-cover"
-                      />
-                      <div class="flex items-start justify-center flex-col">
-                        <h4
-                          class="text-base md:text-xl text-coffee-800 font-bold"
-                        >
-                          Rajs676
-                        </h4>
-                        <span class="text-sm italic text-coffee-800/50"
-                          >via Tripadvisor</span
-                        >
-                      </div>
-                    </div>
-                    <p class="text-justify text-black text-sm md:text-base">
-                      10/10 <br />
-                      We had a great time as a family. Very tasteful decor in
-                      Victorian era and comfortable suites! Central location
-                      makes it close to most places of attraction. The staff at
-                      the reception were excellent. Sweetie, Sudikshya and Rupes
-                      thank you for making our Stay comfortable. We certainly
-                      will visit again.
-                    </p>
-                  </div>
-
-                  <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear"
-                  >
-                    <div class="w-full flex items-center justify-between">
-                      <img
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/a1/ec/0f/filip-r.jpg?w=100&amp;h=-1&amp;s=1"
-                        width="100"
-                        height="100"
-                        role="none"
-                        alt="Filip R"
-                        loading="lazy"
-                        class="w-20 h-20 rounded-full shadow-lg object-cover"
-                      />
-                      <div class="flex items-start justify-center flex-col">
-                        <h4
-                          class="text-base md:text-xl text-coffee-800 font-bold"
-                        >
-                          Filip R
-                        </h4>
-                        <span class="text-sm italic text-coffee-800/50"
-                          >via Tripadvisor</span
-                        >
-                      </div>
-                    </div>
-                    <p class="text-justify text-black text-sm md:text-base">
-                      It was my 3rd stay in Baber Mahal, it’s amazing place.
-                      It’s 15 min walk from the center which makes it nicely
-                      separated from busy Kathmandu, yet very close to
-                      everything worth seeing. Staff is fantastic, friendly and
-                      very accommodating to anything you need. The place is
-                      absolutely unique, where else could you sleep in real
-                      Nepalese palace? It’s worth mentioning that breakfasts and
-                      coffee is great.
                     </p>
                   </div>
                 </div>
@@ -1305,19 +1337,21 @@
 
         <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 z-10">
+        <div class="grid grid-cols-1 gap-4 z-10 py-5 translate-y-10">
           <div class="w-full mb-5">
             <h4
-              class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-800 mb-5"
+              class="flex items-center justify-center flex-col text-lg md:text-xl font-semibold text-coffee-800 mb-5"
             >
               Contact Address
-              <div class="w-1/4 h-1 rounded-full bg-coffee-800/50"></div>
+              <div
+                class="w-1/4 md:w-1/12 h-1 rounded-full bg-coffee-800/50"
+              ></div>
             </h4>
-            <ul class="flex items-center justify-center flex-col">
+            <ul class="flex items-center justify-center flex-col gap-4">
               <li>
                 <a
                   href="#"
-                  class="inline-block text-base leading-loose text-coffee-800 hover:underline"
+                  class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline"
                   target="_blank"
                 >
                   <i class="mr-2 fa-solid fa-map-marker-alt"></i>
@@ -1327,7 +1361,7 @@
               <li>
                 <a
                   href="tel:+9774257655"
-                  class="inline-block text-base leading-loose text-coffee-800 hover:underline"
+                  class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline"
                   target="_blank"
                 >
                   <i class="mr-2 fa-solid fa-phone-volume"></i>
@@ -1337,7 +1371,7 @@
               <li>
                 <a
                   href="mailto:info@babermahal.com"
-                  class="inline-block text-base leading-loose text-coffee-800 hover:underline"
+                  class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline"
                   target="_blank"
                 >
                   <i class="mr-2 fa-solid fa-envelope"></i>
@@ -1377,7 +1411,7 @@
             </div>
           </div>
 
-          <div class="w-full mb-5">
+          <!-- <div class="w-full mb-5">
             <h4
               class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-800 mb-5"
             >
@@ -1456,45 +1490,39 @@
               Site Map
               <div class="w-1/4 h-1 rounded-full bg-coffee-800/50 mb-5"></div>
             </h4>
-            <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.734563527526!2d85.31993567558068!3d27.6945976761899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19afde62a401%3A0x859f71fc5ccb7c71!2sBaber%20Mahal%20Vilas%20-%20The%20Heritage%20Hotel!5e0!3m2!1sen!2snp!4v1702840406097!5m2!1sen!2snp"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe> -->
             <img
               src="./svg/QRcode.svg"
               alt="QR Code for google maps"
               class="w-full h-48"
             />
-          </div>
+          </div> -->
         </div>
 
-        <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
-
         <div
-          class="flex justify-between items-center flex-col md:flex-row text-coffee-400"
+          class="bg-repeat-x bg-contain w-full h-[15vh] md:h-[20vh] mix-blend-multiply bg-center opacity-50"
+          style="background-image: url('./svg/building.svg')"
+        ></div>
+        <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
+        <div
+          class="flex justify-between items-center flex-col md:flex-row text-coffee-400 pb-3 gap-4"
         >
-          <p class="text-center">
+          <p class="text-center text-sm md:text-base">
             Copyright © Naikap Village Resort 2023. All rights reserved.
             Developed by:
             <a href="https://longtail.info/" target="_blank" class="underline"
               >Longtail e-media</a
             >
           </p>
-          <p class="flex gap-4">
-            <a href="#" class="hover:underline no-underline"
+          <p class="flex gap-4 text-sm md:text-base">
+            <a href="#" class="underline hover:underline md:no-underline"
               >Terms & Conditions</a
             >
-            <a href="#" class="hover:underline no-underline">Privacy Policy</a>
+            <a href="#" class="underline hover:underline md:no-underline"
+              >Privacy Policy</a
+            >
           </p>
         </div>
       </div>
-      <div
-        class="bg-repeat-x bg-contain w-full h-[15vh] md:h-[20vh] mix-blend-multiply bg-center opacity-50"
-        style="background-image: url('./svg/building.svg')"
-      ></div>
     </footer>
 
     <!-- hero carousel -->
