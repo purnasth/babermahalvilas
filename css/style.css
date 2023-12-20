@@ -28,9 +28,12 @@
     font-family: "Merriweather", serif;
   }
   .nav-link {
-    @apply relative w-full text-coffee-400 hover:bg-coffee-400 py-3 px-6 text-base md:text-lg rounded-xl hover:text-coffee-700 transition-all duration-200 ease-linear;
+    @apply relative block w-full text-coffee-400 hover:bg-coffee-400 py-3 px-6 text-lg md:text-xl rounded-xl hover:text-coffee-700 transition-all duration-200 ease-linear;
   }
-  .nav-link-dropdown {
-    @apply w-full hover:bg-pink-400 py-3 px-6 text-base md:text-lg rounded-xl text-white;
+  .navlink-dropdown {
+    @apply w-full bg-coffee-500/50 text-coffee-700 hover:bg-coffee-700 hover:text-coffee-400 py-3 lg:px-2 text-lg md:text-xl rounded-xl transition-all duration-200 ease-linear flex items-center justify-center flex-col gap-2;
+  }
+  .caps {
+    font-variant: "small-caps";
   }
 }

@@ -17,21 +17,6 @@
   transition: transform 3s cubic-bezier(0.165, 0.84, 0.44, 1) !important; /* Reapply the transition to the current slide */
 }
 
-/* Style for next and prev buttons */
-/* .slick-prev,
-.slick-next {
-  cursor: pointer;
-  z-index: 1;
-}
-
-.slick-prev {
-  left: 10px;
-}
-
-.slick-next {
-  right: 10px;
-} */
-
 /* navbar */
 li.active > .drop {
   visibility: visible;
@@ -47,4 +32,8 @@ li.active > .drop {
     opacity: 1;
     transform: none;
   }
+}
+
+.caps {
+  font-variant: "small-caps";
 }
