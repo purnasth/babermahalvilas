@@ -24,10 +24,15 @@
     <link rel="stylesheet" href="./css/component.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="dist/output.css" rel="stylesheet" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .caps {
         font-variant: small-caps;
+      }
+      .owl-carousel .owl-item img {
+        width: 80px;
+        height: 80px;
+        display: block;
       }
     </style>
   </head>
@@ -659,8 +664,7 @@
                           <p class="text-sm text-coffee-400">
                             Heritage Suites are in the Mustang section of the
                             property, and hence reflects the traditional
-                            Buddhist décor. This is illustrated in the Buddhist
-                            art work on the furniture and the wall paintings.
+                            Buddhist décor.
                           </p>
                           <span
                             class="text-lg text-coffee-600 font-extrabold drop-shadow-xl"
@@ -872,7 +876,7 @@
         ></div>
 
         <div
-          class="py-2 flex items-center justify-center flex-col md:my-3 lg:my-6 md:mb-6 lg:mb-12"
+          class="py-2 flex items-center justify-center flex-col mt-8 md:my-3 lg:my-6 md:mb-6 lg:mb-12"
         >
           <h2 class="caps mt-5 text-3xl md:text-5xl font-bold text-coffee-800">
             Our Services
@@ -997,7 +1001,7 @@
       </div>
     </section>
 
-    <section class="md:my-5 lg:my-10 md:mt-10 lg:mt-16 relative">
+    <section class="md:my-5 lg:my-10 md:mt-10 lg:mt-16 relative p-4 py-0">
       <div
         class="absolute top-0 lg:top-28 left-0 bg-no-repeat bg-contain w-32 h-40 mix-blend-multiply opacity-30 -z-10 lg:-rotate-90"
         style="background-image: url('./svg/flower.svg')"
@@ -1030,278 +1034,221 @@
             ></span>
           </div>
         </div>
-        <div class="glide testimonials-glide py-8 pt-0">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <!-- Testimonial 1 -->
 
-              <li class="glide__slide">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
-                  <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
-                  >
-                    <div class="w-full flex items-center justify-between">
-                      <img
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/d0/default-avatar-2020-33.jpg?w=100&amp;h=-1&amp;s=1"
-                        width="100"
-                        height="100"
-                        role="none"
-                        alt="10footwave"
-                        loading="lazy"
-                        class="w-20 h-20 rounded-full shadow-lg object-cover"
-                      />
+        <div class="owl-carousel owl-theme my-10">
+          <!-- Testimonial 1 -->
+          <div
+            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
+          >
+            <div class="w-full flex items-center justify-between">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/d0/default-avatar-2020-33.jpg?w=100&amp;h=-1&amp;s=1"
+                role="none"
+                alt="10footwave"
+                loading="lazy"
+                class="w-20 h-20 rounded-full shadow-lg object-cover"
+              />
 
-                      <div class="flex items-start justify-center flex-col">
-                        <h4
-                          class="text-base md:text-xl text-coffee-800 font-bold"
-                        >
-                          10footwave
-                        </h4>
-                        <span class="text-sm italic text-coffee-800/50"
-                          >via Tripadvisor</span
-                        >
-                      </div>
-                    </div>
-                    <p class="text-justify text-black text-sm md:text-base">
-                      Absolutely Beautiful<br />
-                      I travel quite extensively in five star hotels and this is
-                      not only the best value it also has a charm that is
-                      unsurpassed. The rooms, staff and food were all
-                      exceptional. The food was wonderful both buffet breakfast
-                      and dinner.
-                    </p>
-                  </div>
-
-                  <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
-                  >
-                    <div class="w-full flex items-center justify-between">
-                      <img
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
-                        width="100"
-                        height="100"
-                        role="none"
-                        alt="Rajs676"
-                        loading="lazy"
-                        class="w-20 h-20 rounded-full shadow-lg object-cover"
-                      />
-                      <div class="flex items-start justify-center flex-col">
-                        <h4
-                          class="text-base md:text-xl text-coffee-800 font-bold"
-                        >
-                          Rajs676
-                        </h4>
-                        <span class="text-sm italic text-coffee-800/50"
-                          >via Tripadvisor</span
-                        >
-                      </div>
-                    </div>
-                    <p class="text-justify text-black text-sm md:text-base">
-                      10/10 <br />
-                      We had a great time as a family. Very tasteful decor in
-                      Victorian era and comfortable suites! Central location
-                      makes it close to most places of attraction. The staff at
-                      the reception were excellent. Sweetie, Sudikshya and Rupes
-                      thank you for making our Stay comfortable. We certainly
-                      will visit again.
-                    </p>
-                  </div>
-
-                  <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
-                  >
-                    <div class="w-full flex items-center justify-between">
-                      <img
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/a1/ec/0f/filip-r.jpg?w=100&amp;h=-1&amp;s=1"
-                        width="100"
-                        height="100"
-                        role="none"
-                        alt="Filip R"
-                        loading="lazy"
-                        class="w-20 h-20 rounded-full shadow-lg object-cover"
-                      />
-                      <div class="flex items-start justify-center flex-col">
-                        <h4
-                          class="text-base md:text-xl text-coffee-800 font-bold"
-                        >
-                          Filip R
-                        </h4>
-                        <span class="text-sm italic text-coffee-800/50"
-                          >via Tripadvisor</span
-                        >
-                      </div>
-                    </div>
-                    <p class="text-justify text-black text-sm md:text-base">
-                      It was my 3rd stay in Baber Mahal, it’s amazing place.
-                      It’s 15 min walk from the center which makes it nicely
-                      separated from busy Kathmandu, yet very close to
-                      everything worth seeing. Staff is fantastic, friendly and
-                      very accommodating to anything you need. The place is
-                      absolutely unique, where else could you sleep in real
-                      Nepalese palace? It’s worth mentioning that breakfasts and
-                      coffee is great.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <!-- Testimonial 2 -->
-              <li class="glide__slide">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4">
-                  <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
-                  >
-                    <div class="w-full flex items-center justify-between">
-                      <img
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-f/01/2e/70/8d/avatar014.jpg?w=100&amp;h=-1&amp;s=1"
-                        width="100"
-                        height="100"
-                        role="none"
-                        alt="The_eye"
-                        loading="lazy"
-                        class="w-20 h-20 rounded-full shadow-lg object-cover"
-                      />
-                      <div class="flex items-start justify-center flex-col">
-                        <h4
-                          class="text-base md:text-xl text-coffee-800 font-bold"
-                        >
-                          The_eye
-                        </h4>
-                        <span class="text-sm italic text-coffee-800/50"
-                          >via Tripadvisor</span
-                        >
-                      </div>
-                    </div>
-                    <p class="text-justify text-black text-sm md:text-base">
-                      Wonderful old style class. <br />
-                      Having travelled the world over many years, this hotel has
-                      to rank up there as one of the most wonderful experiences.
-                      The hotel I discovered is legendary in Kathmandu amongst
-                      the locals, it is steeped in history. There is a selection
-                      of room grades from I will say standard (which is anything
-                      but) to suites. At least five restaurants on site, all
-                      serving different styles of cuisine. As is the custom,
-                      save the best until last, the staff are absolutely beyond
-                      words, nowhere have we encountered better. I would love to
-                      name them all but that would be impossible, so I can only
-                      name those whose names I have (Sudikshya, Abhipsha &
-                      Sweety). Very highly recommended.
-                    </p>
-                  </div>
-
-                  <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
-                  >
-                    <div class="w-full flex items-center justify-between">
-                      <img
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/2a/15/3b/antonio-h.jpg?w=100&amp;h=-1&amp;s=1"
-                        width="100"
-                        height="100"
-                        role="none"
-                        loading="lazy"
-                        alt="Antonio H"
-                        class="w-20 h-20 rounded-full shadow-lg object-cover"
-                      />
-                      <div class="flex items-start justify-center flex-col">
-                        <h4
-                          class="text-base md:text-xl text-coffee-800 font-bold"
-                        >
-                          Antonio H
-                        </h4>
-                        <span class="text-sm italic text-coffee-800/50"
-                          >via Tripadvisor</span
-                        >
-                      </div>
-                    </div>
-                    <p class="text-justify text-black text-sm md:text-base">
-                      We stayed at Baber Mahal Vilas during late November 2023
-                      in suite N. 302.The whole property is beautiful with its
-                      traditional architecture, the suite was ample, nice
-                      decorated and well appointed located at the roof top next
-                      to a nice terrasse with flowers and even an Himalayan bees
-                      honeycomb .There is also an small shopping arcade with
-                      nice shops and restaurants, Location is calm and yet close
-                      to points of interest. We ate many times at the hotel
-                      either via room service and at its Indian restaurant, the
-                      food was good but the service must be improved since there
-                      were mistakes all times. The included breakfast was a bit
-                      small but still appropriate with the best coffee of our
-                      whole month trip ,the staff serving it was very attentive
-                      and efficient, also the rest of the staff at the front
-                      desk. Definitely we could come back.
-                    </p>
-                  </div>
-
-                  <div
-                    class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-96 overflow-y-auto"
-                  >
-                    <div class="w-full flex items-center justify-between">
-                      <img
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
-                        width="100"
-                        height="100"
-                        role="none"
-                        alt="Lisa"
-                        loading="lazy"
-                        class="w-20 h-20 rounded-full shadow-lg object-cover"
-                      />
-                      <div class="flex items-start justify-center flex-col">
-                        <h4
-                          class="text-base md:text-xl text-coffee-800 font-bold"
-                        >
-                          Lisa
-                        </h4>
-                        <span class="text-sm italic text-coffee-800/50"
-                          >via Tripadvisor</span
-                        >
-                      </div>
-                    </div>
-                    <p class="text-justify text-black text-sm md:text-base">
-                      Nepal's "Wes Anderson-style hotel" <br />
-                      We booked the whole hotel for a conference of three days
-                      and could not have been happier with our selection! It's a
-                      boutique hotel that could easily be the stage of a Wes
-                      Anderson movie due to the beautiful and detailed
-                      combination of different architectural standards. The
-                      managers of the hotel, Sanish and Rupes are extremely
-                      helpful individuals. Overall the staff of the hotel is
-                      very nice. They fed us so well! The food was also beyond
-                      our expectation. The complimentary airport pickup helps a
-                      lot as the airport in Kathmandu can be a bit messy at
-                      times. The rooms were also very nice and gave us an
-                      at-home-feeling. We loved our stay and hope to be back!
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+              <div class="flex items-start justify-center flex-col">
+                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                  10footwave
+                </h4>
+                <span class="text-sm italic text-coffee-800/50"
+                  >via Tripadvisor</span
+                >
+              </div>
+            </div>
+            <p class="text-justify text-black text-sm md:text-base">
+              Absolutely Beautiful<br />
+              I travel quite extensively in five-star hotels and this is not
+              only the best value it also has a charm that is unsurpassed. The
+              rooms, staff, and food were all exceptional. The food was
+              wonderful both buffet breakfast and dinner.
+            </p>
           </div>
 
-          <!-- Navigation Buttons -->
+          <!-- Testimonial 2 -->
           <div
-            class="mt-5 hidden glide__arrows md:flex items-center justify-center gap-5"
-            data-glide-el="controls"
+            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
           >
-            <button
-              class="glide__arrow glide__arrow--left"
-              data-glide-dir="<"
-              aria-label="Previous"
-              title="Previous"
-            >
-              <i
-                class="fa-solid fa-chevron-left text-2xl bg-coffee-700 text-coffee-400 px-5 py-3 hover:opacity-60 transition-all duration-150 ease-in-out"
-              ></i>
-            </button>
-            <button
-              class="glide__arrow glide__arrow--right"
-              data-glide-dir=">"
-              aria-label="Next"
-              title="Next"
-            >
-              <i
-                class="fa-solid fa-chevron-right text-2xl bg-coffee-700 text-coffee-400 px-5 py-3 hover:opacity-60 transition-all duration-150 ease-in-out"
-              ></i>
-            </button>
+            <div class="w-full flex items-center justify-between">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
+                role="none"
+                alt="Rajs676"
+                loading="lazy"
+                class="w-20 h-20 rounded-full shadow-lg object-cover"
+              />
+              <div class="flex items-start justify-center flex-col">
+                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                  Rajs676
+                </h4>
+                <span class="text-sm italic text-coffee-800/50"
+                  >via Tripadvisor</span
+                >
+              </div>
+            </div>
+            <p class="text-justify text-black text-sm md:text-base">
+              10/10 <br />
+              We had a great time as a family. Very tasteful decor in Victorian
+              era and comfortable suites! Central location makes it close to
+              most places of attraction. The staff at the reception were
+              excellent. Sweetie, Sudikshya and Rupes thank you for making our
+              Stay comfortable. We certainly will visit again.
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
+          >
+            <div class="w-full flex items-center justify-between">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/a1/ec/0f/filip-r.jpg?w=100&amp;h=-1&amp;s=1"
+                width="100"
+                height="100"
+                role="none"
+                alt="Filip R"
+                loading="lazy"
+                class="w-20 h-20 rounded-full shadow-lg object-cover"
+              />
+              <div class="flex items-start justify-center flex-col">
+                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                  Filip R
+                </h4>
+                <span class="text-sm italic text-coffee-800/50"
+                  >via Tripadvisor</span
+                >
+              </div>
+            </div>
+            <p class="text-justify text-black text-sm md:text-base">
+              It was my 3rd stay in Baber Mahal, it’s amazing place. It’s 15 min
+              walk from the center which makes it nicely separated from busy
+              Kathmandu, yet very close to everything worth seeing. Staff is
+              fantastic, friendly and very accommodating to anything you need.
+              The place is absolutely unique, where else could you sleep in real
+              Nepalese palace? It’s worth mentioning that breakfasts and coffee
+              is great.
+            </p>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div
+            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
+          >
+            <div class="w-full flex items-center justify-between">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-f/01/2e/70/8d/avatar014.jpg?w=100&amp;h=-1&amp;s=1"
+                width="100"
+                height="100"
+                role="none"
+                alt="The_eye"
+                loading="lazy"
+                class="w-20 h-20 rounded-full shadow-lg object-cover"
+              />
+              <div class="flex items-start justify-center flex-col">
+                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                  The_eye
+                </h4>
+                <span class="text-sm italic text-coffee-800/50"
+                  >via Tripadvisor</span
+                >
+              </div>
+            </div>
+            <p class="text-justify text-black text-sm md:text-base">
+              Wonderful old style class. <br />
+              Having travelled the world over many years, this hotel has to rank
+              up there as one of the most wonderful experiences. The hotel I
+              discovered is legendary in Kathmandu amongst the locals, it is
+              steeped in history. There is a selection of room grades from I
+              will say standard (which is anything but) to suites. At least five
+              restaurants on site, all serving different styles of cuisine. As
+              is the custom, save the best until last, the staff are absolutely
+              beyond words, nowhere have we encountered better. I would love to
+              name them all but that would be impossible, so I can only name
+              those whose names I have (Sudikshya, Abhipsha & Sweety). Very
+              highly recommended.
+            </p>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div
+            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
+          >
+            <div class="w-full flex items-center justify-between">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/2a/15/3b/antonio-h.jpg?w=100&amp;h=-1&amp;s=1"
+                width="100"
+                height="100"
+                role="none"
+                loading="lazy"
+                alt="Antonio H"
+                class="w-20 h-20 rounded-full shadow-lg object-cover"
+              />
+              <div class="flex items-start justify-center flex-col">
+                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                  Antonio H
+                </h4>
+                <span class="text-sm italic text-coffee-800/50"
+                  >via Tripadvisor</span
+                >
+              </div>
+            </div>
+            <p class="text-justify text-black text-sm md:text-base">
+              We stayed at Baber Mahal Vilas during late November 2023 in suite
+              N. 302.The whole property is beautiful with its traditional
+              architecture, the suite was ample, nice decorated and well
+              appointed located at the roof top next to a nice terrasse with
+              flowers and even an Himalayan bees honeycomb .There is also an
+              small shopping arcade with nice shops and restaurants, Location is
+              calm and yet close to points of interest. We ate many times at the
+              hotel either via room service and at its Indian restaurant, the
+              food was good but the service must be improved since there were
+              mistakes all times. The included breakfast was a bit small but
+              still appropriate with the best coffee of our whole month trip
+              ,the staff serving it was very attentive and efficient, also the
+              rest of the staff at the front desk. Definitely we could come
+              back.
+            </p>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div
+            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
+          >
+            <div class="w-full flex items-center justify-between">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
+                width="100"
+                height="100"
+                role="none"
+                alt="Lisa"
+                loading="lazy"
+                class="w-20 h-20 rounded-full shadow-lg object-cover"
+              />
+              <div class="flex items-start justify-center flex-col">
+                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                  Lisa
+                </h4>
+                <span class="text-sm italic text-coffee-800/50"
+                  >via Tripadvisor</span
+                >
+              </div>
+            </div>
+            <p class="text-justify text-black text-sm md:text-base">
+              Nepal's "Wes Anderson-style hotel" <br />
+              We booked the whole hotel for a conference of three days and could
+              not have been happier with our selection! It's a boutique hotel
+              that could easily be the stage of a Wes Anderson movie due to the
+              beautiful and detailed combination of different architectural
+              standards. The managers of the hotel, Sanish and Rupes are
+              extremely helpful individuals. Overall the staff of the hotel is
+              very nice. They fed us so well! The food was also beyond our
+              expectation. The complimentary airport pickup helps a lot as the
+              airport in Kathmandu can be a bit messy at times. The rooms were
+              also very nice and gave us an at-home-feeling. We loved our stay
+              and hope to be back!
+            </p>
           </div>
         </div>
       </div>
@@ -1333,7 +1280,7 @@
             />
           </a>
           <a
-            href="https://www.tripadvisor.com/Hotel_Review-g293890-d11648304-Reviews-Baber_Mahal_Vilas_The_Heritage_Hotel-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_.html"
+            href="https://www.tripadvisor.com/Hotel_Review-g293890-d11648304-w-20 h-20 rounded-full shadow-lg object-cover-Baber_Mahal_Vilas_The_Heritage_Hotel-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_.html"
             target="_blank"
             rel="noopener noreferrer"
             class="p-2 flex items-center justify-center"
@@ -1612,8 +1559,10 @@
       />
     </a>
 
-    <!-- hero carousel -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Testimonials -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- hero carousel -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
     <!-- rooms carousel -->

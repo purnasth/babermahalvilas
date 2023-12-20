@@ -140,21 +140,43 @@ document.addEventListener("DOMContentLoaded", function () {
   }).mount();
 
   // Initialize Glide for the testimonials section
-  new Glide(".testimonials-glide", {
-    type: "carousel",
-    startAt: 0,
-    perView: 1,
-    focusAt: "center",
-    autoplay: 5000,
-    hoverpause: true,
-    gap: 0,
-    breakpoints: {
-      768: {
-        perView: 1,
+  // new Glide(".testimonials-glide", {
+  //   type: "carousel",
+  //   startAt: 0,
+  //   perView: 1,
+  //   autoplay: 5000,
+  //   hoverpause: true,
+  //   gap: 0,
+  //   breakpoints: {
+  //     768: {
+  //       perView: 1,
+  //     },
+  //     1024: {
+  //       perView: 1,
+  //     },
+  //   },
+  // }).mount();
+});
+
+$(document).ready(function () {
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: false,
+    responsive: {
+      0: {
+        items: 1, // Set 1 item for mobile devices
       },
-      1024: {
-        perView: 1,
+      768: {
+        items: 2, // Set 2 items for tablets
+      },
+      992: {
+        items: 3, // Keep 2 items for larger screens
       },
     },
-  }).mount();
+  });
 });
