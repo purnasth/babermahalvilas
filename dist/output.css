@@ -773,6 +773,10 @@ body {
   top: -75%;
 }
 
+.bottom-24 {
+  bottom: 6rem;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -789,6 +793,10 @@ body {
   right: 0px;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -797,8 +805,20 @@ body {
   top: 25%;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .top-\[88px\] {
   top: 88px;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
 }
 
 .isolate {
@@ -827,6 +847,14 @@ body {
 
 .z-\[99\] {
   z-index: 99;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-\[-1\] {
+  z-index: -1;
 }
 
 .float-right {
@@ -865,6 +893,11 @@ body {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .-ml-3 {
@@ -913,10 +946,6 @@ body {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .box-border {
@@ -1082,20 +1111,16 @@ body {
   height: 100vh;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .max-h-80 {
   max-height: 20rem;
 }
 
 .min-h-\[10vh\] {
   min-height: 10vh;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-1 {
@@ -1108,6 +1133,10 @@ body {
 
 .w-1\/4 {
   width: 25%;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-20 {
@@ -1160,6 +1189,10 @@ body {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .flex-shrink {
@@ -2242,8 +2275,9 @@ body {
   background-color: transparent;
 }
 
-.bg-\[url\(\'https\:\/\/www\.babermahalvilas\.com\/images\/slideshow\/J2WCs-untitled-3\.jpg\'\)\] {
-  background-image: url('https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg');
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -2433,11 +2467,6 @@ body {
   padding-right: 1.25rem;
 }
 
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2472,10 +2501,6 @@ body {
 
 .pl-0 {
   padding-left: 0px;
-}
-
-.pt-0 {
-  padding-top: 0px;
 }
 
 .text-left {
@@ -2544,6 +2569,10 @@ body {
   line-height: 2.25rem;
 }
 
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2562,6 +2591,10 @@ body {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 
 .font-bold {
@@ -2698,6 +2731,16 @@ body {
   color: rgb(94 48 35 / 0.9);
 }
 
+.text-green-600 {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2758,6 +2801,10 @@ body {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .bg-blend-normal {
@@ -3222,6 +3269,10 @@ body {
     top: 25%;
   }
 
+  .md\:top-10 {
+    top: 2.5rem;
+  }
+
   .md\:z-10 {
     z-index: 10;
   }
@@ -3238,18 +3289,14 @@ body {
     order: 2;
   }
 
-  .md\:my-3 {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+  .md\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .md\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-  }
-
-  .md\:mb-6 {
-    margin-bottom: 1.5rem;
   }
 
   .md\:ml-8 {
@@ -3260,16 +3307,8 @@ body {
     margin-top: 0px;
   }
 
-  .md\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .md\:mt-24 {
     margin-top: 6rem;
-  }
-
-  .md\:mt-6 {
-    margin-top: 1.5rem;
   }
 
   .md\:block {
@@ -3326,6 +3365,10 @@ body {
 
   .md\:w-\[30vw\] {
     width: 30vw;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
   }
 
   .md\:translate-x-\[120px\] {
@@ -3443,30 +3486,13 @@ body {
     margin-bottom: 2.5rem;
   }
 
-  .lg\:my-6 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .lg\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .lg\:mb-12 {
-    margin-bottom: 3rem;
+  .lg\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .lg\:mr-3 {
     margin-right: 0.75rem;
-  }
-
-  .lg\:mt-12 {
-    margin-top: 3rem;
-  }
-
-  .lg\:mt-16 {
-    margin-top: 4rem;
   }
 
   .lg\:block {
@@ -3500,6 +3526,10 @@ body {
 
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:bg-\[url\(\'https\:\/\/www\.babermahalvilas\.com\/images\/slideshow\/J2WCs-untitled-3\.jpg\'\)\] {
+    background-image: url('https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg');
   }
 }
 

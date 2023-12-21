@@ -144,7 +144,7 @@ $(document).ready(function () {
         items: 2, // Set 2 items for tablets
       },
       992: {
-        items: 3, // Keep 2 items for larger screens
+        items: 2, // Keep 2 items for larger screens
       },
     },
   });
@@ -152,3 +152,10 @@ $(document).ready(function () {
   var owlDots = $(".owl-dots");
   owlDots.css("display", "none");
 });
+
+//! important for the hero section video.
+
+function startVideo() {
+  var backgroundVideo = document.getElementById("backgroundVideo");
+  backgroundVideo.play();
+}
