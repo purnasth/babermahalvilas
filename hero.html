@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Baber Mahal Vilas" />
+    <meta name="theme-color" content="#FFE9D2" />
+
+    <title>Baber Mahal Vilas</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo/favicon-32x32.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.ico" />
+    <link rel="manifest" href="./logo/site.webmanifest" />
+
+    <link rel="stylesheet" href="./css/links.css" />
+    <link rel="stylesheet" href="./css/component.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+      /* Slick carousel */
+      @import url("https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css");
+
+      /* Slick carousel theme */
+      @import url("https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css");
+      .caps {
+        font-variant: small-caps;
+      }
+
+      /* Add custom styles for slow zoom effect */
+      .slick-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+      }
+
+      .slick-slide.slick-current img {
+        transform: scale(1.2);
+        transition: transform 3s cubic-bezier(0.165, 0.84, 0.44, 1) !important; /* Reapply the transition to the current slide */
+      }
+    </style>
+  </head>
+
+  <body class="overflow-x-hidden">
+    <div class="slick-carousel overflow-hidden">
+      <div class="swiper-slide">
+        <img
+          src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
+          alt="Slide 1"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://www.babermahalvilas.com/images/slideshow/EjoB5-untitled-2.jpg"
+          alt="Slide 2"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
+          alt="Slide 3"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://www.babermahalvilas.com/images/articles/hqAc5-property.jpg"
+          alt="Slide 4"
+        />
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+
+    <!-- hero carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script>
+      // HERO CAROUSEL
+      $(document).ready(function () {
+        var slickElement = $(".slick-carousel");
+
+        slickElement.on(
+          "beforeChange",
+          function (event, slick, currentSlide, nextSlide) {
+            slick.$slides
+              .eq(currentSlide)
+              .find("img")
+              .css("transform", "scale(1)");
+          }
+        );
+
+        function continuousZoom() {
+          slickElement
+            .find(".slick-current img")
+            .css("transform", "scale(1.2)");
+        }
+
+        setInterval(continuousZoom, 3000);
+
+        slickElement.slick({
+          autoplay: true,
+          autoplaySpeed: 2000,
+          // dots: true,
+          prevArrow:
+            '<button type="button" class="slick-prev">&#9665;</button>',
+          nextArrow:
+            '<button type="button" class="slick-next">&#9655;</button>',
+          speed: 1000, // Set the transition duration
+          fade: true, // Enable fade transition
+          cssEase: "cubic-bezier(0.455, 0.03, 0.515, 0.955)", // Use a custom easing function for smoother transition
+          swipe: true, // Enable swipe navigation
+          touchMove: true, // Enable touch move
+        });
+      });
+    </script>
+  </body>
+</html>

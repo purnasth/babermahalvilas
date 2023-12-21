@@ -1,13 +1,9 @@
 /* owl carousel for testimonials */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"); */
+@import url("./owl.carousel.min.css");
 
 /* owl carousel theme for testimonials */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css");
-/* Slick carousel */
-@import url("https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css");
-
-/* Slick carousel theme */
-@import url("https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css");
 
 /* font awesome cdn */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");

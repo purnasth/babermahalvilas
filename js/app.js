@@ -67,37 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// HERO CAROUSEL
-$(document).ready(function () {
-  var slickElement = $(".slick-carousel");
-
-  slickElement.on(
-    "beforeChange",
-    function (event, slick, currentSlide, nextSlide) {
-      slick.$slides.eq(currentSlide).find("img").css("transform", "scale(1)");
-    }
-  );
-
-  function continuousZoom() {
-    slickElement.find(".slick-current img").css("transform", "scale(1.2)");
-  }
-
-  setInterval(continuousZoom, 3000);
-
-  slickElement.slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    // dots: true,
-    prevArrow: '<button type="button" class="slick-prev">&#9665;</button>',
-    nextArrow: '<button type="button" class="slick-next">&#9655;</button>',
-    speed: 1000, // Set the transition duration
-    fade: true, // Enable fade transition
-    cssEase: "cubic-bezier(0.455, 0.03, 0.515, 0.955)", // Use a custom easing function for smoother transition
-    swipe: true, // Enable swipe navigation
-    touchMove: true, // Enable touch move
-  });
-});
-
 // rooms carousel
 // document.addEventListener("DOMContentLoaded", function () {
 //   new Glide(".glide", {
@@ -179,4 +148,7 @@ $(document).ready(function () {
       },
     },
   });
+
+  var owlDots = $(".owl-dots");
+  owlDots.css("display", "none");
 });

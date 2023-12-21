@@ -630,9 +630,8 @@ body {
   --tw-text-opacity: 1;
   color: rgb(255 233 210 / var(--tw-text-opacity));
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
-  transition-timing-function: linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover {
@@ -657,7 +656,8 @@ body {
   justify-content: center;
   gap: 0.5rem;
   border-radius: 0.75rem;
-  background-color: rgb(218 180 157 / 0.5);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 233 210 / var(--tw-bg-opacity));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   font-size: 1.125rem;
@@ -665,9 +665,8 @@ body {
   --tw-text-opacity: 1;
   color: rgb(137 87 55 / var(--tw-text-opacity));
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
-  transition-timing-function: linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navlink-dropdown:hover {
@@ -1080,6 +1079,14 @@ body {
 }
 
 .h-screen {
+  height: 100vh;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-\[100vh\] {
   height: 100vh;
 }
 
@@ -2222,10 +2229,6 @@ body {
   background-color: rgb(137 87 55 / var(--tw-bg-opacity));
 }
 
-.bg-coffee-700\/60 {
-  background-color: rgb(137 87 55 / 0.6);
-}
-
 .bg-coffee-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(94 48 35 / var(--tw-bg-opacity));
@@ -2685,10 +2688,6 @@ body {
 .text-coffee-800 {
   --tw-text-opacity: 1;
   color: rgb(94 48 35 / var(--tw-text-opacity));
-}
-
-.text-coffee-800\/50 {
-  color: rgb(94 48 35 / 0.5);
 }
 
 .text-coffee-800\/80 {
@@ -3472,6 +3471,10 @@ body {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:h-\[100vh\] {
+    height: 100vh;
   }
 
   .lg\:w-1\/2 {

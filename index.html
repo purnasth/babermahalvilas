@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Baber Mahal Vilas" />
+    <meta name="theme-color" content="#FFE9D2" />
 
     <title>Baber Mahal Vilas</title>
 
@@ -24,15 +26,10 @@
     <link rel="stylesheet" href="./css/component.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="dist/output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <style>
       .caps {
         font-variant: small-caps;
-      }
-      .owl-carousel .owl-item img {
-        width: 80px;
-        height: 80px;
-        display: block;
       }
     </style>
   </head>
@@ -45,9 +42,9 @@
         <div class="container mx-auto">
           <div class="flex justify-between items-center h-14">
             <div class="flex items-center">
-              <a href="#">
+              <a href="#" aria-label="Logo">
                 <img
-                  src="./img/logo.svg"
+                  src="./logo/logo-svg.webp"
                   alt="Logo"
                   class="w-24 md:w-32 h-auto object-contain"
                 />
@@ -55,8 +52,9 @@
             </div>
             <div class="flex items-center justify-center gap-4">
               <button
+                type="button"
                 class="caps hidden md:block bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl tracking-wider"
-                aria-label="Book"
+                aria-label="Book Now"
                 title="Book"
               >
                 <i class="mr-2 fa-solid fa-calendar-check"></i>
@@ -64,6 +62,7 @@
               </button>
 
               <button
+                type="menu"
                 id="toggleButton"
                 class="text-coffee-400 focus:outline-none p-2"
                 aria-label="Toggle Button"
@@ -98,7 +97,7 @@
           style="background-image: url('./svg/building.svg')"
         ></div>
         <div class="flex items-center justify-center md:pb-2">
-          <a href="#">
+          <a href="#" aria-label="Logo">
             <img
               src="./img/logo.svg"
               alt="Logo"
@@ -110,165 +109,150 @@
           class="links flex items-start justify-start gap-1 md:gap-3 flex-col"
         >
           <li class="caps block w-full">
-            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link" aria-label="Home">Home</a>
           </li>
 
           <li class="caps dropdown nav-link">
-            <a href="#" class="flex items-center justify-between w-full"
+            <a
+              href="#"
+              class="flex items-center justify-between w-full"
+              aria-label="About"
               >About <i class="fa-solid fa-chevron-right"></i
             ></a>
             <ul
-              class="drop absolute -top-3/4 left-full bg-coffee-400 flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl"
+              class="drop absolute -top-3/4 left-full bg-transparent flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl"
             >
               <li class="w-full">
-                <a href="#" class="navlink-dropdown">Our Story</a>
+                <a href="#" class="navlink-dropdown" aria-label="Our Story"
+                  >Our Story</a
+                >
               </li>
               <li class="w-full">
-                <a href="#" class="navlink-dropdown">Our History</a>
+                <a href="#" class="navlink-dropdown" aria-label="Our History"
+                  >Our History</a
+                >
               </li>
               <!-- <li class="hover:underline"><a href="#">The Property</a></li> -->
             </ul>
           </li>
           <li class="caps dropdown nav-link">
-            <a href="#" class="flex items-center justify-between w-full"
+            <a
+              href="#"
+              class="flex items-center justify-between w-full"
+              aria-label="Rooms"
               >Rooms <i class="fa-solid fa-chevron-right"></i
             ></a>
             <ul
-              class="drop absolute -top-3/4 lg:-top-full left-full bg-coffee-400 text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl"
+              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl"
             >
               <li class="block w-full">
-                <a href="#" class="navlink-dropdown">
+                <a
+                  href="#"
+                  class="navlink-dropdown"
+                  aria-label="Traditional Room"
+                >
                   <h4>Traditional Room</h4>
                   <img
                     src="https://www.babermahalvilas.com/images/package/JiQAV-bumpa.jpg"
                     alt=""
                     class="hidden lg:block w-full h-28 object-cover"
                   />
-                  <button
-                    aria-label="Visit"
-                    title="Visit"
-                    class="caps hidden lg:block"
-                  >
-                    Visit Now
-                  </button>
                 </a>
               </li>
               <li class="block w-full">
-                <a href="#" class="navlink-dropdown">
+                <a
+                  href="#"
+                  class="navlink-dropdown"
+                  aria-label="Traditional Suite"
+                >
                   <h4>Traditional Suite</h4>
                   <img
                     src="https://www.babermahalvilas.com/images/package/MfzsV-chatra.jpg"
                     alt=""
                     class="hidden lg:block w-full h-28 object-cover"
                   />
-                  <button
-                    aria-label="Visit"
-                    title="Visit"
-                    class="caps hidden lg:block"
-                  >
-                    Visit Now
-                  </button>
                 </a>
               </li>
               <li class="block w-full">
-                <a href="#" class="navlink-dropdown">
+                <a
+                  href="#"
+                  class="navlink-dropdown"
+                  aria-label="Heritage Suite"
+                >
                   <h4>Heritage Suite</h4>
                   <img
                     src="https://www.babermahalvilas.com/images/package/tAOZ7-dhvaja.jpg"
                     alt=""
                     class="hidden lg:block w-full h-28 object-cover"
                   />
-                  <button
-                    aria-label="Visit"
-                    title="Visit"
-                    class="caps hidden lg:block"
-                  >
-                    Visit Now
-                  </button>
                 </a>
               </li>
               <li class="block w-full">
-                <a href="#" class="navlink-dropdown">
+                <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
                   <h4>Royal Suite</h4>
                   <img
                     src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
                     alt=""
                     class="hidden lg:block w-full h-28 object-cover"
                   />
-                  <button
-                    aria-label="Visit"
-                    title="Visit"
-                    class="caps hidden lg:block"
-                  >
-                    Visit Now
-                  </button>
                 </a>
               </li>
             </ul>
           </li>
 
           <li class="caps dropdown nav-link">
-            <a href="#" class="flex items-center justify-between w-full"
-              >Dining <i class="fa-solid fa-chevron-right"></i
+            <a
+              href="#"
+              class="flex items-center justify-between w-full"
+              aria-label="Dining"
+            >
+              Dining <i class="fa-solid fa-chevron-right"></i
             ></a>
             <ul
-              class="drop absolute -top-3/4 lg:-top-full left-full bg-coffee-400 text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl"
+              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl"
             >
               <li class="block w-full">
-                <a href="#" class="navlink-dropdown">
+                <a href="#" class="navlink-dropdown" aria-label="Jyunar">
                   <h4>Jyunar</h4>
                   <img
                     src="https://www.babermahalvilas.com/userfiles/images/dien.jpg"
                     alt=""
                     class="hidden lg:block w-full h-28 object-cover"
                   />
-                  <button
-                    aria-label="Visit"
-                    title="Visit"
-                    class="caps hidden lg:block"
-                  >
-                    Visit Now
-                  </button>
                 </a>
               </li>
               <li class="block w-full">
-                <a href="#" class="navlink-dropdown">
+                <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
                   <h4>Surya Bar</h4>
                   <img
                     src="https://www.babermahalvilas.com/assets/userfiles/images/bar1.jpg"
                     alt=""
                     class="hidden lg:block w-full h-28 object-cover"
                   />
-                  <button
-                    aria-label="Visit"
-                    title="Visit"
-                    class="caps hidden lg:block"
-                  >
-                    Visit Now
-                  </button>
                 </a>
               </li>
             </ul>
           </li>
 
           <li class="caps block w-full">
-            <a href="#" class="nav-link">Spa</a>
+            <a href="#" class="nav-link" aria-label="Spa">Spa</a>
           </li>
           <li class="caps block w-full">
-            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link" aria-label="Services">Services</a>
           </li>
           <li class="caps block w-full">
-            <a href="#" class="nav-link">Gallery</a>
+            <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
           </li>
           <li class="caps block w-full">
-            <a href="#" class="nav-link">Press</a>
+            <a href="#" class="nav-link" aria-label="Press">Press</a>
           </li>
           <li class="caps block w-full">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#" class="nav-link" aria-label="Contact">Contact</a>
           </li>
           <button
+            type="button"
             class="caps w-full md:hidden text-coffee-700 bg-coffee-400 px-4 py-2 rounded-xl text-lg tracking-wider"
-            aria-label="Book"
+            aria-label="Book Now"
             title="Book"
           >
             <i class="mr-2 fa-solid fa-calendar-check"></i>
@@ -278,33 +262,18 @@
       </div>
     </nav>
 
-    <div class="slick-carousel overflow-hidden">
-      <div class="swiper-slide">
-        <img
-          src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
-          alt="Slide 1"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="https://www.babermahalvilas.com/images/slideshow/EjoB5-untitled-2.jpg"
-          alt="Slide 2"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-          alt="Slide 3"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="https://www.babermahalvilas.com/images/articles/hqAc5-property.jpg"
-          alt="Slide 4"
-        />
-      </div>
-      <!-- Add more slides as needed -->
-    </div>
+    <section class="lg:h-[100vh] overflow-hidden">
+      <video
+        width="100%"
+        height="100%"
+        controls="false"
+        autoplay="autoplay"
+        muted
+      >
+        <source src="./video/baber_mahal_vilas.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
 
     <section class="md:my-5 lg:my-10 md:mt-10 lg:mt-16">
       <div class="relative">
@@ -387,6 +356,7 @@
                 <a
                   href="#"
                   class="flex items-center justify-center text-coffee-800"
+                  aria-label="Our Story with open reader icon"
                 >
                   <i class="fa-solid fa-book-open-reader text-3xl mr-2"></i>
                   <h5 class="caps text-xl">Our Story</h5>
@@ -394,6 +364,7 @@
                 <a
                   href="#"
                   class="flex items-center justify-center text-coffee-800"
+                  aria-label="Our History with the timeline icon"
                 >
                   <i class="fa-solid fa-timeline text-3xl mr-2"></i>
                   <h5 class="caps text-xl">Our History</h5>
@@ -401,8 +372,9 @@
               </div>
 
               <button
+                type="button"
                 class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl"
-                aria-label="Explore"
+                aria-label="Explore More"
                 title="Explore"
               >
                 Explore More
@@ -528,8 +500,9 @@
                             </li>
                           </ul>
                           <button
+                            type="button"
                             class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
-                            aria-label="Read"
+                            aria-label="Read More"
                             title="Read"
                           >
                             Read More
@@ -623,8 +596,9 @@
                             </li>
                           </ul>
                           <button
+                            type="button"
                             class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
-                            aria-label="Read"
+                            aria-label="Read More"
                             title="Read"
                           >
                             Read More
@@ -718,8 +692,9 @@
                             </li>
                           </ul>
                           <button
+                            type="button"
                             class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
-                            aria-label="Read"
+                            aria-label="Read More"
                             title="Read"
                           >
                             Read More
@@ -813,8 +788,9 @@
                             </li>
                           </ul>
                           <button
+                            type="button"
                             class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
-                            aria-label="Read"
+                            aria-label="Read More"
                             title="Read"
                           >
                             Read More
@@ -843,6 +819,7 @@
               data-glide-el="controls"
             >
               <button
+                type="button"
                 class="glide__arrow glide__arrow--left"
                 data-glide-dir="<"
                 aria-label="Previous"
@@ -853,6 +830,7 @@
                 ></i>
               </button>
               <button
+                type="button"
                 class="glide__arrow glide__arrow--right"
                 data-glide-dir=">"
                 aria-label="Next"
@@ -926,7 +904,7 @@
                 your well-being.
               </p>
               <span
-                class="bg-coffee-700/60 text-coffee-400 w-full block text-center py-3 px-4 rounded-xl"
+                class="bg-coffee-700 text-coffee-400 w-full block text-center py-3 px-4 rounded-xl"
                 >Opens 10:00 am to 8:00 pm Daily</span
               >
             </div>
@@ -954,7 +932,7 @@
                 challenge yourself and achieve your wellness goals.
               </p>
               <span
-                class="bg-coffee-700/60 text-coffee-400 w-full block text-center py-3 px-4 rounded-xl"
+                class="bg-coffee-700 text-coffee-400 w-full block text-center py-3 px-4 rounded-xl"
                 >Opens 10:00 am to 8:00 pm Daily</span
               >
             </div>
@@ -981,7 +959,7 @@
                 leisurely afternoon by the poolside.
               </p>
               <span
-                class="bg-coffee-700/60 text-coffee-400 w-full block text-center py-3 px-4 rounded-xl"
+                class="bg-coffee-700 text-coffee-400 w-full block text-center py-3 px-4 rounded-xl"
                 >Opens 10:00 am to 8:00 pm Daily</span
               >
             </div>
@@ -990,8 +968,9 @@
 
         <div class="mt-10 flex items-center justify-center">
           <button
+            type="button"
             class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl"
-            aria-label="Facilities"
+            aria-label="Other Facilities"
             title="Facilities"
           >
             Other facilities
@@ -1050,10 +1029,10 @@
               />
 
               <div class="flex items-start justify-center flex-col">
-                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
                   10footwave
-                </h4>
-                <span class="text-sm italic text-coffee-800/50"
+                </h5>
+                <span class="text-sm italic text-coffee-800/80"
                   >via Tripadvisor</span
                 >
               </div>
@@ -1080,10 +1059,10 @@
                 class="w-20 h-20 rounded-full shadow-lg object-cover"
               />
               <div class="flex items-start justify-center flex-col">
-                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
                   Rajs676
-                </h4>
-                <span class="text-sm italic text-coffee-800/50"
+                </h5>
+                <span class="text-sm italic text-coffee-800/80"
                   >via Tripadvisor</span
                 >
               </div>
@@ -1113,10 +1092,10 @@
                 class="w-20 h-20 rounded-full shadow-lg object-cover"
               />
               <div class="flex items-start justify-center flex-col">
-                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
                   Filip R
-                </h4>
-                <span class="text-sm italic text-coffee-800/50"
+                </h5>
+                <span class="text-sm italic text-coffee-800/80"
                   >via Tripadvisor</span
                 >
               </div>
@@ -1147,10 +1126,10 @@
                 class="w-20 h-20 rounded-full shadow-lg object-cover"
               />
               <div class="flex items-start justify-center flex-col">
-                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
                   The_eye
-                </h4>
-                <span class="text-sm italic text-coffee-800/50"
+                </h5>
+                <span class="text-sm italic text-coffee-800/80"
                   >via Tripadvisor</span
                 >
               </div>
@@ -1186,10 +1165,10 @@
                 class="w-20 h-20 rounded-full shadow-lg object-cover"
               />
               <div class="flex items-start justify-center flex-col">
-                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
                   Antonio H
-                </h4>
-                <span class="text-sm italic text-coffee-800/50"
+                </h5>
+                <span class="text-sm italic text-coffee-800/80"
                   >via Tripadvisor</span
                 >
               </div>
@@ -1227,10 +1206,10 @@
                 class="w-20 h-20 rounded-full shadow-lg object-cover"
               />
               <div class="flex items-start justify-center flex-col">
-                <h4 class="text-base md:text-xl text-coffee-800 font-bold">
+                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
                   Lisa
-                </h4>
-                <span class="text-sm italic text-coffee-800/50"
+                </h5>
+                <span class="text-sm italic text-coffee-800/80"
                   >via Tripadvisor</span
                 >
               </div>
@@ -1272,6 +1251,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="p-2 flex items-center justify-center"
+            aria-label="Booking.com"
           >
             <img
               src="./svg/bookingcom.svg"
@@ -1284,6 +1264,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="p-2 flex items-center justify-center"
+            aria-label="Tripadvisor Booking"
           >
             <img
               src="./svg/tripadvisor.svg"
@@ -1296,6 +1277,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="p-2 flex items-center justify-center"
+            aria-label="Agoda Booking"
           >
             <img
               src="./svg/agoda.svg"
@@ -1308,6 +1290,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="p-2 flex items-center justify-center"
+            aria-label="Expedia Booking"
           >
             <img
               src="./svg/expedia.svg"
@@ -1320,6 +1303,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="p-2 flex items-center justify-center"
+            aria-label="Makemytrip Booking"
           >
             <img
               src="./svg/makemytrip.svg"
@@ -1332,6 +1316,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="p-2 flex items-center justify-center"
+            aria-label="Goibibo Booking"
           >
             <img
               src="./svg/goibibo.svg"
@@ -1360,6 +1345,7 @@
                   class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Tanka Prasad Sadak, Kathmandu"
                 >
                   <i class="mr-2 fa-solid fa-map-marker-alt"></i>
                   Tanka Prasad Sadak, Kathmandu
@@ -1371,6 +1357,7 @@
                   class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="+977-01-4257655/4248747"
                 >
                   <i class="mr-2 fa-solid fa-phone-volume"></i>
                   +977-01-4257655/4248747
@@ -1382,6 +1369,7 @@
                   class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="info@babermahal.com"
                 >
                   <i class="mr-2 fa-solid fa-envelope"></i>
                   info@babermahal.com
@@ -1396,6 +1384,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+                aria-label="Facebook link"
               >
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
@@ -1404,6 +1393,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+                aria-label="Instagram link"
               >
                 <i class="fa-brands fa-instagram"></i>
               </a>
@@ -1412,6 +1402,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+                aria-label="Linkedin link"
               >
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
@@ -1420,6 +1411,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+                aria-label="Youtube link"
               >
                 <i class="fa-brands fa-youtube"></i>
               </a>
@@ -1527,15 +1519,25 @@
               document.write(new Date().getFullYear());
             </script>
             . All rights reserved. Developed by:
-            <a href="https://longtail.info/" target="_blank" class="underline"
+            <a
+              href="https://longtail.info/"
+              target="_blank"
+              class="underline"
+              aria-label="Longtail e-media"
               >Longtail e-media</a
             >
           </p>
           <p class="flex gap-4 text-sm md:text-base">
-            <a href="#" class="underline hover:underline md:no-underline"
+            <a
+              href="#"
+              class="underline hover:underline md:no-underline"
+              aria-label="Terms and Conditions"
               >Terms & Conditions</a
             >
-            <a href="#" class="underline hover:underline md:no-underline"
+            <a
+              href="#"
+              class="underline hover:underline md:no-underline"
+              aria-label="Privacy Policy"
               >Privacy Policy</a
             >
           </p>
@@ -1544,10 +1546,11 @@
     </footer>
 
     <a
-      href="#"
-      target=""
+      href="https://www.babermahal.com/"
+      target="_blank"
       rel="noopener noreferrer"
       class="fixed right-0 top-[88px] p-4 px-2 pl-0 flex items-center justify-center bg-coffee-700 rounded-l-xl translate-x-[100px] md:translate-x-[120px] hover:translate-x-0 transition-all duration-300 ease-linear"
+      aria-label="Complex wih the logo of Babar Mahal Revisted"
     >
       <span class="caps text-coffee-400 text-sm md:text-lg -rotate-90 -ml-3"
         >Complex</span
@@ -1562,8 +1565,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Testimonials -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- hero carousel -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
     <!-- rooms carousel -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
