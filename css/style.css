@@ -36,4 +36,13 @@
   .caps {
     font-variant: "small-caps";
   }
+  /* #navLinks::-webkit-scrollbar-track {
+    @apply bg-coffee-400;
+  }
+  #navLinks::-webkit-scrollbar-thumb {
+    @apply bg-coffee-600 rounded-full;
+  }
+  #navLinks::-webkit-scrollbar-thumb:hover {
+    @apply bg-coffee-800 rounded-full;
+  } */
 }
