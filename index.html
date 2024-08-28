@@ -298,7 +298,7 @@
       z-index: -1; /* Place the video behind other content */
     } -->
 
-    <section class="lg:h-[100vh] overflow-hidden" onclick="startVideo()">
+    <section class="lg:h-[100vh] overflow-hidden p-0" onclick="startVideo()">
       <!-- <video
         width="100%"
         height="100%"
@@ -328,7 +328,7 @@
       </video>
     </section>
 
-    <section class="mt-5 md:mt-0">
+    <section class="pb-0">
       <div class="relative">
         <div
           class="absolute top-0 md:top-1/4 right-0 bg-no-repeat bg-contain w-64 h-72 md:w-72 md:h-96 mix-blend-multiply opacity-20 -z-10"
@@ -340,7 +340,7 @@
             style="background-image: url('./svg/flower.svg')"
           ></div>
           <div
-            class="py-2 flex items-center justify-center flex-col md:my-5 lg:my-10"
+            class="py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-16"
           >
             <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800">
               About Us
@@ -441,9 +441,9 @@
       ></div> -->
     </section>
 
-    <section>
+    <section class="pb-0">
       <div
-        class="py-4 pt-12 flex items-center justify-center flex-col my-8 lg:my-10"
+        class="flex items-center justify-center flex-col my-8 lg:my-16"
       >
         <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800">
           Our Rooms
@@ -467,21 +467,21 @@
           ></span>
         </div>
       </div>
-      <div class="container mx-auto p-4">
+      <div class="py-4 px-0">
         <div class="glide rooms-glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <!-- Room 1 -->
               <li class="glide__slide">
-                <div class="grid grid-cols-1 gap-4 rounded-xl">
+                <div class="grid grid-cols-1 gap-4">
                   <div
-                    class="flex items-center flex-col gap-0 md:gap-5 relative rounded-xl"
+                    class="flex items-center flex-col gap-0 md:gap-5 relative rounded-xl overflow-hidden"
                   >
                     <div
                       class="flex items-center justify-end p-4 static md:absolute right-0 w-full h-full md:bg-gradient-to-r from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] rounded-xl md:rounded-r-xl z-10 md:z-20 -mt-20 md:mt-0"
                     >
                       <div
-                        class="w-full md:w-[350px] h-[450px] flex justify-center flex-col gap-5 bg-black/20 md:bg-transparent backdrop-blur-md md:backdrop-filter-none rounded-xl p-4 md:p-0"
+                        class="w-full md:w-[350px] h-full flex justify-center flex-col gap-5 p-4 md:p-0"
                       >
                         <h3
                           class="caps text-coffee-600 text-2xl md:text-3xl font-bold"
@@ -541,25 +541,25 @@
                             />
                           </li>
                         </ul>
-                        <button
-                          type="button"
-                          class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
-                          aria-label="Read More"
-                          title="Read"
-                        >
-                          Read More
-                          <i class="ml-2 fa-solid fa-arrow-right"></i>
-                        </button>
+                        <div>
+                          <button
+                            type="button"
+                            class="bg-coffee-700 text-coffee-400 px-8 py-2 rounded-xl"
+                            aria-label="Read More"
+                            title="Read"
+                          >
+                            Read More
+                            <i class="ml-2 fa-solid fa-arrow-right"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <img
-                      src="https://www.babermahalvilas.com/images/package/JiQAV-bumpa.jpg"
-                      width="100"
-                      height="100"
+                      src="./img/rooms/room1.webp"
                       role="none"
                       alt="Traditional Room"
                       loading="lazy"
-                      class="w-full max-h-[400px] xl:max-h-[500px] rounded-xl shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
+                      class="w-full h-screen shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
                     />
                   </div>
                 </div>
@@ -574,7 +574,7 @@
                       class="flex items-center justify-end p-4 static md:absolute right-0 w-full h-full md:bg-gradient-to-r from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] rounded-xl md:rounded-r-xl z-10 md:z-20 -mt-20 md:mt-0"
                     >
                       <div
-                        class="w-full md:w-[350px] h-[450px] flex justify-center flex-col gap-5 bg-black/20 md:bg-transparent backdrop-blur-md md:backdrop-filter-none rounded-xl p-4 md:p-0"
+                        class="w-full md:w-[350px] h-full flex justify-center flex-col gap-5 p-4 md:p-0"
                       >
                         <h3
                           class="caps text-coffee-600 text-2xl md:text-3xl font-bold"
@@ -634,25 +634,25 @@
                             />
                           </li>
                         </ul>
-                        <button
-                          type="button"
-                          class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
-                          aria-label="Read More"
-                          title="Read"
-                        >
-                          Read More
-                          <i class="ml-2 fa-solid fa-arrow-right"></i>
-                        </button>
+                        <div>
+                          <button
+                            type="button"
+                            class="bg-coffee-700 text-coffee-400 px-8 py-2 rounded-xl"
+                            aria-label="Read More"
+                            title="Read"
+                          >
+                            Read More
+                            <i class="ml-2 fa-solid fa-arrow-right"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <img
-                      src="https://www.babermahalvilas.com/images/package/lNBjx-kausee-kotha.jpg"
-                      width="100"
-                      height="100"
+                      src="./img/rooms/room2.webp"
                       role="none"
                       alt="Traditional Suite"
                       loading="lazy"
-                      class="w-full max-h-[400px] xl:max-h-[500px] rounded-xl shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
+                      class="w-full h-screen rounded-xl shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
                     />
                   </div>
                 </div>
@@ -667,7 +667,7 @@
                       class="flex items-center justify-end p-4 static md:absolute right-0 w-full h-full md:bg-gradient-to-r from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] rounded-xl md:rounded-r-xl z-10 md:z-20 -mt-20 md:mt-0"
                     >
                       <div
-                        class="w-full md:w-[350px] h-[450px] flex justify-center flex-col gap-5 bg-black/20 md:bg-transparent backdrop-blur-md md:backdrop-filter-none rounded-xl p-4 md:p-0"
+                        class="w-full md:w-[350px] h-full flex justify-center flex-col gap-5 p-4 md:p-0"
                       >
                         <h3
                           class="caps text-coffee-600 text-2xl md:text-3xl font-bold"
@@ -727,25 +727,25 @@
                             />
                           </li>
                         </ul>
-                        <button
-                          type="button"
-                          class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
-                          aria-label="Read More"
-                          title="Read"
-                        >
-                          Read More
-                          <i class="ml-2 fa-solid fa-arrow-right"></i>
-                        </button>
+                        <div>
+                          <button
+                            type="button"
+                            class="bg-coffee-700 text-coffee-400 px-8 py-2 rounded-xl"
+                            aria-label="Read More"
+                            title="Read"
+                          >
+                            Read More
+                            <i class="ml-2 fa-solid fa-arrow-right"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <img
-                      src="https://www.babermahalvilas.com/images/package/MfzsV-chatra.jpg"
-                      width="100"
-                      height="100"
+                      src="./img/rooms/room3.webp"
                       role="none"
                       alt="Heritage Suite"
                       loading="lazy"
-                      class="w-full max-h-[400px] xl:max-h-[500px] rounded-xl shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
+                      class="w-full h-screen rounded-xl shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
                     />
                   </div>
                 </div>
@@ -760,7 +760,7 @@
                       class="flex items-center justify-end p-4 static md:absolute right-0 w-full h-full md:bg-gradient-to-r from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] rounded-xl md:rounded-r-xl z-10 md:z-20 -mt-20 md:mt-0"
                     >
                       <div
-                        class="w-full md:w-[350px] h-[450px] flex justify-center flex-col gap-5 bg-black/20 md:bg-transparent backdrop-blur-md md:backdrop-filter-none rounded-xl p-4 md:p-0"
+                        class="w-full md:w-[350px] h-full flex justify-center flex-col gap-5 p-4 md:p-0"
                       >
                         <h3
                           class="caps text-coffee-600 text-2xl md:text-3xl font-bold"
@@ -820,25 +820,25 @@
                             />
                           </li>
                         </ul>
-                        <button
-                          type="button"
-                          class="bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
-                          aria-label="Read More"
-                          title="Read"
-                        >
-                          Read More
-                          <i class="ml-2 fa-solid fa-arrow-right"></i>
-                        </button>
+                        <div>
+                          <button
+                            type="button"
+                            class="bg-coffee-700 text-coffee-400 px-8 py-2 rounded-xl"
+                            aria-label="Read More"
+                            title="Read"
+                          >
+                            Read More
+                            <i class="ml-2 fa-solid fa-arrow-right"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <img
-                      src="https://www.babermahalvilas.com/images/package/tAOZ7-dhvaja.jpg"
-                      width="100"
-                      height="100"
+                      src="./img/rooms/room4.webp"
                       role="none"
                       alt="Royal Suite"
                       loading="lazy"
-                      class="w-full max-h-[400px] xl:max-h-[500px] rounded-xl shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
+                      class="w-full h-screen rounded-xl shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
                     />
                   </div>
                 </div>
@@ -879,20 +879,20 @@
     </section>
 
     <section
-      class="mt-10 bg-coffee-700 lg:bg-[url('https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg')] bg-no-repeat bg-cover bg-center w-full min-h-screen h-full relative"
+      class="bg-coffee-700 lg:bg-[url('https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg')] bg-no-repeat bg-cover bg-center w-full min-h-screen h-full relative"
     >
       <!-- <img src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg" alt="" class="absolute inset-0 w-full min-h-screen object-cover bg-repeat md:hidden"> -->
       <div
         class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-coffee-400 via-coffee-400/40 to-coffee-400"
       ></div>
-      <div class="container mx-auto relative p-4">
+      <div class="container mx-auto relative">
         <div
           class="absolute top-0 right-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30 -z-10"
           style="background-image: url('./svg/flower.svg')"
         ></div>
 
-        <div class="py-2 flex items-center justify-center flex-col md:my-10">
-          <h2 class="caps mt-5 text-3xl md:text-5xl font-bold text-coffee-800">
+        <div class="flex items-center justify-center flex-col">
+          <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800">
             Our Services
           </h2>
           <span class="caps text-sm md:text-xl font-bold text-coffee-800/80"
@@ -918,7 +918,7 @@
         </div>
 
         <div
-          class="mt-5 md:mt-60 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[50vw] mx-auto"
+          class="mt-5 md:mt-44 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[50vw] mx-auto"
         >
           <div
             class="flex items-center flex-col gap-5 shadow-xl hover:shadow-2xl transition-all duration-200 ease-linear"
