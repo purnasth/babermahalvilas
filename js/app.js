@@ -128,11 +128,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function () {
-  var owl = $(".owl-carousel");
+  var owl = $(".testimonial.owl-carousel");
   owl.owlCarousel({
     items: 1,
     loop: true,
-    margin: 10,
+    margin: 20,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: false,

@@ -37,7 +37,7 @@
   <body class="overflow-x-hidden">
     <header class="bg-transparent sticky top-0 z-50">
       <div
-        class="blur-bg absolute w-full p-4 transition-all duration-200 ease-linear bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.75)]"
+        class="absolute w-full p-4 md:pb-20 transition-all duration-200 ease-linear bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.5)]"
       >
         <div class="container mx-auto">
           <div class="flex justify-between items-center h-14">
@@ -346,7 +346,7 @@
           <div
             class="py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-16"
           >
-            <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800">
+            <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
               About Us
             </h2>
             <span class="caps text-sm md:text-2xl font-bold text-coffee-800/80"
@@ -445,9 +445,37 @@
       ></div> -->
     </section>
 
-    <section class="pb-0">
-      <div class="flex items-center justify-center flex-col my-8 lg:my-16">
-        <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800">
+    <section class="px-0 bg-white relative">
+      <div
+        class="absolute size-full top-0 left-0 bg-gradient-to-b from-coffee-400 via-transparent to-coffee-400"
+      ></div>
+      <img
+        src="./img/arts/property-arts.png"
+        alt="The Property"
+        class="w-full h-screen object-contain"
+      />
+
+      <div class="absolute mt-44 mr-14 max-w-md right-0 top-0 size-auto space-y-4 text-coffee-800">
+        <h4 class="caps text-4xl capitalize">The property</h4>
+        <p class="text-sm">
+          Baber Mahal Vilas - The Heritage Hotel is a quaint family-run boutique
+          property set in the existing architectural haven of Baber Mahal
+          Revisited. In an effort to portray the distinct architectural features
+          of Nepal in an blend of architectural design, the property shows 4
+          distinct styles.
+        </p>
+      </div>
+      <div class="absolute ml-14 max-w-xs left-0 bottom-52 size-auto space-y-4 text-coffee-800">
+        <h4 class="caps text-4xl capitalize">The history</h4>
+        <p class="text-sm">
+          The property is built and run by the descendants of the longest ruling prime minister of Nepal Maharaja Chandra Shumsher Rana and his son Baber Shumsher Rana who was the Commander and Chief of the Nepali Armed Forces.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-0">
+      <div class="flex items-center justify-center flex-col my-6 mb-8 lg:mb-12">
+        <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
           Our Rooms
         </h2>
         <span class="caps text-sm md:text-xl font-bold text-coffee-800/80"
@@ -894,7 +922,7 @@
         ></div>
 
         <div class="flex items-center justify-center flex-col">
-          <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800">
+          <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
             Our Services
           </h2>
           <span class="caps text-sm md:text-xl font-bold text-coffee-800/80"
@@ -1020,7 +1048,7 @@
         <div
           class="py-2 flex items-center justify-center flex-col md:my-5 lg:my-10"
         >
-          <h2 class="caps mt-10 text-3xl md:text-5xl font-bold text-coffee-800">
+          <h2 class="caps mt-10 text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
             Reviews
           </h2>
           <span class="caps text-sm md:text-xl font-bold text-coffee-800/80"
@@ -1045,7 +1073,7 @@
           </div>
         </div>
 
-        <div class="w-full md:w-3/4 mx-auto owl-carousel owl-theme my-10 z-10">
+        <div class="testimonial w-full md:w-3/4 mx-auto owl-carousel owl-theme my-10 z-10">
           <!-- Testimonial 1 -->
           <div
             class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
@@ -1265,7 +1293,7 @@
     </section>
 
     <footer
-      class="bg-gradient-to-b from-coffee-400 via-coffee-600 to-coffee-800 relative"
+      class="py-32 pb-16 bg-gradient-to-b from-coffee-400 via-coffee-600 to-coffee-800 relative"
     >
       <div
         class="absolute top-0 left-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30"
@@ -1362,7 +1390,7 @@
         <div class="grid grid-cols-1 gap-4 z-10 py-5 translate-y-10">
           <div class="w-full mb-5">
             <h4
-              class="caps flex items-center justify-center flex-col text-xl md:text-2xl font-semibold text-coffee-800 mb-5"
+              class="caps flex items-center justify-center flex-col text-xl md:text-2xl font-semibold text-coffee-800 mb-8"
             >
               Contact Address
               <div
@@ -1542,14 +1570,14 @@
         ></div>
         <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
         <div
-          class="flex justify-between items-center flex-col md:flex-row text-coffee-400 pb-3 gap-4"
+          class="mt-8 flex justify-between items-center flex-col md:flex-row text-coffee-400 gap-4"
         >
           <p class="text-center text-sm">
             © Baber Mahal Vilas
             <script>
               document.write(new Date().getFullYear());
             </script>
-            . All rights reserved. Developed by:
+            | All rights reserved &ensp;&ensp; Developed by:
             <a
               href="https://www.purnashrestha.com.np/"
               target="_blank"

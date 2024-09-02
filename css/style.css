@@ -29,7 +29,7 @@
   }
 
   section {
-    @apply py-12 sm:py-24 md:py-[7.5rem] lg:py-[9rem];
+    @apply py-12 sm:py-24 md:py-28 lg:py-36;
   }
 
   .nav-link {
