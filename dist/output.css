@@ -801,10 +801,6 @@ section {
   bottom: 1.5rem;
 }
 
-.bottom-8 {
-  bottom: 2rem;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -1451,11 +1447,6 @@ section {
   padding-right: 1rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1474,11 +1465,6 @@ section {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-5 {
@@ -1623,6 +1609,11 @@ section {
 
 .text-coffee-800\/90 {
   color: rgb(94 48 35 / 0.9);
+}
+
+.text-coffee-900 {
+  --tw-text-opacity: 1;
+  color: rgb(65 20 12 / var(--tw-text-opacity));
 }
 
 .text-green-600 {
@@ -1842,10 +1833,6 @@ section {
     display: block;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:hidden {
     display: none;
   }
@@ -1900,10 +1887,6 @@ section {
 
   .md\:w-\[30vw\] {
     width: 30vw;
-  }
-
-  .md\:w-\[350px\] {
-    width: 350px;
   }
 
   .md\:w-\[50vw\] {

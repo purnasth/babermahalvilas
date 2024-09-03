@@ -67,25 +67,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Initialize Glide for the rooms section
-  new Glide(".rooms-glide", {
-    type: "carousel",
-    startAt: 0,
-    perView: 1,
-    focusAt: "center",
-    autoplay: 5000,
-    hoverpause: true,
-    gap: 0,
-    breakpoints: {
-      768: {
-        perView: 1,
-      },
-      1024: {
-        perView: 1,
-      },
-    },
-  }).mount();
+$(document).ready(function () {
+  $(".rooms-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    animateOut: "fadeOut",
+    smartSpeed: 1000,
+    dots: false,
+    nav: true,
+    navText: [
+      '<i class="fa-solid fa-chevron-left text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
+      '<i class="fa-solid fa-chevron-right text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
+    ],
+  });
 });
 
 $(document).ready(function () {
