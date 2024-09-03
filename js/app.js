@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.classList.add("hidden");
   });
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 0) {
-      header.classList.add("backdrop-blur-sm");
-      header.classList.remove("bg-transparent");
-    } else {
-      header.classList.remove("backdrop-blur-sm");
-      header.classList.add("bg-transparent");
-    }
-  });
+  // window.addEventListener("scroll", function () {
+  //   if (window.scrollY > 0) {
+  //     header.classList.add("backdrop-blur-sm");
+  //     header.classList.remove("bg-transparent");
+  //   } else {
+  //     header.classList.remove("backdrop-blur-sm");
+  //     header.classList.add("bg-transparent");
+  //   }
+  // });
 });
 
 // for dropdown

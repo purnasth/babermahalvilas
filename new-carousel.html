@@ -1,270 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Baber Mahal Vilas" />
-    <meta name="theme-color" content="#FFE9D2" />
 
-    <title>Baber Mahal Vilas</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to Baber Mahal Vilas" />
+  <meta name="theme-color" content="#FFE9D2" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./logo/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./logo/favicon-32x32.png"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.ico" />
-    <link rel="manifest" href="./logo/site.webmanifest" />
+  <title>Baber Mahal Vilas</title>
 
-    <link rel="stylesheet" href="./css/links.css" />
-    <link rel="stylesheet" href="./css/component.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="dist/output.css" rel="stylesheet" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <style>
-      .caps {
-        font-variant: small-caps;
-      }
-    </style>
-  </head>
+  <link rel="apple-touch-icon" sizes="180x180" href="./logo/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.ico" />
+  <link rel="manifest" href="./logo/site.webmanifest" />
 
-  <body class="overflow-x-hidden">
-    <header class="bg-transparent sticky top-0 z-50">
-      <div
-        class="absolute w-full p-4 md:pb-20 transition-all duration-200 ease-linear bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.5)]"
-      >
-        <div class="container mx-auto">
-          <div class="flex justify-between items-center h-14">
-            <div class="flex items-center">
-              <a href="#" aria-label="Logo">
-                <img
-                  src="./img/logo.svg"
-                  alt="Logo"
-                  class="w-24 md:w-32 h-auto object-contain"
-                />
-              </a>
-            </div>
-            <div class="flex items-center justify-center gap-4">
-              <button
-                type="button"
-                class="caps hidden md:block bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl tracking-wider"
-                aria-label="Book Now"
-                title="Book"
-              >
-                <i class="mr-2 fa-solid fa-calendar-check"></i>
-                Book Now
-              </button>
+  <link rel="stylesheet" href="./css/links.css" />
+  <link rel="stylesheet" href="./css/component.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="dist/output.css" rel="stylesheet" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <style>
+    .caps {
+      font-variant: small-caps;
+    }
+  </style>
+</head>
 
-              <button
-                type="menu"
-                id="toggleButton"
-                class="text-coffee-400 focus:outline-none p-2"
-                aria-label="Toggle Button"
-                title="Toggle"
-              >
-                <i
-                  id="hamburgerIcon"
-                  class="fa-solid fa-bars text-coffee-400 text-2xl"
-                ></i>
-                <i
-                  id="closeIcon"
-                  class="hidden fa-solid fa-xmark text-coffee-400 text-3xl"
-                ></i>
-              </button>
-            </div>
+<body class="overflow-x-hidden">
+  <header class="bg-transparent sticky top-0 z-50">
+    <div
+      class="absolute w-full p-4 md:pb-20 transition-all duration-200 ease-linear bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.5)]">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center h-14">
+          <div class="flex items-center">
+            <a href="#" aria-label="Logo">
+              <img src="./img/logo.svg" alt="Logo" class="w-24 md:w-32 h-auto object-contain" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center gap-4">
+            <button type="button"
+              class="caps hidden md:block bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl tracking-wider"
+              aria-label="Book Now" title="Book">
+              <i class="mr-2 fa-solid fa-calendar-check"></i>
+              Book Now
+            </button>
+
+            <button type="menu" id="toggleButton" class="text-coffee-400 focus:outline-none p-2"
+              aria-label="Toggle Button" title="Toggle">
+              <i id="hamburgerIcon" class="fa-solid fa-bars text-coffee-400 text-2xl"></i>
+              <i id="closeIcon" class="hidden fa-solid fa-xmark text-coffee-400 text-3xl"></i>
+            </button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div
-      id="overlay"
-      class="fixed inset-0 bg-black opacity-50 z-10 hidden"
-    ></div>
-    <nav
-      id="navLinks"
-      class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-coffee-700 transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full"
-    >
-      <div class="relative">
-        <div
-          class="absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
-          style="background-image: url('./svg/building.svg')"
-        ></div>
+  <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-10 hidden"></div>
+  <nav id="navLinks"
+    class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-coffee-700 transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full">
+    <div class="relative">
+      <div
+        class="absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
+        style="background-image: url('./svg/building.svg')"></div>
 
-        <div class="flex items-center justify-center">
-          <a href="#" aria-label="Logo">
-            <img
-              src="./img/logo.svg"
-              alt="Logo"
-              class="w-full h-28 object-contain rounded-full p-2"
-            />
-          </a>
-        </div>
+      <div class="flex items-center justify-center">
+        <a href="#" aria-label="Logo">
+          <img src="./img/logo.svg" alt="Logo" class="w-full h-28 object-contain rounded-full p-2" />
+        </a>
+      </div>
 
-        <ul
-          class="links flex items-start justify-start gap-1 md:gap-3 flex-col"
-        >
-          <li class="caps block w-full">
-            <a href="#" class="nav-link" aria-label="Home">Home</a>
-          </li>
+      <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Home">Home</a>
+        </li>
 
-          <li class="caps dropdown nav-link">
-            <a
-              href="#"
-              class="flex items-center justify-between w-full"
-              aria-label="About"
-              >About <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <ul
-              class="drop absolute -top-3/4 left-full bg-transparent flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl"
-            >
-              <li class="w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Our Story"
-                  >Our Story</a
-                >
-              </li>
-              <li class="w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Our History"
-                  >Our History</a
-                >
-              </li>
-              <!-- <li class="hover:underline"><a href="#">The Property</a></li> -->
-            </ul>
-          </li>
-          <li class="caps dropdown nav-link">
-            <a
-              href="#"
-              class="flex items-center justify-between w-full"
-              aria-label="Rooms"
-              >Rooms <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <ul
-              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl"
-            >
-              <li class="block w-full">
-                <a
-                  href="#"
-                  class="navlink-dropdown"
-                  aria-label="Traditional Room"
-                >
-                  <h4>Traditional Room</h4>
-                  <img
-                    src="https://www.babermahalvilas.com/images/package/JiQAV-bumpa.jpg"
-                    alt=""
-                    class="hidden lg:block w-full h-28 object-cover"
-                  />
-                </a>
-              </li>
-              <li class="block w-full">
-                <a
-                  href="#"
-                  class="navlink-dropdown"
-                  aria-label="Traditional Suite"
-                >
-                  <h4>Traditional Suite</h4>
-                  <img
-                    src="https://www.babermahalvilas.com/images/package/MfzsV-chatra.jpg"
-                    alt=""
-                    class="hidden lg:block w-full h-28 object-cover"
-                  />
-                </a>
-              </li>
-              <li class="block w-full">
-                <a
-                  href="#"
-                  class="navlink-dropdown"
-                  aria-label="Heritage Suite"
-                >
-                  <h4>Heritage Suite</h4>
-                  <img
-                    src="https://www.babermahalvilas.com/images/package/tAOZ7-dhvaja.jpg"
-                    alt=""
-                    class="hidden lg:block w-full h-28 object-cover"
-                  />
-                </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
-                  <h4>Royal Suite</h4>
-                  <img
-                    src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                    alt=""
-                    class="hidden lg:block w-full h-28 object-cover"
-                  />
-                </a>
-              </li>
-            </ul>
-          </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="About">About <i
+              class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 left-full bg-transparent flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl">
+            <li class="w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Our Story">Our Story</a>
+            </li>
+            <li class="w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Our History">Our History</a>
+            </li>
+            <!-- <li class="hover:underline"><a href="#">The Property</a></li> -->
+          </ul>
+        </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Rooms">Rooms <i
+              class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl">
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Traditional Room">
+                <h4>Traditional Room</h4>
+                <img src="https://www.babermahalvilas.com/images/package/JiQAV-bumpa.jpg" alt=""
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Traditional Suite">
+                <h4>Traditional Suite</h4>
+                <img src="https://www.babermahalvilas.com/images/package/MfzsV-chatra.jpg" alt=""
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Heritage Suite">
+                <h4>Heritage Suite</h4>
+                <img src="https://www.babermahalvilas.com/images/package/tAOZ7-dhvaja.jpg" alt=""
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
+                <h4>Royal Suite</h4>
+                <img src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg" alt=""
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+          </ul>
+        </li>
 
-          <li class="caps dropdown nav-link">
-            <a
-              href="#"
-              class="flex items-center justify-between w-full"
-              aria-label="Dining"
-            >
-              Dining <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <ul
-              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl"
-            >
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Jyunar">
-                  <h4>Jyunar</h4>
-                  <img
-                    src="https://www.babermahalvilas.com/userfiles/images/dien.jpg"
-                    alt=""
-                    class="hidden lg:block w-full h-28 object-cover"
-                  />
-                </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
-                  <h4>Surya Bar</h4>
-                  <img
-                    src="https://www.babermahalvilas.com/assets/userfiles/images/bar1.jpg"
-                    alt=""
-                    class="hidden lg:block w-full h-28 object-cover"
-                  />
-                </a>
-              </li>
-            </ul>
-          </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Dining">
+            Dining <i class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Jyunar">
+                <h4>Jyunar</h4>
+                <img src="https://www.babermahalvilas.com/userfiles/images/dien.jpg" alt=""
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
+                <h4>Surya Bar</h4>
+                <img src="https://www.babermahalvilas.com/assets/userfiles/images/bar1.jpg" alt=""
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+          </ul>
+        </li>
 
-          <!-- <li class="caps block w-full">
+        <!-- <li class="caps block w-full">
             <a href="#" class="nav-link" aria-label="Spa">Spa</a>
           </li> -->
-          <li class="caps block w-full">
-            <a href="#" class="nav-link" aria-label="Services">Services</a>
-          </li>
-          <li class="caps block w-full">
-            <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
-          </li>
-          <!-- <li class="caps block w-full">
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Services">Services</a>
+        </li>
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
+        </li>
+        <!-- <li class="caps block w-full">
             <a href="#" class="nav-link" aria-label="Press">Press</a>
           </li> -->
-          <li class="caps block w-full">
-            <a href="#" class="nav-link" aria-label="Contact">Contact</a>
-          </li>
-          <button
-            type="button"
-            class="caps w-full md:hidden text-coffee-700 bg-coffee-400 px-4 py-2 rounded-xl text-lg tracking-wider"
-            aria-label="Book Now"
-            title="Book"
-          >
-            <i class="mr-2 fa-solid fa-calendar-check"></i>
-            Book Now
-          </button>
-        </ul>
-      </div>
-    </nav>
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Contact">Contact</a>
+        </li>
+        <button type="button"
+          class="caps w-full md:hidden text-coffee-700 bg-coffee-400 px-4 py-2 rounded-xl text-lg tracking-wider"
+          aria-label="Book Now" title="Book">
+          <i class="mr-2 fa-solid fa-calendar-check"></i>
+          Book Now
+        </button>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- <section class="lg:h-[100vh] overflow-hidden" onclick="startVideo()">
+  <!-- <section class="lg:h-[100vh] overflow-hidden" onclick="startVideo()">
       <video
         width="100%"
         height="100%"
@@ -289,7 +197,7 @@
         backgroundVideo.play();
       }
     </script> -->
-    <!-- #backgroundVideo {
+  <!-- #backgroundVideo {
       object-fit: cover;
       width: 100%;
       height: 100%;
@@ -299,8 +207,8 @@
       z-index: -1; /* Place the video behind other content */
     } -->
 
-    <section class="size-full p-0 relative" onclick="startVideo()">
-      <!-- <video
+  <section class="size-full p-0 relative" onclick="startVideo()">
+    <!-- <video
         width="100%"
         height="100%"
         autoplay
@@ -311,990 +219,599 @@
         poster="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
         class="w-full h-full object-cover absolute topp-0 left-0 z-[-1]"
       > -->
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        id="backgroundVideo"
-        poster="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg"
-        class="size-full"
-      >
-        <source
-          src="./video/Baber Mahal Vilas _ Boutique Property _ Architectural Heaven _ Baber Mahal Revis.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+    <video autoplay loop muted playsinline id="backgroundVideo"
+      poster="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg" class="size-full">
+      <source src="./video/Baber Mahal Vilas _ Boutique Property _ Architectural Heaven _ Baber Mahal Revis.mp4"
+        type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
-      <!-- <h3 class="caps absolute bottom-0 w-full h-auto max-h-screen text-5xl font-bold m-10 text-center capitalize text-coffee-400">
+    <!-- <h3 class="caps absolute bottom-0 w-full h-auto max-h-screen text-5xl font-bold m-10 text-center capitalize text-coffee-400">
         A time capsule of Nepalese Architecture.
       </h3> -->
-    </section>
+  </section>
 
-    <section class="pb-0">
-      <div class="relative">
+  <section class="pb-0">
+    <div class="relative">
+      <div
+        class="absolute top-0 md:top-1/4 right-0 bg-no-repeat bg-contain w-64 h-72 md:w-72 md:h-96 mix-blend-multiply opacity-20 -z-10"
+        style="background-image: url('./svg/statue.svg')"></div>
+      <div class="container mx-auto p-4 relative">
         <div
-          class="absolute top-0 md:top-1/4 right-0 bg-no-repeat bg-contain w-64 h-72 md:w-72 md:h-96 mix-blend-multiply opacity-20 -z-10"
-          style="background-image: url('./svg/statue.svg')"
-        ></div>
-        <div class="container mx-auto p-4 relative">
-          <div
-            class="absolute top-5 md:top-10 left-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30 -z-10"
-            style="background-image: url('./svg/flower.svg')"
-          ></div>
-          <div
-            class="py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-16"
-          >
-            <h2
-              class="caps text-3xl md:text-5xl font-bold text-coffee-800 mb-2"
-            >
-              About Us
-            </h2>
-            <span class="caps text-sm md:text-2xl font-bold text-coffee-800/80"
-              >Legacy in Every Detail</span
-            >
-            <div class="text-center">
-              <span
-                class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-              ></span>
-              <span
-                class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-              ></span>
-              <span
-                class="inline-block w-40 h-1 rounded-full bg-coffee-800"
-              ></span>
-              <span
-                class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-              ></span>
-              <span
-                class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-              ></span>
-            </div>
+          class="absolute top-5 md:top-10 left-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30 -z-10"
+          style="background-image: url('./svg/flower.svg')"></div>
+        <div class="py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-16">
+          <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
+            About Us
+          </h2>
+          <span class="caps text-sm md:text-2xl font-bold text-coffee-800/80">Legacy in Every Detail</span>
+          <div class="text-center">
+            <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
+            <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
+            <span class="inline-block w-40 h-1 rounded-full bg-coffee-800"></span>
+            <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
+            <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
           </div>
-          <div
-            class="flex items-center flex-col md:flex-row justify-between gap-5 md:gap-10"
-          >
-            <div class="hidden lg:block w-full md:w-1/2">
-              <img
-                src="./img/babermahal.jpg"
-                alt=""
-                class="w-full h-[500px] object-cover"
-              />
+        </div>
+        <div class="flex items-center flex-col md:flex-row justify-between gap-5 md:gap-10">
+          <div class="hidden lg:block w-full md:w-1/2">
+            <img src="./img/babermahal.jpg" alt="" class="w-full h-[500px] object-cover" />
+          </div>
+
+          <div class="w-full lg:w-1/2 flex flex-col items-start gap-4 py-5">
+            <h4 class="caps text-coffee-800/90 text-2xl md:text-3xl font-extrabold">
+              <span class="text-coffee-700 text-lg font-light" style="font-variant: none">Welcome to</span>
+              <br />
+              Baber Mahal Vilas
+            </h4>
+            <p class="text-black text-justify text-sm md:text-base">
+              The vision behind the boutique property is to create a
+              hospitality model where in, luxury and service are provided in a
+              historically and culturally significant ambience in the center
+              Kathmandu Valley. To host our guests in an atmosphere that
+              illustrates the grand lifestyle of the Rana era mixed with the
+              original architectural heritage of Newar, Mustang and Terai
+              cultures. Though modest in size the property is attached to
+              BABER MAHAL REVISITED complex. Acting as an extension to the
+              Vilas, Revisited offers a host of shops offering quality
+              traditional products, and some of the finest dining options in
+              the city.
+            </p>
+
+            <div class="grid grid-cols-2 gap-8">
+              <a href="#" class="flex items-center justify-center text-coffee-800"
+                aria-label="Our Story with open reader icon">
+                <i class="fa-solid fa-book-open-reader text-3xl mr-2"></i>
+                <h5 class="caps text-xl">Our Story</h5>
+              </a>
+              <a href="#" class="flex items-center justify-center text-coffee-800"
+                aria-label="Our History with the timeline icon">
+                <i class="fa-solid fa-timeline text-3xl mr-2"></i>
+                <h5 class="caps text-xl">Our History</h5>
+              </a>
             </div>
 
-            <div class="w-full lg:w-1/2 flex flex-col items-start gap-4 py-5">
-              <h4
-                class="caps text-coffee-800/90 text-2xl md:text-3xl font-extrabold"
-              >
-                <span
-                  class="text-coffee-700 text-lg font-light"
-                  style="font-variant: none"
-                  >Welcome to</span
-                >
-                <br />
-                Baber Mahal Vilas
-              </h4>
-              <p class="text-black text-justify text-sm md:text-base">
-                The vision behind the boutique property is to create a
-                hospitality model where in, luxury and service are provided in a
-                historically and culturally significant ambience in the center
-                Kathmandu Valley. To host our guests in an atmosphere that
-                illustrates the grand lifestyle of the Rana era mixed with the
-                original architectural heritage of Newar, Mustang and Terai
-                cultures. Though modest in size the property is attached to
-                BABER MAHAL REVISITED complex. Acting as an extension to the
-                Vilas, Revisited offers a host of shops offering quality
-                traditional products, and some of the finest dining options in
-                the city.
-              </p>
-
-              <div class="grid grid-cols-2 gap-8">
-                <a
-                  href="#"
-                  class="flex items-center justify-center text-coffee-800"
-                  aria-label="Our Story with open reader icon"
-                >
-                  <i class="fa-solid fa-book-open-reader text-3xl mr-2"></i>
-                  <h5 class="caps text-xl">Our Story</h5>
-                </a>
-                <a
-                  href="#"
-                  class="flex items-center justify-center text-coffee-800"
-                  aria-label="Our History with the timeline icon"
-                >
-                  <i class="fa-solid fa-timeline text-3xl mr-2"></i>
-                  <h5 class="caps text-xl">Our History</h5>
-                </a>
-              </div>
-
-              <button
-                type="button"
-                class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl"
-                aria-label="Explore More"
-                title="Explore"
-              >
-                Explore More
-                <i class="ml-2 fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
+            <button type="button" class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl" aria-label="Explore More"
+              title="Explore">
+              Explore More
+              <i class="ml-2 fa-solid fa-arrow-right"></i>
+            </button>
           </div>
         </div>
       </div>
-      <!-- <div
+    </div>
+    <!-- <div
         class="bg-repeat-x bg-contain w-full min-h-[10vh] md:min-h-[20vh] mix-blend-multiply opacity-40"
         style="background-image: url('./svg/building.svg')"
       ></div> -->
-    </section>
+  </section>
 
-    <section class="px-0 bg-white relative">
-      <div
-        class="absolute size-full top-0 left-0 bg-gradient-to-b from-coffee-400 via-transparent to-coffee-400"
-      ></div>
-      <img
-        src="./img/arts/property-arts.png"
-        alt="The Property"
-        class="w-full h-screen object-contain"
-      />
+  <section class="px-0 bg-white relative">
+    <div class="absolute size-full top-0 left-0 bg-gradient-to-b from-coffee-400 via-transparent to-coffee-400"></div>
+    <img src="./img/arts/property-arts.png" alt="The Property" class="w-full h-screen object-contain" />
 
-      <div
-        class="absolute mt-44 mr-14 max-w-md right-0 top-0 size-auto space-y-4 text-coffee-800"
-      >
-        <h4 class="caps text-4xl capitalize">The property</h4>
-        <p class="text-sm">
-          Baber Mahal Vilas - The Heritage Hotel is a quaint family-run boutique
-          property set in the existing architectural haven of Baber Mahal
-          Revisited. In an effort to portray the distinct architectural features
-          of Nepal in an blend of architectural design, the property shows 4
-          distinct styles.
-        </p>
+    <div class="absolute mt-44 mr-14 max-w-md right-0 top-0 size-auto space-y-4 text-coffee-800">
+      <h4 class="caps text-4xl capitalize">The property</h4>
+      <p class="text-sm">
+        Baber Mahal Vilas - The Heritage Hotel is a quaint family-run boutique
+        property set in the existing architectural haven of Baber Mahal
+        Revisited. In an effort to portray the distinct architectural features
+        of Nepal in an blend of architectural design, the property shows 4
+        distinct styles.
+      </p>
+    </div>
+    <div class="absolute ml-14 max-w-xs left-0 bottom-52 size-auto space-y-4 text-coffee-800">
+      <h4 class="caps text-4xl capitalize">The history</h4>
+      <p class="text-sm">
+        The property is built and run by the descendants of the longest ruling
+        prime minister of Nepal Maharaja Chandra Shumsher Rana and his son
+        Baber Shumsher Rana who was the Commander and Chief of the Nepali
+        Armed Forces.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-0">
+    <div class="flex items-center justify-center flex-col my-6 mb-8 lg:mb-12">
+      <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
+        Our Rooms
+      </h2>
+      <span class="caps text-sm md:text-xl font-bold text-coffee-800/80">Discover Luxury, Define Memories</span>
+      <div class="text-center">
+        <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
+        <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
+        <span class="inline-block w-40 h-1 rounded-full bg-coffee-800"></span>
+        <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
+        <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
       </div>
-      <div
-        class="absolute ml-14 max-w-xs left-0 bottom-52 size-auto space-y-4 text-coffee-800"
-      >
-        <h4 class="caps text-4xl capitalize">The history</h4>
-        <p class="text-sm">
-          The property is built and run by the descendants of the longest ruling
-          prime minister of Nepal Maharaja Chandra Shumsher Rana and his son
-          Baber Shumsher Rana who was the Commander and Chief of the Nepali
-          Armed Forces.
-        </p>
-      </div>
-    </section>
+    </div>
+    <div class="owl-carousel owl-theme rooms-carousel">
+      <!-- Room 1 -->
+      <div class="item">
+        <div class="grid grid-cols-1 gap-4">
+          <div class="flex items-center flex-col gap-0 md:gap-5 relative rounded-xl overflow-hidden">
+            <div
+              class="flex items-center justify-end p-4 static md:absolute right-0 size-full md:bg-gradient-to-r from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] rounded-xl md:rounded-r-xl z-10 md:z-20 -mt-20 md:mt-0">
+              <div class="w-full w- md:w-80 h-full flex justify-center flex-col gap-5 p-4 md:p-0 mr-12">
+                <h3 class="caps text-coffee-600 text-2xl md:text-3xl font-bold">
+                  Traditional Room
+                </h3>
+                <p class="text-sm text-coffee-400">
+                  These rooms reflect the skilled craftsmanship of Newari artisans,
+                  adorned with vibrant handwoven textiles and traditional art that adds warmth and color.
+                </p>
+                <span class="text-lg text-coffee-600 font-extrabold drop-shadow-xl">USD 100/night</span>
+                <ul
+                  class="room-details flex items-center gap-2 md:gap-4 text-xs md:text-sm transition-all duration-300 text-coffee-400">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-2xl" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 18l.01 0"></path>
+                    <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                    <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                    <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                  </svg>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-xl"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20 3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h3l-1 1v2h12v-2l-1-1h3c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H4V5h16v11z">
+                    </path>
+                  </svg>
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" class="text-2xl" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M8 16a3 3 0 0 1 -3 3"></path>
+                    <path d="M16 16a3 3 0 0 0 3 3"></path>
+                    <path d="M12 16v4"></path>
+                    <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z">
+                    </path>
+                    <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
+                  </svg>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-2xl"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <circle cx="7" cy="7" r="2"></circle>
+                    <path
+                      d="M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25a.828.828 0 0 1 1.41.59V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5A2.251 2.251 0 0 0 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z">
+                    </path>
+                  </svg>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-2xl"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M2 21.5c0 .28.22.5.49.5h13.02c.27 0 .49-.22.49-.5V20H2v1.5zM15.5 16H11v-2H7v2H2.5c-.28 0-.5.22-.5.5V18h14v-1.5c0-.28-.22-.5-.5-.5zM20.47 15.45A5.796 5.796 0 0 0 22 11.51V2h-6v9.47c0 1.48.58 2.92 1.6 4l.4.42V22h4v-2h-2v-4.03l.47-.52zM18 4h2v4h-2V4zm1.03 10.07a3.893 3.893 0 0 1-1.03-2.6V10h2v1.51c0 .95-.34 1.85-.97 2.56z">
+                    </path>
+                  </svg>
 
-    <section class="py-0">
-      <div class="flex items-center justify-center flex-col my-6 mb-8 lg:mb-12">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-2xl"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" d="M0 0h24v24H0V0z"></path>
+                    <path
+                      d="M18 6V4h2V2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14v-2h-4.03A4.966 4.966 0 0 0 18 16v-5H8v5c0 1.64.81 3.09 2.03 4H6V4h2v2c0 .55.45 1 1 1h8c.55 0 1-.45 1-1zm-8 10v-3h6v3c0 1.65-1.35 3-3 3s-3-1.35-3-3z">
+                    </path>
+                    <circle cx="13" cy="9" r="1"></circle>
+                  </svg>
+                </ul>
+                <div>
+                  <button type="button" class="text-sm bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl"
+                    aria-label="Read More" title="Read">
+                    Read More
+                    <i class="ml-2 fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img src="./img/rooms/room1.webp" role="none" alt="Traditional Room" loading="lazy"
+              class="w-full h-[105vh] shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="bg-coffee-700 lg:bg-[url('https://www.babermahalvilas.com/images/slideshow/G9YkC-img_0164.jpg')] bg-no-repeat bg-cover bg-center w-full min-h-screen h-full relative">
+    <!-- <img src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg" alt="" class="absolute inset-0 w-full min-h-screen object-cover bg-repeat md:hidden"> -->
+    <div class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-coffee-400 via-coffee-400/40 to-coffee-400">
+    </div>
+    <div class="container mx-auto relative">
+      <div class="absolute top-0 right-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30 -z-10"
+        style="background-image: url('./svg/flower.svg')"></div>
+
+      <div class="flex items-center justify-center flex-col">
         <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
-          Our Rooms
+          Our Services
         </h2>
-        <span class="caps text-sm md:text-xl font-bold text-coffee-800/80"
-          >Discover Luxury, Define Memories</span
-        >
+        <span class="caps text-sm md:text-xl font-bold text-coffee-800/80">Your Comfort, Our Commitment</span>
         <div class="text-center">
-          <span
-            class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-          ></span>
-          <span
-            class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-          ></span>
+          <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
+          <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
           <span class="inline-block w-40 h-1 rounded-full bg-coffee-800"></span>
-          <span
-            class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-          ></span>
-          <span
-            class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-          ></span>
+          <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
+          <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
         </div>
       </div>
-      <div class="owl-carousel owl-theme rooms-carousel">
-        <!-- Room 1 -->
-        <div class="item">
-          <div class="grid grid-cols-1 gap-4">
-            <div
-              class="flex items-center flex-col gap-0 md:gap-5 relative rounded-xl overflow-hidden"
-            >
-              <div
-                class="flex items-center justify-end p-4 static md:absolute right-0 w-full h-full md:bg-gradient-to-r from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] rounded-xl md:rounded-r-xl z-10 md:z-20 -mt-20 md:mt-0"
-              >
-                <div
-                  class="w-full md:w-[350px] h-full flex justify-center flex-col gap-5 p-4 md:p-0"
-                >
-                  <h3
-                    class="caps text-coffee-600 text-2xl md:text-3xl font-bold"
-                  >
-                    Traditional Room
-                  </h3>
-                  <p class="text-sm text-coffee-400">
-                    These rooms are located in the Newari section of the
-                    property, and hence blends with the traditional décor of the
-                    Newari culture.
-                  </p>
-                  <span
-                    class="text-lg text-coffee-600 font-extrabold drop-shadow-xl"
-                    >USD 45/night</span
-                  >
-                  <ul class="flex items-center justify-between gap-2">
-                    <!-- Add icons here -->
-                  </ul>
-                  <div>
-                    <button
-                      type="button"
-                      class="bg-coffee-700 text-coffee-400 px-8 py-2 rounded-xl"
-                      aria-label="Read More"
-                      title="Read"
-                    >
-                      Read More
-                      <i class="ml-2 fa-solid fa-arrow-right"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <img
-                src="./img/rooms/room1.webp"
-                role="none"
-                alt="Traditional Room"
-                loading="lazy"
-                class="w-full h-[105vh] shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- Repeat for other rooms -->
-        <!-- Room 1 -->
-        <div class="item">
-          <div class="grid grid-cols-1 gap-4">
-            <div
-              class="flex items-center flex-col gap-0 md:gap-5 relative rounded-xl overflow-hidden"
-            >
-              <div
-                class="flex items-center justify-end p-4 static md:absolute right-0 w-full h-full md:bg-gradient-to-r from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] rounded-xl md:rounded-r-xl z-10 md:z-20 -mt-20 md:mt-0"
-              >
-                <div
-                  class="w-full md:w-[350px] h-full flex justify-center flex-col gap-5 p-4 md:p-0"
-                >
-                  <h3
-                    class="caps text-coffee-600 text-2xl md:text-3xl font-bold"
-                  >
-                    Traditional Suite
-                  </h3>
-                  <p class="text-sm text-coffee-400">
-                    One suite has a Victorian finish while the other two suites
-                    provide the guest a Traditional Newari feel with its decor.
-                  </p>
-                  <span
-                    class="text-lg text-coffee-600 font-extrabold drop-shadow-xl"
-                    >USD 55/night</span
-                  >
-                  <ul class="flex items-center justify-between gap-2">
-                    <!-- Add icons here -->
-                  </ul>
-                  <div>
-                    <button
-                      type="button"
-                      class="bg-coffee-700 text-coffee-400 px-8 py-2 rounded-xl"
-                      aria-label="Read More"
-                      title="Read"
-                    >
-                      Read More
-                      <i class="ml-2 fa-solid fa-arrow-right"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <img
-                src="./img/rooms/room2.webp"
-                role="none"
-                alt="Traditional Room"
-                loading="lazy"
-                class="w-full h-[105vh] shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- Repeat for other rooms -->
-        <!-- Room 1 -->
-        <div class="item">
-          <div class="grid grid-cols-1 gap-4">
-            <div
-              class="flex items-center flex-col gap-0 md:gap-5 relative rounded-xl overflow-hidden"
-            >
-              <div
-                class="flex items-center justify-end p-4 static md:absolute right-0 w-full h-full md:bg-gradient-to-r from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] rounded-xl md:rounded-r-xl z-10 md:z-20 -mt-20 md:mt-0"
-              >
-                <div
-                  class="w-full md:w-[350px] h-full flex justify-center flex-col gap-5 p-4 md:p-0"
-                >
-                  <h3
-                    class="caps text-coffee-600 text-2xl md:text-3xl font-bold"
-                  >
-                    Traditional Room
-                  </h3>
-                  <p class="text-sm text-coffee-400">
-                    These rooms are located in the Newari section of the
-                    property, and hence blends with the traditional décor of the
-                    Newari culture.
-                  </p>
-                  <span
-                    class="text-lg text-coffee-600 font-extrabold drop-shadow-xl"
-                    >USD 45/night</span
-                  >
-                  <ul class="flex items-center justify-between gap-2">
-                    <!-- Add icons here -->
-                  </ul>
-                  <div>
-                    <button
-                      type="button"
-                      class="bg-coffee-700 text-coffee-400 px-8 py-2 rounded-xl"
-                      aria-label="Read More"
-                      title="Read"
-                    >
-                      Read More
-                      <i class="ml-2 fa-solid fa-arrow-right"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <img
-                src="./img/rooms/room3.webp"
-                role="none"
-                alt="Traditional Room"
-                loading="lazy"
-                class="w-full h-[105vh] shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- Repeat for other rooms -->
-        <!-- Room 1 -->
-        <div class="item">
-          <div class="grid grid-cols-1 gap-4">
-            <div
-              class="flex items-center flex-col gap-0 md:gap-5 relative rounded-xl overflow-hidden"
-            >
-              <div
-                class="flex items-center justify-end p-4 static md:absolute right-0 w-full h-full md:bg-gradient-to-r from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)] rounded-xl md:rounded-r-xl z-10 md:z-20 -mt-20 md:mt-0"
-              >
-                <div
-                  class="w-full md:w-[350px] h-full flex justify-center flex-col gap-5 p-4 md:p-0"
-                >
-                  <h3
-                    class="caps text-coffee-600 text-2xl md:text-3xl font-bold"
-                  >
-                    Traditional Room
-                  </h3>
-                  <p class="text-sm text-coffee-400">
-                    These rooms are located in the Newari section of the
-                    property, and hence blends with the traditional décor of the
-                    Newari culture.
-                  </p>
-                  <span
-                    class="text-lg text-coffee-600 font-extrabold drop-shadow-xl"
-                    >USD 45/night</span
-                  >
-                  <ul class="flex items-center justify-between gap-2">
-                    <!-- Add icons here -->
-                  </ul>
-                  <div>
-                    <button
-                      type="button"
-                      class="bg-coffee-700 text-coffee-400 px-8 py-2 rounded-xl"
-                      aria-label="Read More"
-                      title="Read"
-                    >
-                      Read More
-                      <i class="ml-2 fa-solid fa-arrow-right"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <img
-                src="./img/rooms/room4.webp"
-                role="none"
-                alt="Traditional Room"
-                loading="lazy"
-                class="w-full h-[105vh] shadow-lg object-cover -mt-20 md:mt-0 z-20 md:z-10"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- Repeat for other rooms -->
-      </div>
-    </section>
 
-    <section
-      class="bg-coffee-700 lg:bg-[url('https://www.babermahalvilas.com/images/slideshow/G9YkC-img_0164.jpg')] bg-no-repeat bg-cover bg-center w-full min-h-screen h-full relative"
-    >
-      <!-- <img src="https://www.babermahalvilas.com/images/slideshow/lch9c-roof_.jpg" alt="" class="absolute inset-0 w-full min-h-screen object-cover bg-repeat md:hidden"> -->
-      <div
-        class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-coffee-400 via-coffee-400/40 to-coffee-400"
-      ></div>
-      <div class="container mx-auto relative">
+      <div class="mt-5 md:mt-44 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[50vw] mx-auto">
         <div
-          class="absolute top-0 right-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30 -z-10"
-          style="background-image: url('./svg/flower.svg')"
-        ></div>
-
-        <div class="flex items-center justify-center flex-col">
-          <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
-            Our Services
-          </h2>
-          <span class="caps text-sm md:text-xl font-bold text-coffee-800/80"
-            >Your Comfort, Our Commitment</span
-          >
-          <div class="text-center">
-            <span
-              class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-            <span
-              class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-            <span
-              class="inline-block w-40 h-1 rounded-full bg-coffee-800"
-            ></span>
-            <span
-              class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-            <span
-              class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-          </div>
-        </div>
-
-        <div
-          class="mt-5 md:mt-44 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[50vw] mx-auto"
-        >
-          <div
-            class="flex items-center flex-col gap-5 shadow-xl hover:shadow-2xl transition-all duration-200 ease-linear"
-          >
-            <div
-              class="bg-white flex flex-col items-center justify-center gap-4 h-56 w-full p-4 text-center"
-            >
-              <h3 class="text-xl font-bold text-coffee-800">SPA</h3>
-              <p class="text-sm text-coffee-800">
-                Explore the sanctuary of tranquility at our spa, where every
-                moment is crafted for your ultimate relaxation & rejuvenation.
-              </p>
-              <!-- <span
+          class="flex items-center flex-col gap-5 shadow-xl hover:shadow-2xl transition-all duration-200 ease-linear">
+          <div class="bg-white flex flex-col items-center justify-center gap-4 h-56 w-full p-4 text-center">
+            <h3 class="text-xl font-bold text-coffee-800">SPA</h3>
+            <p class="text-sm text-coffee-800">
+              Explore the sanctuary of tranquility at our spa, where every
+              moment is crafted for your ultimate relaxation & rejuvenation.
+            </p>
+            <!-- <span
                 class="bg-coffee-700 text-coffee-400 w-full block text-center py-3 px-4 rounded-xl"
                 >Opens 10:00 am to 8:00 pm Daily</span
               > -->
-            </div>
-            <div class="flex">
-              <img
-                src="https://www.babermahalvilas.com/assets/userfiles/images/spa2(1).jpg"
-                alt="SPA"
-                class="w-full h-56 object-cover shadow-lg"
-              />
-            </div>
           </div>
-          <div
-            class="flex items-center flex-col gap-5 shadow-xl hover:shadow-2xl transition-all duration-200 ease-linear"
-          >
-            <div
-              class="bg-white flex flex-col items-center justify-center gap-4 h-56 w-full md:order-2 p-4 text-center"
-            >
-              <h3 class="text-xl font-bold text-coffee-800">Gym</h3>
-              <p class="text-sm text-coffee-800">
-                Elevate your fitness journey with cutting-edge equipment,
-                personalized training programs, and a dynamic atmosphere
-                designed to inspire.
-              </p>
-              <!-- <span
+          <div class="flex">
+            <img src="https://www.babermahalvilas.com/assets/userfiles/images/spa2(1).jpg" alt="SPA"
+              class="w-full h-56 object-cover shadow-lg" />
+          </div>
+        </div>
+        <div
+          class="flex items-center flex-col gap-5 shadow-xl hover:shadow-2xl transition-all duration-200 ease-linear">
+          <div class="bg-white flex flex-col items-center justify-center gap-4 h-56 w-full md:order-2 p-4 text-center">
+            <h3 class="text-xl font-bold text-coffee-800">Gym</h3>
+            <p class="text-sm text-coffee-800">
+              Elevate your fitness journey with cutting-edge equipment,
+              personalized training programs, and a dynamic atmosphere
+              designed to inspire.
+            </p>
+            <!-- <span
                 class="bg-coffee-700 text-coffee-400 w-full block text-center py-3 px-4 rounded-xl"
                 >Opens 10:00 am to 8:00 pm Daily</span
               > -->
-            </div>
-            <div class="flex md:order-1">
-              <img
-                src="https://www.babermahalvilas.com/assets/userfiles/images/gym1.jpg"
-                alt="GYM"
-                class="w-full h-56 object-cover shadow-lg"
-              />
-            </div>
           </div>
-          <div
-            class="flex items-center flex-col gap-5 shadow-xl hover:shadow-2xl transition-all duration-200 ease-linear"
-          >
-            <div
-              class="bg-white flex flex-col items-center justify-center gap-4 h-56 w-full p-4 text-center"
-            >
-              <h3 class="text-xl font-bold text-coffee-800">Swimming Pool</h3>
-              <p class="text-sm text-coffee-800">
-                Dive into tranquility at our luxurious swimming pool oasis
-                surrounded by lush landscapes and soothing waters.
-              </p>
-              <!-- <span
+          <div class="flex md:order-1">
+            <img src="https://www.babermahalvilas.com/assets/userfiles/images/gym1.jpg" alt="GYM"
+              class="w-full h-56 object-cover shadow-lg" />
+          </div>
+        </div>
+        <div
+          class="flex items-center flex-col gap-5 shadow-xl hover:shadow-2xl transition-all duration-200 ease-linear">
+          <div class="bg-white flex flex-col items-center justify-center gap-4 h-56 w-full p-4 text-center">
+            <h3 class="text-xl font-bold text-coffee-800">Swimming Pool</h3>
+            <p class="text-sm text-coffee-800">
+              Dive into tranquility at our luxurious swimming pool oasis
+              surrounded by lush landscapes and soothing waters.
+            </p>
+            <!-- <span
                 class="bg-coffee-700 text-coffee-400 w-full block text-center py-3 px-4 rounded-xl"
                 >Opens 10:00 am to 8:00 pm Daily</span
               > -->
-            </div>
-            <div class="flex">
-              <img
-                src="https://www.babermahalvilas.com/assets/userfiles/images/pool2.jpg"
-                alt="swimming pool"
-                class="w-full h-56 object-cover shadow-lg"
-              />
-            </div>
           </div>
-        </div>
-
-        <div class="mt-10 flex items-center justify-center">
-          <button
-            type="button"
-            class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl"
-            aria-label="Other Facilities"
-            title="Facilities"
-          >
-            Other facilities
-            <i class="ml-2 fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="relative p-2">
-      <div
-        class="absolute top-0 lg:top-28 left-0 bg-no-repeat bg-contain w-32 h-40 mix-blend-multiply opacity-30 -z-10 lg:-rotate-90"
-        style="background-image: url('./svg/flower.svg')"
-      ></div>
-      <div class="container mx-auto z-10">
-        <div
-          class="py-2 flex items-center justify-center flex-col md:my-5 lg:my-10"
-        >
-          <h2
-            class="caps mt-10 text-3xl md:text-5xl font-bold text-coffee-800 mb-2"
-          >
-            Reviews
-          </h2>
-          <span class="caps text-sm md:text-xl font-bold text-coffee-800/80"
-            >Our Guests' Voices, Your Assurance</span
-          >
-          <div class="text-center">
-            <span
-              class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-            <span
-              class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-            <span
-              class="inline-block w-40 h-1 rounded-full bg-coffee-800"
-            ></span>
-            <span
-              class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-            <span
-              class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"
-            ></span>
-          </div>
-        </div>
-
-        <div
-          class="testimonial w-full md:w-3/4 mx-auto owl-carousel owl-theme my-10 z-10"
-        >
-          <!-- Testimonial 1 -->
-          <div
-            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
-          >
-            <div class="w-full flex items-center justify-between">
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/d0/default-avatar-2020-33.jpg?w=100&amp;h=-1&amp;s=1"
-                role="none"
-                alt="10footwave"
-                loading="lazy"
-                class="w-20 h-20 rounded-full shadow-lg object-cover"
-              />
-
-              <div class="flex items-start justify-center flex-col">
-                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
-                  10footwave
-                </h5>
-                <span class="text-sm italic text-coffee-800/80"
-                  >via Tripadvisor</span
-                >
-              </div>
-            </div>
-            <p class="text-justify text-black text-sm md:text-base">
-              Absolutely Beautiful<br />
-              I travel quite extensively in five-star hotels and this is not
-              only the best value it also has a charm that is unsurpassed. The
-              rooms, staff, and food were all exceptional. The food was
-              wonderful both buffet breakfast and dinner.
-            </p>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div
-            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
-          >
-            <div class="w-full flex items-center justify-between">
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
-                role="none"
-                alt="Rajs676"
-                loading="lazy"
-                class="w-20 h-20 rounded-full shadow-lg object-cover"
-              />
-              <div class="flex items-start justify-center flex-col">
-                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
-                  Rajs676
-                </h5>
-                <span class="text-sm italic text-coffee-800/80"
-                  >via Tripadvisor</span
-                >
-              </div>
-            </div>
-            <p class="text-justify text-black text-sm md:text-base">
-              10/10 <br />
-              We had a great time as a family. Very tasteful decor in Victorian
-              era and comfortable suites! Central location makes it close to
-              most places of attraction. The staff at the reception were
-              excellent. Sweetie, Sudikshya and Rupes thank you for making our
-              Stay comfortable. We certainly will visit again.
-            </p>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div
-            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
-          >
-            <div class="w-full flex items-center justify-between">
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/a1/ec/0f/filip-r.jpg?w=100&amp;h=-1&amp;s=1"
-                width="100"
-                height="100"
-                role="none"
-                alt="Filip R"
-                loading="lazy"
-                class="w-20 h-20 rounded-full shadow-lg object-cover"
-              />
-              <div class="flex items-start justify-center flex-col">
-                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
-                  Filip R
-                </h5>
-                <span class="text-sm italic text-coffee-800/80"
-                  >via Tripadvisor</span
-                >
-              </div>
-            </div>
-            <p class="text-justify text-black text-sm md:text-base">
-              It was my 3rd stay in Baber Mahal, it’s amazing place. It’s 15 min
-              walk from the center which makes it nicely separated from busy
-              Kathmandu, yet very close to everything worth seeing. Staff is
-              fantastic, friendly and very accommodating to anything you need.
-              The place is absolutely unique, where else could you sleep in real
-              Nepalese palace? It’s worth mentioning that breakfasts and coffee
-              is great.
-            </p>
-          </div>
-
-          <!-- Testimonial 4 -->
-          <div
-            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
-          >
-            <div class="w-full flex items-center justify-between">
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-f/01/2e/70/8d/avatar014.jpg?w=100&amp;h=-1&amp;s=1"
-                width="100"
-                height="100"
-                role="none"
-                alt="The_eye"
-                loading="lazy"
-                class="w-20 h-20 rounded-full shadow-lg object-cover"
-              />
-              <div class="flex items-start justify-center flex-col">
-                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
-                  The_eye
-                </h5>
-                <span class="text-sm italic text-coffee-800/80"
-                  >via Tripadvisor</span
-                >
-              </div>
-            </div>
-            <p class="text-justify text-black text-sm md:text-base">
-              Wonderful old style class. <br />
-              Having travelled the world over many years, this hotel has to rank
-              up there as one of the most wonderful experiences. The hotel I
-              discovered is legendary in Kathmandu amongst the locals, it is
-              steeped in history. There is a selection of room grades from I
-              will say standard (which is anything but) to suites. At least five
-              restaurants on site, all serving different styles of cuisine. As
-              is the custom, save the best until last, the staff are absolutely
-              beyond words, nowhere have we encountered better. I would love to
-              name them all but that would be impossible, so I can only name
-              those whose names I have (Sudikshya, Abhipsha & Sweety). Very
-              highly recommended.
-            </p>
-          </div>
-
-          <!-- Testimonial 5 -->
-          <div
-            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
-          >
-            <div class="w-full flex items-center justify-between">
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/2a/15/3b/antonio-h.jpg?w=100&amp;h=-1&amp;s=1"
-                width="100"
-                height="100"
-                role="none"
-                loading="lazy"
-                alt="Antonio H"
-                class="w-20 h-20 rounded-full shadow-lg object-cover"
-              />
-              <div class="flex items-start justify-center flex-col">
-                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
-                  Antonio H
-                </h5>
-                <span class="text-sm italic text-coffee-800/80"
-                  >via Tripadvisor</span
-                >
-              </div>
-            </div>
-            <p class="text-justify text-black text-sm md:text-base">
-              We stayed at Baber Mahal Vilas during late November 2023 in suite
-              N. 302.The whole property is beautiful with its traditional
-              architecture, the suite was ample, nice decorated and well
-              appointed located at the roof top next to a nice terrasse with
-              flowers and even an Himalayan bees honeycomb .There is also an
-              small shopping arcade with nice shops and restaurants, Location is
-              calm and yet close to points of interest. We ate many times at the
-              hotel either via room service and at its Indian restaurant, the
-              food was good but the service must be improved since there were
-              mistakes all times. The included breakfast was a bit small but
-              still appropriate with the best coffee of our whole month trip
-              ,the staff serving it was very attentive and efficient, also the
-              rest of the staff at the front desk. Definitely we could come
-              back.
-            </p>
-          </div>
-
-          <!-- Testimonial 6 -->
-          <div
-            class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto"
-          >
-            <div class="w-full flex items-center justify-between">
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
-                width="100"
-                height="100"
-                role="none"
-                alt="Lisa"
-                loading="lazy"
-                class="w-20 h-20 rounded-full shadow-lg object-cover"
-              />
-              <div class="flex items-start justify-center flex-col">
-                <h5 class="text-base md:text-xl text-coffee-800 font-bold">
-                  Lisa
-                </h5>
-                <span class="text-sm italic text-coffee-800/80"
-                  >via Tripadvisor</span
-                >
-              </div>
-            </div>
-            <p class="text-justify text-black text-sm md:text-base">
-              Nepal's "Wes Anderson-style hotel" <br />
-              We booked the whole hotel for a conference of three days and could
-              not have been happier with our selection! It's a boutique hotel
-              that could easily be the stage of a Wes Anderson movie due to the
-              beautiful and detailed combination of different architectural
-              standards. The managers of the hotel, Sanish and Rupes are
-              extremely helpful individuals. Overall the staff of the hotel is
-              very nice. They fed us so well! The food was also beyond our
-              expectation. The complimentary airport pickup helps a lot as the
-              airport in Kathmandu can be a bit messy at times. The rooms were
-              also very nice and gave us an at-home-feeling. We loved our stay
-              and hope to be back!
-            </p>
+          <div class="flex">
+            <img src="https://www.babermahalvilas.com/assets/userfiles/images/pool2.jpg" alt="swimming pool"
+              class="w-full h-56 object-cover shadow-lg" />
           </div>
         </div>
       </div>
-    </section>
 
-    <footer
-      class="py-32 pb-16 bg-gradient-to-b from-coffee-400 via-coffee-600 to-coffee-800 relative"
-    >
-      <div
-        class="absolute top-0 left-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30"
-        style="background-image: url('./svg/flower.svg')"
-      ></div>
-      <div
-        class="absolute top-1/4 md:top-1/2 right-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 -rotate-180 mix-blend-multiply opacity-30"
-        style="background-image: url('./svg/flower.svg')"
-      ></div>
-      <div class="container mx-auto z-10 p-4 pb-0">
-        <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 pb-4">
-          <a
-            href="https://www.booking.com/hotel/np/babermahal-vilas.en-gb.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="p-2 flex items-center justify-center"
-            aria-label="Booking.com"
-          >
-            <img
-              src="./svg/bookingcom.svg"
-              alt="Booking.com"
-              class="w-32 h-8 object-contain"
-            />
-          </a>
-          <a
-            href="https://www.tripadvisor.com/Hotel_Review-g293890-d11648304-w-20 h-20 rounded-full shadow-lg object-cover-Baber_Mahal_Vilas_The_Heritage_Hotel-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="p-2 flex items-center justify-center"
-            aria-label="Tripadvisor Booking"
-          >
-            <img
-              src="./svg/tripadvisor.svg"
-              alt="Tripadvisor"
-              class="w-32 h-8 object-contain"
-            />
-          </a>
-          <a
-            href="https://www.agoda.com/baber-mahal-vilas/hotel/kathmandu-np.html?cid=1844104"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="p-2 flex items-center justify-center"
-            aria-label="Agoda Booking"
-          >
-            <img
-              src="./svg/agoda.svg"
-              alt="Agoda"
-              class="w-24 h-9 object-cover scale-75 md:scale-100"
-            />
-          </a>
-          <a
-            href="https://www.expedia.com/Kathmandu-Hotels-Baber-Mahal-Vilas.h16220397.Hotel-Information"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="p-2 flex items-center justify-center"
-            aria-label="Expedia Booking"
-          >
-            <img
-              src="./svg/expedia.svg"
-              alt="Expedia"
-              class="w-32 h-8 object-cover"
-            />
-          </a>
-          <a
-            href="https://www.makemytrip.com/hotels-international/nepal/kathmandu-hotels/baber_mahal_vilas-details.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="p-2 flex items-center justify-center"
-            aria-label="Makemytrip Booking"
-          >
-            <img
-              src="./svg/makemytrip.svg"
-              alt="Make my trip"
-              class="w-32 h-8 object-contain"
-            />
-          </a>
-          <a
-            href="https://www.goibibo.com/hotels-international/baber-mahal-vilas-hotel-in-kathmandu-8255403136307471630/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="p-2 flex items-center justify-center"
-            aria-label="Goibibo Booking"
-          >
-            <img
-              src="./svg/goibibo.svg"
-              alt="Goibibo"
-              class="w-32 h-8 object-cover"
-            />
-          </a>
+      <div class="mt-10 flex items-center justify-center">
+        <button type="button" class="bg-coffee-700 text-coffee-400 px-4 py-3 rounded-xl" aria-label="Other Facilities"
+          title="Facilities">
+          Other facilities
+          <i class="ml-2 fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative p-2">
+    <div
+      class="absolute top-0 lg:top-28 left-0 bg-no-repeat bg-contain w-32 h-40 mix-blend-multiply opacity-30 -z-10 lg:-rotate-90"
+      style="background-image: url('./svg/flower.svg')"></div>
+    <div class="container mx-auto z-10">
+      <div class="py-2 flex items-center justify-center flex-col md:my-5 lg:my-10">
+        <h2 class="caps mt-10 text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
+          Reviews
+        </h2>
+        <span class="caps text-sm md:text-xl font-bold text-coffee-800/80">Our Guests' Voices, Your Assurance</span>
+        <div class="text-center">
+          <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
+          <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
+          <span class="inline-block w-40 h-1 rounded-full bg-coffee-800"></span>
+          <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
+          <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
         </div>
+      </div>
 
-        <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
+      <div class="testimonial w-full md:w-3/4 mx-auto owl-carousel owl-theme my-10 z-10">
+        <!-- Testimonial 1 -->
+        <div
+          class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto">
+          <div class="w-full flex items-center justify-between">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/d0/default-avatar-2020-33.jpg?w=100&amp;h=-1&amp;s=1"
+              role="none" alt="10footwave" loading="lazy" class="w-20 h-20 rounded-full shadow-lg object-cover" />
 
-        <div class="grid grid-cols-1 gap-4 z-10 py-5 translate-y-10">
-          <div class="w-full mb-5">
-            <h4
-              class="caps flex items-center justify-center flex-col text-xl md:text-2xl font-semibold text-coffee-800 mb-8"
-            >
-              Contact Address
-              <div
-                class="w-1/4 md:w-1/12 h-1 rounded-full bg-coffee-800/50"
-              ></div>
-            </h4>
-            <ul class="flex items-center justify-center flex-col gap-4">
-              <li>
-                <a
-                  href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
-                  class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Tanka Prasad Sadak, Kathmandu"
-                >
-                  <i class="mr-2 fa-solid fa-map-marker-alt"></i>
-                  Tanka Prasad Sadak, Kathmandu
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+9774257655"
-                  class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="+977-01-4257655/4248747"
-                >
-                  <i class="mr-2 fa-solid fa-phone-volume"></i>
-                  +977-01-4257655/4248747
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:info@babermahal.com"
-                  class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="info@babermahal.com"
-                >
-                  <i class="mr-2 fa-solid fa-envelope"></i>
-                  info@babermahal.com
-                </a>
-              </li>
-            </ul>
-            <div
-              class="flex items-center justify-center md:gap-2 flex-row mt-6"
-            >
-              <a
-                href="https://www.facebook.com/babermahalvilas/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                aria-label="Facebook link"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/BaberMahalVilas"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                aria-label="Instagram link"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                aria-label="Linkedin link"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                aria-label="Youtube link"
-              >
-                <i class="fa-brands fa-youtube"></i>
-              </a>
+            <div class="flex items-start justify-center flex-col">
+              <h5 class="text-base md:text-xl text-coffee-800 font-bold">
+                10footwave
+              </h5>
+              <span class="text-sm italic text-coffee-800/80">via Tripadvisor</span>
             </div>
           </div>
+          <p class="text-justify text-black text-sm md:text-base">
+            Absolutely Beautiful<br />
+            I travel quite extensively in five-star hotels and this is not
+            only the best value it also has a charm that is unsurpassed. The
+            rooms, staff, and food were all exceptional. The food was
+            wonderful both buffet breakfast and dinner.
+          </p>
+        </div>
 
-          <!-- <div class="w-full mb-5">
+        <!-- Testimonial 2 -->
+        <div
+          class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto">
+          <div class="w-full flex items-center justify-between">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
+              role="none" alt="Rajs676" loading="lazy" class="w-20 h-20 rounded-full shadow-lg object-cover" />
+            <div class="flex items-start justify-center flex-col">
+              <h5 class="text-base md:text-xl text-coffee-800 font-bold">
+                Rajs676
+              </h5>
+              <span class="text-sm italic text-coffee-800/80">via Tripadvisor</span>
+            </div>
+          </div>
+          <p class="text-justify text-black text-sm md:text-base">
+            10/10 <br />
+            We had a great time as a family. Very tasteful decor in Victorian
+            era and comfortable suites! Central location makes it close to
+            most places of attraction. The staff at the reception were
+            excellent. Sweetie, Sudikshya and Rupes thank you for making our
+            Stay comfortable. We certainly will visit again.
+          </p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div
+          class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto">
+          <div class="w-full flex items-center justify-between">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/a1/ec/0f/filip-r.jpg?w=100&amp;h=-1&amp;s=1"
+              width="100" height="100" role="none" alt="Filip R" loading="lazy"
+              class="w-20 h-20 rounded-full shadow-lg object-cover" />
+            <div class="flex items-start justify-center flex-col">
+              <h5 class="text-base md:text-xl text-coffee-800 font-bold">
+                Filip R
+              </h5>
+              <span class="text-sm italic text-coffee-800/80">via Tripadvisor</span>
+            </div>
+          </div>
+          <p class="text-justify text-black text-sm md:text-base">
+            It was my 3rd stay in Baber Mahal, it’s amazing place. It’s 15 min
+            walk from the center which makes it nicely separated from busy
+            Kathmandu, yet very close to everything worth seeing. Staff is
+            fantastic, friendly and very accommodating to anything you need.
+            The place is absolutely unique, where else could you sleep in real
+            Nepalese palace? It’s worth mentioning that breakfasts and coffee
+            is great.
+          </p>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div
+          class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto">
+          <div class="w-full flex items-center justify-between">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-f/01/2e/70/8d/avatar014.jpg?w=100&amp;h=-1&amp;s=1"
+              width="100" height="100" role="none" alt="The_eye" loading="lazy"
+              class="w-20 h-20 rounded-full shadow-lg object-cover" />
+            <div class="flex items-start justify-center flex-col">
+              <h5 class="text-base md:text-xl text-coffee-800 font-bold">
+                The_eye
+              </h5>
+              <span class="text-sm italic text-coffee-800/80">via Tripadvisor</span>
+            </div>
+          </div>
+          <p class="text-justify text-black text-sm md:text-base">
+            Wonderful old style class. <br />
+            Having travelled the world over many years, this hotel has to rank
+            up there as one of the most wonderful experiences. The hotel I
+            discovered is legendary in Kathmandu amongst the locals, it is
+            steeped in history. There is a selection of room grades from I
+            will say standard (which is anything but) to suites. At least five
+            restaurants on site, all serving different styles of cuisine. As
+            is the custom, save the best until last, the staff are absolutely
+            beyond words, nowhere have we encountered better. I would love to
+            name them all but that would be impossible, so I can only name
+            those whose names I have (Sudikshya, Abhipsha & Sweety). Very
+            highly recommended.
+          </p>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div
+          class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto">
+          <div class="w-full flex items-center justify-between">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/2a/15/3b/antonio-h.jpg?w=100&amp;h=-1&amp;s=1"
+              width="100" height="100" role="none" loading="lazy" alt="Antonio H"
+              class="w-20 h-20 rounded-full shadow-lg object-cover" />
+            <div class="flex items-start justify-center flex-col">
+              <h5 class="text-base md:text-xl text-coffee-800 font-bold">
+                Antonio H
+              </h5>
+              <span class="text-sm italic text-coffee-800/80">via Tripadvisor</span>
+            </div>
+          </div>
+          <p class="text-justify text-black text-sm md:text-base">
+            We stayed at Baber Mahal Vilas during late November 2023 in suite
+            N. 302.The whole property is beautiful with its traditional
+            architecture, the suite was ample, nice decorated and well
+            appointed located at the roof top next to a nice terrasse with
+            flowers and even an Himalayan bees honeycomb .There is also an
+            small shopping arcade with nice shops and restaurants, Location is
+            calm and yet close to points of interest. We ate many times at the
+            hotel either via room service and at its Indian restaurant, the
+            food was good but the service must be improved since there were
+            mistakes all times. The included breakfast was a bit small but
+            still appropriate with the best coffee of our whole month trip
+            ,the staff serving it was very attentive and efficient, also the
+            rest of the staff at the front desk. Definitely we could come
+            back.
+          </p>
+        </div>
+
+        <!-- Testimonial 6 -->
+        <div
+          class="flex items-center flex-col gap-5 relative p-4 bg-coffee-500 shadow-lg hover:shadow-xl transition-all duration-150 ease-linear max-h-80 overflow-y-auto">
+          <div class="w-full flex items-center justify-between">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/59/default-avatar-2020-24.jpg?w=100&amp;h=-1&amp;s=1"
+              width="100" height="100" role="none" alt="Lisa" loading="lazy"
+              class="w-20 h-20 rounded-full shadow-lg object-cover" />
+            <div class="flex items-start justify-center flex-col">
+              <h5 class="text-base md:text-xl text-coffee-800 font-bold">
+                Lisa
+              </h5>
+              <span class="text-sm italic text-coffee-800/80">via Tripadvisor</span>
+            </div>
+          </div>
+          <p class="text-justify text-black text-sm md:text-base">
+            Nepal's "Wes Anderson-style hotel" <br />
+            We booked the whole hotel for a conference of three days and could
+            not have been happier with our selection! It's a boutique hotel
+            that could easily be the stage of a Wes Anderson movie due to the
+            beautiful and detailed combination of different architectural
+            standards. The managers of the hotel, Sanish and Rupes are
+            extremely helpful individuals. Overall the staff of the hotel is
+            very nice. They fed us so well! The food was also beyond our
+            expectation. The complimentary airport pickup helps a lot as the
+            airport in Kathmandu can be a bit messy at times. The rooms were
+            also very nice and gave us an at-home-feeling. We loved our stay
+            and hope to be back!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-32 pb-16 bg-gradient-to-b from-coffee-400 via-coffee-600 to-coffee-800 relative">
+    <div class="absolute top-0 left-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30"
+      style="background-image: url('./svg/flower.svg')"></div>
+    <div
+      class="absolute top-1/4 md:top-1/2 right-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 -rotate-180 mix-blend-multiply opacity-30"
+      style="background-image: url('./svg/flower.svg')"></div>
+    <div class="container mx-auto z-10 p-4 pb-0">
+      <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 pb-4">
+        <a href="https://www.booking.com/hotel/np/babermahal-vilas.en-gb.html" target="_blank" rel="noopener noreferrer"
+          class="p-2 flex items-center justify-center" aria-label="Booking.com">
+          <img src="./svg/bookingcom.svg" alt="Booking.com" class="w-32 h-8 object-contain" />
+        </a>
+        <a href="https://www.tripadvisor.com/Hotel_Review-g293890-d11648304-w-20 h-20 rounded-full shadow-lg object-cover-Baber_Mahal_Vilas_The_Heritage_Hotel-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_.html"
+          target="_blank" rel="noopener noreferrer" class="p-2 flex items-center justify-center"
+          aria-label="Tripadvisor Booking">
+          <img src="./svg/tripadvisor.svg" alt="Tripadvisor" class="w-32 h-8 object-contain" />
+        </a>
+        <a href="https://www.agoda.com/baber-mahal-vilas/hotel/kathmandu-np.html?cid=1844104" target="_blank"
+          rel="noopener noreferrer" class="p-2 flex items-center justify-center" aria-label="Agoda Booking">
+          <img src="./svg/agoda.svg" alt="Agoda" class="w-24 h-9 object-cover scale-75 md:scale-100" />
+        </a>
+        <a href="https://www.expedia.com/Kathmandu-Hotels-Baber-Mahal-Vilas.h16220397.Hotel-Information" target="_blank"
+          rel="noopener noreferrer" class="p-2 flex items-center justify-center" aria-label="Expedia Booking">
+          <img src="./svg/expedia.svg" alt="Expedia" class="w-32 h-8 object-cover" />
+        </a>
+        <a href="https://www.makemytrip.com/hotels-international/nepal/kathmandu-hotels/baber_mahal_vilas-details.html"
+          target="_blank" rel="noopener noreferrer" class="p-2 flex items-center justify-center"
+          aria-label="Makemytrip Booking">
+          <img src="./svg/makemytrip.svg" alt="Make my trip" class="w-32 h-8 object-contain" />
+        </a>
+        <a href="https://www.goibibo.com/hotels-international/baber-mahal-vilas-hotel-in-kathmandu-8255403136307471630/"
+          target="_blank" rel="noopener noreferrer" class="p-2 flex items-center justify-center"
+          aria-label="Goibibo Booking">
+          <img src="./svg/goibibo.svg" alt="Goibibo" class="w-32 h-8 object-cover" />
+        </a>
+      </div>
+
+      <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
+
+      <div class="grid grid-cols-1 gap-4 z-10 py-5 translate-y-10">
+        <div class="w-full mb-5">
+          <h4
+            class="caps flex items-center justify-center flex-col text-xl md:text-2xl font-semibold text-coffee-800 mb-8">
+            Contact Address
+            <div class="w-1/4 md:w-1/12 h-1 rounded-full bg-coffee-800/50"></div>
+          </h4>
+          <ul class="flex items-center justify-center flex-col gap-4">
+            <li>
+              <a href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
+                class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline" target="_blank"
+                rel="noopener noreferrer" aria-label="Tanka Prasad Sadak, Kathmandu">
+                <i class="mr-2 fa-solid fa-map-marker-alt"></i>
+                Tanka Prasad Sadak, Kathmandu
+              </a>
+            </li>
+            <li>
+              <a href="tel:+9774257655"
+                class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline" target="_blank"
+                rel="noopener noreferrer" aria-label="+977-01-4257655/4248747">
+                <i class="mr-2 fa-solid fa-phone-volume"></i>
+                +977-01-4257655/4248747
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@babermahal.com"
+                class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline" target="_blank"
+                rel="noopener noreferrer" aria-label="info@babermahal.com">
+                <i class="mr-2 fa-solid fa-envelope"></i>
+                info@babermahal.com
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center justify-center md:gap-2 flex-row mt-6">
+            <a href="https://www.facebook.com/babermahalvilas/" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Facebook link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/BaberMahalVilas" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Instagram link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np" target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Linkedin link">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Youtube link">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- <div class="w-full mb-5">
             <h4
               class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-800 mb-5"
             >
@@ -1379,66 +896,39 @@
               class="w-full h-48"
             />
           </div> -->
-        </div>
-
-        <div
-          class="bg-repeat-x bg-contain w-full h-[15vh] md:h-[20vh] mix-blend-multiply bg-center opacity-50"
-          style="background-image: url('./svg/building.svg')"
-        ></div>
-        <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
-        <div
-          class="mt-8 flex justify-between items-center flex-col md:flex-row text-coffee-400 gap-4"
-        >
-          <p class="text-center text-sm">
-            © Baber Mahal Vilas
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            | All rights reserved &ensp;&ensp; Developed by:
-            <a
-              href="https://www.purnashrestha.com.np/"
-              target="_blank"
-              class="underline"
-              aria-label="Purna Shrestha"
-              >Purna Shrestha</a
-            >
-          </p>
-          <p class="flex gap-4 text-sm">
-            <a
-              href="#"
-              class="underline hover:underline md:no-underline"
-              aria-label="Terms and Conditions"
-              >Terms & Conditions</a
-            >
-            <a
-              href="#"
-              class="underline hover:underline md:no-underline"
-              aria-label="Privacy Policy"
-              >Privacy Policy</a
-            >
-          </p>
-        </div>
       </div>
-    </footer>
 
-    <a
-      href="https://www.babermahal.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="fixed right-0 top-[88px] p-4 px-2 pl-0 flex items-center justify-center bg-coffee-700 rounded-l-xl translate-x-[100px] md:translate-x-[120px] hover:translate-x-0 transition-all duration-300 ease-linear z-50"
-      aria-label="Complex wih the logo of Babar Mahal Revisted"
-    >
-      <span class="caps text-coffee-400 text-sm md:text-lg -rotate-90 -ml-3"
-        >Complex</span
-      >
-      <img
-        alt="Babermahal Revisited The Complex"
-        src="https://www.babermahal.com/images/preference/KIs6r-logo.png"
-        class="w-20 md:w-24 h-auto object-contain scale-75 md:scale-100"
-      />
-    </a>
+      <div class="bg-repeat-x bg-contain w-full h-[15vh] md:h-[20vh] mix-blend-multiply bg-center opacity-50"
+        style="background-image: url('./svg/building.svg')"></div>
+      <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
+      <div class="mt-8 flex justify-between items-center flex-col md:flex-row text-coffee-400 gap-4">
+        <p class="text-center text-sm">
+          © Baber Mahal Vilas
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          | All rights reserved &ensp;&ensp; Developed by:
+          <a href="https://www.purnashrestha.com.np/" target="_blank" class="underline"
+            aria-label="Purna Shrestha">Purna Shrestha</a>
+        </p>
+        <p class="flex gap-4 text-sm">
+          <a href="#" class="underline hover:underline md:no-underline" aria-label="Terms and Conditions">Terms &
+            Conditions</a>
+          <a href="#" class="underline hover:underline md:no-underline" aria-label="Privacy Policy">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- <div
+  <a href="https://www.babermahal.com/" target="_blank" rel="noopener noreferrer"
+    class="fixed right-0 top-[88px] p-4 px-2 pl-0 flex items-center justify-center bg-coffee-700 rounded-l-xl translate-x-[100px] md:translate-x-[120px] hover:translate-x-0 transition-all duration-300 ease-linear z-50"
+    aria-label="Complex wih the logo of Babar Mahal Revisted">
+    <span class="caps text-coffee-400 text-sm md:text-lg -rotate-90 -ml-3">Complex</span>
+    <img alt="Babermahal Revisited The Complex" src="https://www.babermahal.com/images/preference/KIs6r-logo.png"
+      class="w-20 md:w-24 h-auto object-contain scale-75 md:scale-100" />
+  </a>
+
+  <!-- <div
       id="messenger-icon"
       class="fixed right-5 bottom-24 z-[99] size-12 rounded-full bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-150 ease-in-out p-2 opacity-0 invisible"
     >
@@ -1452,68 +942,61 @@
         <i class="fa-brands fa-facebook-messenger text-3xl text-blue-600"></i>
       </a>
     </div> -->
-    <div
-      id="whatsapp-icon"
-      class="fixed right-5 bottom-6 z-[99] size-12 rounded-full bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-150 ease-in-out p-2 opacity-0 invisible"
-    >
-      <a
-        href="#"
-        target="_blank"
-        class="p-2"
-        rel="noopener noreferrer"
-        aria-label="whatsapp-icon"
-      >
-        <i class="fa-brands fa-whatsapp text-3xl text-green-600"></i>
-      </a>
-    </div>
+  <div id="whatsapp-icon"
+    class="fixed right-5 bottom-6 z-[99] size-12 rounded-full bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-150 ease-in-out p-2 opacity-0 invisible">
+    <a href="#" target="_blank" class="p-2" rel="noopener noreferrer" aria-label="whatsapp-icon">
+      <i class="fa-brands fa-whatsapp text-3xl text-green-600"></i>
+    </a>
+  </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var whatsappIcon = document.getElementById("whatsapp-icon");
-        var messengerIcon = document.getElementById("messenger-icon");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var whatsappIcon = document.getElementById("whatsapp-icon");
+      var messengerIcon = document.getElementById("messenger-icon");
 
-        // Adjust the offset as needed
-        var offset = 100;
+      // Adjust the offset as needed
+      var offset = 100;
 
-        window.addEventListener("scroll", function () {
-          if (window.scrollY > offset) {
-            whatsappIcon.classList.remove("opacity-0", "invisible");
-            messengerIcon.classList.remove("opacity-0", "invisible");
-          } else {
-            whatsappIcon.classList.add("opacity-0", "invisible");
-            messengerIcon.classList.add("opacity-0", "invisible");
-          }
-        });
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > offset) {
+          whatsappIcon.classList.remove("opacity-0", "invisible");
+          messengerIcon.classList.remove("opacity-0", "invisible");
+        } else {
+          whatsappIcon.classList.add("opacity-0", "invisible");
+          messengerIcon.classList.add("opacity-0", "invisible");
+        }
       });
-    </script>
+    });
+  </script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Testimonials -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Testimonials -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <!-- rooms carousel -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <!-- rooms carousel -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
-    <script src="./js/app.js"></script>
+  <script src="./js/app.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $(".rooms-carousel").owlCarousel({
-          items: 1, // Show one item at a time
-          loop: true, // Infinite loop
-          autoplay: true,
-          autoplayTimeout: 5000,
-          autoplayHoverPause: true,
-          animateOut: "fadeOut", // Fade out transition
-          smartSpeed: 1000, // Speed of the fade transition
-          dots: false, // Show dots navigation
-          nav: true, // Show next/prev buttons
-          navText: [
-            '<i class="fa-solid fa-chevron-left text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
-            '<i class="fa-solid fa-chevron-right text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
-          ],
-        });
+  <script>
+    $(document).ready(function () {
+      $(".rooms-carousel").owlCarousel({
+        items: 1, // Show one item at a time
+        loop: true, // Infinite loop
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut", // Fade out transition
+        smartSpeed: 1000, // Speed of the fade transition
+        dots: false, // Show dots navigation
+        nav: true, // Show next/prev buttons
+        navText: [
+          '<i class="fa-solid fa-chevron-left text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
+          '<i class="fa-solid fa-chevron-right text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
+        ],
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

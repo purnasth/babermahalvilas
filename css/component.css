@@ -5,16 +5,18 @@
 }
 
 /* navbar */
-li.active > .drop {
+li.active>.drop {
   visibility: visible;
   animation: fadeInRight 0.3s ease;
   -webkit-animation: fadeInRight 0.3s ease;
 }
+
 @keyframes fadeInRight {
   0% {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
+
   100% {
     opacity: 1;
     transform: none;
@@ -23,4 +25,15 @@ li.active > .drop {
 
 .caps {
   font-variant: "small-caps";
+}
+
+.rooms-carousel .owl-nav {
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  width: 100%;
+}
+
+.rooms-carousel .owl-nav button:hover {
+  background: transparent!important;
 }

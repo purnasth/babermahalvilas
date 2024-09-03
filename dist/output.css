@@ -630,6 +630,11 @@ body {
   font-family: "Merriweather", serif;
 }
 
+p {
+  font-weight: 500;
+  font-family: "SUSE", sans-serif;
+}
+
 section {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -905,6 +910,10 @@ section {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mr-12 {
+  margin-right: 3rem;
 }
 
 .mr-14 {
@@ -1541,6 +1550,11 @@ section {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1880,6 +1894,10 @@ section {
     width: 18rem;
   }
 
+  .md\:w-80 {
+    width: 20rem;
+  }
+
   .md\:w-\[30vw\] {
     width: 30vw;
   }
@@ -1921,6 +1939,10 @@ section {
 
   .md\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
   .md\:gap-5 {
@@ -1967,6 +1989,11 @@ section {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:text-xl {
