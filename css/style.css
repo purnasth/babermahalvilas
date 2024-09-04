@@ -28,12 +28,6 @@
     font-family: "Merriweather", serif;
   }
 
-  p {
-    @apply font-medium;
-    font-family: "SUSE", sans-serif;
-
-  }
-
   section {
     @apply py-12 sm:py-24 md:py-28 lg:py-36;
   }

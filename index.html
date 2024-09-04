@@ -27,7 +27,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="fixed top-0 z-50 bg-black py-2 w-full">
+  <header class="fixed top-0 z-50 bg-black py-2 w-full hidden">
     <div class="container mx-auto">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
@@ -206,107 +206,73 @@
     </div>
   </section>
 
-  <section class="pb-0 relative">
+  <section class="p-0 relative h-screen">
     <div
-      class="absolute inset-0 size-full bg-[url('/src/assets/graphics/flowers.webp')] bg-contain bg-repeat mix-blend-multiply opacity-10 -z-50 pointer-events-none"
-      style="background-image: url('./img/arts/palace.avif')"></div>
-    <div
-      class="absolute bottom-0 size-full bg-gradient-to-b from-transparent from-85% to-coffee-400 pointer-events-none">
+      class="absolute inset-0 size-full bg-[url('https://www.babermahalvilas.com/images/articles/oRAGu-0NLLN-edition-1.jpg')] bg-no-repeat bg-cover bg-center bg-fixed -z-10">
     </div>
-    <div class="relative">
-      <div
-        class="absolute top-0 md:top-1/4 right-0 bg-no-repeat bg-contain w-64 h-72 md:w-72 md:h-96 mix-blend-multiply opacity-10 -z-10"
-        style="background-image: url('./svg/statue.svg')"></div>
-      <div class="container mx-auto p-4 relative">
-        <!-- <div
-            class="absolute top-5 md:top-10 left-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30 -z-10"
-            style="background-image: url('./svg/flower.svg')"
-          ></div> -->
-        <div class="py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-16">
-          <h2 class="caps text-3xl md:text-5xl font-bold text-coffee-800 mb-2">
-            About Us
-          </h2>
-          <span class="caps text-sm md:text-2xl font-bold text-coffee-800/80">Legacy in Every Detail</span>
-          <div class="text-center">
-            <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
-            <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
-            <span class="inline-block w-40 h-1 rounded-full bg-coffee-800"></span>
-            <span class="inline-block w-3 h-1 rounded-full bg-coffee-800 ml-1"></span>
-            <span class="inline-block w-1 h-1 rounded-full bg-coffee-800 ml-1"></span>
-          </div>
-        </div>
-        <div class="flex items-center flex-col md:flex-row justify-between gap-5 md:gap-10">
-          <div class="hidden lg:block w-full md:w-1/2">
-            <img src="./img/babermahal.jpg" alt="" class="w-full h-[500px] object-cover" />
-          </div>
 
-          <div class="w-full lg:w-1/2 flex flex-col items-start gap-4 py-5">
-            <h4 class="caps text-coffee-800/90 text-2xl md:text-3xl font-extrabold">
-              <span class="text-coffee-700 text-lg font-light" style="font-variant: none">Welcome to</span>
-              <br />
-              Baber Mahal Vilas
-            </h4>
-            <p class="text-coffee-900 text-justify text-sm md:text-base">
-              The vision behind the boutique property is to create a
-              hospitality model where in, luxury and service are provided in a
-              historically and culturally significant ambience in the center
-              Kathmandu Valley. To host our guests in an atmosphere that
-              illustrates the grand lifestyle of the Rana era mixed with the
-              original architectural heritage of Newar, Mustang and Terai
-              cultures. Though modest in size the property is attached to
-              BABER MAHAL REVISITED complex. Acting as an extension to the
-              Vilas, Revisited offers a host of shops offering quality
-              traditional products, and some of the finest dining options in
-              the city.
-            </p>
+    <div class="flex items-center justify-center size-full">
+      <div class="w-1/2 bg-black/70 text-white mx-auto p-10 text-center space-y-8">
+        <h2 class="caps text-6xl">Baber Mahal Vilas</h2>
+        <p class="text-sm font-light">The vision behind the boutique property is to create a hospitality model where in,
+          luxury and service are
+          provided in a historically and culturally significant ambience in the center Kathmandu Valley. </p>
 
-            <!-- <div class="grid grid-cols-2 gap-8">
-                <a
-                  href="#"
-                  class="flex items-center justify-center text-coffee-800"
-                  aria-label="Our Story with open reader icon"
-                >
-                  <i class="fa-solid fa-book-open-reader text-3xl mr-2"></i>
-                  <h5 class="caps text-xl">Our Story</h5>
-                </a>
-                <a
-                  href="#"
-                  class="flex items-center justify-center text-coffee-800"
-                  aria-label="Our History with the timeline icon"
-                >
-                  <i class="fa-solid fa-timeline text-3xl mr-2"></i>
-                  <h5 class="caps text-xl">Our History</h5>
-                </a>
-              </div> -->
-
-            <button type="button" class="mt-5 text-coffee-900 flex items-center gap-2 group text-base relative"
-              aria-label="Explore More" title="Explore">
-              <div
-                class="absolute bottom-0 -right-0 w-[76%] h-[2px] bg-coffee-700 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
-              </div>
-              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
-                class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
-                <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
-                <path d="M17 16l4 -4l-4 -4"></path>
-              </svg>
-              Explore More
-            </button>
+        <button type="button" class="flex items-center justify-center gap-2 group text-base relative mx-auto"
+          aria-label="Read More" title="Read more">
+          <div
+            class="absolute bottom-0 -right-0 w-[71%] h-[2px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
           </div>
-        </div>
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+            stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
+            class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
+            <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
+            <path d="M17 16l4 -4l-4 -4"></path>
+          </svg>
+          Read More
+        </button>
       </div>
     </div>
-    <!-- <div
-        class="bg-repeat-x bg-contain w-full min-h-[10vh] md:min-h-[20vh] mix-blend-multiply opacity-40"
-        style="background-image: url('./svg/building.svg')"
-      ></div> -->
   </section>
 
-  <section class="px-0 bg-white relative">
-    <div class="absolute size-full top-0 left-0 bg-gradient-to-b from-coffee-400 via-transparent to-coffee-400"></div>
-    <img src="./img/arts/property-arts.png" alt="The Property" class="w-full h-screen object-contain" />
+  <section class="p-0 relative h-screen">
+    <div
+      class="absolute inset-0 size-full bg-[url('https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg')] bg-no-repeat bg-cover bg-top -z-10">
+    </div>
+    <div class="max-w-xl">
+      <div class="text-black p-10 space-y-6">
+        <h2 class="caps text-5xl">The History</h2>
+        <p class="text-sm font-light">The property is built and run by the descendants of the longest ruling prime
+          minister of Nepal Maharaja Chandra Shumsher Rana and his son Baber Shumsher Rana who was the Commander and
+          Chief of the Nepali Armed Forces.</p>
 
-    <div class="absolute mt-44 mr-14 max-w-md right-0 top-0 size-auto space-y-4 text-coffee-800">
+        <button type="button" class="flex items-center justify-center gap-2 group text-base relative"
+          aria-label="Read More" title="Read more">
+          <div
+            class="absolute bottom-0 -right-0 w-[71%] h-[2px] bg-black group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+          </div>
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+            stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
+            class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
+            <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
+            <path d="M17 16l4 -4l-4 -4"></path>
+          </svg>
+          Read More
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="p-0 bg-white relative h-screen">
+    <img src="./img/arts/property-arts.png" alt="The Property" class="w-full h-screen object-contain object-left" />
+
+    <!-- <div class="size-full bg-no-repeat bg-contain bg-left bg-fixed -z-10"
+      style="background-image: url('./img/arts/property-arts.png');">
+    </div> -->
+
+    <div class="absolute mt-32 mr-14 max-w-md right-0 top-0 size-auto space-y-4 text-black/80">
       <h4 class="caps text-4xl capitalize">The property</h4>
       <p class="text-sm">
         Baber Mahal Vilas - The Heritage Hotel is a quaint family-run boutique
@@ -315,15 +281,19 @@
         of Nepal in an blend of architectural design, the property shows 4
         distinct styles.
       </p>
-    </div>
-    <div class="absolute ml-14 max-w-xs left-0 bottom-52 size-auto space-y-4 text-coffee-800">
-      <h4 class="caps text-4xl capitalize">The history</h4>
-      <p class="text-sm">
-        The property is built and run by the descendants of the longest ruling
-        prime minister of Nepal Maharaja Chandra Shumsher Rana and his son
-        Baber Shumsher Rana who was the Commander and Chief of the Nepali
-        Armed Forces.
-      </p>
+      <button type="button" class="flex items-center justify-center gap-2 group text-base relative"
+        aria-label="Read More" title="Read more">
+        <div
+          class="absolute bottom-0 -right-0 w-[71%] h-[2px] bg-black/80 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+        </div>
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+          stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
+          class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
+          <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
+          <path d="M17 16l4 -4l-4 -4"></path>
+        </svg>
+        Read More
+      </button>
     </div>
   </section>
 
@@ -800,17 +770,17 @@
           <button
             type="button"
             class="bg-coffee-700 text-coffee-400 text-sm px-4 py-2 rounded-xl"
-            aria-label="Other Facilities"
-            title="Facilities"
+            aria-label="Read More"
+            title="Read more"
           >
-            Other facilities
+            Read More
             <i class="ml-2 fa-solid fa-arrow-right"></i>
           </button>
         </div> -->
 
       <div class="mt-10 flex items-center justify-center">
         <button type="button" class="text-coffee-800 flex items-center gap-2 group text-base relative"
-          aria-label="Other Facilities" title="Facilities">
+          aria-label="Read More" title="Read more">
           <div
             class="absolute bottom-0 -right-0 w-[78%] h-[2px] bg-coffee-800 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
           </div>
@@ -820,7 +790,7 @@
             <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
             <path d="M17 16l4 -4l-4 -4"></path>
           </svg>
-          Other facilities
+          Read More
         </button>
       </div>
     </div>
@@ -1018,59 +988,48 @@
     </div>
   </section>
 
-  <footer class="py-32 pb-16 bg-gradient-to-b from-coffee-400 via-coffee-600 to-coffee-800 relative">
-    <!-- <div
-        class="absolute top-0 left-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 mix-blend-multiply opacity-30"
-        style="background-image: url('./svg/flower.svg')"
-      ></div>
-      <div
-        class="absolute top-1/4 md:top-1/2 right-0 bg-no-repeat bg-contain w-32 h-36 md:h-44 -rotate-180 mix-blend-multiply opacity-30"
-        style="background-image: url('./svg/flower.svg')"
-      ></div> -->
+  <div class="bg-white grid grid-cols-3 lg:grid-cols-6 gap-4 py-2 ota-links">
+    <a href="https://www.booking.com/hotel/np/babermahal-vilas.en-gb.html" target="_blank" rel="noopener noreferrer"
+      class="p-2 flex items-center justify-center" aria-label="Booking.com">
+      <img src="./svg/bookingcom.svg" alt="Booking.com" class="w-32 h-8 object-contain" />
+    </a>
+    <a href="https://www.tripadvisor.com/Hotel_Review-g293890-d11648304-w-20 h-20 rounded-full shadow-lg object-cover-Baber_Mahal_Vilas_The_Heritage_Hotel-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_.html"
+      target="_blank" rel="noopener noreferrer" class="p-2 flex items-center justify-center"
+      aria-label="Tripadvisor Booking">
+      <img src="./svg/tripadvisor.svg" alt="Tripadvisor" class="w-32 h-8 object-contain" />
+    </a>
+    <a href="https://www.agoda.com/baber-mahal-vilas/hotel/kathmandu-np.html?cid=1844104" target="_blank"
+      rel="noopener noreferrer" class="p-2 flex items-center justify-center" aria-label="Agoda Booking">
+      <img src="./svg/agoda.svg" alt="Agoda" class="w-24 h-9 object-cover scale-75 md:scale-100" />
+    </a>
+    <a href="https://www.expedia.com/Kathmandu-Hotels-Baber-Mahal-Vilas.h16220397.Hotel-Information" target="_blank"
+      rel="noopener noreferrer" class="p-2 flex items-center justify-center" aria-label="Expedia Booking">
+      <img src="./svg/expedia.svg" alt="Expedia" class="w-32 h-8 object-cover" />
+    </a>
+    <a href="https://www.makemytrip.com/hotels-international/nepal/kathmandu-hotels/baber_mahal_vilas-details.html"
+      target="_blank" rel="noopener noreferrer" class="p-2 flex items-center justify-center"
+      aria-label="Makemytrip Booking">
+      <img src="./svg/makemytrip.svg" alt="Make my trip" class="w-32 h-8 object-contain" />
+    </a>
+    <a href="https://www.goibibo.com/hotels-international/baber-mahal-vilas-hotel-in-kathmandu-8255403136307471630/"
+      target="_blank" rel="noopener noreferrer" class="p-2 flex items-center justify-center"
+      aria-label="Goibibo Booking">
+      <img src="./svg/goibibo.svg" alt="Goibibo" class="w-32 h-8 object-cover" />
+    </a>
+  </div>
+
+  <footer class="py-16 bg-black relative">
     <div class="container mx-auto z-10 p-4 pb-0">
-      <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 pb-4">
-        <a href="https://www.booking.com/hotel/np/babermahal-vilas.en-gb.html" target="_blank" rel="noopener noreferrer"
-          class="p-2 flex items-center justify-center" aria-label="Booking.com">
-          <img src="./svg/bookingcom.svg" alt="Booking.com" class="w-32 h-8 object-contain" />
-        </a>
-        <a href="https://www.tripadvisor.com/Hotel_Review-g293890-d11648304-w-20 h-20 rounded-full shadow-lg object-cover-Baber_Mahal_Vilas_The_Heritage_Hotel-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_.html"
-          target="_blank" rel="noopener noreferrer" class="p-2 flex items-center justify-center"
-          aria-label="Tripadvisor Booking">
-          <img src="./svg/tripadvisor.svg" alt="Tripadvisor" class="w-32 h-8 object-contain" />
-        </a>
-        <a href="https://www.agoda.com/baber-mahal-vilas/hotel/kathmandu-np.html?cid=1844104" target="_blank"
-          rel="noopener noreferrer" class="p-2 flex items-center justify-center" aria-label="Agoda Booking">
-          <img src="./svg/agoda.svg" alt="Agoda" class="w-24 h-9 object-cover scale-75 md:scale-100" />
-        </a>
-        <a href="https://www.expedia.com/Kathmandu-Hotels-Baber-Mahal-Vilas.h16220397.Hotel-Information" target="_blank"
-          rel="noopener noreferrer" class="p-2 flex items-center justify-center" aria-label="Expedia Booking">
-          <img src="./svg/expedia.svg" alt="Expedia" class="w-32 h-8 object-cover" />
-        </a>
-        <a href="https://www.makemytrip.com/hotels-international/nepal/kathmandu-hotels/baber_mahal_vilas-details.html"
-          target="_blank" rel="noopener noreferrer" class="p-2 flex items-center justify-center"
-          aria-label="Makemytrip Booking">
-          <img src="./svg/makemytrip.svg" alt="Make my trip" class="w-32 h-8 object-contain" />
-        </a>
-        <a href="https://www.goibibo.com/hotels-international/baber-mahal-vilas-hotel-in-kathmandu-8255403136307471630/"
-          target="_blank" rel="noopener noreferrer" class="p-2 flex items-center justify-center"
-          aria-label="Goibibo Booking">
-          <img src="./svg/goibibo.svg" alt="Goibibo" class="w-32 h-8 object-cover" />
-        </a>
-      </div>
-
-      <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
-
-      <div class="grid grid-cols-1 gap-4 z-10 py-5 translate-y-10">
+      <div class="grid grid-cols-1 gap-4 z-10 py-5">
         <div class="w-full mb-5">
-          <h4
-            class="caps flex items-center justify-center flex-col text-xl md:text-2xl font-semibold text-coffee-800 mb-8">
+          <h4 class="caps flex items-center justify-center flex-col text-xl md:text-2xl font-semibold text-white mb-8">
             Contact Address
-            <div class="w-1/4 md:w-1/12 h-1 rounded-full bg-coffee-800/50"></div>
+            <div class="w-1/4 md:w-1/12 h-1 rounded-full bg-white"></div>
           </h4>
           <ul class="flex items-center justify-center flex-col gap-4">
             <li>
               <a href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
-                class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline" target="_blank"
+                class="inline-block text-base md:text-lg leading-loose text-white hover:underline" target="_blank"
                 rel="noopener noreferrer" aria-label="Tanka Prasad Sadak, Kathmandu">
                 <i class="mr-2 fa-solid fa-map-marker-alt"></i>
                 Tanka Prasad Sadak, Kathmandu
@@ -1078,7 +1037,7 @@
             </li>
             <li>
               <a href="tel:+9774257655"
-                class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline" target="_blank"
+                class="inline-block text-base md:text-lg leading-loose text-white hover:underline" target="_blank"
                 rel="noopener noreferrer" aria-label="+977-01-4257655/4248747">
                 <i class="mr-2 fa-solid fa-phone-volume"></i>
                 +977-01-4257655/4248747
@@ -1086,7 +1045,7 @@
             </li>
             <li>
               <a href="mailto:info@babermahal.com"
-                class="inline-block text-base md:text-lg leading-loose text-coffee-800 hover:underline" target="_blank"
+                class="inline-block text-base md:text-lg leading-loose text-white hover:underline" target="_blank"
                 rel="noopener noreferrer" aria-label="info@babermahal.com">
                 <i class="mr-2 fa-solid fa-envelope"></i>
                 info@babermahal.com
@@ -1095,120 +1054,36 @@
           </ul>
           <div class="flex items-center justify-center md:gap-2 flex-row mt-6">
             <a href="https://www.facebook.com/babermahalvilas/" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
               aria-label="Facebook link">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com/BaberMahalVilas" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
               aria-label="Instagram link">
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np" target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
               aria-label="Linkedin link">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-coffee-400 border-[1px] rounded-full text-coffee-400 hover:bg-coffee-400 hover:text-coffee-700 sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
               aria-label="Youtube link">
               <i class="fa-brands fa-youtube"></i>
             </a>
           </div>
         </div>
 
-        <!-- <div class="w-full mb-5">
-            <h4
-              class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-800 mb-5"
-            >
-              Gallery
-              <div class="w-1/4 h-1 rounded-full bg-coffee-800/50"></div>
-            </h4>
-
-            <div class="grid grid-cols-3 gap-2">
-              <a
-                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                class="relative block overflow-hidden rounded-xl"
-              >
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                />
-              </a>
-              <a
-                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                class="relative block overflow-hidden rounded-xl"
-              >
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                />
-              </a>
-              <a
-                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                class="relative block overflow-hidden rounded-xl"
-              >
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                />
-              </a>
-              <a
-                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                class="relative block overflow-hidden rounded-xl"
-              >
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                />
-              </a>
-              <a
-                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                class="relative block overflow-hidden rounded-xl"
-              >
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                />
-              </a>
-              <a
-                href="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                class="relative block overflow-hidden rounded-xl"
-              >
-                <img
-                  src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg"
-                  alt=""
-                  class="w-full h-20 object-cover rounded-xl border-0 hover:border-4 hover:border-solid hover:border-coffee-400 transition-all duration-150 ease-linear"
-                />
-              </a>
-            </div>
-          </div>
-
-          <div class="w-full mb-5 hidden md:block">
-            <h4
-              class="flex items-center justify-center flex-col text-lg font-semibold text-coffee-800"
-            >
-              Site Map
-              <div class="w-1/4 h-1 rounded-full bg-coffee-800/50 mb-5"></div>
-            </h4>
-            <img
-              src="./svg/QRcode.svg"
-              alt="QR Code for google maps"
-              class="w-full h-48"
-            />
-          </div> -->
       </div>
 
-      <div class="bg-repeat-x bg-contain w-full h-[15vh] md:h-[20vh] mix-blend-multiply bg-center opacity-50"
+      <div class="white-filter bg-repeat-x bg-contain w-full h-[15vh] md:h-[20vh] mix-blend-multiply bg-center opacity-50"
         style="background-image: url('./svg/building.svg')"></div>
-      <div class="py-2 border-dotted border-coffee-400 border-t-2"></div>
-      <div class="mt-8 flex justify-between items-center flex-col md:flex-row text-coffee-400 gap-4">
+        
+      <div class="py-2 border-dotted border-white border-t-2"></div>
+      <div class="mt-8 flex justify-between items-center flex-col md:flex-row text-white gap-4">
         <div class="flex items-center gap-4">
           <p class="text-center text-sm">
             © Baber Mahal Vilas
@@ -1220,25 +1095,18 @@
           <p class="flex gap-4 text-sm">
             <a href="#" class="underline hover:underline md:no-underline" aria-label="Terms and Conditions">Terms &
               Conditions</a>
-            <a href="#" class="underline hover:underline md:no-underline" aria-label="Privacy Policy">Privacy Policy</a>
+            <a href="#" class="underline hover:underline md:no-underline" aria-label="Privacy Policy">Privacy
+              Policy</a>
           </p>
         </div>
         <p class="text-sm">
           Developed by:
-          <a href="https://www.purnashrestha.com.np/" target="_blank" class="relative group"
-            aria-label="Purna Shrestha">
+          <a href="https://longtail.info" target="_blank" class="relative group" aria-label="Longtail e-Media">
             <label
-              class="absolute bottom-0 -right-0 w-full h-[2px] bg-coffee-400 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"></label>
-            Purna Shrestha</a>
+              class="absolute bottom-0 -right-0 w-full h-[2px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"></label>
+            Longtail e-Media</a>
         </p>
       </div>
-    </div>
-
-    <div
-      class="absolute inset-0 size-full bg-[url('/src/assets/graphics/flowers.webp')] bg-contain bg-repeat mix-blend-multiply opacity-20 -z-0 pointer-events-none"
-      style="background-image: url('./img/arts/palace.avif')"></div>
-
-    <div class="absolute top-0 size-full bg-gradient-to-b from-coffee-400 to-transparent to-20% pointer-events-none">
     </div>
   </footer>
 
