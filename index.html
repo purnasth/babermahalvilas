@@ -27,7 +27,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="fixed top-0 z-50 bg-black py-2 w-full hidden">
+  <header class="fixed top-0 z-50 bg-black py-2 w-full transition-all duration-1000 ease-in-out">
     <div class="container mx-auto">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
@@ -1018,13 +1018,13 @@
     </a>
   </div>
 
-  <footer class="py-16 bg-black relative">
-    <div class="container mx-auto z-10 p-4 pb-0">
+  <footer class="py-16 px-0 mx-0 bg-black relative">
+    <div class="z-10 pb-0">
       <div class="grid grid-cols-1 gap-4 z-10 py-5">
         <div class="w-full mb-5">
-          <h4 class="caps flex items-center justify-center flex-col text-xl md:text-2xl font-semibold text-white mb-8">
+          <h4 class="caps group flex items-center justify-center flex-col text-xl md:text-2xl font-semibold text-white mb-8">
             Contact Address
-            <div class="w-1/4 md:w-1/12 h-1 rounded-full bg-white"></div>
+            <div class="mt-1 w-20 group-hover:w-32 h-[2px] rounded-full bg-white/80 transition-all duration-300 ease-linear"></div>
           </h4>
           <ul class="flex items-center justify-center flex-col gap-4">
             <li>
@@ -1054,23 +1054,23 @@
           </ul>
           <div class="flex items-center justify-center md:gap-2 flex-row mt-6">
             <a href="https://www.facebook.com/babermahalvilas/" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
               aria-label="Facebook link">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com/BaberMahalVilas" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
               aria-label="Instagram link">
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np" target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
               aria-label="Linkedin link">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-dotted border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-black sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
               aria-label="Youtube link">
               <i class="fa-brands fa-youtube"></i>
             </a>
@@ -1079,11 +1079,11 @@
 
       </div>
 
-      <div class="white-filter bg-repeat-x bg-contain w-full h-[15vh] md:h-[20vh] mix-blend-multiply bg-center opacity-50"
-        style="background-image: url('./svg/building.svg')"></div>
+      <div class="white-filter bg-repeat-x bg-contain w-full h-[15vh] bg-center opacity-50"
+        style="background-image: url('./img/arts/building.png')"></div>
         
-      <div class="py-2 border-dotted border-white border-t-2"></div>
-      <div class="mt-8 flex justify-between items-center flex-col md:flex-row text-white gap-4">
+      <div class="py-2 border-dotted border-white/50 border-t-2"></div>
+      <div class="mt-8 container mx-auto flex justify-between items-center flex-col md:flex-row text-white gap-4">
         <div class="flex items-center gap-4">
           <p class="text-center text-sm">
             © Baber Mahal Vilas
@@ -1092,10 +1092,10 @@
             </script>
             | All rights reserved |
           </p>
-          <p class="flex gap-4 text-sm">
-            <a href="#" class="underline hover:underline md:no-underline" aria-label="Terms and Conditions">Terms &
+          <p class="flex gap-4 text-sm text-white/80 hover:text-white transition-all duration-300 ease-linear">
+            <a href="#" class="underline hover:no-underline md:underline" aria-label="Terms and Conditions">Terms &
               Conditions</a>
-            <a href="#" class="underline hover:underline md:no-underline" aria-label="Privacy Policy">Privacy
+            <a href="#" class="underline hover:no-underline md:underline" aria-label="Privacy Policy">Privacy
               Policy</a>
           </p>
         </div>

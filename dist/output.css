@@ -616,7 +616,7 @@ video {
 ::-webkit-scrollbar-thumb {
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(137 87 55 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -626,7 +626,7 @@ video {
 
 body {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 233 210 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   font-family: "Merriweather", serif;
 }
 
@@ -744,10 +744,6 @@ section {
     @apply bg-coffee-800 rounded-full;
   } */
 
-.pointer-events-none {
-  pointer-events: none;
-}
-
 .invisible {
   visibility: hidden;
 }
@@ -836,10 +832,6 @@ section {
   top: 88px;
 }
 
-.-z-0 {
-  z-index: 0;
-}
-
 .-z-10 {
   z-index: -10;
 }
@@ -874,6 +866,11 @@ section {
 
 .m-8 {
   margin: 2rem;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .mx-auto {
@@ -937,6 +934,10 @@ section {
 
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-10 {
@@ -1138,6 +1139,10 @@ section {
   width: 36rem;
 }
 
+.w-\[71\%\] {
+  width: 71%;
+}
+
 .w-\[72\%\] {
   width: 72%;
 }
@@ -1158,40 +1163,16 @@ section {
   width: 100vw;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
-.w-\[76\%\] {
-  width: 76%;
-}
-
-.w-\[7\%\] {
-  width: 7%;
-}
-
-.w-\[73\%\] {
-  width: 73%;
-}
-
-.w-\[70\%\] {
-  width: 70%;
-}
-
-.w-\[71\%\] {
-  width: 71%;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
 
-.max-w-xs {
-  max-width: 20rem;
-}
-
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .origin-left {
@@ -1200,6 +1181,11 @@ section {
 
 .-translate-x-full {
   --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-full {
+  --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1312,16 +1298,16 @@ section {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1365,6 +1351,10 @@ section {
   border-top-width: 2px;
 }
 
+.border-solid {
+  border-style: solid;
+}
+
 .border-dotted {
   border-style: dotted;
 }
@@ -1382,6 +1372,10 @@ section {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-white\/50 {
+  border-color: rgb(255 255 255 / 0.5);
 }
 
 .bg-black {
@@ -1439,8 +1433,12 @@ section {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/src\/assets\/graphics\/flowers\.webp\'\)\] {
-  background-image: url('/src/assets/graphics/flowers.webp');
+.bg-white\/80 {
+  background-color: rgb(255 255 255 / 0.8);
+}
+
+.bg-\[url\(\'https\:\/\/www\.babermahalvilas\.com\/images\/articles\/Z30rm-history\.jpg\'\)\] {
+  background-image: url('https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg');
 }
 
 .bg-\[url\(\'https\:\/\/www\.babermahalvilas\.com\/images\/articles\/oRAGu-0NLLN-edition-1\.jpg\'\)\] {
@@ -1453,10 +1451,6 @@ section {
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'https\:\/\/www\.babermahalvilas\.com\/images\/articles\/Z30rm-history\.jpg\'\)\] {
-  background-image: url('https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg');
 }
 
 .from-\[rgba\(0\2c 0\2c 0\2c 0\)\] {
@@ -1505,14 +1499,6 @@ section {
 
 .to-coffee-800 {
   --tw-gradient-to: #5E3023 var(--tw-gradient-to-position);
-}
-
-.to-transparent {
-  --tw-gradient-to: transparent var(--tw-gradient-to-position);
-}
-
-.to-20\% {
-  --tw-gradient-to-position: 20%;
 }
 
 .bg-contain {
@@ -1570,8 +1556,8 @@ section {
   padding: 0px;
 }
 
-.p-12 {
-  padding: 3rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-2 {
@@ -1580,10 +1566,6 @@ section {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-0 {
@@ -1606,6 +1588,11 @@ section {
   padding-bottom: 0px;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1624,16 +1611,6 @@ section {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pb-0 {
@@ -1680,6 +1657,11 @@ section {
   line-height: 1;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1703,11 +1685,6 @@ section {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -1798,6 +1775,10 @@ section {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-white\/80 {
+  color: rgb(255 255 255 / 0.8);
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1873,6 +1854,10 @@ section {
   transition-duration: 150ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 .duration-150 {
   transition-duration: 150ms;
 }
@@ -1921,18 +1906,27 @@ section {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:text-coffee-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(137 87 55 / var(--tw-text-opacity));
-}
-
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.hover\:text-coffee-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(137 87 55 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:no-underline:hover {
+  text-decoration-line: none;
 }
 
 .hover\:opacity-100:hover {
@@ -1954,6 +1948,10 @@ section {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.group:hover .group-hover\:w-32 {
+  width: 8rem;
 }
 
 .group:hover .group-hover\:translate-x-1 {
@@ -2179,6 +2177,10 @@ section {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:underline {
+    text-decoration-line: underline;
   }
 
   .md\:no-underline {
