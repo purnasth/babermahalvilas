@@ -44,6 +44,10 @@
     font-variant: "small-caps";
   }
 
+  .number {
+    font-family: "Kanit", sans-serif;
+  }
+
   /* #navLinks::-webkit-scrollbar-track {
     @apply bg-coffee-400;
   }
