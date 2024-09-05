@@ -117,10 +117,12 @@ $(document).ready(function () {
   owl.owlCarousel({
     items: 1,
     loop: true,
-    margin: 20,
+    margin: 30,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: false,
+    nav: false,
+    dots: true,
     responsive: {
       0: {
         items: 1, // Set 1 item for mobile devices

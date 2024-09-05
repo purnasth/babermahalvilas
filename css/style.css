@@ -33,11 +33,11 @@
   }
 
   .nav-link {
-    @apply relative block w-full text-coffee-400 hover:bg-coffee-400 py-3 px-6 text-lg md:text-xl rounded-xl hover:text-coffee-700 transition-all duration-200 ease-in-out;
+    @apply relative block w-full text-white/80 hover:text-white py-3 px-3 text-lg rounded-xl transition-all duration-200 ease-in-out;
   }
 
   .navlink-dropdown {
-    @apply w-full bg-coffee-400 text-coffee-700 hover:bg-coffee-700 hover:text-coffee-400 py-3 lg:px-2 text-lg md:text-xl rounded-xl transition-all duration-200 ease-in-out flex items-center justify-center flex-col gap-2;
+    @apply w-full bg-black/80 text-white hover:bg-white/80 hover:text-black py-3 lg:py-2 lg:px-2 text-base rounded-xl transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
   }
 
   .caps {
@@ -54,3 +54,23 @@
     @apply bg-coffee-800 rounded-full;
   } */
 }
+
+/* @layer utilities {
+  .underline-hover-effect::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+  }
+
+  .group:hover .underline-hover-effect::after {
+    transform: scaleX(1);
+  }
+} */
