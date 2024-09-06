@@ -27,12 +27,12 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="fixed top-0 z-50 bg-black py-2 w-full transition-all duration-1000 ease-in-out">
+  <header class="sticky lg:fixed top-0 z-50 bg-black py-1 md:py-2 w-full transition-all duration-1000 ease-in-out">
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
           <a href="#" aria-label="Logo">
-            <img src="./img/logo.svg" alt="Logo" class="w-24 md:w-32 h-20 object-contain" />
+            <img src="./img/logo.svg" alt="Logo" class="w-24 h-16 md:w-32 md:h-20 object-contain" />
           </a>
         </div>
         <div class="flex items-center gap-2">
@@ -349,7 +349,8 @@
         <!-- <a href="https://www.babermahal.com/" target="_blank"
               class="mt-4 mb-4 w-4/5 mx-auto text-center caps text-white text-xs bg-white/20 border border-white/50 px-4 py-2 rounded-full hover:bg-white/40 transition-all duration-300 ease-linear">Baber
               Mahal Revisited</a> -->
-        <a href="#" class="mt-4 caps text-center w-full md:hidden bg-green-600 text-black px-4 py-2 rounded-xl text-lg tracking-wider"
+        <a href="#"
+          class="mt-4 caps text-center w-full md:hidden bg-green-600 text-black px-4 py-2 rounded-xl text-lg tracking-wider"
           aria-label="Book Now" title="Book">
           <i class="mr-2 fa-solid fa-calendar-check"></i>
           Book Now
@@ -361,9 +362,11 @@
   <section class="p-0">
     <div class="rooms-carousel owl-carousel owl-theme relative">
       <div class="item relative">
-        <img src="./img/babermahal.jpg" alt="Baber Mahal Vilas" class="w-full h-screen shadow-lg object-cover" />
+        <img src="./img/babermahal.jpg" alt="Baber Mahal Vilas"
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
 
-        <h4 class="w-[36rem] absolute left-0 bottom-0 m-8 bg-black/50 text-white text-sm font-light p-4">
+        <h4
+          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-black/50 text-white text-xs sm:text-sm font-extralight md:font-light p-4">
           A time capsule of Nepalese Architecture. An amalgamation of the best
           of Nepalese architecture. Baber Mahal Vilas, an architectural museum
           !
@@ -371,15 +374,18 @@
       </div>
       <div class="item relative">
         <img src="https://www.babermahalvilas.com/images/slideshow/CSMdY-157a2237---copy.jpg" alt="Baber Mahal Vilas"
-          class="w-full h-screen shadow-lg object-cover" />
-        <h4 class="w-[36rem] absolute left-0 bottom-0 m-8 bg-black/50 text-white text-sm font-light p-4">
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
+        <h4
+          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-black/50 text-white text-xs sm:text-sm font-extralight md:font-light p-4">
           In an effort to portray the distinct architectural features of Nepal in an essentially neoclassical 'Rana'
           style.
         </h4>
       </div>
       <div class="item relative">
-        <img src="./img/rooms/room3.webp" alt="Baber Mahal Vilas" class="w-full h-screen shadow-lg object-cover" />
-        <h4 class="w-[36rem] absolute left-0 bottom-0 m-8 bg-black/50 text-white text-sm font-light p-4">
+        <img src="./img/rooms/room3.webp" alt="Baber Mahal Vilas"
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
+        <h4
+          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-black/50 text-white text-xs sm:text-sm font-extralight md:font-light p-4">
           Luxury and Service, in a haven of history, culture and tradition,
           Baber Mahal Vilas is a boutique hotel in the heart of Kathmandu,
           Nepal.
@@ -387,8 +393,9 @@
       </div>
       <div class="item relative">
         <img src="https://www.babermahalvilas.com/images/slideshow/sjCXd-img_7796---copy.jpg" alt="Baber Mahal Vilas"
-          class="w-full h-screen shadow-lg object-cover" />
-        <h4 class="w-[36rem] absolute left-0 bottom-0 m-8 bg-black/50 text-white text-sm font-light p-4">
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
+        <h4
+          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-black/50 text-white text-xs sm:text-sm font-extralight md:font-light p-4">
           The hotel is rich in historic significance to its location, built upon the grounds of the Baber Mahal Palace,
           to reflect its grandeur.
         </h4>
@@ -396,14 +403,14 @@
     </div>
   </section>
 
-  <section class="p-0 relative h-screen">
+  <section class="p-0 relative h-96 sm:h-[50vh] sm:min-h-96 lg:h-screen">
     <div class="absolute inset-0 size-full bg-no-repeat bg-cover bg-center bg-fixed -z-10"
       style="background-image: url('./img/vilas/hotel.webp')"></div>
 
     <div class="flex items-center justify-center size-full">
-      <div class="w-1/2 bg-black/70 text-white mx-auto p-10 text-center space-y-8">
-        <h2 class="caps text-6xl">Baber Mahal Vilas</h2>
-        <p class="text-sm font-light">
+      <div class="w-auto md:w-1/2 bg-black/70 text-white mx-auto p-10 text-center space-y-8">
+        <h2 class="caps text-2xl md:text-6xl">Baber Mahal Vilas</h2>
+        <p class="text-xs md:text-sm font-light">
           The vision behind the boutique property is to create a hospitality
           model where in, luxury and service are provided in a historically
           and culturally significant ambience in the center Kathmandu Valley.
@@ -426,14 +433,14 @@
     </div>
   </section>
 
-  <section class="p-0 relative h-screen">
+  <section class="pb-0 md:p-0 relative h-auto lg:h-screen">
     <div
-      class="absolute inset-0 size-full bg-[url('https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg')] bg-no-repeat bg-cover bg-top -z-10">
+      class="hidden lg:block absolute inset-0 size-full bg-[url('https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg')] bg-no-repeat bg-cover bg-top -z-10">
     </div>
     <div class="max-w-xl">
-      <div class="text-black p-10 space-y-6">
-        <h2 class="caps text-5xl">The History</h2>
-        <p class="text-sm font-light">
+      <div class="text-black p-0 px-4 pb-6 md:p-10 space-y-6">
+        <h2 class="caps text-2xl md:text-5xl">The History</h2>
+        <p class="text-xs md:text-sm font-light">
           The property is built and run by the descendants of the longest
           ruling prime minister of Nepal Maharaja Chandra Shumsher Rana and
           his son Baber Shumsher Rana who was the Commander and Chief of the
@@ -455,18 +462,15 @@
         </button>
       </div>
     </div>
+
+    <img src="https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg"
+      class="lg:hidden w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-screen object-cover object-center" />
   </section>
 
-  <section class="p-0 bg-white relative h-screen">
-    <img src="./img/arts/property-arts.png" alt="The Property" class="w-full h-screen object-contain object-left" />
-
-    <!-- <div class="size-full bg-no-repeat bg-contain bg-left bg-fixed -z-10"
-      style="background-image: url('./img/arts/property-arts.png');">
-    </div> -->
-
-    <div class="absolute mt-32 mr-14 max-w-md right-0 top-0 size-auto space-y-4 text-black/80">
-      <h4 class="caps text-4xl capitalize">The property</h4>
-      <p class="text-sm">
+  <section class="px-4 pb-0 md:p-0 bg-white relative">
+    <div class="static md:absolute md:mt-32 md:mr-14 max-w-md right-0 top-0 size-auto space-y-4 text-black/80">
+      <h4 class="caps text-2xl md:text-4xl capitalize">The property</h4>
+      <p class="text-xs md:text-sm">
         Baber Mahal Vilas - The Heritage Hotel is a quaint family-run boutique
         property set in the existing architectural haven of Baber Mahal
         Revisited. In an effort to portray the distinct architectural features
@@ -487,6 +491,13 @@
         Read More
       </button>
     </div>
+
+    <img src="./img/arts/property-arts.png" alt="The Property"
+      class="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-screen object-contain object-center md:object-left" />
+
+    <!-- <div class="size-full bg-no-repeat bg-contain bg-left bg-fixed -z-10"
+      style="background-image: url('./img/arts/property-arts.png');">
+    </div> -->
   </section>
 
   <section class="size-full p-0 relative" onclick="startVideo()">
@@ -532,7 +543,7 @@
       style="
           background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/fWDW7-lobby3.jpg');
         "></div>
-    <div class="py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-10 text-black">
+    <div class="px-4 py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-10 text-black">
       <h2 class="caps text-3xl md:text-5xl font-bold mb-2">Rooms</h2>
       <!-- <span class="text-sm md:text-xl font-bold text-coffee-800/80">Our Guests' Voices, Your Assurance</span> -->
       <p class="text-sm max-w-lg text-center">
@@ -548,16 +559,17 @@
           <div class="overflow-hidden">
             <a href="#">
               <img
-                class="w-full h-[32rem] object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                class="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-[32rem] object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
                 src="./img/rooms/room1.webp" alt="Traditional Room" />
             </a>
           </div>
 
-          <div class="p-5 absolute bottom-0 w-full pt-16 bg-gradient-to-b from-transparent to-black/80 text-white">
+          <div
+            class="p-1 md:p-5 absolute bottom-0 w-full pt-16 bg-gradient-to-b from-transparent to-black/80 text-white">
             <!-- <div class="flex items-center justify-between">
               <a href="#">
                 <p class="text-sm text-white "><strong class="text-xl number">100$</strong>/night</p>
-                <h5 class="caps text-lg md:text-2xl tracking-tight mb-2 font-bold">
+               <h5 class="caps text-lg sm:text-xl md:text-2xl tracking-wide mb-2 font-light md:font-bold">
                   Traditional Room
                 </h5>
               </a>
@@ -576,8 +588,8 @@
               </a>
             </div> -->
 
-            <div class="flex items-center justify-between py-2 pr-2">
-              <p class="flex items-center gap-2 text-lg">
+            <div class="flex items-center justify-between py-2 px-2 md:pr-2">
+              <p class="hidden sm:flex items-center gap-2 text-lg">
                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
                   stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -589,7 +601,7 @@
                 100$<span class="text-xs">/night</span>
               </p>
               <a href="#">
-                <h5 class="caps text-lg md:text-2xl tracking-tight mb-2 font-bold">
+                <h5 class="caps text-lg sm:text-xl md:text-2xl tracking-wide mb-2 font-light md:font-bold">
                   Traditional Room
                 </h5>
               </a>
@@ -629,14 +641,15 @@
           <div class="overflow-hidden">
             <a href="#">
               <img
-                class="w-full h-[32rem] object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                class="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-[32rem] object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
                 src="./img/rooms/room2.webp" alt="Traditional Suite" />
             </a>
           </div>
 
-          <div class="p-5 absolute bottom-0 w-full pt-16 bg-gradient-to-b from-transparent to-black/80 text-white">
-            <div class="flex items-center justify-between py-2 pr-2">
-              <p class="flex items-center gap-2 text-lg">
+          <div
+            class="p-1 md:p-5 absolute bottom-0 w-full pt-16 bg-gradient-to-b from-transparent to-black/80 text-white">
+            <div class="flex items-center justify-between py-2 px-2 md:pr-2">
+              <p class="hidden sm:flex items-center gap-2 text-lg">
                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
                   stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -648,7 +661,7 @@
                 125$<span class="text-xs">/night</span>
               </p>
               <a href="#">
-                <h5 class="caps text-lg md:text-2xl tracking-tight mb-2 font-bold">
+                <h5 class="caps text-lg sm:text-xl md:text-2xl tracking-wide mb-2 font-light md:font-bold">
                   Traditional Suite
                 </h5>
               </a>
@@ -688,14 +701,15 @@
           <div class="overflow-hidden">
             <a href="#">
               <img
-                class="w-full h-[32rem] object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                class="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-[32rem] object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
                 src="./img/rooms/room3.webp" alt="Heritage Suite" />
             </a>
           </div>
 
-          <div class="p-5 absolute bottom-0 w-full pt-16 bg-gradient-to-b from-transparent to-black/80 text-white">
-            <div class="flex items-center justify-between py-2 pr-2">
-              <p class="flex items-center gap-2 text-lg">
+          <div
+            class="p-1 md:p-5 absolute bottom-0 w-full pt-16 bg-gradient-to-b from-transparent to-black/80 text-white">
+            <div class="flex items-center justify-between py-2 px-2 md:pr-2">
+              <p class="hidden sm:flex items-center gap-2 text-lg">
                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
                   stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -707,7 +721,7 @@
                 180$<span class="text-xs">/night</span>
               </p>
               <a href="#">
-                <h5 class="caps text-lg md:text-2xl tracking-tight mb-2 font-bold">
+                <h5 class="caps text-lg sm:text-xl md:text-2xl tracking-wide mb-2 font-light md:font-bold">
                   Heritage Suite
                 </h5>
               </a>
@@ -747,14 +761,15 @@
           <div class="overflow-hidden">
             <a href="#">
               <img
-                class="w-full h-[32rem] object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                class="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-[32rem] object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
                 src="./img/rooms/room4.webp" alt="Royal Suite" />
             </a>
           </div>
 
-          <div class="p-5 absolute bottom-0 w-full pt-16 bg-gradient-to-b from-transparent to-black/80 text-white">
-            <div class="flex items-center justify-between py-2 pr-2">
-              <p class="flex items-center gap-2 text-lg">
+          <div
+            class="p-1 md:p-5 absolute bottom-0 w-full pt-16 bg-gradient-to-b from-transparent to-black/80 text-white">
+            <div class="flex items-center justify-between py-2 px-2 md:pr-2">
+              <p class="hidden sm:flex items-center gap-2 text-lg">
                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
                   stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -766,7 +781,7 @@
                 200$<span class="text-xs">/night</span>
               </p>
               <a href="#">
-                <h5 class="caps text-lg md:text-2xl tracking-tight mb-2 font-bold">
+                <h5 class="caps text-lg sm:text-xl md:text-2xl tracking-wide mb-2 font-light md:font-bold">
                   Royal Suite
                 </h5>
               </a>
@@ -805,12 +820,12 @@
   </section>
 
   <section class="bg-white">
-    <div class="container mx-auto">
-      <div class="grid grid-cols-3 gap-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-12">
         <div class="col-span-2">
           <div class="space-y-4">
-            <h5 class="caps capitalize text-4xl">Gallery</h5>
-            <p class="text-sm max-w-lg">
+            <h5 class="caps capitalize text-2xl md:text-4xl">Gallery</h5>
+            <p class="text-xs md:text-sm max-w-lg">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
               beatae aspernatur ex culpa porro ratione a commodi quos!
             </p>
@@ -889,7 +904,7 @@
         <div class="col-span-1">
           <div class="space-y-4">
             <h5 class="caps capitalize text-4xl">Feedback</h5>
-            <p class="text-sm max-w-xs">
+            <p class="text-xs md:text-sm max-w-xs">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
               beatae aspernatur
             </p>
@@ -1086,7 +1101,7 @@
 
       <div class="py-2 border-dotted border-white/50 border-t-2"></div>
       <div class="mt-8 container mx-auto flex justify-between items-center flex-col md:flex-row text-white gap-4">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center flex-col md:flex-row gap-4">
           <p class="text-center text-base caps capitalize">
             © Baber Mahal Vilas
             <script>
@@ -1100,37 +1115,33 @@
               <a href="#" class="underline hover:no-underline md:underline" aria-label="Privacy Policy">Privacy
                 Policy</a>
             </p> -->
-          <div class="flex items-center justify-center gap-4 mt-5 md:mt-0">
+          <div class="flex items-center justify-center gap-4">
             <span class="text-xs md:text-base capitalize caps text-white">We accept</span>
             <ul class="flex items-center justify-center gap-0">
               <li>
                 <a href="#" target="_blank">
-                  <img src="https://naikapvillageresort.com/template/web/img/visa/visa.png"
-                    class="w-10 h-4 object-contain" alt="visa" />
+                  <img src="./img/visa/visa.png" class="w-10 h-4 object-contain" alt="visa" />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="https://naikapvillageresort.com/template/web/img/visa/union.png"
-                    class="w-10 h-4 object-contain" alt="union" />
+                  <img src="./img/visa/union.png" class="w-10 h-4 object-contain" alt="union" />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="https://naikapvillageresort.com/template/web/img/visa/mastercard.png"
-                    class="w-10 h-4 object-contain" alt="mastercard" />
+                  <img src="./img/visa/mastercard.png" class="w-10 h-4 object-contain" alt="mastercard" />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <img src="https://naikapvillageresort.com/template/web/img/visa/amex.png"
-                    class="w-10 h-4 object-contain" alt="amex" />
+                  <img src="./img/visa/amex.png" class="w-10 h-4 object-contain" alt="amex" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <p class="text-base caps capitalize">
+        <p class="text-base caps capitalize mt-4 md:mt-0">
           Developed by:
           <a href="https://longtail.info" target="_blank" class="relative group" aria-label="Longtail e-Media">
             <label
