@@ -12,41 +12,53 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-transparent rounded-full;
+    @apply bg-transparent rounded-[100vw];
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-black rounded-full;
+    @apply bg-dark rounded-full border border-solid border-white;
   }
 
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-coffee-800;
   }
 
+  *,
+  html,
   body {
-    /* @apply bg-black; */
-    font-family: "Merriweather", serif;
+    /* @apply bg-dark; */
+    /* font-family: "Merriweather", serif; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
   }
 
   section {
-    @apply py-12 sm:py-24 md:py-28 lg:py-36;
+    @apply py-12 sm:py-24 md:py-28 lg:py-32;
   }
 
   .nav-link {
-    @apply capitalize relative block w-full text-white/80 hover:text-white py-3 px-3 text-lg rounded-xl transition-all duration-200 ease-in-out;
+    @apply capitalize relative block w-full text-white/80 hover:text-white py-3 px-3 text-base rounded-xl transition-all duration-200 ease-in-out;
+  }
+
+  .nav-link>a {
+    @apply text-base;
   }
 
   .navlink-dropdown {
-    @apply w-full capitalize bg-black/80 text-white hover:bg-white/80 hover:text-black py-3 lg:py-2 lg:px-2 text-base rounded-xl transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
+    @apply w-full capitalize text-white hover:bg-white/80 hover:text-dark py-3 lg:py-2 lg:px-2 text-sm rounded-xl transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
   }
 
   .caps {
     font-variant: "small-caps";
   }
 
-  .number {
-    font-family: "Kanit", serif;
+  .merriweather {
+    font-family: "Merriweather", 'Times New Roman', Times, serif;
   }
+
+  /* .number {
+    font-family: "Kanit", serif;
+  } */
 
   /* #navLinks::-webkit-scrollbar-track {
     @apply bg-coffee-400;

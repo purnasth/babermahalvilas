@@ -39,7 +39,7 @@ li.active>.drop {
   padding: 1rem;
 }
 
-.owl-nav button {
+.owl-nav button i {
   font-size: 2rem !important;
   opacity: 0.5;
   transition: all 0.3s;
@@ -88,11 +88,11 @@ li.active>.drop {
     width: 3rem;
     height: 3rem;
     background-color: rgba(255, 255, 255, 0.5) !important;
-    font-size: 1.25rem;
-    padding: 0.5em;
     border-radius: 100% !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.5em;
+    transform: scale(0.8);
   }
 }

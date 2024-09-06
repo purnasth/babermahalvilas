@@ -14,6 +14,7 @@ module.exports = {
         // "light-coffee-clr": "#FFE9D2",
         // "white-clr": "#E1F7EB",
         // "yellow-clr": "#FFDE59",
+        dark: "#111111",
       },
     },
   },
