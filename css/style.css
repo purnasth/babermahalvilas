@@ -16,7 +16,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-white rounded-full;
+    @apply bg-black rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -33,11 +33,11 @@
   }
 
   .nav-link {
-    @apply relative block w-full text-white/80 hover:text-white py-3 px-3 text-lg rounded-xl transition-all duration-200 ease-in-out;
+    @apply capitalize relative block w-full text-white/80 hover:text-white py-3 px-3 text-lg rounded-xl transition-all duration-200 ease-in-out;
   }
 
   .navlink-dropdown {
-    @apply w-full bg-black/80 text-white hover:bg-white/80 hover:text-black py-3 lg:py-2 lg:px-2 text-base rounded-xl transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
+    @apply w-full capitalize bg-black/80 text-white hover:bg-white/80 hover:text-black py-3 lg:py-2 lg:px-2 text-base rounded-xl transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
   }
 
   .caps {
