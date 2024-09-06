@@ -45,7 +45,7 @@
   }
 
   .navlink-dropdown {
-    @apply w-full capitalize text-white hover:bg-white/80 hover:text-dark py-3 lg:py-2 lg:px-2 text-sm rounded-xl transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
+    @apply w-full capitalize text-white bg-dark/80 hover:bg-white/80 hover:text-dark py-3 lg:py-2 lg:px-2 text-sm rounded-xl transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
   }
 
   .caps {

@@ -48,40 +48,68 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // for dropdown
+// ? for active on click
+// document.addEventListener("DOMContentLoaded", function () {
+//   var links = document.querySelectorAll(".dropdown > a");
+//   var dropdowns = document.querySelectorAll(".dropdown");
+
+//   document.addEventListener("click", function (event) {
+//     var isInsideDropdown = false;
+
+//     dropdowns.forEach(function (dropdown) {
+//       if (dropdown.contains(event.target)) {
+//         isInsideDropdown = true;
+//       }
+//     });
+
+//     if (!isInsideDropdown) {
+//       dropdowns.forEach(function (dropdown) {
+//         dropdown.classList.remove("active");
+//       });
+//     }
+//   });
+
+//   links.forEach(function (link) {
+//     link.addEventListener("mouseover", function (event) {
+//       event.preventDefault();
+//       var parentLi = link.parentElement;
+//       dropdowns.forEach(function (dropdown) {
+//         if (dropdown !== parentLi) {
+//           dropdown.classList.remove("active");
+//         }
+//       });
+
+//       parentLi.classList.toggle("active");
+//     });
+//   });
+// });
+// ? for active on hover
 document.addEventListener("DOMContentLoaded", function () {
-  var links = document.querySelectorAll(".dropdown > a");
-  var dropdowns = document.querySelectorAll(".dropdown");
+  let dropdowns = document.querySelectorAll(".dropdown");
+  let timeout; 
 
-  document.addEventListener("click", function (event) {
-    var isInsideDropdown = false;
-
+  function closeAllDropdowns() {
     dropdowns.forEach(function (dropdown) {
-      if (dropdown.contains(event.target)) {
-        isInsideDropdown = true;
-      }
+      dropdown.classList.remove("active");
+    });
+  }
+
+  dropdowns.forEach(function (dropdown) {
+    dropdown.addEventListener("mouseenter", function () {
+      clearTimeout(timeout);
+      closeAllDropdowns();
+      dropdown.classList.add("active");
     });
 
-    if (!isInsideDropdown) {
-      dropdowns.forEach(function (dropdown) {
+    // Hide dropdown after 0.5 seconds on mouseleave
+    dropdown.addEventListener("mouseleave", function () {
+      timeout = setTimeout(function () {
         dropdown.classList.remove("active");
-      });
-    }
-  });
-
-  links.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      var parentLi = link.parentElement;
-      dropdowns.forEach(function (dropdown) {
-        if (dropdown !== parentLi) {
-          dropdown.classList.remove("active");
-        }
-      });
-
-      parentLi.classList.toggle("active");
+      }, 500);
     });
   });
 });
+
 
 $(document).ready(function () {
   $(".rooms-carousel").owlCarousel({

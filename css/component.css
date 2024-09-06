@@ -96,3 +96,15 @@ li.active>.drop {
     transform: scale(0.8);
   }
 }
+
+
+.dropdown ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown.active ul {
+  visibility: visible;
+  opacity: 1;
+}
