@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("toggleButton");
-  const hamburgerIcon = document.getElementById("hamburgerIcon");
-  const closeIcon = document.getElementById("closeIcon");
+  const svgIcon = document.getElementById("svgIcon");
   const navLinks = document.getElementById("navLinks");
   const overlay = document.getElementById("overlay");
-  // const header = document.querySelector(".blur-bg");
 
   let lastScrollTop = 0;
   const navbar = document.querySelector("header");
@@ -23,27 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   toggleButton.addEventListener("click", function () {
     navLinks.classList.toggle("-translate-x-full");
-    hamburgerIcon.classList.toggle("hidden");
-    closeIcon.classList.toggle("hidden");
+    svgIcon.classList.toggle("active");
     overlay.classList.toggle("hidden");
   });
 
   overlay.addEventListener("click", function () {
     navLinks.classList.add("-translate-x-full");
-    hamburgerIcon.classList.remove("hidden");
-    closeIcon.classList.add("hidden");
     overlay.classList.add("hidden");
+    svgIcon.classList.remove("active");
   });
-
-  // window.addEventListener("scroll", function () {
-  //   if (window.scrollY > 0) {
-  //     header.classList.add("backdrop-blur-sm");
-  //     header.classList.remove("bg-transparent");
-  //   } else {
-  //     header.classList.remove("backdrop-blur-sm");
-  //     header.classList.add("bg-transparent");
-  //   }
-  // });
 });
 
 // for dropdown
@@ -111,13 +97,13 @@ $(document).ready(function () {
     autoplayHoverPause: false,
     responsive: {
       0: {
-        items: 1, // Set 1 item for mobile devices
+        items: 1,
       },
       768: {
-        items: 2, // Set 2 items for tablets
+        items: 2,
       },
       992: {
-        items: 2, // Keep 2 items for larger screens
+        items: 2,
       },
     },
   });
