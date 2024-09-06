@@ -16,7 +16,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-coffee-700 rounded-full;
+    @apply bg-coffee-700 rounded-full border border-solid border-coffee-400;
   }
 
   ::-webkit-scrollbar-thumb:hover {

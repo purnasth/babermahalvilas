@@ -4,7 +4,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeIcon = document.getElementById("closeIcon");
   const navLinks = document.getElementById("navLinks");
   const overlay = document.getElementById("overlay");
-  const header = document.querySelector(".blur-bg");
+  // const header = document.querySelector(".blur-bg");
+
+  let lastScrollTop = 0;
+  const navbar = document.querySelector("header");
+
+  window.addEventListener("scroll", function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      navbar.classList.add("-translate-y-full");
+    } else {
+      navbar.classList.remove("-translate-y-full");
+    }
+
+    lastScrollTop = scrollTop;
+  });
 
   toggleButton.addEventListener("click", function () {
     navLinks.classList.toggle("-translate-x-full");
