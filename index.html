@@ -28,7 +28,7 @@
 
 <body class="overflow-x-hidden">
   <header
-    class="sticky lg:fixed top-0 z-50 w-full transition-all duration-1000 ease-in-out p-4 md:pb-20 bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.5)]">
+    class="sticky lg:fixed top-0 z-50 w-full transition-all duration-1000 ease-in-out p-4 md:pb-20 bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.75)]">
     <div class="container mx-auto">
       <div class="flex justify-between items-center h-14">
         <div class="flex items-center">
@@ -188,6 +188,34 @@
       </ul>
     </div>
   </nav>
+
+  <section class="p-0 relative">
+    <div class="slider-carousel owl-carousel owl-theme relative z-auto">
+      <div class="item relative">
+        <img src="./img/banner/1.webp" alt="Baber Mahal Vilas"
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
+        <h4
+          class="z-20 w-auto md:max-w-xl absolute left-0 bottom-0 m-2 md:mx-3 md:my-2 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4 text-balance">
+          A time capsule of Nepalese Architecture. An amalgamation of the best
+          of Nepalese architecture, Baber Mahal Vilas.
+        </h4>
+        <div class="slider-overlay">
+        </div>
+      </div>
+      <div class="item relative">
+        <img src="./img/banner/2.webp" alt="Baber Mahal Vilas"
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
+        <h4
+          class="z-20 w-auto md:max-w-xl absolute left-0 bottom-0 m-2 md:mx-3 md:my-2 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4 text-balance">
+          An architectural museum in the heart of Kathmandu Valley offering luxury in
+          a historically significant ambience.
+        </h4>
+        <div class="slider-overlay">
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <!-- <section class="lg:h-[100vh] overflow-hidden" onclick="startVideo()">
       <video
@@ -920,8 +948,7 @@
             </div>
             <div
               class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
-              <img src="https://www.babermahalvilas.com/images/gallery/galleryimages/jpb5E-untitled-1.jpg"
-                alt="Restaurant"
+              <img src="./img/test/4.jpg" alt="Restaurant"
                 class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
                 loading="lazy" draggable="false" />
               <div
@@ -1294,23 +1321,6 @@
       </a>
     </div>
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var whatsappIcon = document.getElementById("whatsapp-icon");
-
-      // Adjust the offset as needed
-      var offset = 100;
-
-      window.addEventListener("scroll", function () {
-        if (window.scrollY > offset) {
-          whatsappIcon.classList.remove("opacity-0", "invisible");
-        } else {
-          whatsappIcon.classList.add("opacity-0", "invisible");
-        }
-      });
-    });
-  </script>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Testimonials -->

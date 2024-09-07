@@ -27,6 +27,12 @@ li.active>.drop {
   font-variant: "small-caps";
 }
 
+.slider-carousel .owl-nav {
+  position: absolute;
+  left: 0;
+  bottom: 1.5rem;
+  width: 100%;
+}
 .rooms-carousel .owl-nav {
   position: absolute;
   left: 0;
@@ -34,7 +40,7 @@ li.active>.drop {
   width: 100%;
 }
 
-.rooms-carousel .owl-nav button:hover {
+.owl-nav button:hover {
   background: transparent !important;
 }
 

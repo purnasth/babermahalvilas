@@ -50,6 +50,10 @@
     font-variant: "small-caps";
   }
 
+  .slider-overlay {
+    @apply absolute inset-0 size-full bg-gradient-to-b from-transparent via-transparent to-black/60 z-10 pointer-events-none select-none;
+  }
+
   /* #navLinks::-webkit-scrollbar-track {
     @apply bg-coffee-400;
   }

@@ -743,6 +743,25 @@ section {
   font-variant: "small-caps";
 }
 
+.slider-overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: transparent var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(0 0 0 / 0.6) var(--tw-gradient-to-position);
+}
+
 /* #navLinks::-webkit-scrollbar-track {
     @apply bg-coffee-400;
   }
@@ -881,6 +900,10 @@ section {
   z-index: 99;
 }
 
+.z-auto {
+  z-index: auto;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -891,6 +914,10 @@ section {
 
 .m-10 {
   margin: 2.5rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-auto {
@@ -906,6 +933,11 @@ section {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .-mb-10 {
@@ -1071,6 +1103,10 @@ section {
   height: 2rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .h-9 {
   height: 2.25rem;
 }
@@ -1111,20 +1147,12 @@ section {
   max-height: 20rem;
 }
 
-.max-h-96 {
-  max-height: 24rem;
+.max-h-\[33rem\] {
+  max-height: 33rem;
 }
 
 .max-h-screen {
   max-height: 100vh;
-}
-
-.max-h-\[32rem\] {
-  max-height: 32rem;
-}
-
-.max-h-\[33rem\] {
-  max-height: 33rem;
 }
 
 .min-h-\[10vh\] {
@@ -1185,6 +1213,10 @@ section {
 
 .w-\[78\%\] {
   width: 78%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -1252,6 +1284,11 @@ section {
 
 .rotate-90 {
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-45 {
+  --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1385,6 +1422,10 @@ section {
   overflow-x: hidden;
 }
 
+.text-balance {
+  text-wrap: balance;
+}
+
 .text-pretty {
   text-wrap: pretty;
 }
@@ -1430,6 +1471,11 @@ section {
 .border-coffee-600 {
   --tw-border-opacity: 1;
   border-color: rgb(192 133 82 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1481,6 +1527,14 @@ section {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-coffee-700\/50 {
+  background-color: rgb(137 87 55 / 0.5);
+}
+
+.bg-coffee-700\/30 {
+  background-color: rgb(137 87 55 / 0.3);
 }
 
 .bg-\[url\(\'\/src\/assets\/graphics\/flowers\.webp\'\)\] {
@@ -1751,6 +1805,10 @@ section {
   font-weight: 800;
 }
 
+.font-extralight {
+  font-weight: 200;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -1902,12 +1960,6 @@ section {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -2051,6 +2103,19 @@ section {
   .sm\:mr-4 {
     margin-right: 1rem;
   }
+
+  .sm\:h-\[50vh\] {
+    height: 50vh;
+  }
+
+  .sm\:min-h-96 {
+    min-height: 24rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2084,6 +2149,16 @@ section {
 
   .md\:order-2 {
     order: 2;
+  }
+
+  .md\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .md\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .md\:my-5 {
@@ -2173,6 +2248,10 @@ section {
 
   .md\:w-\[50vw\] {
     width: 50vw;
+  }
+
+  .md\:max-w-xl {
+    max-width: 36rem;
   }
 
   .md\:translate-x-\[120px\] {
@@ -2283,6 +2362,10 @@ section {
     line-height: 1.75rem;
   }
 
+  .md\:font-light {
+    font-weight: 300;
+  }
+
   .md\:no-underline {
     text-decoration-line: none;
   }
@@ -2326,6 +2409,10 @@ section {
     height: 100vh;
   }
 
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2358,6 +2445,11 @@ section {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
