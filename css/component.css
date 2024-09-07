@@ -33,6 +33,7 @@ li.active>.drop {
   bottom: 1.5rem;
   width: 100%;
 }
+
 .rooms-carousel .owl-nav {
   position: absolute;
   left: 0;
@@ -42,6 +43,20 @@ li.active>.drop {
 
 .owl-nav button:hover {
   background: transparent !important;
+}
+
+.slider-carousel.owl-carousel .owl-item.active img {
+  animation: zoomIn 5s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* hamburger */
