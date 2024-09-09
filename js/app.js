@@ -6,22 +6,49 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.getElementById("overlay");
   // const header = document.querySelector(".blur-bg");
 
+  // let lastScrollTop = 0;
+  // const navbar = document.querySelector("header");
+
+  // window.addEventListener("scroll", function () {
+  //   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  //   if (scrollTop > lastScrollTop) {
+  //     // Scroll Down
+  //     navbar.classList.add("-translate-y-full");
+  //   } else {
+  //     // Scroll Up
+  //     navbar.classList.remove("-translate-y-full");
+  //   }
+
+  //   lastScrollTop = scrollTop;
+  // });
+
   let lastScrollTop = 0;
-  const navbar = document.querySelector("header");
+  const navbar = document.getElementById("navbar");
 
   window.addEventListener("scroll", function () {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-      // Scroll Down
-      navbar.classList.add("-translate-y-full");
-    } else {
-      // Scroll Up
+    if (scrollTop === 0) {
+      // At the top of the page: Restore original height
       navbar.classList.remove("-translate-y-full");
+      navbar.classList.remove("h-8");
+      navbar.classList.add("h-20");
+    } else if (scrollTop > lastScrollTop) {
+      // Scroll Down: Hide navbar and restore original height
+      navbar.classList.add("-translate-y-full");
+      navbar.classList.remove("h-8");
+      navbar.classList.add("h-20");
+    } else {
+      // Scroll Up: Show navbar and reduce height
+      navbar.classList.remove("-translate-y-full");
+      navbar.classList.remove("h-20");
+      navbar.classList.add("h-8");
     }
 
     lastScrollTop = scrollTop;
   });
+
   toggleButton.addEventListener("click", function () {
     navLinks.classList.toggle("-translate-x-full");
     hamburgerIcon.classList.toggle("hidden");
@@ -86,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // ? for active on hover
 document.addEventListener("DOMContentLoaded", function () {
   let dropdowns = document.querySelectorAll(".dropdown");
-  let timeout; 
+  let timeout;
 
   function closeAllDropdowns() {
     dropdowns.forEach(function (dropdown) {
@@ -109,7 +136,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
 
 $(document).ready(function () {
   $(".rooms-carousel").owlCarousel({

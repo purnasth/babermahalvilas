@@ -30,14 +30,13 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="h-20 sticky lg:fixed top-0 z-50 bg-dark w-full transition-all duration-1000 ease-in-out">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-between items-center">
-        <div class="flex items-center">
-          <a href="#" aria-label="Logo">
-            <img src="./img/logo.svg" alt="Logo" class="w-24 h-16 md:w-32 md:h-20 object-contain" />
-          </a>
-        </div>
+  <header id="navbar" class="h-20 sticky lg:fixed top-0 z-50 bg-dark w-full transition-all duration-1000 ease-in-out">
+    <div class="container mx-auto px-4 size-full">
+      <div class="flex justify-between items-center size-full">
+        <a href="#" aria-label="Logo" class="">
+          <img id="logo" src="./img/logo.svg" alt="Logo"
+            class="absolute top-0 w-24 h-16 md:w-32 md:h-20 object-contain bg-dark" />
+        </a>
         <div class="flex items-center gap-2">
           <div class="flex items-center gap-3">
             <ul class="links hidden lg:flex items-start justify-start gap-1 md:gap-3">
