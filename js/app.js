@@ -25,29 +25,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let lastScrollTop = 0;
   const navbar = document.getElementById("navbar");
-
+  const dropdowns = document.querySelectorAll(".dropdown ul"); // Select all dropdown menus
+  
   window.addEventListener("scroll", function () {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
+  
     if (scrollTop === 0) {
-      // At the top of the page: Restore original height
+      // At the top of the page: Restore original navbar height and dropdown position
       navbar.classList.remove("-translate-y-full");
       navbar.classList.remove("h-8");
       navbar.classList.add("h-20");
+  
+      dropdowns.forEach((dropdown) => {
+        dropdown.style.top = "4.5rem"; // Restore dropdown position
+      });
     } else if (scrollTop > lastScrollTop) {
       // Scroll Down: Hide navbar and restore original height
       navbar.classList.add("-translate-y-full");
       navbar.classList.remove("h-8");
       navbar.classList.add("h-20");
+  
+      dropdowns.forEach((dropdown) => {
+        dropdown.style.top = "4.5rem"; // Dropdown position for scroll down
+      });
     } else {
-      // Scroll Up: Show navbar and reduce height
+      // Scroll Up: Show navbar, reduce height, and change dropdown position
       navbar.classList.remove("-translate-y-full");
       navbar.classList.remove("h-20");
       navbar.classList.add("h-8");
+  
+      dropdowns.forEach((dropdown) => {
+        dropdown.style.top = "2.5rem"; // Dropdown position for scroll up
+      });
     }
-
+  
     lastScrollTop = scrollTop;
   });
+  
 
   toggleButton.addEventListener("click", function () {
     navLinks.classList.toggle("-translate-x-full");

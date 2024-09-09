@@ -2289,6 +2289,10 @@ section {
     top: 4.5rem;
   }
 
+  .md\:top-\[2\.5rem\] {
+    top: 2.5rem;
+  }
+
   .md\:z-10 {
     z-index: 10;
   }
