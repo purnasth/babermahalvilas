@@ -14,6 +14,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.ico" />
   <link rel="manifest" href="./logo/site.webmanifest" />
 
+  <!-- Light gallery -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+
   <link rel="stylesheet" href="./css/links.css" />
   <link rel="stylesheet" href="./css/component.css" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -27,7 +30,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="sticky lg:fixed top-0 z-50 bg-dark py-1 md:py-2 w-full transition-all duration-1000 ease-in-out">
+  <header class="h-20 sticky lg:fixed top-0 z-50 bg-dark w-full transition-all duration-1000 ease-in-out">
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
@@ -187,8 +190,8 @@
               </li>
             </ul>
             <a href="https://www.babermahal.com/" target="_blank"
-              class="caps text-white text-xs bg-white/20 border border-white/50 px-4 py-1 rounded-full hover:bg-white/40 transition-all duration-300 ease-linear">Baber
-              Mahal Revisited</a>
+              class="caps text-white/80 hover:text-white text-base  transition-all duration-300 ease-linear">Babermahal
+              Revisited</a>
           </div>
           <div class="flex items-center justify-center gap-4 lg:hidden">
             <button type="menu" id="toggleButton" class="text-white focus:outline-none p-2" aria-label="Toggle Button"
@@ -408,7 +411,7 @@
       style="background-image: url('https://www.babermahalvilas.com/images/articles/oRAGu-0NLLN-edition-1.jpg')"></div>
 
     <div class="flex items-center justify-center size-full">
-      <div class="w-auto md:w-1/2 bg-dark/90 text-white mx-auto p-10 text-center space-y-6">
+      <div class="w-auto md:w-1/2 text-white mx-auto p-10 text-center space-y-6">
         <h2 class="caps text-2xl md:text-6xl">Baber Mahal Vilas</h2>
         <p class="text-xs md:text-sm font-light">
           The vision behind the boutique property is to create a hospitality
@@ -419,14 +422,14 @@
         <button type="button" class="flex items-center justify-center gap-2 group text-base relative mx-auto"
           aria-label="Read More" title="Read more">
           <div
-            class="absolute bottom-0 -right-0 w-[71%] h-[2px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+            class="absolute bottom-0 -right-0 w-full h-[2px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
           </div>
-          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+          <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
             stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
             class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
             <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
             <path d="M17 16l4 -4l-4 -4"></path>
-          </svg>
+          </svg> -->
           Read More
         </button>
       </div>
@@ -450,14 +453,14 @@
         <button type="button" class="flex items-center justify-center gap-2 group text-base relative"
           aria-label="Read More" title="Read more">
           <div
-            class="absolute bottom-0 -right-0 w-[71%] h-[2px] bg-dark group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+            class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
           </div>
-          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+          <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
             stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
             class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
             <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
             <path d="M17 16l4 -4l-4 -4"></path>
-          </svg>
+          </svg> -->
           Read More
         </button>
       </div>
@@ -480,14 +483,14 @@
       <button type="button" class="flex items-center justify-center gap-2 group text-base relative"
         aria-label="Read More" title="Read more">
         <div
-          class="absolute bottom-0 -right-0 w-[71%] h-[2px] bg-dark/80 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+          class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark/80 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
         </div>
-        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+        <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
           stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
           class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
           <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
           <path d="M17 16l4 -4l-4 -4"></path>
-        </svg>
+        </svg> -->
         Read More
       </button>
     </div>
@@ -659,8 +662,8 @@
               elegance and intricate artistry of Baber Mahal Vilas.
             </p>
           </div>
-          <div class="mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear">
-            <div
+          <div id="lightgallery" class="mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear">
+            <a href="./img/rooms/room3.webp" data-src="./img/rooms/room3.webp"
               class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
               <img src="./img/rooms/room3.webp" alt="Heritage Suite"
                 class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
@@ -672,8 +675,9 @@
                 class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
                 Heritage Suite
               </h5>
-            </div>
-            <div
+            </a>
+
+            <a href="./img/babermahal.jpg" data-src="./img/babermahal.jpg"
               class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
               <img src="./img/babermahal.jpg" alt="The Property"
                 class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
@@ -685,11 +689,11 @@
                 class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
                 The Property
               </h5>
-            </div>
-            <div
+            </a>
+
+            <a href="./img/banner/5.webp" data-src="./img/banner/5.webp"
               class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
-              <img src="./img/banner/5.webp"
-                alt="Restaurant"
+              <img src="./img/banner/5.webp" alt="Restaurant"
                 class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
                 loading="lazy" draggable="false" />
               <div
@@ -699,8 +703,10 @@
                 class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
                 Restaurant
               </h5>
-            </div>
-            <div
+            </a>
+
+            <a href="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg"
+              data-src="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg"
               class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
               <img src="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg" alt="Arts"
                 class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
@@ -712,20 +718,21 @@
                 class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
                 Arts
               </h5>
-            </div>
+            </a>
           </div>
+
           <div class="mt-8 flex items-center justify-center">
             <a href="#" class="inline-flex items-center justify-center gap-2 group text-base text-center relative"
               aria-label="Read More" title="Read more">
               <div
-                class="absolute bottom-0 -right-0 w-[72%] h-[2px] bg-dark/80 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+                class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark/80 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
               </div>
-              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+              <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
                 stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
                 class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
                 <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
                 <path d="M17 16l4 -4l-4 -4"></path>
-              </svg>
+              </svg> -->
               View More
             </a>
           </div>
@@ -980,12 +987,12 @@
       <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
     </svg> -->
     <!-- <i class="ml-1 fa-solid fa-calendar-check"></i> -->
-    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
+    <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
       class="group-hover:animate-bounce" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M24,184H232a8,8,0,0,0,0-16h-8V152a96.12,96.12,0,0,0-88-95.66V40h16a8,8,0,0,0,0-16H104a8,8,0,0,0,0,16h16V56.34A96.12,96.12,0,0,0,32,152v16H24a8,8,0,0,0,0,16Zm24-32a80,80,0,0,1,160,0v16H48Zm192,56a8,8,0,0,1-8,8H24a8,8,0,0,1,0-16H232A8,8,0,0,1,240,208Z">
       </path>
-    </svg>
+    </svg> -->
 
     <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="group-hover:animate-bounce"
       height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -1030,6 +1037,22 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Testimonials -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- LightGallery JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.min.js"></script>
+
+  <script>
+    // Initialize LightGallery
+    document.addEventListener('DOMContentLoaded', function () {
+      const galleryElement = document.getElementById('lightgallery');
+      lightGallery(galleryElement, {
+        plugins: [lgThumbnail, lgFullscreen],
+        thumbnail: true,
+        fullscreen: true
+      });
+    });
+  </script>
 
   <script src="./js/app.js"></script>
 </body>
