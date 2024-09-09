@@ -951,19 +951,14 @@ section {
   margin-bottom: 0.75rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .-ml-3 {
@@ -1151,6 +1146,10 @@ section {
   height: 12rem;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .h-56 {
   height: 14rem;
 }
@@ -1213,14 +1212,6 @@ section {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-52 {
-  height: 13rem;
 }
 
 .max-h-40 {
@@ -1313,10 +1304,6 @@ section {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .max-w-5xl {
@@ -1567,10 +1554,6 @@ section {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.text-balance {
-  text-wrap: balance;
 }
 
 .text-pretty {
@@ -2495,6 +2478,10 @@ section {
   background-color: rgb(17 17 17 / 0.5);
 }
 
+.hover\:bg-dark\/80:hover {
+  background-color: rgb(17 17 17 / 0.8);
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2502,10 +2489,6 @@ section {
 
 .hover\:bg-white\/40:hover {
   background-color: rgb(255 255 255 / 0.4);
-}
-
-.hover\:bg-dark\/80:hover {
-  background-color: rgb(17 17 17 / 0.8);
 }
 
 .hover\:text-coffee-700:hover {
@@ -3102,6 +3085,10 @@ section {
 
   .lg\:h-\[100vh\] {
     height: 100vh;
+  }
+
+  .lg\:h-\[110vh\] {
+    height: 110vh;
   }
 
   .lg\:h-\[32rem\] {
