@@ -32,73 +32,6 @@
       font-variant: small-caps;
     }
   </style>
-
-  <style>
-    .revGallery-anchor {
-      overflow: hidden;
-      position: relative;
-      width: calc(100% / 4);
-      height: 15rem;
-      display: block;
-      float: left;
-      border: 5px solid #e9e9e9;
-    }
-
-    @media (max-width: 768px) {
-      .revGallery-anchor {
-        width: calc(100% / 2);
-      }
-    }
-
-    .gal-overlay {
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: rgba(27, 27, 27, 0);
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: background .4s ease;
-      -webkit-transition: background .4s ease;
-    }
-
-    .revGallery-anchor:hover .gal-overlay {
-      background: rgba(27, 27, 27, 0.6);
-    }
-
-    .nak-gallery {
-      display: block;
-      width: 100%;
-      position: relative;
-      margin-top: 30px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-
-    .nak-gallery-poster {
-      padding-bottom: 100%;
-      transform-origin: 50% 50%;
-      -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      transform: scale(1, 1);
-      -webkit-transform: scale(1, 1);
-      -ms-transform: scale(1, 1);
-      transition: all .4s ease;
-      -webkit-transition: all .4s ease;
-    }
-
-    .revGallery-anchor:hover .nak-gallery-poster {
-      transform: scale(1.1, 1.1);
-      -webkit-transform: scale(1.1, 1.1);
-      -ms-transform: scale(1.1, 1.1);
-    }
-
-    /* .hidden {
-      display: none;
-    } */
-  </style>
 </head>
 
 <body>
@@ -436,15 +369,16 @@
 
   <div
     class="responsive-banner relative w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-screen overflow-hidden group">
-    <img src="https://www.babermahalvilas.com/images/gallery/FjHlR-exterior-9.jpg" alt="Gallery"
+    <img src="./img/rooms/room2.webp" alt="Room"
       class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-screen object-cover" draggable="false">
     <div class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/50 to-black/20"></div>
     <div
       class="pointer-events-none absolute left-0 bottom-0 text-center bg-gradient-to-t from-black/80 to-black/0 w-full py-4">
       <div class="max-w-xl text-gradient mx-auto space-y-4 py-6 md:py-12 text-white">
-        <h3 class="caps text-lg font-bold sm:font-medium sm:text-2xl md:text-5xl leading-snug">Gallery</h3>
-        <p class="hidden md:block px-8 text-sm">Explore the rich heritage of Nepalese architecture through our curated
-          gallery, showcasing the timeless elegance and intricate artistry of Baber Mahal Vilas.</p>
+        <h3 class="caps text-lg font-bold sm:font-medium sm:text-2xl md:text-5xl leading-snug">Rooms</h3>
+        <p class="hidden md:block px-8 text-sm">Explore the rich heritage of Nepalese architecture
+          and culture in our rooms that highlights the living style of the Rana era.
+        </p>
       </div>
       <nav class="flex items-center justify-center w-full" aria-label="Breadcrumb">
         <ul class="inline-flex items-center space-x-3 text-white">
@@ -459,7 +393,7 @@
           </svg>
           <li aria-current="page">
             <h2 class="caps text-sm md:text-base font-title tracking-wider">
-              Gallery
+              Rooms
             </h2>
           </li>
         </ul>
@@ -467,201 +401,142 @@
     </div>
   </div>
 
-  <section class="px-4">
-    <div class="gallery">
-      <div class="flex items-center justify-center gap-4 mb-16 flex-wrap">
-        <button type="button"
-          class="caps capitalize button bg-dark/20 hover:bg-dark/50 text-sm md:text-base px-4 md:px-4 py-2 md:py-2 is-checked"
-          data-filter="">all</button>
-        <button type="button"
-          class="caps capitalize button bg-dark/20 hover:bg-dark/50 text-sm md:text-base px-4 md:px-4 py-2 md:py-2"
-          data-filter=".rooms">Rooms</button>
-        <button type="button"
-          class="caps capitalize button bg-dark/20 hover:bg-dark/50 text-sm md:text-base px-4 md:px-4 py-2 md:py-2"
-          data-filter=".dine">Dine</button>
-        <button type="button"
-          class="caps capitalize button bg-dark/20 hover:bg-dark/50 text-sm md:text-base px-4 md:px-4 py-2 md:py-2"
-          data-filter=".hotel">Hotel</button>
-      </div>
+  <section class="bg-gray-200 relative">
+    <!-- <div class="absolute inset-0 bg-white -z-20"></div> -->
+    <!-- <div
+        class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
+        style="background-image: url('https://www.babermahalvilas.com/images/slideshow/XGLiA-157a2310---copy.jpg')"
+      ></div> -->
+    <!-- <div
+        class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
+        style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/Xhh6T-padma8.jpg')"
+      ></div> -->
+    <!-- <div
+        class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
+        style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/fPKow-singha-suite3.jpg')"
+      ></div> -->
+    <!-- <div
+        class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
+        style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/r4WyJ-kausee-kotha8.jpg')"
+      ></div> -->
+    <!-- <div
+        class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
+        style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/rNdxL-cs4.jpg')"
+      ></div> -->
+    <!-- <div
+        class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
+        style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg')"
+      ></div> -->
+    <!-- <div
+        class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
+        style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/B2imo-untitled-13.jpg')"
+      ></div> -->
+    <!-- <div
+      class="absolute inset-0 size-full bg-fixed bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
+      style="
+          background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/fWDW7-lobby3.jpg');
+        "></div> -->
+    <div class="px-4 py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-10 text-dark">
+      <h2 class="caps text-3xl md:text-5xl mb-2">Rooms</h2>
+      <!-- <span class="text-sm md:text-xl font-bold text-coffee-800/80">Our Guests' Voices, Your Assurance</span> -->
+      <p class="text-base max-w-lg text-center capitalize">
+        Experience The Rana style of living
+      </p>
+    </div>
+    <div class="container mx-auto flex items-center justify-center p-4">
+      <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- room 1 -->
+        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
+          <div class="p-6 text-center space-y-3">
+            <a href="#">
+              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                Traditional Room
+              </h5>
+            </a>
+            <p class="text-xs md:text-sm text-dark/80">
+              These rooms are compact and yet inviting, reflecting the skilled craftmenship of Newari Artisans. The
+              rooms are adorned with traditional art and vibrant handwoven textiles, adding warmth and colour.
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <a href="#">
+              <img
+                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                src="./img/rooms/room1.webp" alt="Traditional Room">
+            </a>
+          </div>
 
-      <div class="nak-gallery nlg1" id="gallery">
-        <a href="./img/babermahal.jpg" class="revGallery-anchor hotel">
-          <img class="hidden" src="./img/babermahal.jpg">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./img/babermahal.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./img/babermahal.jpg" class="revGallery-anchor rooms">
-          <img class="hidden" src="./img/babermahal.jpg">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./img/babermahal.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./img/babermahal.jpg" class="revGallery-anchor dine">
-          <img class="hidden" src="./img/babermahal.jpg">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./img/babermahal.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./img/babermahal.jpg" class="revGallery-anchor hall">
-          <img class="hidden" src="./img/babermahal.jpg">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./img/babermahal.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
 
-        <a href="./assets/img/rooms/drd1.webp" class="revGallery-anchor rooms">
-          <img class="hidden" src="./assets/img/rooms/drd1.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/rooms/drd1.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
+        </div>
+        <!-- room 2 -->
+        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
+          <div class="p-6 text-center space-y-3">
+            <a href="#">
+              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                Traditional Premium Room
+              </h5>
+            </a>
+            <p class="text-xs md:text-sm text-dark/80">
+              These rooms reflect the diverse architectural elements of the Rana era as well as the local Newari and
+              Buddhist architectural features. Rooms are spacious and look over the quaint courtyards of the property.
+            </p>
           </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
+          <div class="overflow-hidden">
+            <a href="#">
+              <img
+                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                src="./img/rooms/room2.webp" alt="Traditional Premium Room">
+            </a>
           </div>
-        </a>
-        <a href="./assets/img/hall/hall2.webp" class="revGallery-anchor hall">
-          <img class="hidden" src="./assets/img/hall/hall2.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/hall/hall2.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
+        </div>
+        <!-- room 3 -->
+        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
+          <div class="p-6 text-center space-y-3">
+            <a href="#">
+              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                Heritage Suite
+              </h5>
+            </a>
+            <p class="text-xs md:text-sm text-dark/80">
+              Spacious, with quaint private balconies. These rooms reflect the diverse architectural elements of the
+              Rana era as well as the local Newari and Buddhist architectural features. Rooms are spacious and look over
+              the quaint courtyards.
+            </p>
           </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
+          <div class="overflow-hidden">
+            <a href="#">
+              <img
+                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                src="./img/rooms/room3.webp" alt="Heritage Room">
+            </a>
           </div>
-        </a>
-        <a href="./assets/img/dine/dine2.webp" class="revGallery-anchor dine">
-          <img class="hidden" src="./assets/img/dine/dine2.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/dine/dine2.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
+
+
+        </div>
+        <!-- room 4 -->
+        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
+          <div class="p-6 text-center space-y-3">
+            <a href="#">
+              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                Royal Suites
+              </h5>
+            </a>
+            <p class="text-xs md:text-sm text-dark/80">
+              Spacious, with quaint private balconies. These rooms reflect the diverse architectural elements of the
+              Rana era as well as the local Newari and Buddhist architectural features. Rooms are spacious and look over
+              the quaint courtyards.
+            </p>
           </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
+          <div class="overflow-hidden">
+            <a href="#">
+              <img
+                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                src="./img/rooms/room4.webp" alt="Royal Suites">
+            </a>
           </div>
-        </a>
-        <a href="./assets/img/rooms/fr1.webp" class="revGallery-anchor rooms">
-          <img class="hidden" src="./assets/img/rooms/fr1.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/rooms/fr1.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./assets/img/dayatra.webp" class="revGallery-anchor hotel">
-          <img class="hidden" src="./assets/img/dayatra.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/dayatra.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./assets/img/rooms/drs2.webp" class="revGallery-anchor rooms">
-          <img class="hidden" src="./assets/img/rooms/drs2.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/rooms/drs2.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./assets/img/daYatraEntry.webp" class="revGallery-anchor hotel">
-          <img class="hidden" src="./assets/img/daYatraEntry.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/daYatraEntry.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./assets/img/slider/welcome.webp" class="revGallery-anchor hotel">
-          <img class="hidden" src="./assets/img/slider/welcome.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/slider/welcome.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./assets/img/slider/reception.webp" class="revGallery-anchor hotel">
-          <img class="hidden" src="./assets/img/slider/reception.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/slider/reception.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./assets/img/daYatraNight.webp" class="revGallery-anchor hotel">
-          <img class="hidden" src="./assets/img/daYatraNight.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/daYatraNight.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./assets/img/rooms/fr2.webp" class="revGallery-anchor hotel">
-          <img class="hidden" src="./assets/img/rooms/fr2.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/rooms/fr2.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
-        <a href="./assets/img/slider/building.webp" class="revGallery-anchor hotel">
-          <img class="hidden" src="./assets/img/slider/building.webp">
-          <div style="overflow:hidden">
-            <div class="nak-gallery-poster"
-              style="background-image:url('./assets/img/slider/building.webp');background-size:cover;background-repeat:no-repeat;background-position:center center;display: block;width: 100%;height: 0;">
-            </div>
-          </div>
-          <div class="gal-overlay">
-            <div class="photo"></div>
-          </div>
-        </a>
+
+
+        </div>
       </div>
     </div>
   </section>
@@ -823,63 +698,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery-all.min.js'></script>
   <script src='https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js'></script>
   <script src='https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js'></script>
-
-  <script src="./assets/js/app.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      var $gallery = $('#gallery');
-      var $boxes = $('.revGallery-anchor');
-      $boxes.hide();
-
-      $gallery.imagesLoaded({ background: true }, function () {
-        $boxes.fadeIn();
-
-        $gallery.isotope({
-          // options
-          sortBy: 'original-order',
-          layoutMode: 'fitRows',
-          itemSelector: '.revGallery-anchor',
-          stagger: 30,
-        });
-      });
-
-      $('button').on('click', function () {
-        var filterValue = $(this).attr('data-filter');
-        $('#gallery').isotope({ filter: filterValue });
-        $gallery.data('lightGallery').destroy(true);
-        $gallery.lightGallery({
-          selector: filterValue.replace('*', '')
-        });
-      });
-    });
-
-    $(document).ready(function () {
-      $("#gallery").lightGallery({
-
-      });
-    });
-
-    //button active mode
-    $('.button').click(function () {
-      $('.button').removeClass('is-checked');
-      $(this).addClass('is-checked');
-    });
-
-
-    //CSS Gram Filters on Mouse enter
-    $("#gallery a .nak-gallery-poster").addClass("inkwell");
-
-    $("#gallery a").on({
-      mouseenter: function () {
-        $(this).find(".nak-gallery-poster").removeClass("inkwell").addClass("walden");
-      },
-      mouseleave: function () {
-        $(this).find(".nak-gallery-poster").removeClass("walden").addClass("inkwell");
-      }
-    });
-  </script>
-
 
 
   <script src="./js/app.js"></script>

@@ -867,6 +867,10 @@ section {
   top: 88px;
 }
 
+.left-5 {
+  left: 1.25rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -901,6 +905,10 @@ section {
 
 .z-\[99\] {
   z-index: 99;
+}
+
+.z-auto {
+  z-index: auto;
 }
 
 .order-1 {
@@ -1041,6 +1049,10 @@ section {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .block {
@@ -1192,6 +1204,10 @@ section {
   height: 100vh;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .max-h-80 {
   max-height: 20rem;
 }
@@ -1202,6 +1218,10 @@ section {
 
 .max-h-screen {
   max-height: 100vh;
+}
+
+.max-h-40 {
+  max-height: 10rem;
 }
 
 .min-h-\[10vh\] {
@@ -1338,6 +1358,11 @@ section {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-0 {
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-rotate-180 {
   --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1356,6 +1381,12 @@ section {
 .scale-75 {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1379,6 +1410,14 @@ section {
 
 .scroll-pt-6 {
   scroll-padding-top: 1.5rem;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .grid-cols-1 {
@@ -1467,6 +1506,10 @@ section {
 
 .gap-y-12 {
   row-gap: 3rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1675,6 +1718,26 @@ section {
   background-color: rgb(255 255 255 / 0.8);
 }
 
+.bg-amber-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 243 199 / var(--tw-bg-opacity));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'https\:\/\/www\.babermahalvilas\.com\/images\/articles\/Z30rm-history\.jpg\'\)\] {
   background-image: url('https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg');
 }
@@ -1714,6 +1777,12 @@ section {
 .from-dark\/70 {
   --tw-gradient-from: rgb(17 17 17 / 0.7) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(17 17 17 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-black\/10 {
+  --tw-gradient-from: rgb(0 0 0 / 0.1) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1944,6 +2013,26 @@ section {
   padding-top: 1.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2023,6 +2112,10 @@ section {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .capitalize {
@@ -2110,6 +2203,15 @@ section {
   color: rgb(255 255 255 / 0.8);
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-dark\/60 {
+  color: rgb(17 17 17 / 0.6);
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2142,6 +2244,10 @@ section {
   opacity: 0.8;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
@@ -2164,6 +2270,10 @@ section {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.outline {
+  outline-style: solid;
+}
+
 .outline-dashed {
   outline-style: dashed;
 }
@@ -2172,12 +2282,32 @@ section {
   outline-width: 1.5px;
 }
 
+.outline-1 {
+  outline-width: 1px;
+}
+
 .-outline-offset-4 {
   outline-offset: -4px;
 }
 
+.-outline-offset-8 {
+  outline-offset: -8px;
+}
+
+.-outline-offset-\[12px\] {
+  outline-offset: -12px;
+}
+
 .outline-black {
   outline-color: #000;
+}
+
+.outline-black\/0 {
+  outline-color: rgb(0 0 0 / 0);
+}
+
+.outline-white {
+  outline-color: #fff;
 }
 
 .contrast-100 {
@@ -2254,6 +2384,10 @@ section {
   transition-duration: 500ms;
 }
 
+.duration-\[2s\] {
+  transition-duration: 2s;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2264,6 +2398,10 @@ section {
 
 .\[text-shadow\:1px_1px_2px_\#cd9c31\] {
   text-shadow: 1px 1px 2px #cd9c31;
+}
+
+.\[text-shadow\:2px_2px_\#815f16\] {
+  text-shadow: 2px 2px #815f16;
 }
 
 /* @layer utilities {
@@ -2285,6 +2423,42 @@ section {
     transform: scaleX(1);
   }
 } */
+
+@media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+    }
+  }
+}
 
 .hover\:-translate-x-2:hover {
   --tw-translate-x: -0.5rem;
@@ -2446,6 +2620,10 @@ section {
   opacity: 0.5;
 }
 
+.group:hover .group-hover\:outline-offset-0 {
+  outline-offset: 0px;
+}
+
 .group:hover .group-hover\:contrast-125 {
   --tw-contrast: contrast(1.25);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2456,8 +2634,16 @@ section {
     margin-right: 1rem;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:h-\[50vh\] {
     height: 50vh;
+  }
+
+  .sm\:h-96 {
+    height: 24rem;
   }
 
   .sm\:min-h-96 {
@@ -2575,6 +2761,10 @@ section {
     margin-top: 11rem;
   }
 
+  .md\:-mt-28 {
+    margin-top: -7rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2603,8 +2793,16 @@ section {
     height: 20vh;
   }
 
+  .md\:h-\[30rem\] {
+    height: 30rem;
+  }
+
   .md\:max-h-screen {
     max-height: 100vh;
+  }
+
+  .md\:max-h-60 {
+    max-height: 15rem;
   }
 
   .md\:min-h-\[20vh\] {
@@ -2710,6 +2908,22 @@ section {
     gap: 1.25rem;
   }
 
+  .md\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .md\:space-y-32 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(8rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
   .md\:overflow-y-auto {
     overflow-y: auto;
   }
@@ -2764,6 +2978,21 @@ section {
     padding-bottom: 2rem;
   }
 
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -2811,6 +3040,11 @@ section {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .md\:font-light {
@@ -2888,6 +3122,10 @@ section {
     height: 100vh;
   }
 
+  .lg\:h-\[32rem\] {
+    height: 32rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2925,6 +3163,11 @@ section {
     background-image: url('https://www.babermahalvilas.com/images/slideshow/G9YkC-img_0164.jpg');
   }
 
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2953,11 +3196,61 @@ section {
     height: 100vh;
   }
 
+  .xl\:h-\[95vh\] {
+    height: 95vh;
+  }
+
+  .xl\:h-\[90vh\] {
+    height: 90vh;
+  }
+
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:gap-16 {
+    gap: 4rem;
+  }
+
+  .xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .xl\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .xl\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xl\:text-center {
+    text-align: center;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:leading-snug {
+    line-height: 1.375;
   }
 }
