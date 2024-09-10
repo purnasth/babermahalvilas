@@ -1594,10 +1594,6 @@ section {
   overflow-x: hidden;
 }
 
-.text-balance {
-  text-wrap: balance;
-}
-
 .text-pretty {
   text-wrap: pretty;
 }
@@ -1683,6 +1679,10 @@ section {
   border-color: rgb(17 17 17 / 0.5);
 }
 
+.border-dark\/80 {
+  border-color: rgb(17 17 17 / 0.8);
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -1699,10 +1699,6 @@ section {
 
 .border-white\/60 {
   border-color: rgb(255 255 255 / 0.6);
-}
-
-.border-dark\/80 {
-  border-color: rgb(17 17 17 / 0.8);
 }
 
 .bg-black {
@@ -1788,10 +1784,6 @@ section {
 
 .bg-white\/40 {
   background-color: rgb(255 255 255 / 0.4);
-}
-
-.bg-white\/60 {
-  background-color: rgb(255 255 255 / 0.6);
 }
 
 .bg-white\/80 {
@@ -2096,10 +2088,6 @@ section {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-center {
@@ -3235,10 +3223,6 @@ section {
 
   .xl\:mr-4 {
     margin-right: 1rem;
-  }
-
-  .xl\:h-\[95vh\] {
-    height: 95vh;
   }
 
   .xl\:h-screen {
