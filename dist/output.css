@@ -845,6 +845,10 @@ section {
   bottom: 6rem;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
 .bottom-52 {
   bottom: 13rem;
 }
@@ -1085,6 +1089,10 @@ section {
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mt-4 {
@@ -1701,6 +1709,10 @@ section {
 
 .border-white\/50 {
   border-color: rgb(255 255 255 / 0.5);
+}
+
+.border-white\/60 {
+  border-color: rgb(255 255 255 / 0.6);
 }
 
 .bg-black {
@@ -2559,6 +2571,10 @@ section {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.hover\:border-white\/0:hover {
+  border-color: rgb(255 255 255 / 0);
+}
+
 .hover\:bg-coffee-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 233 210 / var(--tw-bg-opacity));
@@ -2841,6 +2857,10 @@ section {
 
   .md\:mt-44 {
     margin-top: 11rem;
+  }
+
+  .md\:-mt-32 {
+    margin-top: -8rem;
   }
 
   .md\:block {
@@ -3286,6 +3306,11 @@ section {
 
   .xl\:text-center {
     text-align: center;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .xl\:text-3xl {

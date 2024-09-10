@@ -74,6 +74,24 @@ li.active>.drop {
   }
 }
 
+.zoomIn-image {
+  animation: zoomIn 2s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .white-filter {
   filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1647%) hue-rotate(184deg) brightness(119%) contrast(100%);
 }
