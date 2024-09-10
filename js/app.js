@@ -22,46 +22,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //   lastScrollTop = scrollTop;
   // });
-
   let lastScrollTop = 0;
   const navbar = document.getElementById("navbar");
   const dropdowns = document.querySelectorAll(".dropdown ul"); // Select all dropdown menus
-  
+
   window.addEventListener("scroll", function () {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
+
     if (scrollTop === 0) {
-      // At the top of the page: Restore original navbar height and dropdown position
+      // At the top of the page: Show the navbar and restore dropdown position
       navbar.classList.remove("-translate-y-full");
-      navbar.classList.remove("h-8");
-      navbar.classList.add("h-20");
-  
+
       dropdowns.forEach((dropdown) => {
         dropdown.style.top = "4.5rem"; // Restore dropdown position
       });
     } else if (scrollTop > lastScrollTop) {
-      // Scroll Down: Hide navbar and restore original height
-      navbar.classList.add("-translate-y-full");
-      navbar.classList.remove("h-8");
-      navbar.classList.add("h-20");
-  
+      // Scroll Down: Hide navbar and reset dropdown position
+      navbar.classList.add("-translate-y-full"); // Hide the navbar
+
       dropdowns.forEach((dropdown) => {
         dropdown.style.top = "4.5rem"; // Dropdown position for scroll down
       });
     } else {
-      // Scroll Up: Show navbar, reduce height, and change dropdown position
-      navbar.classList.remove("-translate-y-full");
-      navbar.classList.remove("h-20");
-      navbar.classList.add("h-8");
-  
+      // Scroll Up: Hide the navbar completely, no need to show it
+      navbar.classList.add("-translate-y-full"); // Keep navbar hidden on scroll up
+
       dropdowns.forEach((dropdown) => {
         dropdown.style.top = "2.5rem"; // Dropdown position for scroll up
       });
     }
-  
+
     lastScrollTop = scrollTop;
   });
-  
 
   toggleButton.addEventListener("click", function () {
     navLinks.classList.toggle("-translate-x-full");
@@ -86,6 +78,26 @@ document.addEventListener("DOMContentLoaded", function () {
   //     header.classList.add("bg-transparent");
   //   }
   // });
+});
+
+// Select the Back to Top button
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// Show/Hide button after 100vh scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > window.innerHeight) {
+    backToTopBtn.classList.remove("hidden");
+  } else {
+    backToTopBtn.classList.add("hidden");
+  }
+});
+
+// Scroll to top when button is clicked
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
 
 // for dropdown

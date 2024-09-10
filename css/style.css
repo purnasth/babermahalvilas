@@ -38,15 +38,18 @@
   }
 
   .nav-link {
-    @apply capitalize relative block w-full text-white/80 hover:text-white py-3 px-3 text-base rounded-xl transition-all duration-200 ease-in-out;
+    @apply capitalize relative block w-full text-white/80 hover:text-white py-3 px-3 text-base 2xl:text-lg rounded-xl transition-all duration-200 ease-in-out;
   }
 
   .nav-link>a {
-    @apply text-base;
+    @apply text-base 2xl:text-xl;
   }
 
-  .navlink-dropdown {
+  /* .navlink-dropdown {
     @apply w-full capitalize text-white bg-dark/80 hover:bg-white/80 hover:text-dark py-3 lg:py-2 lg:px-2 text-sm rounded-xl transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
+  } */
+  .navlink-dropdown {
+    @apply capitalize text-white bg-dark/0 hover:bg-white/50 hover:text-dark py-3 lg:py-2 lg:px-4 text-sm xl:text-sm 2xl:text-base transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
   }
 
   .caps {
@@ -55,6 +58,10 @@
 
   .merriweather {
     font-family: "Merriweather", 'Times New Roman', Times, serif;
+  }
+
+  .review {
+    @apply italic;
   }
 
   /* .number {
