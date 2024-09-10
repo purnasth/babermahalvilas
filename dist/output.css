@@ -1343,6 +1343,10 @@ section {
   width: 100vw;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -1361,6 +1365,10 @@ section {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .origin-left {
@@ -2240,6 +2248,10 @@ section {
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(17 17 17 / var(--tw-text-opacity));
+}
+
+.text-dark\/70 {
+  color: rgb(17 17 17 / 0.7);
 }
 
 .text-dark\/80 {
