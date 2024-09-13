@@ -32,11 +32,23 @@
       .revGallery-anchor {
         overflow: hidden;
         position: relative;
-        width: calc(100% / 4);
-        height: 15rem;
         display: block;
         float: left;
-        border: 5px solid #e9e9e9;
+        border: 5px solid #fff;
+        width: calc(100% / 3);
+        /* Adjust the width to suit your layout */
+      }
+
+      .nak-gallery-poster {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%;
+        /* Default aspect ratio for landscape images */
+        transition: all 0.4s ease;
       }
 
       @media (max-width: 768px) {
@@ -72,27 +84,16 @@
         box-sizing: border-box;
       }
 
-      .nak-gallery-poster {
-        padding-bottom: 100%;
-        transform-origin: 50% 50%;
-        -webkit-transform-origin: 50% 50%;
-        -ms-transform-origin: 50% 50%;
-        transform: scale(1, 1);
-        -webkit-transform: scale(1, 1);
-        -ms-transform: scale(1, 1);
-        transition: all 0.4s ease;
-        -webkit-transition: all 0.4s ease;
-      }
-
       .revGallery-anchor:hover .nak-gallery-poster {
         transform: scale(1.1, 1.1);
         -webkit-transform: scale(1.1, 1.1);
         -ms-transform: scale(1.1, 1.1);
       }
 
-      /* .hidden {
-      display: none;
-    } */
+      .revGallery-anchor.portrait .nak-gallery-poster {
+        padding-bottom: 150%;
+        /* Adjust for portrait images */
+      }
     </style>
   </head>
 
@@ -670,53 +671,88 @@
       </div>
     </div>
 
-    <section class="px-4">
+    <section class="pt-12 py-20 px-1">
       <div class="gallery">
-        <div class="flex items-center justify-center gap-4 mb-16 flex-wrap">
+        <div class="flex items-center justify-center gap-2 mb-8 flex-wrap">
           <button
             type="button"
-            class="caps capitalize button bg-dark/20 hover:bg-dark/50 text-sm md:text-base px-4 md:px-4 py-2 md:py-2 is-checked"
+            class="caps capitalize button border border-dark/40 hover:bg-dark/20 text-sm md:text-base px-4 md:px-4 py-1 is-checked"
             data-filter=""
           >
             all
           </button>
           <button
             type="button"
-            class="caps capitalize button bg-dark/20 hover:bg-dark/50 text-sm md:text-base px-4 md:px-4 py-2 md:py-2"
-            data-filter=".rooms"
+            class="caps capitalize button border border-dark/40 hover:bg-dark/20 text-sm md:text-base px-4 md:px-4 py-1"
+            data-filter=".traditional-room"
           >
-            Rooms
+            Traditional Room
           </button>
           <button
             type="button"
-            class="caps capitalize button bg-dark/20 hover:bg-dark/50 text-sm md:text-base px-4 md:px-4 py-2 md:py-2"
-            data-filter=".dine"
+            class="caps capitalize button border border-dark/40 hover:bg-dark/20 text-sm md:text-base px-4 md:px-4 py-1"
+            data-filter=".traditional-premium-room"
           >
-            Dine
+            Traditional Premium Room
           </button>
           <button
             type="button"
-            class="caps capitalize button bg-dark/20 hover:bg-dark/50 text-sm md:text-base px-4 md:px-4 py-2 md:py-2"
-            data-filter=".hotel"
+            class="caps capitalize button border border-dark/40 hover:bg-dark/20 text-sm md:text-base px-4 md:px-4 py-1"
+            data-filter=".heritage-room"
           >
-            Hotel
+            Heritage Room
+          </button>
+          <button
+            type="button"
+            class="caps capitalize button border border-dark/40 hover:bg-dark/20 text-sm md:text-base px-4 md:px-4 py-1"
+            data-filter=".royal-suite"
+          >
+            Royal Suite
+          </button>
+          <button
+            type="button"
+            class="caps capitalize button border border-dark/40 hover:bg-dark/20 text-sm md:text-base px-4 md:px-4 py-1"
+            data-filter=".exterior"
+          >
+            Exterior
+          </button>
+          <button
+            type="button"
+            class="caps capitalize button border border-dark/40 hover:bg-dark/20 text-sm md:text-base px-4 md:px-4 py-1"
+            data-filter=".interior"
+          >
+            Interior
+          </button>
+          <button
+            type="button"
+            class="caps capitalize button border border-dark/40 hover:bg-dark/20 text-sm md:text-base px-4 md:px-4 py-1"
+            data-filter=".restro-bar"
+          >
+            Restaurant & Bar
+          </button>
+          <button
+            type="button"
+            class="caps capitalize button border border-dark/40 hover:bg-dark/20 text-sm md:text-base px-4 md:px-4 py-1"
+            data-filter=".recreation"
+          >
+            Recreation
           </button>
         </div>
 
         <div class="nak-gallery nlg1" id="gallery">
-          <a href="./img/babermahal.jpg" class="revGallery-anchor hotel">
-            <img class="hidden" src="./img/babermahal.jpg" />
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/pGs4D-padma1.jpg"
+            class="revGallery-anchor landscape traditional-room"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/pGs4D-padma1.jpg"
+            />
             <div style="overflow: hidden">
               <div
                 class="nak-gallery-poster"
                 style="
-                  background-image: url('./img/babermahal.jpg');
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center center;
-                  display: block;
-                  width: 100%;
-                  height: 0;
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/pGs4D-padma1.jpg');
                 "
               ></div>
             </div>
@@ -724,19 +760,20 @@
               <div class="photo"></div>
             </div>
           </a>
-          <a href="./img/babermahal.jpg" class="revGallery-anchor rooms">
-            <img class="hidden" src="./img/babermahal.jpg" />
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/To50L-chakra1.jpg"
+            class="revGallery-anchor landscape traditional-premium-room"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/To50L-chakra1.jpg"
+            />
             <div style="overflow: hidden">
               <div
                 class="nak-gallery-poster"
                 style="
-                  background-image: url('./img/babermahal.jpg');
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center center;
-                  display: block;
-                  width: 100%;
-                  height: 0;
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/To50L-chakra1.jpg');
                 "
               ></div>
             </div>
@@ -744,19 +781,20 @@
               <div class="photo"></div>
             </div>
           </a>
-          <a href="./img/babermahal.jpg" class="revGallery-anchor dine">
-            <img class="hidden" src="./img/babermahal.jpg" />
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/UWbs1-singha-suite5.jpg"
+            class="revGallery-anchor portrait heritage-room"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/UWbs1-singha-suite5.jpg"
+            />
             <div style="overflow: hidden">
               <div
                 class="nak-gallery-poster"
                 style="
-                  background-image: url('./img/babermahal.jpg');
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center center;
-                  display: block;
-                  width: 100%;
-                  height: 0;
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/UWbs1-singha-suite5.jpg');
                 "
               ></div>
             </div>
@@ -764,19 +802,272 @@
               <div class="photo"></div>
             </div>
           </a>
-          <a href="./img/babermahal.jpg" class="revGallery-anchor hall">
-            <img class="hidden" src="./img/babermahal.jpg" />
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/QZFoq-cs3.jpg"
+            class="revGallery-anchor landscape royal-suite"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/QZFoq-cs3.jpg"
+            />
             <div style="overflow: hidden">
               <div
                 class="nak-gallery-poster"
                 style="
-                  background-image: url('./img/babermahal.jpg');
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center center;
-                  display: block;
-                  width: 100%;
-                  height: 0;
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/QZFoq-cs3.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/qjTrO-ex2.jpg"
+            class="revGallery-anchor portrait exterior"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/qjTrO-ex2.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/qjTrO-ex2.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/jpb5E-untitled-1.jpg"
+            class="revGallery-anchor portrait restro-bar"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/jpb5E-untitled-1.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/jpb5E-untitled-1.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg"
+            class="revGallery-anchor portrait interior"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/4pLvq-pool3.jpg"
+            class="revGallery-anchor portrait recreation"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/4pLvq-pool3.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/4pLvq-pool3.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/e8c88-frangipani2.jpg"
+            class="revGallery-anchor portrait traditional-room"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/e8c88-frangipani2.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/e8c88-frangipani2.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/3fruF-chakra4.jpg"
+            class="revGallery-anchor portrait traditional-premium-room"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/3fruF-chakra4.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/3fruF-chakra4.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/xYj7x-kausee-kotha1.jpg"
+            class="revGallery-anchor landscape heritage-room"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/xYj7x-kausee-kotha1.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/xYj7x-kausee-kotha1.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/7bTUf-dhvaja4.jpg"
+            class="revGallery-anchor portrait royal-suite"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/7bTUf-dhvaja4.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/7bTUf-dhvaja4.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/PXIC3-ex1.jpg"
+            class="revGallery-anchor landscape exterior"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/PXIC3-ex1.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/PXIC3-ex1.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/ON4z9-bar1.jpg"
+            class="revGallery-anchor landscape restro-bar"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/ON4z9-bar1.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/ON4z9-bar1.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/9Okdw-untitled-19.jpg"
+            class="revGallery-anchor landscape interior"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/9Okdw-untitled-19.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/9Okdw-untitled-19.jpg');
+                "
+              ></div>
+            </div>
+            <div class="gal-overlay">
+              <div class="photo"></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.babermahalvilas.com/images/gallery/galleryimages/UjWBX-gym1.jpg"
+            class="revGallery-anchor landscape recreation"
+          >
+            <img
+              class="hidden"
+              src="https://www.babermahalvilas.com/images/gallery/galleryimages/UjWBX-gym1.jpg"
+            />
+            <div style="overflow: hidden">
+              <div
+                class="nak-gallery-poster"
+                style="
+                  background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/UjWBX-gym1.jpg');
                 "
               ></div>
             </div>
@@ -1009,9 +1300,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
 
@@ -1030,50 +1318,38 @@
           $boxes.fadeIn();
 
           $gallery.isotope({
-            // options
-            sortBy: "original-order",
-            layoutMode: "fitRows",
             itemSelector: ".revGallery-anchor",
-            stagger: 30,
+            layoutMode: "masonry",
+            percentPosition: true,
+            masonry: {
+              columnWidth: ".revGallery-anchor",
+              gutter: 0,
+            },
           });
         });
 
+        // Handle tab click event
         $("button").on("click", function () {
           var filterValue = $(this).attr("data-filter");
+
+          // Remove is-checked class from all buttons
+          $("button").removeClass("is-checked");
+
+          // Add is-checked class to the clicked button
+          $(this).addClass("is-checked");
+
+          // Apply the filter using Isotope
           $("#gallery").isotope({ filter: filterValue });
+
+          // Destroy and reinitialize lightGallery with the new filtered items
           $gallery.data("lightGallery").destroy(true);
           $gallery.lightGallery({
             selector: filterValue.replace("*", ""),
           });
         });
-      });
 
-      $(document).ready(function () {
+        // Initialize lightGallery
         $("#gallery").lightGallery({});
-      });
-
-      //button active mode
-      $(".button").click(function () {
-        $(".button").removeClass("is-checked");
-        $(this).addClass("is-checked");
-      });
-
-      //CSS Gram Filters on Mouse enter
-      $("#gallery a .nak-gallery-poster").addClass("inkwell");
-
-      $("#gallery a").on({
-        mouseenter: function () {
-          $(this)
-            .find(".nak-gallery-poster")
-            .removeClass("inkwell")
-            .addClass("walden");
-        },
-        mouseleave: function () {
-          $(this)
-            .find(".nak-gallery-poster")
-            .removeClass("walden")
-            .addClass("inkwell");
-        },
       });
     </script>
 

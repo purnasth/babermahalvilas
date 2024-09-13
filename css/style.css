@@ -64,6 +64,10 @@
     @apply italic;
   }
 
+  .is-checked {
+    @apply bg-coffee-400 text-coffee-800;
+  }
+
   /* .number {
     font-family: "Kanit", serif;
   } */

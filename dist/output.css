@@ -771,6 +771,13 @@ section {
   font-style: italic;
 }
 
+.is-checked {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 233 210 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(94 48 35 / var(--tw-text-opacity));
+}
+
 /* .number {
     font-family: "Kanit", serif;
   } */
@@ -1371,6 +1378,14 @@ section {
   max-width: 20rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-96 {
+  max-width: 24rem;
+}
+
 .origin-left {
   transform-origin: left;
 }
@@ -1492,6 +1507,10 @@ section {
   flex-wrap: wrap;
 }
 
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1594,12 +1613,20 @@ section {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .text-pretty {
@@ -1681,6 +1708,10 @@ section {
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(17 17 17 / var(--tw-border-opacity));
+}
+
+.border-dark\/40 {
+  border-color: rgb(17 17 17 / 0.4);
 }
 
 .border-dark\/50 {
@@ -2062,6 +2093,21 @@ section {
   padding-bottom: 1.5rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2096,6 +2142,10 @@ section {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-center {
@@ -2576,6 +2626,10 @@ section {
   background-color: rgb(255 255 255 / 0.4);
 }
 
+.hover\:bg-dark\/20:hover {
+  background-color: rgb(17 17 17 / 0.2);
+}
+
 .hover\:text-coffee-700:hover {
   --tw-text-opacity: 1;
   color: rgb(137 87 55 / var(--tw-text-opacity));
@@ -3043,6 +3097,11 @@ section {
     padding-bottom: 2rem;
   }
 
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -3251,6 +3310,10 @@ section {
 
   .xl\:gap-16 {
     gap: 4rem;
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
   }
 
   .xl\:px-20 {
