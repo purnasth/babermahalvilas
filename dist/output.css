@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -791,6 +791,10 @@ section {
 
 .pointer-events-auto {
   pointer-events: auto;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .invisible {
@@ -2131,6 +2135,10 @@ section {
   line-height: 1.5rem;
 }
 
+.text-inherit {
+  font-size: inherit;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2257,6 +2265,10 @@ section {
 .text-green-600 {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.text-inherit {
+  color: inherit;
 }
 
 .text-white {
@@ -2738,10 +2750,6 @@ section {
 
   .md\:top-10 {
     top: 2.5rem;
-  }
-
-  .md\:top-\[4\.5rem\] {
-    top: 4.5rem;
   }
 
   .md\:top-\[4rem\] {
@@ -3277,11 +3285,6 @@ section {
   .\32xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .\32xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .\32xl\:text-lg {

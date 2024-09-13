@@ -16,6 +16,9 @@ module.exports = {
         // "yellow-clr": "#FFDE59",
         dark: "#111111",
       },
+      fontSize: {
+        inherit: "inherit",
+      },
     },
   },
   plugins: [],

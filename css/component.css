@@ -138,3 +138,10 @@ li.active>.drop {
   animation: zoomIn 8s ease-in-out infinite;
   transform-origin: center;
 }
+
+.the-vilas {
+  font-style: italic;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
