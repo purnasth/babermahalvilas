@@ -1,666 +1,952 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Baber Mahal Vilas" />
+    <meta name="theme-color" content="#FFE9D2" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to Baber Mahal Vilas" />
-  <meta name="theme-color" content="#FFE9D2" />
+    <title>Baber Mahal Vilas</title>
 
-  <title>Baber Mahal Vilas</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./logo/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.png" />
+    <link rel="manifest" href="./logo/site.webmanifest" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./logo/favicon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.png" />
-  <link rel="manifest" href="./logo/site.webmanifest" />
+    <link rel="stylesheet" href="./css/links.css" />
+    <link rel="stylesheet" href="./css/component.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
 
-  <link rel="stylesheet" href="./css/links.css" />
-  <link rel="stylesheet" href="./css/component.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link href="dist/output.css" rel="stylesheet" />
-</head>
+  <body class="overflow-x-hidden">
+    <header
+      id="navbar"
+      class="h-20 sticky lg:fixed top-0 z-50 bg-dark/60 w-full transition-all duration-1000 ease-in-out"
+    >
+      <div class="container mx-auto px-4 size-full">
+        <div class="flex justify-between items-center size-full">
+          <a href="./index.html" aria-label="Logo" class="">
+            <img
+              id="logo"
+              src="./img/logo.svg"
+              alt="Logo"
+              class="absolute top-0 w-24 h-16 md:w-32 md:h-20 object-contain"
+            />
+          </a>
+          <div class="flex items-center gap-2">
+            <div class="flex items-center gap-3">
+              <ul
+                class="links hidden lg:flex items-start justify-start gap-1 md:gap-3"
+              >
+                <li class="caps dropdown nav-link group">
+                  <a
+                    href="#"
+                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                    aria-label="About"
+                  >
+                    About
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </a>
+                  <ul
+                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
+                  >
+                    <li class="w-full">
+                      <a
+                        href="./index.html#our-story"
+                        class="navlink-dropdown"
+                        aria-label="Our Story"
+                        >Our Story</a
+                      >
+                    </li>
+                    <li class="w-full">
+                      <a
+                        href="./index.html#the-history"
+                        class="navlink-dropdown"
+                        aria-label="Our History"
+                        >The History</a
+                      >
+                    </li>
+                    <li class="w-full">
+                      <a
+                        href="./index.html#the-property"
+                        class="navlink-dropdown"
+                        aria-label="Our Property"
+                        >The Property</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="caps dropdown nav-link group">
+                  <a
+                    href="./room.html"
+                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                    aria-label="Rooms"
+                  >
+                    Rooms
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </a>
+                  <ul
+                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
+                  >
+                    <li class="block w-full">
+                      <a
+                        href="./traditional-room.html"
+                        class="navlink-dropdown"
+                        aria-label="Traditional Room"
+                      >
+                        Traditional Room
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a
+                        href="./traditional-room-new.html"
+                        class="navlink-dropdown"
+                        aria-label="Traditional Suite"
+                      >
+                        Traditional Suite
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a
+                        href="#"
+                        class="navlink-dropdown"
+                        aria-label="Heritage Suite"
+                      >
+                        Heritage Suite
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a
+                        href="#"
+                        class="navlink-dropdown"
+                        aria-label="Royal Suite"
+                      >
+                        Royal Suite
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="caps dropdown nav-link group">
+                  <a
+                    href="./dine.html"
+                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                    aria-label="Dining"
+                  >
+                    Dining
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </a>
+                  <ul
+                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
+                  >
+                    <li class="block w-full">
+                      <a
+                        href="./dine.html#baithak"
+                        class="navlink-dropdown"
+                        aria-label="Baithak Restaurant"
+                      >
+                        Baithak Restaurant
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a
+                        href="./dine.html#k2-terrace"
+                        class="navlink-dropdown"
+                        aria-label="K2 Terrace Cafe"
+                      >
+                        K2 Terrace Cafe
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="caps dropdown nav-link group">
+                  <a
+                    href="./facilities.html"
+                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                    aria-label="Facilities"
+                  >
+                    Facilities
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </a>
+                  <ul
+                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
+                  >
+                    <li class="block w-full">
+                      <a
+                        href="./facilities.html#spa"
+                        class="navlink-dropdown"
+                        aria-label="Spa"
+                      >
+                        Spa
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a
+                        href="./facilities.html#gym"
+                        class="navlink-dropdown"
+                        aria-label="Gym"
+                      >
+                        Gym
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a
+                        href="./facilities.html#swimming-pool"
+                        class="navlink-dropdown"
+                        aria-label="Swimming Pool"
+                      >
+                        Swimming Pool
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a
+                        href="./facilities.html#gift-shop"
+                        class="navlink-dropdown"
+                        aria-label="Gift Shop"
+                      >
+                        Gift Shop
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="caps dropdown nav-link group">
+                  <a
+                    href="./traveldesk.html"
+                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                    aria-label="Travel Desk"
+                  >
+                    Travel&nbsp;Desk
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </a>
+                  <ul
+                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
+                  >
+                    <li class="block w-full">
+                      <a
+                        href="./day-trip.html"
+                        class="navlink-dropdown"
+                        aria-label="Day Trip"
+                      >
+                        Day Trip
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a href="#" class="navlink-dropdown" aria-label="Flights">
+                        Flights
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a
+                        href="#"
+                        class="navlink-dropdown"
+                        aria-label="Car Rental"
+                      >
+                        Car Rentals
+                      </a>
+                    </li>
+                    <li class="block w-full">
+                      <a
+                        href="#"
+                        class="navlink-dropdown"
+                        aria-label="Day Hikes"
+                      >
+                        Day Hikes
+                      </a>
+                    </li>
+                  </ul>
+                </li>
 
-<body class="overflow-x-hidden">
-  <header id="navbar"
-    class="h-20 sticky lg:fixed top-0 z-50 bg-dark/60 w-full transition-all duration-1000 ease-in-out">
-    <div class="container mx-auto px-4 size-full">
-      <div class="flex justify-between items-center size-full">
-        <a href="./index.html" aria-label="Logo" class="">
-          <img id="logo" src="./img/logo.svg" alt="Logo"
-            class="absolute top-0 w-24 h-16 md:w-32 md:h-20 object-contain" />
-        </a>
-        <div class="flex items-center gap-2">
-          <div class="flex items-center gap-3">
-            <ul class="links hidden lg:flex items-start justify-start gap-1 md:gap-3">
-              <li class="caps dropdown nav-link group">
-                <a href="#" class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="About">
-                  About
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="w-full">
-                    <a href="./index.html#our-story" class="navlink-dropdown" aria-label="Our Story">Our Story</a>
-                  </li>
-                  <li class="w-full">
-                    <a href="./index.html#the-history" class="navlink-dropdown" aria-label="Our History">The History</a>
-                  </li>
-                  <li class="w-full">
-                    <a href="./index.html#the-property" class="navlink-dropdown" aria-label="Our Property">The
-                      Property</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="caps dropdown nav-link group">
-                <a href="./room.html"
-                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="Rooms">
-                  Rooms
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="block w-full">
-                    <a href="./traditional-room.html" class="navlink-dropdown" aria-label="Traditional Room">
-                      Traditional Room
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./traditional-room-new.html" class="navlink-dropdown" aria-label="Traditional Suite">
-                      Traditional Suite
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="#" class="navlink-dropdown" aria-label="Heritage Suite">
-                      Heritage Suite
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
-                      Royal Suite
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="caps dropdown nav-link group">
-                <a href="./dine.html"
-                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="Dining">
-                  Dining
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="block w-full">
-                    <a href="./dine.html#baithak" class="navlink-dropdown" aria-label="Baithak Restaurant">
-                      Baithak Restaurant
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./dine.html#k2-terrace" class="navlink-dropdown" aria-label="K2 Terrace Cafe">
-                      K2 Terrace Cafe
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="caps dropdown nav-link group">
-                <a href="./facilities.html"
-                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="Facilities">
-                  Facilities
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="block w-full">
-                    <a href="./facilities.html#spa" class="navlink-dropdown" aria-label="Spa">
-                      Spa
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./facilities.html#gym" class="navlink-dropdown" aria-label="Gym">
-                      Gym
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./facilities.html#swimming-pool" class="navlink-dropdown" aria-label="Swimming Pool">
-                      Swimming Pool
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./facilities.html#gift-shop" class="navlink-dropdown" aria-label="Gift Shop">
-                      Gift Shop
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="caps dropdown nav-link group">
-                <a href="./traveldesk.html"
-                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="Travel Desk">
-                  Travel&nbsp;Desk
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="block w-full">
-                    <a href="./day-trip.html" class="navlink-dropdown" aria-label="Day Trip">
-                      Day Trip
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="#" class="navlink-dropdown" aria-label="Flights">
-                      Flights
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="#" class="navlink-dropdown" aria-label="Car Rental">
-                      Car Rentals
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="#" class="navlink-dropdown" aria-label="Day Hikes">
-                      Day Hikes
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <!-- <li class="caps block w-full">
+                <!-- <li class="caps block w-full">
                   <a href="#" class="nav-link" aria-label="Spa">Spa</a>
                 </li> -->
-              <li class="caps block w-full group">
-                <a href="./gallery.html" class="nav-link relative underline-hover-effect"
-                  aria-label="Gallery">Gallery</a>
-              </li>
-              <!-- <li class="caps block w-full">
+                <li class="caps block w-full group">
+                  <a
+                    href="./gallery.html"
+                    class="nav-link relative underline-hover-effect"
+                    aria-label="Gallery"
+                    >Gallery</a
+                  >
+                </li>
+                <!-- <li class="caps block w-full">
                   <a href="#" class="nav-link" aria-label="Press">Press</a>
                 </li> -->
-              <li class="caps block w-full group">
-                <a href="./contact.html" class="nav-link relative underline-hover-effect"
-                  aria-label="Contact">Contact</a>
-              </li>
-            </ul>
-            <a href="https://www.babermahal.com/" target="_blank"
-              class="caps text-white/80 hover:text-white text-base 2xl:text-lg transition-all duration-300 ease-linear vilas-italic">Baber
-              Mahal
-              Revisited</a>
-          </div>
-          <div class="flex items-center justify-center gap-4 lg:hidden">
-            <button type="menu" id="toggleButton" class="text-white focus:outline-none p-2" aria-label="Toggle Button"
-              title="Toggle">
-              <i id="hamburgerIcon" class="fa-solid fa-bars text-white text-2xl"></i>
-              <i id="closeIcon" class="hidden fa-solid fa-xmark text-white text-3xl"></i>
-            </button>
+                <li class="caps block w-full group">
+                  <a
+                    href="./contact.html"
+                    class="nav-link relative underline-hover-effect"
+                    aria-label="Contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <a
+                href="https://www.babermahal.com/"
+                target="_blank"
+                class="caps text-white/80 hover:text-white text-base 2xl:text-lg transition-all duration-300 ease-linear vilas-italic"
+                >Baber Mahal Revisited
+              </a>
+            </div>
+            <div class="flex items-center justify-center gap-4 lg:hidden">
+              <button
+                type="menu"
+                id="toggleButton"
+                class="text-white focus:outline-none p-2"
+                aria-label="Toggle Button"
+                title="Toggle"
+              >
+                <i
+                  id="hamburgerIcon"
+                  class="fa-solid fa-bars text-white text-2xl"
+                ></i>
+                <i
+                  id="closeIcon"
+                  class="hidden fa-solid fa-xmark text-white text-3xl"
+                ></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <div id="overlay" class="fixed inset-0 bg-dark opacity-50 z-10 hidden"></div>
-  <nav id="navLinks"
-    class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-dark transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full">
-    <div class="relative">
-      <div
-        class="absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
-        style="background-image: url('./svg/building.svg')"></div>
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-dark opacity-50 z-10 hidden"
+    ></div>
+    <nav
+      id="navLinks"
+      class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-dark transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full"
+    >
+      <div class="relative">
+        <div
+          class="absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
+          style="background-image: url('./svg/building.svg')"
+        ></div>
 
-      <div class="flex items-center justify-center">
-        <a href="#" aria-label="Logo">
-          <img src="./img/logo.svg" alt="Logo" class="w-full h-28 object-contain rounded-full p-2" />
-        </a>
-      </div>
+        <div class="flex items-center justify-center">
+          <a href="#" aria-label="Logo">
+            <img
+              src="./img/logo.svg"
+              alt="Logo"
+              class="w-full h-28 object-contain rounded-full p-2"
+            />
+          </a>
+        </div>
 
-      <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="About">About <i
-              class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 left-full bg-transparent flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl">
-            <li class="w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Our Story">Our Story</a>
-            </li>
-            <li class="w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Our History">The History</a>
-            </li>
-            <li class="w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Our Property">The Property</a>
-            </li>
-          </ul>
-        </li>
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="Rooms">Rooms <i
-              class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl">
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Traditional Room">
-                Traditional Room
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Traditional Suite">
-                Traditional Suite
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Heritage Suite">
-                Heritage Suite
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
-                Royal Suite
-              </a>
-            </li>
-          </ul>
-        </li>
+        <ul
+          class="links flex items-start justify-start gap-1 md:gap-3 flex-col"
+        >
+          <li class="caps dropdown nav-link">
+            <a
+              href="#"
+              class="flex items-center justify-between w-full"
+              aria-label="About"
+              >About <i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <ul
+              class="drop absolute -top-3/4 left-full bg-transparent flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl"
+            >
+              <li class="w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Our Story"
+                  >Our Story</a
+                >
+              </li>
+              <li class="w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Our History"
+                  >The History</a
+                >
+              </li>
+              <li class="w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Our Property"
+                  >The Property</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="caps dropdown nav-link">
+            <a
+              href="#"
+              class="flex items-center justify-between w-full"
+              aria-label="Rooms"
+              >Rooms <i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <ul
+              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl"
+            >
+              <li class="block w-full">
+                <a
+                  href="#"
+                  class="navlink-dropdown"
+                  aria-label="Traditional Room"
+                >
+                  Traditional Room
+                </a>
+              </li>
+              <li class="block w-full">
+                <a
+                  href="#"
+                  class="navlink-dropdown"
+                  aria-label="Traditional Suite"
+                >
+                  Traditional Suite
+                </a>
+              </li>
+              <li class="block w-full">
+                <a
+                  href="#"
+                  class="navlink-dropdown"
+                  aria-label="Heritage Suite"
+                >
+                  Heritage Suite
+                </a>
+              </li>
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
+                  Royal Suite
+                </a>
+              </li>
+            </ul>
+          </li>
 
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="Dining">
-            Dining <i class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Jyunar">
-                Jyunar
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
-                Surya Bar
-              </a>
-            </li>
-          </ul>
-        </li>
+          <li class="caps dropdown nav-link">
+            <a
+              href="#"
+              class="flex items-center justify-between w-full"
+              aria-label="Dining"
+            >
+              Dining <i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <ul
+              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl"
+            >
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Jyunar">
+                  Jyunar
+                </a>
+              </li>
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
+                  Surya Bar
+                </a>
+              </li>
+            </ul>
+          </li>
 
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="Facilities">
-            Facilities <i class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Spa">
-                Spa
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Gym">
-                Gym
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Swimming Pool">
-                Swimming Pool
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Gift Shop">
-                Gift Shop
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Other facilities">
-                Other Facilities
-              </a>
-            </li>
-          </ul>
-        </li>
+          <li class="caps dropdown nav-link">
+            <a
+              href="#"
+              class="flex items-center justify-between w-full"
+              aria-label="Facilities"
+            >
+              Facilities <i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <ul
+              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl"
+            >
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Spa"> Spa </a>
+              </li>
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Gym"> Gym </a>
+              </li>
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Swimming Pool">
+                  Swimming Pool
+                </a>
+              </li>
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Gift Shop">
+                  Gift Shop
+                </a>
+              </li>
+              <li class="block w-full">
+                <a
+                  href="#"
+                  class="navlink-dropdown"
+                  aria-label="Other facilities"
+                >
+                  Other Facilities
+                </a>
+              </li>
+            </ul>
+          </li>
 
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="Travel Desk">
-            Travel Desk <i class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Day Trip">
-                Day Trip
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Flights">
-                Flights
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Car Rentals">
-                Car Rentals
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Day Hikes">
-                Day Hikes
-              </a>
-            </li>
-          </ul>
-        </li>
+          <li class="caps dropdown nav-link">
+            <a
+              href="#"
+              class="flex items-center justify-between w-full"
+              aria-label="Travel Desk"
+            >
+              Travel Desk <i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <ul
+              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl"
+            >
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Day Trip">
+                  Day Trip
+                </a>
+              </li>
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Flights">
+                  Flights
+                </a>
+              </li>
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Car Rentals">
+                  Car Rentals
+                </a>
+              </li>
+              <li class="block w-full">
+                <a href="#" class="navlink-dropdown" aria-label="Day Hikes">
+                  Day Hikes
+                </a>
+              </li>
+            </ul>
+          </li>
 
-        <li class="caps block w-full">
-          <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
-        </li>
-        <li class="caps block w-full">
-          <a href="#" class="nav-link" aria-label="Contact">Contact</a>
-        </li>
-        <!-- <a href="https://www.babermahal.com/" target="_blank"
+          <li class="caps block w-full">
+            <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
+          </li>
+          <li class="caps block w-full">
+            <a href="#" class="nav-link" aria-label="Contact">Contact</a>
+          </li>
+          <!-- <a href="https://www.babermahal.com/" target="_blank"
               class="mt-4 mb-4 w-4/5 mx-auto text-center caps text-white text-xs bg-white/20 border border-white/50 px-4 py-2 rounded-full hover:bg-white/40 transition-all duration-300 ease-linear">Baber
               Mahal Revisited</a> -->
-        <a href="#"
-          class="mt-4 caps text-center w-full md:hidden bg-green-600 text-dark px-4 py-2 rounded-xl text-lg tracking-wider"
-          aria-label="Book Now" title="Book">
-          <i class="mr-2 fa-solid fa-calendar-check"></i>
-          Book Now
-        </a>
-      </ul>
-    </div>
-  </nav>
-
-  <section class="p-0">
-    <div class="rooms-carousel owl-carousel owl-theme relative">
-      <div class="item relative">
-        <img src="./img/babermahal.jpg" alt="Baber Mahal Vilas"
-          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
-
-        <h4
-          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/50 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4">
-          A time capsule of Nepalese Architecture. An amalgamation of the best
-          of Nepalese architecture. Baber Mahal Vilas, an architectural museum
-          !
-        </h4>
+          <a
+            href="#"
+            class="mt-4 caps text-center w-full md:hidden bg-green-600 text-dark px-4 py-2 rounded-xl text-lg tracking-wider"
+            aria-label="Book Now"
+            title="Book"
+          >
+            <i class="mr-2 fa-solid fa-calendar-check"></i>
+            Book Now
+          </a>
+        </ul>
       </div>
-      <div class="item relative">
-        <img src="./img/banner/4.webp" alt="Baber Mahal Vilas"
-          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
-        <h4
-          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/50 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4">
-          In an effort to portray the distinct architectural features of Nepal in an essentially neoclassical 'Rana'
-          style.
-        </h4>
-      </div>
-      <div class="item relative">
-        <img src="./img/rooms/room3.webp" alt="Baber Mahal Vilas"
-          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
-        <h4
-          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/50 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4">
-          Luxury and Service, in a haven of history, culture and tradition,
-          Baber Mahal Vilas is a boutique hotel in the heart of Kathmandu,
-          Nepal.
-        </h4>
-      </div>
-      <div class="item relative">
-        <img src="https://www.babermahalvilas.com/images/slideshow/sjCXd-img_7796---copy.jpg" alt="Baber Mahal Vilas"
-          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
-        <h4
-          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/50 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4">
-          The hotel is rich in historic significance to its location, built upon the grounds of the Baber Mahal Palace,
-          to reflect its grandeur.
-        </h4>
-      </div>
-    </div>
-  </section>
+    </nav>
 
+    <section class="p-0">
+      <div class="rooms-carousel owl-carousel owl-theme relative">
+        <div class="item relative">
+          <img
+            src="./img/babermahal.jpg"
+            alt="Baber Mahal Vilas"
+            class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover"
+          />
 
-  <section>
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 xl:grid-cols-3 gap-12">
-        <div class="col-span-1 sticky top-8 md:max-h-screen md:overflow-y-auto">
-          <div class="travel-desk">
-            <h3 class="caps text-2xl md:text-3xl">Day Hikes</h3>
-            <ul class="mt-8 space-y-4">
-              <li class="border border-x-0">
-                <a href="#nagarkot-hike"
-                  class="caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Nagarkot
-                  Hike</a>
-              </li>
-              <li class="border border-x-0">
-                <a href="#champadevi-hike"
-                  class="caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Champadevi
-                  Hike</a>
-              </li>
-              <li class="border border-x-0">
-                <a href="#shivapuri-hike"
-                  class="caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Shivapuri
-                  Hike</a>
-              </li>
-              <li class="border border-x-0">
-                <a href="#phulchowki-hike"
-                  class="caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Phulchowki
-                  Hike</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-span-2 space-y-16">
-          <div id="nagarkot-hike" class="space-y-6 scroll-pt-6">
-            <h3 class="caps text-2xl md:text-3xl">Nagarkot Hike</h3>
-            <img
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/28c46a14-Nagarkot-Sunrise-Tour/Nagarkot%20Sunrise%20Tour.jpg"
-              alt="Nagarkot Hike" class="w-full h-96 object-cover shadow-md">
-            <p class="text-base">
-              The Nagarkot hike is one of the most popular day hikes near Kathmandu. Known for its breathtaking sunrise
-              and sunset views, this hike takes you through lush green hills and offers a panoramic view of the
-              Himalayan ranges, including Mount Everest on a clear day. The hike usually starts from Sankhu village and
-              takes about 4-5 hours to reach Nagarkot. Along the way, you'll pass through traditional villages, terraced
-              fields, and serene forests, making it a peaceful and scenic adventure.
-            </p>
-          </div>
-
-          <div id="champadevi-hike" class="space-y-6 scroll-pt-6">
-            <h3 class="caps text-2xl md:text-3xl">Champadevi Hike</h3>
-            <img src="https://www.vivaanadventure.com/wp-content/uploads/2021/06/Chama-Devi-Hiking--984x540.jpg"
-              alt="Champadevi Hike" class="w-full h-96 object-cover shadow-md">
-            <p class="text-base">
-              Champadevi is one of the highest hills surrounding Kathmandu, standing at an elevation of 2,285 meters.
-              The hike to the top offers panoramic views of the Kathmandu Valley and the majestic Himalayan ranges.
-              Starting from Hattiban Resort, the trail is well-defined and takes around 3-4 hours to reach the summit.
-              Along the way, you’ll pass through pine forests and spot various species of birds, making it a great
-              option for nature lovers. At the top, you'll find a shrine dedicated to the goddess Champadevi, a popular
-              pilgrimage site.
-            </p>
-          </div>
-
-          <div id="shivapuri-hike" class="space-y-6 scroll-pt-6">
-            <h3 class="caps text-2xl md:text-3xl">Shivapuri Hike</h3>
-            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/2d/14/c9.jpg" alt="Shivapuri Hike"
-              class="w-full h-96 object-cover shadow-md">
-            <p class="text-base">
-              Located within the Shivapuri National Park, this hike is perfect for those seeking both adventure and a
-              close connection with nature. The trail begins from Budhanilkantha, where you can visit the ancient
-              reclining Vishnu statue before starting your journey. The trek offers a variety of terrains, including
-              dense forests, waterfalls, and wildlife sightings. Reaching the Shivapuri Peak (2,732 meters) takes around
-              4-5 hours and rewards you with a stunning view of the Langtang range, Kathmandu Valley, and beyond.
-            </p>
-          </div>
-
-          <div id="phulchowki-hike" class="space-y-6 scroll-pt-6">
-            <h3 class="caps text-2xl md:text-3xl">Phulchowki Hike</h3>
-            <img src="https://nepalecoadventure.com/wp-content/uploads/2019/09/A-Day-Hike-to-Phulchowki-Kathmandu-2.jpg"
-              alt="Phulchowki Hike" class="w-full h-96 object-cover shadow-md">
-            <p class="text-base">
-              Phulchowki is the highest hill (2,765 meters) surrounding the Kathmandu Valley, making it one of the most
-              exciting day hikes for avid trekkers. The hike starts from Godavari, just outside the city, and takes you
-              through rhododendron forests, especially vibrant in spring. This hike is known for its rich biodiversity
-              and is ideal for birdwatching enthusiasts. At the summit, you’ll find a small shrine and a lookout point
-              offering 360-degree views of the valley and the Himalayas. The total hike takes about 5-6 hours.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="py-12 px-0 mx-0 mb-0 pb-0 bg-dark relative">
-    <div class="container mx-auto z-10 px-4 pb-72 2xl:pb-96 relative">
-      <div class="grid grid-cols-1 gap-4 z-10 pt-5">
-        <div class="w-full mb-5">
-          <h4 class="caps group flex items-center justify-center flex-col text-xl md:text-2xl text-white mb-8">
-            Contact Address
-            <div
-              class="mt-1 w-20 group-hover:w-32 h-[2px] rounded-full bg-white/80 transition-all duration-300 ease-linear">
-            </div>
+          <h4
+            class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/50 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4"
+          >
+            A time capsule of Nepalese Architecture. An amalgamation of the best
+            of Nepalese architecture. Baber Mahal Vilas, an architectural museum
+            !
           </h4>
-          <ul class="flex items-center justify-center flex-col gap-4">
-            <li>
-              <a href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
-                class="inline-block text-base md:text-lg leading-loose text-white hover:underline" target="_blank"
-                rel="noopener noreferrer" aria-label="Tanka Prasad Sadak, Kathmandu">
-                <i class="mr-2 fa-solid fa-map-marker-alt"></i>
-                Tanka Prasad Sadak, Kathmandu
-              </a>
-            </li>
-            <li class="text-white">
-              <i class="mr-2 fa-solid fa-phone-volume"></i>
-              <a href="tel:+9775348747" class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5348747">
-                +977-01-5348747
-              </a>
-              /
-              <a href="tel:+9775350914" class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5350914">
-                50914
-              </a>
-              /
-              <a href="tel:+9775357655" class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5357655">
-                57655
-              </a>
-            </li>
-            <li>
-              <a href="mailto:info@babermahal.com"
-                class="inline-block text-base md:text-lg leading-loose text-white hover:underline" target="_blank"
-                rel="noopener noreferrer" aria-label="info@babermahal.com">
-                <i class="mr-2 fa-solid fa-envelope"></i>
-                info@babermahal.com
-              </a>
-            </li>
-          </ul>
-          <div class="flex items-center justify-center md:gap-2 flex-row mt-6">
-            <a href="https://www.facebook.com/babermahalvilas/" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-              aria-label="Facebook link">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/BaberMahalVilas" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-              aria-label="Instagram link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np" target="_blank"
-              rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-              aria-label="Linkedin link">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-              aria-label="Youtube link">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
+        </div>
+        <div class="item relative">
+          <img
+            src="./img/banner/4.webp"
+            alt="Baber Mahal Vilas"
+            class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover"
+          />
+          <h4
+            class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/50 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4"
+          >
+            In an effort to portray the distinct architectural features of Nepal
+            in an essentially neoclassical 'Rana' style.
+          </h4>
+        </div>
+        <div class="item relative">
+          <img
+            src="./img/rooms/room3.webp"
+            alt="Baber Mahal Vilas"
+            class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover"
+          />
+          <h4
+            class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/50 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4"
+          >
+            Luxury and Service, in a haven of history, culture and tradition,
+            Baber Mahal Vilas is a boutique hotel in the heart of Kathmandu,
+            Nepal.
+          </h4>
+        </div>
+        <div class="item relative">
+          <img
+            src="https://www.babermahalvilas.com/images/slideshow/sjCXd-img_7796---copy.jpg"
+            alt="Baber Mahal Vilas"
+            class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover"
+          />
+          <h4
+            class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/50 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4"
+          >
+            The hotel is rich in historic significance to its location, built
+            upon the grounds of the Baber Mahal Palace, to reflect its grandeur.
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 xl:grid-cols-3 gap-12">
+          <div
+            class="col-span-1 sticky top-8 md:max-h-screen md:overflow-y-auto"
+          >
+            <div class="travel-desk">
+              <h3 class="caps text-2xl md:text-3xl">Day Hikes</h3>
+              <ul class="mt-8 space-y-4">
+                <li class="border border-x-0">
+                  <a
+                    href="#nagarkot-hike"
+                    class="caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear"
+                    >Nagarkot Hike</a
+                  >
+                </li>
+                <li class="border border-x-0">
+                  <a
+                    href="#champadevi-hike"
+                    class="caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear"
+                    >Champadevi Hike</a
+                  >
+                </li>
+                <li class="border border-x-0">
+                  <a
+                    href="#shivapuri-hike"
+                    class="caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear"
+                    >Shivapuri Hike</a
+                  >
+                </li>
+                <li class="border border-x-0">
+                  <a
+                    href="#phulchowki-hike"
+                    class="caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear"
+                    >Phulchowki Hike</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-span-2 space-y-16">
+            <div id="nagarkot-hike" class="space-y-6 scroll-pt-6">
+              <h3 class="caps text-2xl md:text-3xl">Nagarkot Hike</h3>
+              <img
+                src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/28c46a14-Nagarkot-Sunrise-Tour/Nagarkot%20Sunrise%20Tour.jpg"
+                alt="Nagarkot Hike"
+                class="w-full h-96 object-cover shadow-md"
+              />
+              <p class="text-base">
+                The Nagarkot hike is one of the most popular day hikes near
+                Kathmandu. Known for its breathtaking sunrise and sunset views,
+                this hike takes you through lush green hills and offers a
+                panoramic view of the Himalayan ranges, including Mount Everest
+                on a clear day. The hike usually starts from Sankhu village and
+                takes about 4-5 hours to reach Nagarkot. Along the way, you'll
+                pass through traditional villages, terraced fields, and serene
+                forests, making it a peaceful and scenic adventure.
+              </p>
+            </div>
+
+            <div id="champadevi-hike" class="space-y-6 scroll-pt-6">
+              <h3 class="caps text-2xl md:text-3xl">Champadevi Hike</h3>
+              <img
+                src="https://www.vivaanadventure.com/wp-content/uploads/2021/06/Chama-Devi-Hiking--984x540.jpg"
+                alt="Champadevi Hike"
+                class="w-full h-96 object-cover shadow-md"
+              />
+              <p class="text-base">
+                Champadevi is one of the highest hills surrounding Kathmandu,
+                standing at an elevation of 2,285 meters. The hike to the top
+                offers panoramic views of the Kathmandu Valley and the majestic
+                Himalayan ranges. Starting from Hattiban Resort, the trail is
+                well-defined and takes around 3-4 hours to reach the summit.
+                Along the way, you’ll pass through pine forests and spot various
+                species of birds, making it a great option for nature lovers. At
+                the top, you'll find a shrine dedicated to the goddess
+                Champadevi, a popular pilgrimage site.
+              </p>
+            </div>
+
+            <div id="shivapuri-hike" class="space-y-6 scroll-pt-6">
+              <h3 class="caps text-2xl md:text-3xl">Shivapuri Hike</h3>
+              <img
+                src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/2d/14/c9.jpg"
+                alt="Shivapuri Hike"
+                class="w-full h-96 object-cover shadow-md"
+              />
+              <p class="text-base">
+                Located within the Shivapuri National Park, this hike is perfect
+                for those seeking both adventure and a close connection with
+                nature. The trail begins from Budhanilkantha, where you can
+                visit the ancient reclining Vishnu statue before starting your
+                journey. The trek offers a variety of terrains, including dense
+                forests, waterfalls, and wildlife sightings. Reaching the
+                Shivapuri Peak (2,732 meters) takes around 4-5 hours and rewards
+                you with a stunning view of the Langtang range, Kathmandu
+                Valley, and beyond.
+              </p>
+            </div>
+
+            <div id="phulchowki-hike" class="space-y-6 scroll-pt-6">
+              <h3 class="caps text-2xl md:text-3xl">Phulchowki Hike</h3>
+              <img
+                src="https://nepalecoadventure.com/wp-content/uploads/2019/09/A-Day-Hike-to-Phulchowki-Kathmandu-2.jpg"
+                alt="Phulchowki Hike"
+                class="w-full h-96 object-cover shadow-md"
+              />
+              <p class="text-base">
+                Phulchowki is the highest hill (2,765 meters) surrounding the
+                Kathmandu Valley, making it one of the most exciting day hikes
+                for avid trekkers. The hike starts from Godavari, just outside
+                the city, and takes you through rhododendron forests, especially
+                vibrant in spring. This hike is known for its rich biodiversity
+                and is ideal for birdwatching enthusiasts. At the summit, you’ll
+                find a small shrine and a lookout point offering 360-degree
+                views of the valley and the Himalayas. The total hike takes
+                about 5-6 hours.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-
-
-      <div class="mt-8 container mx-auto flex justify-between items-center flex-col text-white gap-4">
-        <div class="flex items-center flex-col md:flex-row gap-4">
-          <p class="text-center text-base caps capitalize">
-            © Baber Mahal <em class="text-inherit">Vilas</em>
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            | All rights reserved |
-          </p>
-          <div class="flex items-center justify-center gap-4">
-            <span class="text-xs md:text-base capitalize caps text-white">We accept</span>
-            <ul class="flex items-center justify-center gap-0">
+    <footer class="py-12 px-0 mx-0 mb-0 pb-0 bg-dark relative">
+      <div class="container mx-auto z-10 px-4 pb-72 2xl:pb-96 relative">
+        <div class="grid grid-cols-1 gap-4 z-10 pt-5">
+          <div class="w-full mb-5">
+            <h4
+              class="caps group flex items-center justify-center flex-col text-xl md:text-2xl text-white mb-8"
+            >
+              Contact Address
+              <div
+                class="mt-1 w-20 group-hover:w-32 h-[2px] rounded-full bg-white/80 transition-all duration-300 ease-linear"
+              ></div>
+            </h4>
+            <ul class="flex items-center justify-center flex-col gap-4">
               <li>
-                <img src="./img/visa/visa.png" class="w-10 h-4 object-contain" alt="visa" />
+                <a
+                  href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
+                  class="inline-block text-base md:text-lg leading-loose text-white hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Tanka Prasad Sadak, Kathmandu"
+                >
+                  <i class="mr-2 fa-solid fa-map-marker-alt"></i>
+                  Tanka Prasad Sadak, Kathmandu
+                </a>
+              </li>
+              <li class="text-white">
+                <i class="mr-2 fa-solid fa-phone-volume"></i>
+                <a
+                  href="tel:+9775348747"
+                  class="number inline-block text-base md:text-lg leading-loose hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="+977-01-5348747"
+                >
+                  +977-01-5348747
+                </a>
+                /
+                <a
+                  href="tel:+9775350914"
+                  class="number inline-block text-base md:text-lg leading-loose hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="+977-01-5350914"
+                >
+                  50914
+                </a>
+                /
+                <a
+                  href="tel:+9775357655"
+                  class="number inline-block text-base md:text-lg leading-loose hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="+977-01-5357655"
+                >
+                  57655
+                </a>
               </li>
               <li>
-                <img src="./img/visa/union.png" class="w-10 h-4 object-contain" alt="union" />
-              </li>
-              <li>
-                <img src="./img/visa/mastercard.png" class="w-10 h-4 object-contain" alt="mastercard" />
-              </li>
-              <li>
-                <img src="./img/visa/amex.png" class="w-10 h-4 object-contain" alt="amex" />
+                <a
+                  href="mailto:info@babermahal.com"
+                  class="inline-block text-base md:text-lg leading-loose text-white hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="info@babermahal.com"
+                >
+                  <i class="mr-2 fa-solid fa-envelope"></i>
+                  info@babermahal.com
+                </a>
               </li>
             </ul>
+            <div
+              class="flex items-center justify-center md:gap-2 flex-row mt-6"
+            >
+              <a
+                href="https://www.facebook.com/babermahalvilas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+                aria-label="Facebook link"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/BaberMahalVilas"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+                aria-label="Instagram link"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+                aria-label="Linkedin link"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+                aria-label="Youtube link"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <p class="text-base caps capitalize mt-4 md:mt-0">
-          Developed by:
-          <a href="https://longtail.info" target="_blank" class="relative group" aria-label="Longtail e-Media">
-            <label
-              class="absolute bottom-0 -right-0 w-full h-[1px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"></label>
-            Longtail e-Media</a>
-        </p>
+
+        <div
+          class="mt-8 container mx-auto flex justify-between items-center flex-col text-white gap-4"
+        >
+          <div class="flex items-center flex-col md:flex-row gap-4">
+            <p class="text-center text-base caps capitalize">
+              © Baber Mahal <em class="text-inherit">Vilas</em>
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              | All rights reserved |
+            </p>
+            <div class="flex items-center justify-center gap-4">
+              <span class="text-xs md:text-base capitalize caps text-white"
+                >We accept</span
+              >
+              <ul class="flex items-center justify-center gap-0">
+                <li>
+                  <img
+                    src="./img/visa/visa.png"
+                    class="w-10 h-4 object-contain"
+                    alt="visa"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./img/visa/union.png"
+                    class="w-10 h-4 object-contain"
+                    alt="union"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./img/visa/mastercard.png"
+                    class="w-10 h-4 object-contain"
+                    alt="mastercard"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./img/visa/amex.png"
+                    class="w-10 h-4 object-contain"
+                    alt="amex"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-base caps capitalize mt-4 md:mt-0">
+            Developed by:
+            <a
+              href="https://longtail.info"
+              target="_blank"
+              class="relative group"
+              aria-label="Longtail e-Media"
+            >
+              <label
+                class="absolute bottom-0 -right-0 w-full h-[1px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"
+              ></label>
+              Longtail e-Media</a
+            >
+          </p>
+        </div>
+
+        <div
+          class="white-filter pointer-events-none select-none absolute bottom-0 bg-no-repeat bg-contain w-full h-full bg-bottom opacity-50"
+          style="background-image: url('./img/arts/building.png')"
+        ></div>
       </div>
+    </footer>
 
-      <div
-        class="white-filter pointer-events-none select-none absolute bottom-0 bg-no-repeat bg-contain w-full h-full bg-bottom opacity-50"
-        style="background-image: url('./img/arts/building.png')"></div>
-    </div>
-  </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var whatsappIcon = document.getElementById("whatsapp-icon");
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var whatsappIcon = document.getElementById("whatsapp-icon");
+        // Adjust the offset as needed
+        var offset = 100;
 
-      // Adjust the offset as needed
-      var offset = 100;
-
-      window.addEventListener("scroll", function () {
-        if (window.scrollY > offset) {
-          whatsappIcon.classList.remove("opacity-0", "invisible");
-        } else {
-          whatsappIcon.classList.add("opacity-0", "invisible");
-        }
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > offset) {
+            whatsappIcon.classList.remove("opacity-0", "invisible");
+          } else {
+            whatsappIcon.classList.add("opacity-0", "invisible");
+          }
+        });
       });
-    });
-  </script>
+    </script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Get all the navigation links and sections
-      const navLinks = document.querySelectorAll('#travel-desk ul a');
-      const sections = document.querySelectorAll('section div[id]');
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all the navigation links and sections
+        const navLinks = document.querySelectorAll("#travel-desk ul a");
+        const sections = document.querySelectorAll("section div[id]");
 
-      // Create an IntersectionObserver to watch for sections in view
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            const sectionId = entry.target.id;
-            const navLink = document.querySelector(`a[href="#${sectionId}"]`);
+        // Create an IntersectionObserver to watch for sections in view
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const sectionId = entry.target.id;
+              const navLink = document.querySelector(`a[href="#${sectionId}"]`);
 
-            if (entry.isIntersecting) {
-              // Section is in view, add 'border-r-4' to the corresponding nav link
-              navLink.classList.add('border-r-4');
-            } else {
-              // Section is out of view, remove 'border-r-4'
-              navLink.classList.remove('border-r-4');
-            }
-          });
-        },
-        {
-          root: null, // Use the viewport
-          threshold: 0.5, // Trigger when 50% of the section is in view
-        }
-      );
+              if (entry.isIntersecting) {
+                // Section is in view, add 'border-r-4' to the corresponding nav link
+                navLink.classList.add("border-r-4");
+              } else {
+                // Section is out of view, remove 'border-r-4'
+                navLink.classList.remove("border-r-4");
+              }
+            });
+          },
+          {
+            root: null, // Use the viewport
+            threshold: 0.5, // Trigger when 50% of the section is in view
+          }
+        );
 
-      // Observe each section
-      sections.forEach((section) => {
-        observer.observe(section);
+        // Observe each section
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
       });
-    });
+    </script>
 
-  </script>
-
-  <script src="./app.js"></script>
-</body>
-
+    <script src="./app.js"></script>
+  </body>
 </html>
