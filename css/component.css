@@ -140,8 +140,8 @@ li.active>.drop {
 }
 
 .the-vilas {
-  font-style: italic;
   font-family: inherit;
   font-size: inherit;
+  /* font-style: italic; */
   color: inherit;
 }

@@ -229,9 +229,11 @@ function startVideo() {
 
 // for the dynamic italic for Baber Mahal <em>Vilas</em>
 document.querySelectorAll('.vilas-italic').forEach(el => {
-  let words = el.textContent.split(' ');
+  // Use regex to split by any number of spaces, ensuring only actual words are captured
+  let words = el.textContent.trim().split(/\s+/);
   if (words.length >= 3) {
-    words[2] = `<span class="the-vilas">${words[2]}</span>`;
+    words[2] = `<em class="the-vilas">${words[2]}</em>`;
     el.innerHTML = words.join(' ');
   }
 });
+
