@@ -59,6 +59,24 @@ li.active>.drop {
   }
 }
 
+
+@keyframes zoomImage {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.zoom-image {
+  animation: zoomImage 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
 /* hamburger */
 
 .line {
