@@ -228,12 +228,29 @@ function startVideo() {
 }
 
 // for the dynamic italic for Baber Mahal <em>Vilas</em>
-document.querySelectorAll('.vilas-italic').forEach(el => {
+document.querySelectorAll(".vilas-italic").forEach((el) => {
   // Use regex to split by any number of spaces, ensuring only actual words are captured
   let words = el.textContent.trim().split(/\s+/);
   if (words.length >= 3) {
     words[2] = `<em class="the-vilas">${words[2]}</em>`;
-    el.innerHTML = words.join(' ');
+    el.innerHTML = words.join(" ");
   }
 });
 
+// ! lenis scroll : for the smooth scroll
+// Initialize Lenis for slower smooth scroll
+const lenis = new Lenis({
+  duration: 2.5, // Slower duration (increase this value for slower scroll)
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
+  smooth: true, // Enable smooth scrolling
+  smoothWheel: true, // Smooth out the wheel scroll
+  wheelMultiplier: 0.5, // Reduce the scroll speed (lower values slow it down)
+});
+
+// Trigger the scroll animation frame
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
