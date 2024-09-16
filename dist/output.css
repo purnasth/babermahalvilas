@@ -556,17 +556,15 @@ video {
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 100%) {
   .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
+    max-width: 100%;
   }
 }
 
@@ -582,9 +580,9 @@ video {
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1600px) {
   .container {
-    max-width: 1536px;
+    max-width: 1600px;
   }
 }
 
@@ -687,7 +685,7 @@ section {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1600px) {
   .nav-link {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -699,7 +697,7 @@ section {
   line-height: 1.5rem;
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1600px) {
   .nav-link>a {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -752,7 +750,7 @@ section {
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1600px) {
   .navlink-dropdown {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -798,10 +796,6 @@ section {
 
 .pointer-events-auto {
   pointer-events: auto;
-}
-
-.visible {
-  visibility: visible;
 }
 
 .invisible {
@@ -1378,14 +1372,6 @@ section {
   max-width: 20rem;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-96 {
-  max-width: 24rem;
-}
-
 .origin-left {
   transform-origin: left;
 }
@@ -1507,10 +1493,6 @@ section {
   flex-wrap: wrap;
 }
 
-.flex-nowrap {
-  flex-wrap: nowrap;
-}
-
 .items-start {
   align-items: flex-start;
 }
@@ -1613,20 +1595,12 @@ section {
   overflow: hidden;
 }
 
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
 }
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
 }
 
 .text-pretty {
@@ -2013,6 +1987,11 @@ section {
   padding-right: 0px;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2068,6 +2047,11 @@ section {
   padding-bottom: 0.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2091,21 +2075,6 @@ section {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .pb-0 {
@@ -2140,12 +2109,12 @@ section {
   padding-right: 0.5rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -2518,17 +2487,15 @@ section {
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 100%) {
     .md\:container {
-      max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .md\:container {
-      max-width: 768px;
+      max-width: 100%;
     }
   }
 
@@ -2544,9 +2511,9 @@ section {
     }
   }
 
-  @media (min-width: 1536px) {
+  @media (min-width: 1600px) {
     .md\:container {
-      max-width: 1536px;
+      max-width: 1600px;
     }
   }
 }
@@ -2609,6 +2576,10 @@ section {
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-dark\/20:hover {
+  background-color: rgb(17 17 17 / 0.2);
+}
+
 .hover\:bg-dark\/50:hover {
   background-color: rgb(17 17 17 / 0.5);
 }
@@ -2624,10 +2595,6 @@ section {
 
 .hover\:bg-white\/40:hover {
   background-color: rgb(255 255 255 / 0.4);
-}
-
-.hover\:bg-dark\/20:hover {
-  background-color: rgb(17 17 17 / 0.2);
 }
 
 .hover\:text-coffee-700:hover {
@@ -3097,11 +3064,6 @@ section {
     padding-bottom: 2rem;
   }
 
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -3312,10 +3274,6 @@ section {
     gap: 4rem;
   }
 
-  .xl\:gap-8 {
-    gap: 2rem;
-  }
-
   .xl\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -3340,7 +3298,7 @@ section {
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1600px) {
   .\32xl\:pb-96 {
     padding-bottom: 24rem;
   }
