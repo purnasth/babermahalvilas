@@ -212,7 +212,7 @@ document.querySelectorAll(".vilas-italic").forEach((el) => {
 // ! lenis scroll : for the smooth scroll
 // Initialize Lenis for slower smooth scroll
 const lenis = new Lenis({
-  duration: 2.5, // Slower duration (increase this value for slower scroll)
+  duration: 2, // Slower duration (increase this value for slower scroll)
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
   smooth: true, // Enable smooth scrolling
   smoothWheel: true, // Smooth out the wheel scroll
