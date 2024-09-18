@@ -20,7 +20,7 @@
   <link href="dist/output.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   <header id="navbar"
     class="h-20 sticky lg:fixed top-0 z-50 bg-dark/60 w-full transition-all duration-1000 ease-in-out">
     <div class="container mx-auto px-4 size-full">
@@ -352,111 +352,101 @@
     </div>
   </nav>
 
-  <section class="bg-gray-200 relative">
-    <div class="px-4 py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-10 text-dark">
-      <h2 class="caps text-3xl md:text-5xl mb-2">Travel Desk</h2>
-      <p class="hidden md:block px-8 text-base 2xl:text-base text-dark/70 italic max-w-2xl text-center">
-        Our travel desk is at your service to help you plan your day trips,
-        book flights, car rentals and day hikes to make your stay at Baber
-        Mahal Vilas a memorable one.
-      </p>
-    </div>
-    <div class="container mx-auto flex items-center justify-center p-4">
-      <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- room 1 -->
-        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
-          <div class="p-6 text-center space-y-3">
-            <a href="./day-trip.html">
-              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                Day Trip
-              </h5>
-            </a>
-            <p class="text-xs md:text-sm text-dark/80">
-              Our travel desk is at your service to help you plan your day
-              trips, book flights, car rentals and day hikes to make your stay
-              at Baber Mahal Vilas a memorable one.
-            </p>
-          </div>
-          <div class="overflow-hidden">
-            <a href="./day-hike.html">
-              <img
-                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                src="https://media.greenvalleynepaltreks.com/uploads/fullbanner/pashupatinath-temple-kathmandu.webp"
-                alt="Traditional Room" />
-            </a>
+  <section>
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-12">
+        <div class="col-span-1 sticky top-8 md:max-h-screen md:overflow-y-auto">
+          <div class="travel-desk">
+            <h3 class="caps text-2xl md:text-3xl">Flights</h3>
+            <ul class="mt-8 space-y-4">
+              <li class="border border-x-0">
+                <a href="#kathmandu-dubai-flight"
+                  class="merriweather caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Kathmandu
+                  to Dubai</a>
+              </li>
+              <li class="border border-x-0">
+                <a href="#kathmandu-singapore-flight"
+                  class="merriweather caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Kathmandu
+                  to Singapore</a>
+              </li>
+              <li class="border border-x-0">
+                <a href="#kathmandu-bangkok-flight"
+                  class="merriweather caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Kathmandu
+                  to Bangkok</a>
+              </li>
+              <li class="border border-x-0">
+                <a href="#kathmandu-kuala-lumpur-flight"
+                  class="merriweather caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Kathmandu
+                  to Kuala Lumpur</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- room 2 -->
-        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
-          <div class="p-6 text-center space-y-3">
-            <a href="./flights.html">
-              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                Flights
-              </h5>
-            </a>
-            <p class="text-xs md:text-sm text-dark/80">
-              Our travel desk is at your service to help you plan your day
-              trips, book flights, car rentals and day hikes to make your stay
-              at Baber Mahal Vilas a memorable one.
+
+        <div class="col-span-2 space-y-16">
+          <div id="kathmandu-dubai-flight" class="space-y-6 scroll-pt-6">
+            <h3 class="caps text-2xl md:text-3xl">Kathmandu to Dubai Flight</h3>
+            <img
+              src="https://octane.rent/wp-content/uploads/2023/03/The-Dubai-Marina-District.webp"
+              alt="Kathmandu to Dubai Flight" class="w-full h-96 object-cover shadow-md" />
+            <p class="text-base">
+              The Kathmandu to Dubai flight is one of the most popular international routes, connecting two vibrant
+              cities.
+              This flight takes about 4-5 hours and provides easy access to the Middle East for work, tourism, and
+              business.
+              Most flights are non-stop, offering a comfortable journey with stunning aerial views of the Himalayas and
+              the
+              desert as you approach Dubai.
             </p>
+            <p class="text-base font-bold">Price: Rs. 50,000 per person</p>
           </div>
-          <div class="overflow-hidden">
-            <a href="./flights.html">
-              <img
-                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                src="https://kailashjourneys.com/wp-content/uploads/2019/05/nepal-mountain-flight.jpg"
-                alt="Traditional Premium Room" />
-            </a>
-          </div>
-        </div>
-        <!-- room 3 -->
-        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
-          <div class="p-6 text-center space-y-3">
-            <a href="./car-rental.html">
-              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                Car Rentals
-              </h5>
-            </a>
-            <p class="text-xs md:text-sm text-dark/80">
-              Our travel desk is at your service to help you plan your day
-              trips, book flights, car rentals and day hikes to make your stay
-              at Baber Mahal Vilas a memorable one.
+
+          <div id="kathmandu-singapore-flight" class="space-y-6 scroll-pt-6">
+            <h3 class="caps text-2xl md:text-3xl">Kathmandu to Singapore Flight</h3>
+            <img src="https://www.doing-business-international.com/wp-content/uploads/2023/01/Singapore.webp"
+              alt="Kathmandu to Singapore Flight" class="w-full h-96 object-cover shadow-md" />
+            <p class="text-base">
+              Flights from Kathmandu to Singapore are a gateway to Southeast Asia's bustling urban and cultural hub.
+              This route is widely popular among travelers heading for both leisure and business. With a flight duration
+              of
+              approximately 5-6 hours, the journey promises comfort and a smooth experience across Asia’s international
+              airlines.
             </p>
+            <p class="text-base font-bold">Price: Rs. 45,000 per person</p>
           </div>
-          <div class="overflow-hidden">
-            <a href="./car-rental.html">
-              <img
-                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                src="https://www.nepalrentalcar.com/uploads/img/best-car.jpg" alt="Heritage Room" />
-            </a>
-          </div>
-        </div>
-        <!-- room 4 -->
-        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
-          <div class="p-6 text-center space-y-3">
-            <a href="./day-hike.html">
-              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                Day Hikes
-              </h5>
-            </a>
-            <p class="text-xs md:text-sm text-dark/80">
-              Our travel desk is at your service to help you plan your day
-              trips, book flights, car rentals and day hikes to make your stay
-              at Baber Mahal Vilas a memorable one.
+
+          <div id="kathmandu-bangkok-flight" class="space-y-6 scroll-pt-6">
+            <h3 class="caps text-2xl md:text-3xl">Kathmandu to Bangkok Flight</h3>
+            <img src="https://phuketbuyhouse.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM1MjIwLCJwdXIiOiJibG9iX2lkIn19--bebcf48cbb1abb407dfc71da80f102f9cc8fa75f/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls4NTAsbnVsbF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--aa9280226888e442e7216564cbdc53ed91954ee2/858.jpg"
+              alt="Kathmandu to Bangkok Flight" class="w-full h-96 object-cover shadow-md" />
+            <p class="text-base">
+              A Kathmandu to Bangkok flight offers travelers a quick and easy way to explore Thailand's rich culture,
+              beautiful
+              beaches, and bustling city life. The flight duration is about 3-4 hours, and with regular, affordable
+              flight
+              options, it's a preferred route for both tourists and business travelers heading to Thailand.
             </p>
+            <p class="text-base font-bold">Price: Rs. 40,000 per person</p>
           </div>
-          <div class="overflow-hidden">
-            <a href="./day-hike.html">
-              <img
-                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                src="https://www.thirdrockadventures.com/assets-back/images/blog/15-best-hike-in-kathmandu.jpg9Xj.jpg"
-                alt="Royal Suites" />
-            </a>
+
+          <div id="kathmandu-kuala-lumpur-flight" class="space-y-6 scroll-pt-6">
+            <h3 class="caps text-2xl md:text-3xl">Kathmandu to Kuala Lumpur Flight</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Moonrise_over_kuala_lumpur.jpg/800px-Moonrise_over_kuala_lumpur.jpg"
+              alt="Kathmandu to Kuala Lumpur Flight" class="w-full h-96 object-cover shadow-md" />
+            <p class="text-base">
+              The Kathmandu to Kuala Lumpur flight offers a convenient way to explore Malaysia's capital, known for its
+              modern
+              skyline and rich cultural heritage. With a flight time of approximately 4-5 hours, this route is
+              frequently
+              traveled by business and leisure travelers looking to enjoy Malaysia’s diverse offerings.
+            </p>
+            <p class="text-base font-bold">Price: Rs. 48,000 per person</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <footer class="py-12 px-0 mx-0 mb-0 pb-0 bg-dark relative">
     <div class="container mx-auto z-10 px-4 pb-72 2xl:pb-96 relative">
@@ -594,7 +584,41 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Lenis -->
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>z
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all the navigation links and sections
+      const navLinks = document.querySelectorAll("#travel-desk ul a");
+      const sections = document.querySelectorAll("section div[id]");
+
+      // Create an IntersectionObserver to watch for sections in view
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const sectionId = entry.target.id;
+            const navLink = document.querySelector(`a[href="#${sectionId}"]`);
+
+            if (entry.isIntersecting) {
+              // Section is in view, add 'border-r-4' to the corresponding nav link
+              navLink.classList.add("border-r-4");
+            } else {
+              // Section is out of view, remove 'border-r-4'
+              navLink.classList.remove("border-r-4");
+            }
+          });
+        },
+        {
+          root: null, // Use the viewport
+          threshold: 0.5, // Trigger when 50% of the section is in view
+        }
+      );
+
+      // Observe each section
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    });
+  </script>
 
   <script src="./js/app.js"></script>
 </body>

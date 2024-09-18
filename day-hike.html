@@ -20,7 +20,7 @@
   <link href="dist/output.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   <header id="navbar"
     class="h-20 sticky lg:fixed top-0 z-50 bg-dark/60 w-full transition-all duration-1000 ease-in-out">
     <div class="container mx-auto px-4 size-full">
@@ -352,106 +352,107 @@
     </div>
   </nav>
 
-  <section class="bg-gray-200 relative">
-    <div class="px-4 py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-10 text-dark">
-      <h2 class="caps text-3xl md:text-5xl mb-2">Travel Desk</h2>
-      <p class="hidden md:block px-8 text-base 2xl:text-base text-dark/70 italic max-w-2xl text-center">
-        Our travel desk is at your service to help you plan your day trips,
-        book flights, car rentals and day hikes to make your stay at Baber
-        Mahal Vilas a memorable one.
-      </p>
-    </div>
-    <div class="container mx-auto flex items-center justify-center p-4">
-      <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- room 1 -->
-        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
-          <div class="p-6 text-center space-y-3">
-            <a href="./day-trip.html">
-              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                Day Trip
-              </h5>
-            </a>
-            <p class="text-xs md:text-sm text-dark/80">
-              Our travel desk is at your service to help you plan your day
-              trips, book flights, car rentals and day hikes to make your stay
-              at Baber Mahal Vilas a memorable one.
-            </p>
-          </div>
-          <div class="overflow-hidden">
-            <a href="./day-hike.html">
-              <img
-                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                src="https://media.greenvalleynepaltreks.com/uploads/fullbanner/pashupatinath-temple-kathmandu.webp"
-                alt="Traditional Room" />
-            </a>
+  <section>
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-12">
+        <div class="col-span-1 sticky top-8 md:max-h-screen md:overflow-y-auto">
+          <div class="travel-desk">
+            <h3 class="caps text-2xl md:text-3xl">Day Hikes</h3>
+            <ul class="mt-8 space-y-4">
+              <li class="border border-x-0">
+                <a href="#nagarkot-hike"
+                  class="merriweather caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Nagarkot
+                  Hike</a>
+              </li>
+              <li class="border border-x-0">
+                <a href="#champadevi-hike"
+                  class="merriweather caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Champadevi
+                  Hike</a>
+              </li>
+              <li class="border border-x-0">
+                <a href="#shivapuri-hike"
+                  class="merriweather caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Shivapuri
+                  Hike</a>
+              </li>
+              <li class="border border-x-0">
+                <a href="#phulchowki-hike"
+                  class="merriweather caps text-lg text-dark/80 capitalize inline-block size-full py-3 border-dark transition-all duration-100 ease-linear">Phulchowki
+                  Hike</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- room 2 -->
-        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
-          <div class="p-6 text-center space-y-3">
-            <a href="./flights.html">
-              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                Flights
-              </h5>
-            </a>
-            <p class="text-xs md:text-sm text-dark/80">
-              Our travel desk is at your service to help you plan your day
-              trips, book flights, car rentals and day hikes to make your stay
-              at Baber Mahal Vilas a memorable one.
+        <div class="col-span-2 space-y-16">
+          <div id="nagarkot-hike" class="space-y-6 scroll-pt-6">
+            <h3 class="caps text-2xl md:text-3xl">Nagarkot Hike</h3>
+            <img
+              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/28c46a14-Nagarkot-Sunrise-Tour/Nagarkot%20Sunrise%20Tour.jpg"
+              alt="Nagarkot Hike" class="w-full h-96 object-cover shadow-md" />
+            <p class="text-base">
+              The Nagarkot hike is one of the most popular day hikes near
+              Kathmandu. Known for its breathtaking sunrise and sunset views,
+              this hike takes you through lush green hills and offers a
+              panoramic view of the Himalayan ranges, including Mount Everest
+              on a clear day. The hike usually starts from Sankhu village and
+              takes about 4-5 hours to reach Nagarkot. Along the way, you'll
+              pass through traditional villages, terraced fields, and serene
+              forests, making it a peaceful and scenic adventure.
             </p>
+            <p class="text-base font-bold">Price: Rs. 2,500 per person</p>
           </div>
-          <div class="overflow-hidden">
-            <a href="./flights.html">
-              <img
-                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                src="https://kailashjourneys.com/wp-content/uploads/2019/05/nepal-mountain-flight.jpg"
-                alt="Traditional Premium Room" />
-            </a>
-          </div>
-        </div>
-        <!-- room 3 -->
-        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
-          <div class="p-6 text-center space-y-3">
-            <a href="./car-rental.html">
-              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                Car Rentals
-              </h5>
-            </a>
-            <p class="text-xs md:text-sm text-dark/80">
-              Our travel desk is at your service to help you plan your day
-              trips, book flights, car rentals and day hikes to make your stay
-              at Baber Mahal Vilas a memorable one.
+
+          <div id="champadevi-hike" class="space-y-6 scroll-pt-6">
+            <h3 class="caps text-2xl md:text-3xl">Champadevi Hike</h3>
+            <img src="https://www.vivaanadventure.com/wp-content/uploads/2021/06/Chama-Devi-Hiking--984x540.jpg"
+              alt="Champadevi Hike" class="w-full h-96 object-cover shadow-md" />
+            <p class="text-base">
+              Champadevi is one of the highest hills surrounding Kathmandu,
+              standing at an elevation of 2,285 meters. The hike to the top
+              offers panoramic views of the Kathmandu Valley and the majestic
+              Himalayan ranges. Starting from Hattiban Resort, the trail is
+              well-defined and takes around 3-4 hours to reach the summit.
+              Along the way, you’ll pass through pine forests and spot various
+              species of birds, making it a great option for nature lovers. At
+              the top, you'll find a shrine dedicated to the goddess
+              Champadevi, a popular pilgrimage site.
             </p>
+            <p class="text-base font-bold">Price: Rs. 2,000 per person</p>
           </div>
-          <div class="overflow-hidden">
-            <a href="./car-rental.html">
-              <img
-                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                src="https://www.nepalrentalcar.com/uploads/img/best-car.jpg" alt="Heritage Room" />
-            </a>
-          </div>
-        </div>
-        <!-- room 4 -->
-        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
-          <div class="p-6 text-center space-y-3">
-            <a href="./day-hike.html">
-              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                Day Hikes
-              </h5>
-            </a>
-            <p class="text-xs md:text-sm text-dark/80">
-              Our travel desk is at your service to help you plan your day
-              trips, book flights, car rentals and day hikes to make your stay
-              at Baber Mahal Vilas a memorable one.
+
+          <div id="shivapuri-hike" class="space-y-6 scroll-pt-6">
+            <h3 class="caps text-2xl md:text-3xl">Shivapuri Hike</h3>
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/2d/14/c9.jpg" alt="Shivapuri Hike"
+              class="w-full h-96 object-cover shadow-md" />
+            <p class="text-base">
+              Located within the Shivapuri National Park, this hike is perfect
+              for those seeking both adventure and a close connection with
+              nature. The trail begins from Budhanilkantha, where you can
+              visit the ancient reclining Vishnu statue before starting your
+              journey. The trek offers a variety of terrains, including dense
+              forests, waterfalls, and wildlife sightings. Reaching the
+              Shivapuri Peak (2,732 meters) takes around 4-5 hours and rewards
+              you with a stunning view of the Langtang range, Kathmandu
+              Valley, and beyond.
             </p>
+            <p class="text-base font-bold">Price: Rs. 2,800 per person</p>
           </div>
-          <div class="overflow-hidden">
-            <a href="./day-hike.html">
-              <img
-                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                src="https://www.thirdrockadventures.com/assets-back/images/blog/15-best-hike-in-kathmandu.jpg9Xj.jpg"
-                alt="Royal Suites" />
-            </a>
+
+          <div id="phulchowki-hike" class="space-y-6 scroll-pt-6">
+            <h3 class="caps text-2xl md:text-3xl">Phulchowki Hike</h3>
+            <img src="https://nepalecoadventure.com/wp-content/uploads/2019/09/A-Day-Hike-to-Phulchowki-Kathmandu-2.jpg"
+              alt="Phulchowki Hike" class="w-full h-96 object-cover shadow-md" />
+            <p class="text-base">
+              Phulchowki is the highest hill (2,765 meters) surrounding the
+              Kathmandu Valley, making it one of the most exciting day hikes
+              for avid trekkers. The hike starts from Godavari, just outside
+              the city, and takes you through rhododendron forests, especially
+              vibrant in spring. This hike is known for its rich biodiversity
+              and is ideal for birdwatching enthusiasts. At the summit, you’ll
+              find a small shrine and a lookout point offering 360-degree
+              views of the valley and the Himalayas. The total hike takes
+              about 5-6 hours.
+            </p>
+            <p class="text-base font-bold">Price: Rs. 3,000 per person</p>
           </div>
         </div>
       </div>
@@ -594,7 +595,41 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Lenis -->
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>z
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all the navigation links and sections
+      const navLinks = document.querySelectorAll("#travel-desk ul a");
+      const sections = document.querySelectorAll("section div[id]");
+
+      // Create an IntersectionObserver to watch for sections in view
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const sectionId = entry.target.id;
+            const navLink = document.querySelector(`a[href="#${sectionId}"]`);
+
+            if (entry.isIntersecting) {
+              // Section is in view, add 'border-r-4' to the corresponding nav link
+              navLink.classList.add("border-r-4");
+            } else {
+              // Section is out of view, remove 'border-r-4'
+              navLink.classList.remove("border-r-4");
+            }
+          });
+        },
+        {
+          root: null, // Use the viewport
+          threshold: 0.5, // Trigger when 50% of the section is in view
+        }
+      );
+
+      // Observe each section
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    });
+  </script>
 
   <script src="./js/app.js"></script>
 </body>
