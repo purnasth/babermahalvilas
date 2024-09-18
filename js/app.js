@@ -163,6 +163,35 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+$(document).ready(function () {
+  $(".rooms-carousel").owlCarousel({
+    // items: 1,
+    // loop: true,
+    // autoplay: true,
+    // autoplayTimeout: 5000,
+    // autoplayHoverPause: true,
+    // animateOut: "fadeOut",
+    // smartSpeed: 1000,
+    // dots: false,
+    // nav: true,
+    // navText: [
+    //   '<i class="fa-solid fa-chevron-left text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
+    //   '<i class="fa-solid fa-chevron-right text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
+    // ],
+    loop: true,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 8000,
+    items: 1,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    mouseDrag: true,
+    touchDrag: true,
+    navText: ["<i>&#8592;</i>", "<i>&#8594;</i>"],
+  });
+});
+
 //! important for the hero section video.
 
 function startVideo() {
