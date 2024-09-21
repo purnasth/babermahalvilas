@@ -1,1112 +1,825 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Baber Mahal Vilas" />
-    <meta name="theme-color" content="#FFE9D2" />
 
-    <title>Baber Mahal Vilas</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to Baber Mahal Vilas" />
+  <meta name="theme-color" content="#FFE9D2" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./logo/favicon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.png" />
-    <link rel="manifest" href="./logo/site.webmanifest" />
+  <title>Baber Mahal Vilas</title>
 
-    <!-- Light gallery -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"
-    />
+  <link rel="apple-touch-icon" sizes="180x180" href="./logo/favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.png" />
+  <link rel="manifest" href="./logo/site.webmanifest" />
 
-    <link rel="stylesheet" href="./css/links.css" />
-    <link rel="stylesheet" href="./css/component.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="dist/output.css" rel="stylesheet" />
-  </head>
+  <!-- Light gallery -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
 
-  <body class="overflow-x-hidden">
-    <header
-      id="navbar"
-      class="h-20 sticky lg:fixed top-0 z-50 bg-dark/60 w-full transition-all duration-1000 ease-in-out"
-    >
-      <div class="container mx-auto px-4 size-full">
-        <div class="flex justify-between items-center size-full">
-          <a href="./index.html" aria-label="Logo" class="">
-            <img
-              id="logo"
-              src="./img/logo.svg"
-              alt="Logo"
-              class="absolute top-0 w-24 h-16 md:w-32 md:h-20 object-contain"
-            />
-          </a>
-          <div class="flex items-center gap-2">
-            <div class="flex items-center gap-3">
-              <ul
-                class="links hidden lg:flex items-start justify-start gap-1 md:gap-3"
-              >
-                <li class="caps dropdown nav-link group">
-                  <a
-                    href="#"
-                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                    aria-label="About"
-                  >
-                    About
-                    <i class="fa-solid fa-chevron-down text-xs"></i>
-                  </a>
-                  <ul
-                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
-                  >
-                    <li class="w-full">
-                      <a
-                        href="./index.html#our-story"
-                        class="navlink-dropdown"
-                        aria-label="Our Story"
-                        >Our Story</a
-                      >
-                    </li>
-                    <li class="w-full">
-                      <a
-                        href="./index.html#the-history"
-                        class="navlink-dropdown"
-                        aria-label="Our History"
-                        >The History</a
-                      >
-                    </li>
-                    <li class="w-full">
-                      <a
-                        href="./index.html#the-property"
-                        class="navlink-dropdown"
-                        aria-label="Our Property"
-                        >The Property</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="caps dropdown nav-link group">
-                  <a
-                    href="./room.html"
-                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                    aria-label="Rooms"
-                  >
-                    Rooms
-                    <i class="fa-solid fa-chevron-down text-xs"></i>
-                  </a>
-                  <ul
-                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
-                  >
-                    <li class="block w-full">
-                      <a
-                        href="./traditional-room.html"
-                        class="navlink-dropdown"
-                        aria-label="Traditional Room"
-                      >
-                        Traditional Room
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./traditional-premium.html"
-                        class="navlink-dropdown"
-                        aria-label="Traditional Suite"
-                      >
-                        Traditional Premium
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./heritage-room.html"
-                        class="navlink-dropdown"
-                        aria-label="Heritage Suite"
-                      >
-                        Heritage Room
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./royal-suite.html"
-                        class="navlink-dropdown"
-                        aria-label="Royal Suite"
-                      >
-                        Royal Suite
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="caps dropdown nav-link group">
-                  <a
-                    href="./dine.html"
-                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                    aria-label="Dining"
-                  >
-                    Dining
-                    <i class="fa-solid fa-chevron-down text-xs"></i>
-                  </a>
-                  <ul
-                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
-                  >
-                    <li class="block w-full">
-                      <a
-                        href="./dine.html#baithak"
-                        class="navlink-dropdown"
-                        aria-label="Baithak Restaurant"
-                      >
-                        Baithak Restaurant
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./dine.html#k2-terrace"
-                        class="navlink-dropdown"
-                        aria-label="K2 Terrace Cafe"
-                      >
-                        K2 Terrace Cafe
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="caps dropdown nav-link group">
-                  <a
-                    href="./facilities.html"
-                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                    aria-label="Facilities"
-                  >
-                    Facilities
-                    <i class="fa-solid fa-chevron-down text-xs"></i>
-                  </a>
-                  <ul
-                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
-                  >
-                    <li class="block w-full">
-                      <a
-                        href="./facilities.html#spa"
-                        class="navlink-dropdown"
-                        aria-label="Spa"
-                      >
-                        Spa
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./facilities.html#gym"
-                        class="navlink-dropdown"
-                        aria-label="Gym"
-                      >
-                        Gym
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./facilities.html#swimming-pool"
-                        class="navlink-dropdown"
-                        aria-label="Swimming Pool"
-                      >
-                        Swimming Pool
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./facilities.html#gift-shop"
-                        class="navlink-dropdown"
-                        aria-label="Gift Shop"
-                      >
-                        Gift Shop
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="caps dropdown nav-link group">
-                  <a
-                    href="./traveldesk.html"
-                    class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                    aria-label="Travel Desk"
-                  >
-                    Travel&nbsp;Desk
-                    <i class="fa-solid fa-chevron-down text-xs"></i>
-                  </a>
-                  <ul
-                    class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0"
-                  >
-                    <li class="block w-full">
-                      <a
-                        href="./day-trip.html"
-                        class="navlink-dropdown"
-                        aria-label="Day Trip"
-                      >
-                        Day Trip
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./flights.html"
-                        class="navlink-dropdown"
-                        aria-label="Flights"
-                      >
-                        Flights
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./car-rental.html"
-                        class="navlink-dropdown"
-                        aria-label="Car Rental"
-                      >
-                        Car Rentals
-                      </a>
-                    </li>
-                    <li class="block w-full">
-                      <a
-                        href="./day-hike.html"
-                        class="navlink-dropdown"
-                        aria-label="Day Hikes"
-                      >
-                        Day Hikes
-                      </a>
-                    </li>
-                  </ul>
-                </li>
+  <link rel="stylesheet" href="./css/links.css" />
+  <link rel="stylesheet" href="./css/component.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="dist/output.css" rel="stylesheet" />
+</head>
 
-                <!-- <li class="caps block w-full">
+<body class="overflow-x-hidden">
+  <header id="navbar"
+    class="h-20 sticky lg:fixed top-0 z-50 bg-dark/60 w-full transition-all duration-1000 ease-in-out">
+    <div class="container mx-auto px-4 size-full">
+      <div class="flex justify-between items-center size-full">
+        <a href="./index.html" aria-label="Logo" class="">
+          <img id="logo" src="./img/logo.svg" alt="Logo"
+            class="absolute top-0 w-24 h-16 md:w-32 md:h-20 object-contain" />
+        </a>
+        <div class="flex items-center gap-2">
+          <div class="flex items-center gap-3">
+            <ul class="links hidden lg:flex items-start justify-start gap-1 md:gap-3">
+              <li class="caps dropdown nav-link group">
+                <a href="#" class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  aria-label="About">
+                  About
+                  <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="w-full">
+                    <a href="./index.html#our-story" class="navlink-dropdown" aria-label="Our Story">Our Story</a>
+                  </li>
+                  <li class="w-full">
+                    <a href="./index.html#the-history" class="navlink-dropdown" aria-label="Our History">The History</a>
+                  </li>
+                  <li class="w-full">
+                    <a href="./index.html#the-property" class="navlink-dropdown" aria-label="Our Property">The
+                      Property</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="caps dropdown nav-link group">
+                <a href="./room.html"
+                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  aria-label="Rooms">
+                  Rooms
+                  <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="block w-full">
+                    <a href="./traditional-room.html" class="navlink-dropdown" aria-label="Traditional Room">
+                      Traditional Room
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./traditional-premium.html" class="navlink-dropdown" aria-label="Traditional Suite">
+                      Traditional Premium
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./heritage-room.html" class="navlink-dropdown" aria-label="Heritage Suite">
+                      Heritage Room
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./royal-suite.html" class="navlink-dropdown" aria-label="Royal Suite">
+                      Royal Suite
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="caps dropdown nav-link group">
+                <a href="./dine.html"
+                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  aria-label="Dining">
+                  Dining
+                  <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="block w-full">
+                    <a href="./dine.html#baithak" class="navlink-dropdown" aria-label="Baithak Restaurant">
+                      Baithak Restaurant
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./dine.html#k2-terrace" class="navlink-dropdown" aria-label="K2 Terrace Cafe">
+                      K2 Terrace Cafe
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="caps dropdown nav-link group">
+                <a href="./facilities.html"
+                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  aria-label="Facilities">
+                  Facilities
+                  <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="block w-full">
+                    <a href="./facilities.html#spa" class="navlink-dropdown" aria-label="Spa">
+                      Spa
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./facilities.html#gym" class="navlink-dropdown" aria-label="Gym">
+                      Gym
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./facilities.html#swimming-pool" class="navlink-dropdown" aria-label="Swimming Pool">
+                      Swimming Pool
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./facilities.html#gift-shop" class="navlink-dropdown" aria-label="Gift Shop">
+                      Gift Shop
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="caps dropdown nav-link group">
+                <a href="./traveldesk.html"
+                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  aria-label="Travel Desk">
+                  Travel&nbsp;Desk
+                  <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="block w-full">
+                    <a href="./day-trip.html" class="navlink-dropdown" aria-label="Day Trip">
+                      Day Trip
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./flights.html" class="navlink-dropdown" aria-label="Flights">
+                      Flights
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./car-rental.html" class="navlink-dropdown" aria-label="Car Rental">
+                      Car Rentals
+                    </a>
+                  </li>
+                  <li class="block w-full">
+                    <a href="./day-hike.html" class="navlink-dropdown" aria-label="Day Hikes">
+                      Day Hikes
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="caps block w-full">
                   <a href="#" class="nav-link" aria-label="Spa">Spa</a>
                 </li> -->
-                <li class="caps block w-full group">
-                  <a
-                    href="./gallery.html"
-                    class="nav-link relative underline-hover-effect"
-                    aria-label="Gallery"
-                    >Gallery</a
-                  >
-                </li>
-                <!-- <li class="caps block w-full">
+              <li class="caps block w-full group">
+                <a href="./gallery.html" class="nav-link relative underline-hover-effect"
+                  aria-label="Gallery">Gallery</a>
+              </li>
+              <!-- <li class="caps block w-full">
                   <a href="#" class="nav-link" aria-label="Press">Press</a>
                 </li> -->
-                <li class="caps block w-full group">
-                  <a
-                    href="./contact.html"
-                    class="nav-link relative underline-hover-effect"
-                    aria-label="Contact"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-              <a
-                href="https://www.babermahal.com/"
-                target="_blank"
-                class="caps text-white/80 hover:text-white text-base 2xl:text-lg transition-all duration-300 ease-linear vilas-italic"
-                >Baber Mahal Revisited
-              </a>
-            </div>
-            <div class="flex items-center justify-center gap-4 lg:hidden">
-              <button
-                type="menu"
-                id="toggleButton"
-                class="text-white focus:outline-none p-2"
-                aria-label="Toggle Button"
-                title="Toggle"
-              >
-                <i
-                  id="hamburgerIcon"
-                  class="fa-solid fa-bars text-white text-2xl"
-                ></i>
-                <i
-                  id="closeIcon"
-                  class="hidden fa-solid fa-xmark text-white text-3xl"
-                ></i>
-              </button>
-            </div>
+              <li class="caps block w-full group">
+                <a href="./contact.html" class="nav-link relative underline-hover-effect"
+                  aria-label="Contact">Contact</a>
+              </li>
+            </ul>
+            <a href="https://www.babermahal.com/" target="_blank"
+              class="caps text-white/80 hover:text-white text-base 2xl:text-lg transition-all duration-300 ease-linear vilas-italic">Baber
+              Mahal Revisited
+            </a>
+          </div>
+          <div class="flex items-center justify-center gap-4 lg:hidden">
+            <button type="menu" id="toggleButton" class="text-white focus:outline-none p-2" aria-label="Toggle Button"
+              title="Toggle">
+              <i id="hamburgerIcon" class="fa-solid fa-bars text-white text-2xl"></i>
+              <i id="closeIcon" class="hidden fa-solid fa-xmark text-white text-3xl"></i>
+            </button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div
-      id="overlay"
-      class="fixed inset-0 bg-dark opacity-50 z-10 hidden"
-    ></div>
-    <nav
-      id="navLinks"
-      class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-dark transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full"
-    >
-      <div class="relative">
-        <div
-          class="absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
-          style="background-image: url('./svg/building.svg')"
-        ></div>
+  <div id="overlay" class="fixed inset-0 bg-dark opacity-50 z-10 hidden"></div>
+  <nav id="navLinks"
+    class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-dark transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full">
+    <div class="relative">
+      <div
+        class="absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
+        style="background-image: url('./svg/building.svg')"></div>
 
-        <div class="flex items-center justify-center">
-          <a href="#" aria-label="Logo">
-            <img
-              src="./img/logo.svg"
-              alt="Logo"
-              class="w-full h-28 object-contain rounded-full p-2"
-            />
-          </a>
-        </div>
+      <div class="flex items-center justify-center">
+        <a href="#" aria-label="Logo">
+          <img src="./img/logo.svg" alt="Logo" class="w-full h-28 object-contain rounded-full p-2" />
+        </a>
+      </div>
 
-        <ul
-          class="links flex items-start justify-start gap-1 md:gap-3 flex-col"
-        >
-          <li class="caps dropdown nav-link">
-            <a
-              href="#"
-              class="flex items-center justify-between w-full"
-              aria-label="About"
-              >About <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <ul
-              class="drop absolute -top-3/4 left-full bg-transparent flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl"
-            >
-              <li class="w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Our Story"
-                  >Our Story</a
-                >
-              </li>
-              <li class="w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Our History"
-                  >The History</a
-                >
-              </li>
-              <li class="w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Our Property"
-                  >The Property</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="caps dropdown nav-link">
-            <a
-              href="#"
-              class="flex items-center justify-between w-full"
-              aria-label="Rooms"
-              >Rooms <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <ul
-              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl"
-            >
-              <li class="block w-full">
-                <a
-                  href="#"
-                  class="navlink-dropdown"
-                  aria-label="Traditional Room"
-                >
-                  Traditional Room
-                </a>
-              </li>
-              <li class="block w-full">
-                <a
-                  href="#"
-                  class="navlink-dropdown"
-                  aria-label="Traditional Suite"
-                >
-                  Traditional Suite
-                </a>
-              </li>
-              <li class="block w-full">
-                <a
-                  href="#"
-                  class="navlink-dropdown"
-                  aria-label="Heritage Suite"
-                >
-                  Heritage Suite
-                </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
-                  Royal Suite
-                </a>
-              </li>
-            </ul>
-          </li>
+      <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="About">About <i
+              class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 left-full bg-transparent flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl">
+            <li class="w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Our Story">Our Story</a>
+            </li>
+            <li class="w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Our History">The History</a>
+            </li>
+            <li class="w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Our Property">The Property</a>
+            </li>
+          </ul>
+        </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Rooms">Rooms <i
+              class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl">
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Traditional Room">
+                Traditional Room
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Traditional Suite">
+                Traditional Suite
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Heritage Suite">
+                Heritage Suite
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
+                Royal Suite
+              </a>
+            </li>
+          </ul>
+        </li>
 
-          <li class="caps dropdown nav-link">
-            <a
-              href="#"
-              class="flex items-center justify-between w-full"
-              aria-label="Dining"
-            >
-              Dining <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <ul
-              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl"
-            >
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Jyunar">
-                  Jyunar
-                </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
-                  Surya Bar
-                </a>
-              </li>
-            </ul>
-          </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Dining">
+            Dining <i class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Jyunar">
+                Jyunar
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
+                Surya Bar
+              </a>
+            </li>
+          </ul>
+        </li>
 
-          <li class="caps dropdown nav-link">
-            <a
-              href="#"
-              class="flex items-center justify-between w-full"
-              aria-label="Facilities"
-            >
-              Facilities <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <ul
-              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl"
-            >
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Spa"> Spa </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Gym"> Gym </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Swimming Pool">
-                  Swimming Pool
-                </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Gift Shop">
-                  Gift Shop
-                </a>
-              </li>
-              <li class="block w-full">
-                <a
-                  href="#"
-                  class="navlink-dropdown"
-                  aria-label="Other facilities"
-                >
-                  Other Facilities
-                </a>
-              </li>
-            </ul>
-          </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Facilities">
+            Facilities <i class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Spa"> Spa </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Gym"> Gym </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Swimming Pool">
+                Swimming Pool
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Gift Shop">
+                Gift Shop
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Other facilities">
+                Other Facilities
+              </a>
+            </li>
+          </ul>
+        </li>
 
-          <li class="caps dropdown nav-link">
-            <a
-              href="#"
-              class="flex items-center justify-between w-full"
-              aria-label="Travel Desk"
-            >
-              Travel Desk <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <ul
-              class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl"
-            >
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Day Trip">
-                  Day Trip
-                </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Flights">
-                  Flights
-                </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Car Rentals">
-                  Car Rentals
-                </a>
-              </li>
-              <li class="block w-full">
-                <a href="#" class="navlink-dropdown" aria-label="Day Hikes">
-                  Day Hikes
-                </a>
-              </li>
-            </ul>
-          </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Travel Desk">
+            Travel Desk <i class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Day Trip">
+                Day Trip
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Flights">
+                Flights
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Car Rentals">
+                Car Rentals
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Day Hikes">
+                Day Hikes
+              </a>
+            </li>
+          </ul>
+        </li>
 
-          <li class="caps block w-full">
-            <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
-          </li>
-          <li class="caps block w-full">
-            <a href="#" class="nav-link" aria-label="Contact">Contact</a>
-          </li>
-          <!-- <a href="https://www.babermahal.com/" target="_blank"
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
+        </li>
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Contact">Contact</a>
+        </li>
+        <!-- <a href="https://www.babermahal.com/" target="_blank"
               class="mt-4 mb-4 w-4/5 mx-auto text-center caps text-white text-xs bg-white/20 border border-white/50 px-4 py-2 rounded-full hover:bg-white/40 transition-all duration-300 ease-linear">Baber
               Mahal Revisited</a> -->
-          <a
-            href="#"
-            class="mt-4 caps text-center w-full md:hidden bg-green-600 text-dark px-4 py-2 rounded-xl text-lg tracking-wider"
-            aria-label="Book Now"
-            title="Book"
-          >
-            <i class="mr-2 fa-solid fa-calendar-check"></i>
-            Book Now
-          </a>
-        </ul>
-      </div>
-    </nav>
+        <a href="#"
+          class="mt-4 caps text-center w-full md:hidden bg-green-600 text-dark px-4 py-2 rounded-xl text-lg tracking-wider"
+          aria-label="Book Now" title="Book">
+          <i class="mr-2 fa-solid fa-calendar-check"></i>
+          Book Now
+        </a>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="p-0">
-      <div class="rooms-carousel owl-carousel owl-theme relative">
-        <div class="item relative">
-          <img
-            src="./img/babermahal.jpg"
-            alt="Baber Mahal Vilas"
-            class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover"
-          />
+  <section class="p-0">
+    <div class="rooms-carousel owl-carousel owl-theme relative">
+      <div class="item relative">
+        <img src="./img/babermahal.jpg" alt="Baber Mahal Vilas"
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
 
-          <h4
-            class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/40 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4"
-          >
-            A time capsule of Nepalese Architecture. An amalgamation of the best
-            of Nepalese architecture. Baber Mahal
-            <em class="text-inherit">Vilas</em>, an architectural museum !
-          </h4>
-        </div>
-        <div class="item relative">
-          <img
-            src="./img/banner/4.webp"
-            alt="Baber Mahal Vilas"
-            class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover"
-          />
-          <h4
-            class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/40 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4"
-          >
-            In an effort to portray the distinct architectural features of Nepal
-            in an essentially neoclassical 'Rana' style.
-          </h4>
-        </div>
-        <div class="item relative">
-          <img
-            src="./img/rooms/room3.webp"
-            alt="Baber Mahal Vilas"
-            class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover"
-          />
-          <h4
-            class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/40 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4"
-          >
-            Luxury and Service, in a haven of history, culture and tradition,
-            Baber Mahal <em class="text-inherit">Vilas</em> is a boutique hotel
-            in the heart of Kathmandu, Nepal.
-          </h4>
-        </div>
-        <div class="item relative">
-          <img
-            src="https://www.babermahalvilas.com/images/slideshow/sjCXd-img_7796---copy.jpg"
-            alt="Baber Mahal Vilas"
-            class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover"
-          />
-          <h4
-            class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/40 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4"
-          >
-            The hotel is rich in historic significance to its location, built
-            upon the grounds of the Baber Mahal Palace, to reflect its grandeur.
-          </h4>
-        </div>
+        <h4
+          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/40 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4">
+          A time capsule of Nepalese Architecture. An amalgamation of the best
+          of Nepalese architecture. Baber Mahal
+          <em class="text-inherit">Vilas</em>, an architectural museum !
+        </h4>
       </div>
-    </section>
-    <hr class="bar" />
-    <section
-      id="our-story"
-      class="p-0 relative h-96 sm:h-[50vh] sm:min-h-96 lg:h-[110vh]"
-    >
-      <div
-        class="absolute inset-0 size-full bg-no-repeat bg-cover bg-top -z-10"
-        style="
+      <div class="item relative">
+        <img src="./img/banner/4.webp" alt="Baber Mahal Vilas"
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
+        <h4
+          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/40 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4">
+          In an effort to portray the distinct architectural features of Nepal
+          in an essentially neoclassical 'Rana' style.
+        </h4>
+      </div>
+      <div class="item relative">
+        <img src="./img/rooms/room3.webp" alt="Baber Mahal Vilas"
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
+        <h4
+          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/40 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4">
+          Luxury and Service, in a haven of history, culture and tradition,
+          Baber Mahal <em class="text-inherit">Vilas</em> is a boutique hotel
+          in the heart of Kathmandu, Nepal.
+        </h4>
+      </div>
+      <div class="item relative">
+        <img src="https://www.babermahalvilas.com/images/slideshow/sjCXd-img_7796---copy.jpg" alt="Baber Mahal Vilas"
+          class="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen shadow-lg object-cover" />
+        <h4
+          class="w-auto md:w-[36rem] absolute left-0 bottom-0 m-2 md:m-8 bg-dark/40 text-white text-xs sm:text-sm lg:text-base font-extralight md:font-light p-4">
+          The hotel is rich in historic significance to its location, built
+          upon the grounds of the Baber Mahal Palace, to reflect its grandeur.
+        </h4>
+      </div>
+    </div>
+  </section>
+  <hr class="bar" />
+  <section id="our-story" class="p-0 relative h-96 sm:h-[50vh] sm:min-h-96 lg:h-[110vh]">
+    <div class="absolute inset-0 size-full bg-no-repeat bg-cover bg-top -z-10" style="
           background-image: url('https://www.babermahalvilas.com/images/articles/oRAGu-0NLLN-edition-1.jpg');
-        "
-      ></div>
-      <!-- <div
+        "></div>
+    <!-- <div
       class="absolute inset-0 size-full pointer-events-none select-none bg-no-repeat bg-cover bg-top -z-10 bg-gradient-to-b from-white/50 via-transparent to-transparent">
     </div> -->
 
-      <div class="flex size-full">
-        <div
-          class="w-auto md:w-1/2 text-dark mx-auto p-10 pt-5 text-center space-y-3"
-        >
-          <h2 class="caps text-2xl md:text-5xl vilas-italic">
-            Baber Mahal Vilas
-          </h2>
-          <p class="text-xs md:text-sm font-light">
-            The vision behind the boutique property is to create a hospitality
-            model where in, luxury and service are provided in a historically
-            and culturally significant ambience in the center Kathmandu Valley.
-          </p>
+    <div class="flex size-full">
+      <div class="w-auto md:w-1/2 max-w-lg text-dark mx-auto p-10 pt-5 text-center space-y-3">
+        <h2 class="caps text-2xl md:text-5xl vilas-italic">
+          Baber Mahal Vilas
+        </h2>
+        <p class="text-xs md:text-sm font-light">
+          The vision behind the boutique property is to create a hospitality
+          model where in, luxury and service are provided in a historically
+          and culturally significant ambience in the center Kathmandu Valley.
+        </p>
 
-          <button
-            type="button"
-            class="flex items-center justify-center gap-2 group text-base relative mx-auto"
-            aria-label="Read More"
-            title="Read more"
-          >
-            <div
-              class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"
-            ></div>
-            Read More
-          </button>
-        </div>
+        <button type="button" class="flex items-center justify-center gap-2 group text-base relative mx-auto"
+          aria-label="Read More" title="Read more">
+          <div
+            class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+          </div>
+          Read More
+        </button>
       </div>
-    </section>
-    <hr class="bar" />
-    <section id="the-history" class="pb-0 md:p-0 relative h-auto lg:h-[110vh]">
-      <div
-        class="hidden lg:block absolute inset-0 size-full bg-[url('https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg')] bg-no-repeat bg-cover bg-top -z-10"
-      ></div>
-      <div class="max-w-xl">
-        <div class="text-dark p-0 px-4 pb-6 md:p-10 space-y-4">
-          <h2 class="caps text-2xl md:text-5xl">The History</h2>
-          <p class="text-xs md:text-sm font-light">
-            The property is built and run by the descendants of the longest
-            ruling prime minister of Nepal Maharaja Chandra Shumsher Rana and
-            his son Baber Shumsher Rana who was the Commander and Chief of the
-            Nepali Armed Forces.
-          </p>
+    </div>
+  </section>
+  <hr class="bar" />
+  <section id="the-history" class="pb-0 md:p-0 relative h-auto lg:h-[110vh]">
+    <div
+      class="hidden lg:block absolute inset-0 size-full bg-[url('https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg')] bg-no-repeat bg-cover bg-top -z-10">
+    </div>
+    <div class="max-w-xl">
+      <div class="text-dark p-0 px-4 pb-6 md:p-10 space-y-4">
+        <h2 class="caps text-2xl md:text-5xl">The History</h2>
+        <p class="text-xs md:text-sm font-light">
+          The property is built and run by the descendants of the longest
+          ruling prime minister of Nepal Maharaja Chandra Shumsher Rana and
+          his son Baber Shumsher Rana who was the Commander and Chief of the
+          Nepali Armed Forces.
+        </p>
 
-          <button
-            type="button"
-            class="flex items-center justify-center gap-2 group text-base relative"
-            aria-label="Read More"
-            title="Read more"
-          >
-            <div
-              class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"
-            ></div>
-            <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+        <button type="button" class="flex items-center justify-center gap-2 group text-base relative"
+          aria-label="Read More" title="Read more">
+          <div
+            class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+          </div>
+          <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
             stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
             class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
             <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
             <path d="M17 16l4 -4l-4 -4"></path>
           </svg> -->
-            Read More
-          </button>
-        </div>
+          Read More
+        </button>
       </div>
+    </div>
 
-      <img
-        src="https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg"
-        class="lg:hidden w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-screen object-cover object-center"
-      />
-    </section>
-    <hr class="bar" />
-    <section id="the-property" class="px-4 pb-0 md:p-0 bg-white relative">
-      <div
-        class="static md:absolute md:mt-20 md:mr-12 max-w-md right-0 top-0 size-auto space-y-4 text-dark"
-      >
-        <h4 class="caps text-2xl md:text-5xl capitalize">The property</h4>
-        <p class="text-xs md:text-sm">
-          Baber Mahal <em class="text-inherit">Vilas</em> - The Heritage Hotel
-          is a quaint family-run boutique property set in the existing
-          architectural haven of Baber Mahal
-          <em class="text-inherit">Revisited</em>. In an effort to portray the
-          distinct architectural features of Nepal in an blend of architectural
-          design, the property shows 4 distinct styles.
-        </p>
-        <button
-          type="button"
-          class="flex items-center justify-center gap-2 group text-base relative"
-          aria-label="Read More"
-          title="Read more"
-        >
-          <div
-            class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark/80 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"
-          ></div>
-          <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+    <img src="https://www.babermahalvilas.com/images/articles/Z30rm-history.jpg"
+      class="lg:hidden w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-screen object-cover object-center" />
+  </section>
+  <hr class="bar" />
+  <section id="the-property" class="px-4 pb-0 md:p-0 bg-white relative">
+    <div class="static md:absolute md:mt-20 md:mr-12 max-w-md right-0 top-0 size-auto space-y-4 text-dark">
+      <h4 class="caps text-2xl md:text-5xl capitalize">The property</h4>
+      <p class="text-xs md:text-sm">
+        Baber Mahal <em class="text-inherit">Vilas</em> - The Heritage Hotel
+        is a quaint family-run boutique property set in the existing
+        architectural haven of Baber Mahal
+        <em class="text-inherit">Revisited</em>. In an effort to portray the
+        distinct architectural features of Nepal in an blend of architectural
+        design, the property shows 4 distinct styles.
+      </p>
+      <button type="button" class="flex items-center justify-center gap-2 group text-base relative"
+        aria-label="Read More" title="Read more">
+        <div
+          class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark/80 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+        </div>
+        <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
           stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
           class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
           <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
           <path d="M17 16l4 -4l-4 -4"></path>
         </svg> -->
-          Read More
-        </button>
-      </div>
+        Read More
+      </button>
+    </div>
 
-      <img
-        src="./img/arts/property-arts.png"
-        alt="The Property"
-        class="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-[110vh] object-contain object-center md:object-left"
-      />
+    <img src="./img/arts/property-arts.png" alt="The Property"
+      class="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-[110vh] object-contain object-center md:object-left" />
 
-      <!-- <div class="size-full bg-no-repeat bg-contain bg-left bg-fixed -z-10"
+    <!-- <div class="size-full bg-no-repeat bg-contain bg-left bg-fixed -z-10"
       style="background-image: url('./img/arts/property-arts.png');">
     </div> -->
-    </section>
-    <hr class="bar" />
-    <section class="size-full p-0 relative" onclick="startVideo()">
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        id="backgroundVideo"
-        poster="./img/babermahal.jpg"
-        class="size-full object-cover"
-      >
-        <source src="./video/babermahal.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
-    <hr class="bar" />
-    <section class="bg-gray-200 relative">
-      <!-- <div class="absolute inset-0 bg-white -z-20"></div> -->
-      <!-- <div
+  </section>
+  <hr class="bar" />
+  <section class="size-full p-0 relative" onclick="startVideo()">
+    <video autoplay loop muted playsinline id="backgroundVideo" poster="./img/babermahal.jpg"
+      class="size-full object-cover">
+      <source src="./video/babermahal.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <hr class="bar" />
+  <section class="bg-gray-200 relative">
+    <!-- <div class="absolute inset-0 bg-white -z-20"></div> -->
+    <!-- <div
         class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
         style="background-image: url('https://www.babermahalvilas.com/images/slideshow/XGLiA-157a2310---copy.jpg')"
       ></div> -->
-      <!-- <div
+    <!-- <div
         class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
         style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/Xhh6T-padma8.jpg')"
       ></div> -->
-      <!-- <div
+    <!-- <div
         class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
         style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/fPKow-singha-suite3.jpg')"
       ></div> -->
-      <!-- <div
+    <!-- <div
         class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
         style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/r4WyJ-kausee-kotha8.jpg')"
       ></div> -->
-      <!-- <div
+    <!-- <div
         class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
         style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/rNdxL-cs4.jpg')"
       ></div> -->
-      <!-- <div
+    <!-- <div
         class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
         style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg')"
       ></div> -->
-      <!-- <div
+    <!-- <div
         class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
         style="background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/B2imo-untitled-13.jpg')"
       ></div> -->
-      <!-- <div
+    <!-- <div
       class="absolute inset-0 size-full bg-fixed bg-contain bg-repeat mix-blend-multiply opacity-30 -z-10 pointer-events-none"
       style="
           background-image: url('https://www.babermahalvilas.com/images/gallery/galleryimages/fWDW7-lobby3.jpg');
         "></div> -->
-      <div
-        class="px-4 py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-10 text-dark"
-      >
-        <h2 class="caps text-3xl md:text-5xl mb-2">Rooms</h2>
-        <!-- <span class="text-sm md:text-xl font-bold text-coffee-800/80">Our Guests' Voices, Your Assurance</span> -->
-        <p class="text-base max-w-lg text-center capitalize">
-          Experience The Rana style of living
-        </p>
-      </div>
-      <div class="container mx-auto flex items-center justify-center p-4">
-        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <!-- room 1 -->
-          <div
-            class="relative bg-white shadow-md border border-gray-200 group p-2"
-          >
-            <div class="p-6 text-center space-y-3">
-              <a href="./traditional-room.html">
-                <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                  Traditional Room
-                </h5>
-              </a>
-              <p class="text-xs md:text-sm text-dark/80">
-                These rooms are compact and yet inviting, reflecting the skilled
-                craftmenship of Newari Artisans. The rooms are adorned with
-                traditional art and vibrant handwoven textiles, adding warmth
-                and colour.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <a href="./traditional-room.html">
-                <img
-                  class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                  src="./img/rooms/room1.webp"
-                  alt="Traditional Room"
-                />
-              </a>
-            </div>
+    <div class="px-4 py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-10 text-dark">
+      <h2 class="caps text-3xl md:text-5xl mb-2">Rooms</h2>
+      <!-- <span class="text-sm md:text-xl font-bold text-coffee-800/80">Our Guests' Voices, Your Assurance</span> -->
+      <p class="text-base max-w-lg text-center capitalize">
+        Experience The Rana style of living
+      </p>
+    </div>
+    <div class="container mx-auto flex items-center justify-center p-4">
+      <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- room 1 -->
+        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
+          <div class="p-6 text-center space-y-3">
+            <a href="./traditional-room.html">
+              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                Traditional Room
+              </h5>
+            </a>
+            <p class="text-xs md:text-sm text-dark/80">
+              These rooms are compact and yet inviting, reflecting the skilled
+              craftmenship of Newari Artisans. The rooms are adorned with
+              traditional art and vibrant handwoven textiles, adding warmth
+              and colour.
+            </p>
           </div>
-          <!-- room 2 -->
-          <div
-            class="relative bg-white shadow-md border border-gray-200 group p-2"
-          >
-            <div class="p-6 text-center space-y-3">
-              <a href="./traditional-premium.html">
-                <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                  Traditional Premium Room
-                </h5>
-              </a>
-              <p class="text-xs md:text-sm text-dark/80">
-                These rooms reflect the diverse architectural elements of the
-                Rana era as well as the local Newari and Buddhist architectural
-                features. Rooms are spacious and look over the quaint courtyards
-                of the property.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <a href="./traditional-premium.html">
-                <img
-                  class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                  src="./img/rooms/room2.webp"
-                  alt="Traditional Premium Room"
-                />
-              </a>
-            </div>
+          <div class="overflow-hidden">
+            <a href="./traditional-room.html">
+              <img
+                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                src="./img/rooms/room1.webp" alt="Traditional Room" />
+            </a>
           </div>
-          <!-- room 3 -->
-          <div
-            class="relative bg-white shadow-md border border-gray-200 group p-2"
-          >
-            <div class="p-6 text-center space-y-3">
-              <a href="./heritage-room.html">
-                <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                  Heritage Suite
-                </h5>
-              </a>
-              <p class="text-xs md:text-sm text-dark/80">
-                Spacious, with quaint private balconies. These rooms reflect the
-                diverse architectural elements of the Rana era as well as the
-                local Newari and Buddhist architectural features. Rooms are
-                spacious and look over the quaint courtyards.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <a href="./heritage-room.html">
-                <img
-                  class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                  src="./img/rooms/room3.webp"
-                  alt="Heritage Room"
-                />
-              </a>
-            </div>
+        </div>
+        <!-- room 2 -->
+        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
+          <div class="p-6 text-center space-y-3">
+            <a href="./traditional-premium.html">
+              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                Traditional Premium Room
+              </h5>
+            </a>
+            <p class="text-xs md:text-sm text-dark/80">
+              These rooms reflect the diverse architectural elements of the
+              Rana era as well as the local Newari and Buddhist architectural
+              features. Rooms are spacious and look over the quaint courtyards
+              of the property.
+            </p>
           </div>
-          <!-- room 4 -->
-          <div
-            class="relative bg-white shadow-md border border-gray-200 group p-2"
-          >
-            <div class="p-6 text-center space-y-3">
-              <a href="./royal-suite.html">
-                <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                  Royal Suites
-                </h5>
-              </a>
-              <p class="text-xs md:text-sm text-dark/80">
-                Spacious, with quaint private balconies. These rooms reflect the
-                diverse architectural elements of the Rana era as well as the
-                local Newari and Buddhist architectural features. Rooms are
-                spacious and look over the quaint courtyards.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <a href="./royal-suite.html">
-                <img
-                  class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
-                  src="./img/rooms/room4.webp"
-                  alt="Royal Suites"
-                />
-              </a>
-            </div>
+          <div class="overflow-hidden">
+            <a href="./traditional-premium.html">
+              <img
+                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                src="./img/rooms/room2.webp" alt="Traditional Premium Room" />
+            </a>
+          </div>
+        </div>
+        <!-- room 3 -->
+        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
+          <div class="p-6 text-center space-y-3">
+            <a href="./heritage-room.html">
+              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                Heritage Suite
+              </h5>
+            </a>
+            <p class="text-xs md:text-sm text-dark/80">
+              Spacious, with quaint private balconies. These rooms reflect the
+              diverse architectural elements of the Rana era as well as the
+              local Newari and Buddhist architectural features. Rooms are
+              spacious and look over the quaint courtyards.
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <a href="./heritage-room.html">
+              <img
+                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                src="./img/rooms/room3.webp" alt="Heritage Room" />
+            </a>
+          </div>
+        </div>
+        <!-- room 4 -->
+        <div class="relative bg-white shadow-md border border-gray-200 group p-2">
+          <div class="p-6 text-center space-y-3">
+            <a href="./royal-suite.html">
+              <h5 class="caps text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                Royal Suites
+              </h5>
+            </a>
+            <p class="text-xs md:text-sm text-dark/80">
+              Spacious, with quaint private balconies. These rooms reflect the
+              diverse architectural elements of the Rana era as well as the
+              local Newari and Buddhist architectural features. Rooms are
+              spacious and look over the quaint courtyards.
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <a href="./royal-suite.html">
+              <img
+                class="w-full h-64 sm:h-[50vh] lg:h-80 object-cover block group-hover:scale-110 transition-all duration-500 ease-linear group-hover:contrast-125"
+                src="./img/rooms/room4.webp" alt="Royal Suites" />
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="bg-white">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-12">
-          <div class="col-span-2">
-            <div class="space-y-4">
-              <h5 class="caps capitalize text-2xl md:text-4xl">Gallery</h5>
-              <p class="text-xs md:text-sm max-w-lg">
-                Explore the rich heritage of Nepalese architecture through our
-                curated gallery, showcasing the timeless elegance and intricate
-                artistry of Baber Mahal <em class="text-inherit">Vilas</em>.
-              </p>
-            </div>
-            <div
-              id="lightgallery"
-              class="mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear"
-            >
-              <a
-                href="./img/rooms/room3.webp"
-                data-src="./img/rooms/room3.webp"
-                class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative"
-              >
-                <img
-                  src="./img/rooms/room3.webp"
-                  alt="Heritage Suite"
-                  class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
-                  loading="lazy"
-                  draggable="false"
-                />
-                <div
-                  class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-dark/70 to-dark/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear"
-                ></div>
-                <h5
-                  class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear"
-                >
-                  Heritage Suite
-                </h5>
-              </a>
+    </div>
+  </section>
+  <section class="bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-12">
+        <div class="col-span-2">
+          <div class="space-y-4">
+            <h5 class="caps capitalize text-2xl md:text-4xl">Gallery</h5>
+            <p class="text-xs md:text-sm max-w-lg">
+              Explore the rich heritage of Nepalese architecture through our
+              curated gallery, showcasing the timeless elegance and intricate
+              artistry of Baber Mahal <em class="text-inherit">Vilas</em>.
+            </p>
+          </div>
+          <div id="lightgallery" class="mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear">
+            <a href="./img/rooms/room3.webp" data-src="./img/rooms/room3.webp"
+              class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+              <img src="./img/rooms/room3.webp" alt="Heritage Suite"
+                class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                loading="lazy" draggable="false" />
+              <div
+                class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-dark/70 to-dark/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear">
+              </div>
+              <h5
+                class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
+                Heritage Suite
+              </h5>
+            </a>
 
-              <a
-                href="./img/babermahal.jpg"
-                data-src="./img/babermahal.jpg"
-                class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative"
-              >
-                <img
-                  src="./img/babermahal.jpg"
-                  alt="The Property"
-                  class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
-                  loading="lazy"
-                  draggable="false"
-                />
-                <div
-                  class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-dark/70 to-dark/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear"
-                ></div>
-                <h5
-                  class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear"
-                >
-                  The Property
-                </h5>
-              </a>
+            <a href="./img/babermahal.jpg" data-src="./img/babermahal.jpg"
+              class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+              <img src="./img/babermahal.jpg" alt="The Property"
+                class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                loading="lazy" draggable="false" />
+              <div
+                class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-dark/70 to-dark/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear">
+              </div>
+              <h5
+                class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
+                The Property
+              </h5>
+            </a>
 
-              <a
-                href="./img/banner/5.webp"
-                data-src="./img/banner/5.webp"
-                class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative"
-              >
-                <img
-                  src="./img/banner/5.webp"
-                  alt="Restaurant"
-                  class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
-                  loading="lazy"
-                  draggable="false"
-                />
-                <div
-                  class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-dark/70 to-dark/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear"
-                ></div>
-                <h5
-                  class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear"
-                >
-                  Restaurant
-                </h5>
-              </a>
+            <a href="./img/banner/5.webp" data-src="./img/banner/5.webp"
+              class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+              <img src="./img/banner/5.webp" alt="Restaurant"
+                class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                loading="lazy" draggable="false" />
+              <div
+                class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-dark/70 to-dark/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear">
+              </div>
+              <h5
+                class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
+                Restaurant
+              </h5>
+            </a>
 
-              <a
-                href="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg"
-                data-src="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg"
-                class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative"
-              >
-                <img
-                  src="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg"
-                  alt="Arts"
-                  class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
-                  loading="lazy"
-                  draggable="false"
-                />
-                <div
-                  class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-dark/70 to-dark/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear"
-                ></div>
-                <h5
-                  class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear"
-                >
-                  Arts
-                </h5>
-              </a>
-            </div>
+            <a href="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg"
+              data-src="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg"
+              class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+              <img src="https://www.babermahalvilas.com/images/gallery/galleryimages/fJoXP-untitled-17.jpg" alt="Arts"
+                class="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                loading="lazy" draggable="false" />
+              <div
+                class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-dark/70 to-dark/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear">
+              </div>
+              <h5
+                class="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
+                Arts
+              </h5>
+            </a>
+          </div>
 
-            <div class="mt-8 flex items-center justify-center">
-              <a
-                href="./gallery.html"
-                class="inline-flex items-center justify-center gap-2 group text-base text-center relative"
-                aria-label="Read More"
-                title="Read more"
-              >
-                <div
-                  class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark/80 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"
-                ></div>
-                <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+          <div class="mt-8 flex items-center justify-center">
+            <a href="./gallery.html"
+              class="inline-flex items-center justify-center gap-2 group text-base text-center relative"
+              aria-label="Read More" title="Read more">
+              <div
+                class="absolute bottom-0 -right-0 w-full h-[2px] bg-dark/80 group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear">
+              </div>
+              <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
                 stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
                 class="text-2xl group-hover:translate-x-1 transition-all duration-300 ease-linear">
                 <path d="M12 21v-13a4 4 0 1 0 -4 4h13"></path>
                 <path d="M17 16l4 -4l-4 -4"></path>
               </svg> -->
-                View More
-              </a>
-            </div>
+              View More
+            </a>
           </div>
-          <div class="col-span-1">
-            <div class="space-y-4">
-              <h5 class="caps capitalize text-4xl">Feedback</h5>
-              <p class="text-xs md:text-sm max-w-xs">
-                Discover how our guests have embraced the luxury & historical
-                allure of Baber Mahal <em class="text-inherit">Vilas</em>.
+        </div>
+        <div class="col-span-1">
+          <div class="space-y-4">
+            <h5 class="caps capitalize text-4xl">Feedback</h5>
+            <p class="text-xs md:text-sm max-w-xs">
+              Discover how our guests have embraced the luxury & historical
+              allure of Baber Mahal <em class="text-inherit">Vilas</em>.
+            </p>
+          </div>
+          <div class="mt-12 space-y-16 max-h-[36rem] overflow-y-auto pr-2">
+            <div>
+              <p class="review text-justify md:text-pretty text-base">
+                Perfect Family Time <br />
+                We had a great time as a family. Very tasteful decor in
+                Victorian era and comfortable suites! Central location makes
+                it close to most places of attraction. The staff at the
+                reception were excellent. Sweetie, Sudikshya and Rupes thank
+                you for making our Stay comfortable. We certainly will visit
+                again.
               </p>
+              <div class="flex items-center justify-between gap-12 mt-6">
+                <p class="caps text-base font-medium">- Rajs</p>
+                <p class="text-xs">- via Tripadvisor</p>
+              </div>
             </div>
-            <div class="mt-12 space-y-16 max-h-[36rem] overflow-y-auto pr-2">
-              <div>
-                <p class="review text-justify md:text-pretty text-base">
-                  Perfect Family Time <br />
-                  We had a great time as a family. Very tasteful decor in
-                  Victorian era and comfortable suites! Central location makes
-                  it close to most places of attraction. The staff at the
-                  reception were excellent. Sweetie, Sudikshya and Rupes thank
-                  you for making our Stay comfortable. We certainly will visit
-                  again.
-                </p>
-                <div class="flex items-center justify-between gap-12 mt-6">
-                  <p class="caps text-base font-medium">- Rajs</p>
-                  <p class="text-xs">- via Tripadvisor</p>
-                </div>
+            <div>
+              <p class="review text-justify md:text-pretty text-base">
+                Absolutely Beautiful<br />
+                I travel quite extensively in five-star hotels and this is not
+                only the best value it also has a charm that is unsurpassed.
+                The rooms, staff, and food were all exceptional. The food was
+                wonderful both buffet breakfast and dinner.
+              </p>
+              <div class="flex items-center justify-between gap-12 mt-6">
+                <p class="caps text-base font-medium">- 10footwave</p>
+                <p class="text-xs">- via Booking.com</p>
               </div>
-              <div>
-                <p class="review text-justify md:text-pretty text-base">
-                  Absolutely Beautiful<br />
-                  I travel quite extensively in five-star hotels and this is not
-                  only the best value it also has a charm that is unsurpassed.
-                  The rooms, staff, and food were all exceptional. The food was
-                  wonderful both buffet breakfast and dinner.
-                </p>
-                <div class="flex items-center justify-between gap-12 mt-6">
-                  <p class="caps text-base font-medium">- 10footwave</p>
-                  <p class="text-xs">- via Booking.com</p>
-                </div>
+            </div>
+            <div>
+              <p class="review text-justify md:text-pretty text-base">
+                It was my 3rd stay in Baber Mahal, it’s amazing place. It’s 15
+                min walk from the center which makes it nicely separated from
+                busy Kathmandu, yet very close to everything worth seeing.
+                Staff is fantastic, friendly and very accommodating to
+                anything you need. The place is absolutely unique, where else
+                could you sleep in real Nepalese palace? It’s worth mentioning
+                that breakfasts and coffee is great.
+              </p>
+              <div class="flex items-center justify-between gap-12 mt-6">
+                <p class="caps text-base font-medium">- Filip R</p>
+                <p class="text-xs">- via Google Reviews</p>
               </div>
-              <div>
-                <p class="review text-justify md:text-pretty text-base">
-                  It was my 3rd stay in Baber Mahal, it’s amazing place. It’s 15
-                  min walk from the center which makes it nicely separated from
-                  busy Kathmandu, yet very close to everything worth seeing.
-                  Staff is fantastic, friendly and very accommodating to
-                  anything you need. The place is absolutely unique, where else
-                  could you sleep in real Nepalese palace? It’s worth mentioning
-                  that breakfasts and coffee is great.
-                </p>
-                <div class="flex items-center justify-between gap-12 mt-6">
-                  <p class="caps text-base font-medium">- Filip R</p>
-                  <p class="text-xs">- via Google Reviews</p>
-                </div>
+            </div>
+            <div>
+              <p class="review text-justify md:text-pretty text-base">
+                We stayed at Baber Mahal Vilas during late November 2023 in
+                suite N. 302.The whole property is beautiful with its
+                traditional architecture, the suite was ample, nice decorated
+                and well appointed located at the roof top next to a nice
+                terrasse with flowers and even an Himalayan bees honeycomb.
+              </p>
+              <div class="flex items-center justify-between gap-12 mt-6">
+                <p class="caps text-base font-medium">- Antonio H</p>
+                <p class="text-xs">- via Booking.com</p>
               </div>
-              <div>
-                <p class="review text-justify md:text-pretty text-base">
-                  We stayed at Baber Mahal Vilas during late November 2023 in
-                  suite N. 302.The whole property is beautiful with its
-                  traditional architecture, the suite was ample, nice decorated
-                  and well appointed located at the roof top next to a nice
-                  terrasse with flowers and even an Himalayan bees honeycomb.
-                </p>
-                <div class="flex items-center justify-between gap-12 mt-6">
-                  <p class="caps text-base font-medium">- Antonio H</p>
-                  <p class="text-xs">- via Booking.com</p>
-                </div>
-              </div>
-              <div>
-                <p class="review text-justify md:text-pretty text-base">
-                  Nepal's "Wes Anderson-style hotel" <br />
-                  We booked the whole hotel for a conference of three days and
-                  could not have been happier with our selection! It's a
-                  boutique hotel that could easily be the stage of a Wes
-                  Anderson movie due to the beautiful and detailed combination
-                  of different architectural standards. The managers of the
-                  hotel, Sanish and Rupes are extremely helpful individuals.
-                  Overall the staff of the hotel is very nice.
-                </p>
-                <div class="flex items-center justify-between gap-12 mt-6">
-                  <p class="caps text-base font-medium">- Lisa</p>
-                  <p class="text-xs">- via Expedia</p>
-                </div>
+            </div>
+            <div>
+              <p class="review text-justify md:text-pretty text-base">
+                Nepal's "Wes Anderson-style hotel" <br />
+                We booked the whole hotel for a conference of three days and
+                could not have been happier with our selection! It's a
+                boutique hotel that could easily be the stage of a Wes
+                Anderson movie due to the beautiful and detailed combination
+                of different architectural standards. The managers of the
+                hotel, Sanish and Rupes are extremely helpful individuals.
+                Overall the staff of the hotel is very nice.
+              </p>
+              <div class="flex items-center justify-between gap-12 mt-6">
+                <p class="caps text-base font-medium">- Lisa</p>
+                <p class="text-xs">- via Expedia</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- <div class="container mx-auto px-2">
+  <!-- <div class="container mx-auto px-2">
     <div class="bg-white grid grid-cols-3 lg:grid-cols-6 gap-8 py-2 ota-links">
       <a href="https://www.booking.com/hotel/np/babermahal-vilas.en-gb.html" target="_blank" rel="noopener noreferrer"
         class="p-2 flex items-center" aria-label="Booking.com">
@@ -1135,209 +848,134 @@
     </div>
   </div> -->
 
-    <footer class="py-12 px-0 mx-0 mb-0 pb-0 bg-dark relative">
-      <!-- <div class="absolute inset-0 size-full bg-no-repeat bg-cover bg-center bg-fixed -z-10 opacity-50"
+  <footer class="py-12 px-0 mx-0 mb-0 pb-0 bg-dark relative">
+    <!-- <div class="absolute inset-0 size-full bg-no-repeat bg-cover bg-center bg-fixed -z-10 opacity-50"
       style="background-image: url('./img/vilas/hotel.webp')"></div> -->
-      <div class="container mx-auto z-10 px-4 pb-72 2xl:pb-96 relative">
-        <div class="grid grid-cols-1 gap-4 z-10 pt-5">
-          <div class="w-full mb-5">
-            <h4
-              class="caps group flex items-center justify-center flex-col text-xl md:text-2xl text-white mb-8"
-            >
-              Contact Address
-              <div
-                class="mt-1 w-20 group-hover:w-32 h-[2px] rounded-full bg-white/80 transition-all duration-300 ease-linear"
-              ></div>
-            </h4>
-            <ul class="flex items-center justify-center flex-col gap-4">
-              <li>
-                <a
-                  href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
-                  class="inline-block text-base md:text-lg leading-loose text-white hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Tanka Prasad Sadak, Kathmandu"
-                >
-                  <i class="mr-2 fa-solid fa-map-marker-alt"></i>
-                  Tanka Prasad Sadak, Kathmandu
-                </a>
-              </li>
-              <li class="text-white">
-                <i class="mr-2 fa-solid fa-phone-volume"></i>
-                <a
-                  href="tel:+977015348747"
-                  class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="+977-01-5348747"
-                >
-                  +977-01-5348747
-                </a>
-                /
-                <a
-                  href="tel:+977015350914"
-                  class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="+977-01-5350914"
-                >
-                  5350914
-                </a>
-                /
-                <a
-                  href="tel:+977015357655"
-                  class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="+977-01-5357655"
-                >
-                  5357655
-                </a>
-                /
-                <a
-                  href="tel:+977014248747"
-                  class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="+977-01-4248747"
-                >
-                  4248747
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:info@babermahal.com"
-                  class="inline-block text-base md:text-lg leading-loose text-white hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="info@babermahal.com"
-                >
-                  <i class="mr-2 fa-solid fa-envelope"></i>
-                  info@babermahal.com
-                </a>
-              </li>
-            </ul>
+    <div class="container mx-auto z-10 px-4 pb-72 2xl:pb-96 relative">
+      <div class="grid grid-cols-1 gap-4 z-10 pt-5">
+        <div class="w-full mb-5">
+          <h4 class="caps group flex items-center justify-center flex-col text-xl md:text-2xl text-white mb-8">
+            Contact Address
             <div
-              class="flex items-center justify-center md:gap-2 flex-row mt-6"
-            >
-              <a
-                href="https://www.facebook.com/babermahalvilas/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                aria-label="Facebook link"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/BaberMahalVilas"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                aria-label="Instagram link"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                aria-label="Linkedin link"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-                aria-label="Youtube link"
-              >
-                <i class="fa-brands fa-youtube"></i>
-              </a>
+              class="mt-1 w-20 group-hover:w-32 h-[2px] rounded-full bg-white/80 transition-all duration-300 ease-linear">
             </div>
+          </h4>
+          <ul class="flex items-center justify-center flex-col gap-4">
+            <li>
+              <a href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
+                class="inline-block text-base md:text-lg leading-loose text-white hover:underline" target="_blank"
+                rel="noopener noreferrer" aria-label="Tanka Prasad Sadak, Kathmandu">
+                <i class="mr-2 fa-solid fa-map-marker-alt"></i>
+                Tanka Prasad Sadak, Kathmandu
+              </a>
+            </li>
+            <li class="text-white">
+              <i class="mr-2 fa-solid fa-phone-volume"></i>
+              <a href="tel:+977015348747" class="number inline-block text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5348747">
+                +977-01-5348747
+              </a>
+              /
+              <a href="tel:+977015350914" class="number inline-block text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5350914">
+                5350914
+              </a>
+              /
+              <a href="tel:+977015357655" class="number inline-block text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5357655">
+                5357655
+              </a>
+              /
+              <a href="tel:+977014248747" class="number inline-block text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977-01-4248747">
+                4248747
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@babermahal.com"
+                class="inline-block text-base md:text-lg leading-loose text-white hover:underline" target="_blank"
+                rel="noopener noreferrer" aria-label="info@babermahal.com">
+                <i class="mr-2 fa-solid fa-envelope"></i>
+                info@babermahal.com
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center justify-center md:gap-2 flex-row mt-6">
+            <a href="https://www.facebook.com/babermahalvilas/" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Facebook link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/BaberMahalVilas" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Instagram link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np" target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Linkedin link">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Youtube link">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- <div class=""></div> -->
-        <div
-          class="mt-8 container mx-auto flex justify-between items-center flex-col text-white gap-4"
-        >
-          <div class="flex items-center flex-col md:flex-row gap-4">
-            <p class="text-center text-base caps capitalize">
-              © Baber Mahal <em class="text-inherit">Vilas</em>
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              | All rights reserved |
-            </p>
-            <!-- <p class="flex gap-4 text-sm text-white/80 hover:text-white transition-all duration-300 ease-linear">
+      <!-- <div class=""></div> -->
+      <div class="mt-8 container mx-auto flex justify-between items-center flex-col text-white gap-4">
+        <div class="flex items-center flex-col md:flex-row gap-4">
+          <p class="text-center text-base caps capitalize">
+            © Baber Mahal <em class="text-inherit">Vilas</em>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            | All rights reserved |
+          </p>
+          <!-- <p class="flex gap-4 text-sm text-white/80 hover:text-white transition-all duration-300 ease-linear">
               <a href="#" class="underline hover:no-underline md:underline" aria-label="Terms and Conditions">Terms &
                 Conditions</a>
               <a href="#" class="underline hover:no-underline md:underline" aria-label="Privacy Policy">Privacy
                 Policy</a>
             </p> -->
-            <div class="flex items-center justify-center gap-4">
-              <span class="text-xs md:text-base capitalize caps text-white"
-                >We accept</span
-              >
-              <ul class="flex items-center justify-center gap-0">
-                <li>
-                  <img
-                    src="./img/visa/visa.png"
-                    class="w-10 h-4 object-contain"
-                    alt="visa"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./img/visa/union.png"
-                    class="w-10 h-4 object-contain"
-                    alt="union"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./img/visa/mastercard.png"
-                    class="w-10 h-4 object-contain"
-                    alt="mastercard"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./img/visa/amex.png"
-                    class="w-10 h-4 object-contain"
-                    alt="amex"
-                  />
-                </li>
-              </ul>
-            </div>
+          <div class="flex items-center justify-center gap-4">
+            <span class="text-xs md:text-base capitalize caps text-white">We accept</span>
+            <ul class="flex items-center justify-center gap-0">
+              <li>
+                <img src="./img/visa/visa.png" class="w-10 h-4 object-contain" alt="visa" />
+              </li>
+              <li>
+                <img src="./img/visa/union.png" class="w-10 h-4 object-contain" alt="union" />
+              </li>
+              <li>
+                <img src="./img/visa/mastercard.png" class="w-10 h-4 object-contain" alt="mastercard" />
+              </li>
+              <li>
+                <img src="./img/visa/amex.png" class="w-10 h-4 object-contain" alt="amex" />
+              </li>
+            </ul>
           </div>
-          <p class="text-base caps capitalize mt-4 md:mt-0">
-            Developed by:
-            <a
-              href="https://longtail.info"
-              target="_blank"
-              class="relative group"
-              aria-label="Longtail e-Media"
-            >
-              <label
-                class="absolute bottom-0 -right-0 w-full h-[1px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"
-              ></label>
-              Longtail e-Media</a
-            >
-          </p>
         </div>
-
-        <div
-          class="white-filter pointer-events-none select-none absolute bottom-0 bg-no-repeat bg-contain w-full h-full bg-bottom opacity-50"
-          style="background-image: url('./img/arts/building.png')"
-        ></div>
+        <p class="text-base caps capitalize mt-4 md:mt-0">
+          Developed by:
+          <a href="https://longtail.info" target="_blank" class="relative group" aria-label="Longtail e-Media">
+            <label
+              class="absolute bottom-0 -right-0 w-full h-[1px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"></label>
+            Longtail e-Media</a>
+        </p>
       </div>
-    </footer>
 
-    <!-- <a href="https://www.babermahal.com/" target="_blank" rel="noopener noreferrer"
+      <div
+        class="white-filter pointer-events-none select-none absolute bottom-0 bg-no-repeat bg-contain w-full h-full bg-bottom opacity-50"
+        style="background-image: url('./img/arts/building.png')"></div>
+    </div>
+  </footer>
+
+  <!-- <a href="https://www.babermahal.com/" target="_blank" rel="noopener noreferrer"
     class="fixed right-0 top-[88px] p-4 px-2 pl-0 flex items-center justify-center bg-coffee-700 rounded-l-xl translate-x-[100px] md:translate-x-[120px] hover:translate-x-0 transition-all duration-300 ease-linear z-50"
     aria-label="Complex wih the logo of Babar Mahal Revisted">
     <span class="caps text-white text-sm md:text-lg -rotate-90 -ml-3">Complex</span>
@@ -1345,107 +983,94 @@
       class="w-20 md:w-24 h-auto object-contain scale-75 md:scale-100" />
   </a> -->
 
-    <a
-      href="https://41615.staygrid.com/webreservation/index/index/hidHotelIdWebOut/QV5TX0ZSczM0XzQxNjE1X0Y1dGVyOTA4N3NfKWRoZl9kcnRlcjdfNDE2MTVfaGdmaF9nXmQ4NTQ=/hidLanguageId/1/"
-      target="_blank"
-      class="group merriweather caps fixed right-0 top-24 z-40 flex items-center justify-center gap-1 text-sm px-3 py-2 bg-white/40 border border-white hover:bg-white shadow-md hover:shadow-2xl transition-all duration-300 ease-linear"
-      rel="noopener noreferrer"
-      aria-label="Reservation"
-    >
-      Reservation
-      <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+  <a href="https://41615.staygrid.com/webreservation/index/index/hidHotelIdWebOut/QV5TX0ZSczM0XzQxNjE1X0Y1dGVyOTA4N3NfKWRoZl9kcnRlcjdfNDE2MTVfaGdmaF9nXmQ4NTQ=/hidLanguageId/1/"
+    target="_blank"
+    class="group merriweather caps fixed right-0 top-24 z-40 flex items-center justify-center gap-1 text-sm px-3 py-2 bg-white/40 border border-white hover:bg-white shadow-md hover:shadow-2xl transition-all duration-300 ease-linear"
+    rel="noopener noreferrer" aria-label="Reservation">
+    Reservation
+    <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
       stroke-linejoin="round" class="text-lg" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
       <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
     </svg> -->
-      <!-- <i class="ml-1 fa-solid fa-calendar-check"></i> -->
-      <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
+    <!-- <i class="ml-1 fa-solid fa-calendar-check"></i> -->
+    <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
       class="group-  " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M24,184H232a8,8,0,0,0,0-16h-8V152a96.12,96.12,0,0,0-88-95.66V40h16a8,8,0,0,0,0-16H104a8,8,0,0,0,0,16h16V56.34A96.12,96.12,0,0,0,32,152v16H24a8,8,0,0,0,0,16Zm24-32a80,80,0,0,1,160,0v16H48Zm192,56a8,8,0,0,1-8,8H24a8,8,0,0,1,0-16H232A8,8,0,0,1,240,208Z">
       </path>
     </svg> -->
 
-      <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="group-  "
+    <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="group-  "
       height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
       <path fill="none" d="M0 0h24v24H0V0z"></path>
       <path
         d="M2 17h20v2H2zm11.84-9.21A2.006 2.006 0 0 0 12 5a2.006 2.006 0 0 0-1.84 2.79C6.25 8.6 3.27 11.93 3 16h18c-.27-4.07-3.25-7.4-7.16-8.21z">
       </path>
     </svg> -->
-    </a>
+  </a>
 
-    <div
-      id="whatsapp-icon"
-      class="fixed right-5 bottom-6 z-[99] flex items-center justify-center gap-1"
-    >
-      <!-- <p class="text-xs bg-white px-2 py-1 rounded-full animate-pulse merriweather">
+  <div id="whatsapp-icon" class="fixed right-5 bottom-6 z-[99] flex items-center justify-center gap-1">
+    <!-- <p class="text-xs bg-white px-2 py-1 rounded-full animate-pulse merriweather">
       Need Help?
     </p> -->
-      <div
-        class="size-10 rounded-full bg-white/90 hover:bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-150 ease-in-out p-2"
-      >
-        <a
-          href="https://wa.me/+9779801084724"
-          target="_blank"
-          class="p-2"
-          rel="noopener noreferrer"
-          aria-label="whatsapp-icon"
-        >
-          <i class="fa-brands fa-whatsapp text-3xl text-green-600"></i>
-        </a>
-      </div>
+    <div
+      class="size-10 rounded-full bg-white/90 hover:bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-150 ease-in-out p-2">
+      <a href="https://wa.me/+9779801084724" target="_blank" class="p-2" rel="noopener noreferrer"
+        aria-label="whatsapp-icon">
+        <i class="fa-brands fa-whatsapp text-3xl text-green-600"></i>
+      </a>
     </div>
+  </div>
 
-    <button
-      id="backToTopBtn"
-      class="z-30 fixed bottom-6 right-16 size-10 mx-auto bg-dark/40 hover:bg-dark text-white border border-white rounded-full shadow-lg hidden transition-all duration-300"
-    >
-      ↑
-    </button>
+  <button id="backToTopBtn"
+    class="z-30 fixed bottom-6 right-16 size-10 mx-auto bg-dark/40 hover:bg-dark text-white border border-white rounded-full shadow-lg hidden transition-all duration-300">
+    ↑
+  </button>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var whatsappIcon = document.getElementById("whatsapp-icon");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var whatsappIcon = document.getElementById("whatsapp-icon");
 
-        // Adjust the offset as needed
-        var offset = 100;
+      // Adjust the offset as needed
+      var offset = 100;
 
-        window.addEventListener("scroll", function () {
-          if (window.scrollY > offset) {
-            whatsappIcon.classList.remove("opacity-0", "invisible");
-          } else {
-            whatsappIcon.classList.add("opacity-0", "invisible");
-          }
-        });
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > offset) {
+          whatsappIcon.classList.remove("opacity-0", "invisible");
+        } else {
+          whatsappIcon.classList.add("opacity-0", "invisible");
+        }
       });
-    </script>
+    });
+  </script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Testimonials -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- LightGallery JS -->
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.min.js"></script>
-    <!-- Lenis -->
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Testimonials -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- LightGallery JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.min.js"></script>
+  <!-- Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
 
-    <script>
-      // Initialize LightGallery
-      document.addEventListener("DOMContentLoaded", function () {
-        const galleryElement = document.getElementById("lightgallery");
-        lightGallery(galleryElement, {
-          plugins: [lgThumbnail, lgFullscreen],
-          thumbnail: true,
-          fullscreen: true,
-        });
+  <script>
+    // Initialize LightGallery
+    document.addEventListener("DOMContentLoaded", function () {
+      const galleryElement = document.getElementById("lightgallery");
+      lightGallery(galleryElement, {
+        plugins: [lgThumbnail, lgFullscreen],
+        thumbnail: true,
+        fullscreen: true,
       });
-    </script>
+    });
+  </script>
 
-    <script src="./js/app.js"></script>
+  <script src="./js/app.js"></script>
 
-    <script></script>
-  </body>
+  <script></script>
+</body>
+
 </html>
