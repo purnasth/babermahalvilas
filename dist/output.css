@@ -1076,6 +1076,11 @@ section {
   height: 2.5rem;
 }
 
+.size-4 {
+  width: 1rem;
+  height: 1rem;
+}
+
 .size-auto {
   width: auto;
   height: auto;
@@ -1594,6 +1599,11 @@ section {
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -2364,6 +2374,10 @@ section {
     height: 50vh;
   }
 
+  .sm\:h-72 {
+    height: 18rem;
+  }
+
   .sm\:min-h-96 {
     min-height: 24rem;
   }
@@ -2396,6 +2410,10 @@ section {
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
+  }
+
+  .md\:sticky {
+    position: sticky;
   }
 
   .md\:left-0 {
@@ -2464,6 +2482,10 @@ section {
 
   .md\:h-\[30rem\] {
     height: 30rem;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:max-h-60 {
@@ -2665,6 +2687,10 @@ section {
     position: fixed;
   }
 
+  .lg\:sticky {
+    position: sticky;
+  }
+
   .lg\:-top-full {
     top: -100%;
   }
@@ -2709,6 +2735,10 @@ section {
     height: 100vh;
   }
 
+  .lg\:max-h-screen {
+    max-height: 100vh;
+  }
+
   .lg\:w-1\/6 {
     width: 16.666667%;
   }
@@ -2727,6 +2757,18 @@ section {
 
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
+  }
+
+  .lg\:overflow-y-auto {
+    overflow-y: auto;
   }
 
   .lg\:px-12 {
