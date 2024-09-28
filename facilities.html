@@ -25,335 +25,138 @@
 
 <body>
   <header id="navbar"
-    class="h-20 sticky lg:fixed top-0 z-50 bg-dark/60 w-full transition-all duration-1000 ease-in-out">
-    <div class="container mx-auto px-4 size-full">
-      <div class="flex justify-between items-center size-full">
-        <a href="./index.html" aria-label="Logo" class="">
-          <img id="logo" src="./img/logo.svg" alt="Logo"
-            class="absolute top-0 w-24 h-16 md:w-32 md:h-20 object-contain" />
-        </a>
-        <div class="flex items-center gap-2">
-          <div class="flex items-center gap-3">
-            <ul class="links hidden lg:flex items-start justify-start gap-1 md:gap-3">
-              <li class="caps dropdown nav-link group">
-                <a href="#" class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="About">
-                  About
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="w-full">
-                    <a href="./index.html#our-story" class="navlink-dropdown" aria-label="Our Story">Our Story</a>
-                  </li>
-                  <li class="w-full">
-                    <a href="./index.html#the-history" class="navlink-dropdown" aria-label="Our History">The History</a>
-                  </li>
-                  <li class="w-full">
-                    <a href="./index.html#the-property" class="navlink-dropdown" aria-label="Our Property">The
-                      Property</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="caps dropdown nav-link group">
-                <a href="./room.html"
-                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="Rooms">
-                  Rooms
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="block w-full">
-                    <a href="./traditional-room.html" class="navlink-dropdown" aria-label="Traditional Room">
-                      Traditional Room
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./traditional-premium.html" class="navlink-dropdown" aria-label="Traditional Suite">
-                      Traditional Premium
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./heritage-room.html" class="navlink-dropdown" aria-label="Heritage Suite">
-                      Heritage Room
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./royal-suite.html" class="navlink-dropdown" aria-label="Royal Suite">
-                      Royal Suite
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="caps dropdown nav-link group">
-                <a href="./dine.html"
-                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="Dining">
-                  Dining
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="block w-full">
-                    <a href="./dine.html#baithak" class="navlink-dropdown" aria-label="Baithak Restaurant">
-                      Baithak Restaurant
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./dine.html#k2-terrace" class="navlink-dropdown" aria-label="K2 Terrace Cafe">
-                      K2 Terrace Cafe
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="caps dropdown nav-link group">
-                <a href="./facilities.html"
-                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="Facilities">
-                  Facilities
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="block w-full">
-                    <a href="./facilities.html#spa" class="navlink-dropdown" aria-label="Spa">
-                      Spa
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./facilities.html#gym" class="navlink-dropdown" aria-label="Gym">
-                      Gym
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./facilities.html#swimming-pool" class="navlink-dropdown" aria-label="Swimming Pool">
-                      Swimming Pool
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./facilities.html#gift-shop" class="navlink-dropdown" aria-label="Gift Shop">
-                      Gift Shop
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="caps dropdown nav-link group">
-                <a href="./traveldesk.html"
-                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
-                  aria-label="Travel Desk">
-                  Travel&nbsp;Desk
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
-                <ul
-                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
-                  <li class="block w-full">
-                    <a href="./day-trip.html" class="navlink-dropdown" aria-label="Day Trip">
-                      Day Trip
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./flights.html" class="navlink-dropdown" aria-label="Flights">
-                      Flights
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./car-rental.html" class="navlink-dropdown" aria-label="Car Rental">
-                      Car Rentals
-                    </a>
-                  </li>
-                  <li class="block w-full">
-                    <a href="./day-hike.html" class="navlink-dropdown" aria-label="Day Hikes">
-                      Day Hikes
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <!-- <li class="caps block w-full">
-                  <a href="#" class="nav-link" aria-label="Spa">Spa</a>
-                </li> -->
-              <li class="caps block w-full group">
-                <a href="./gallery.html" class="nav-link relative underline-hover-effect"
-                  aria-label="Gallery">Gallery</a>
-              </li>
-              <!-- <li class="caps block w-full">
-                  <a href="#" class="nav-link" aria-label="Press">Press</a>
-                </li> -->
-              <li class="caps block w-full group">
-                <a href="./contact.html" class="nav-link relative underline-hover-effect"
-                  aria-label="Contact">Contact</a>
-              </li>
-            </ul>
-            <a href="https://www.babermahal.com/" target="_blank"
-              class="caps text-white/80 hover:text-white text-base 2xl:text-lg transition-all duration-300 ease-linear vilas-italic">Baber
-              Mahal Revisited
-            </a>
-          </div>
-          <div class="flex items-center justify-center gap-4 lg:hidden">
-            <button type="menu" id="toggleButton" class="text-white focus:outline-none p-2" aria-label="Toggle Button"
-              title="Toggle">
-              <i id="hamburgerIcon" class="fa-solid fa-bars text-white text-2xl"></i>
-              <i id="closeIcon" class="hidden fa-solid fa-xmark text-white text-3xl"></i>
-            </button>
-          </div>
+  class="h-16 sm:h-20 sticky md:fixed top-0 z-50 bg-dark md:bg-dark/60 w-full transition-all duration-1000 ease-in-out">
+  <div class="container mx-auto px-4 size-full">
+    <div class="flex justify-between items-center size-full">
+      <a href="./index.html" aria-label="Logo" class="">
+        <img id="logo" src="./img/logo.png" alt="Logo"
+          class="absolute top-0 w-24 h-16 md:w-32 md:h-20 object-contain" />
+      </a>
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-3">
+          <ul class="links hidden xl:flex items-start justify-start gap-1 md:gap-3">
+            <li class="caps dropdown nav-link group "><a href="#"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_about">About<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./index.html#baber-mahal-vilas" class="navlink-dropdown"
+                    id="id_our_story">Our Story</a></li>
+                <li class="w-full"><a href="./index.html#the-history" class="navlink-dropdown" id="id_the_history">The
+                    History</a></li>
+                <li class="w-full"><a href="./index.html#the-property" class="navlink-dropdown"
+                    id="id_the_property">The Property</a></li>
+              </ul>
+            </li>
+            <li class="caps dropdown nav-link group "><a href="./room.html"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_rooms">Rooms<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./traditional-room.html" class="navlink-dropdown"
+                    id="id_traditional_rooms">Traditional Rooms</a></li>
+                <li class="w-full"><a href="./traditional-room.html" class="navlink-dropdown"
+                    id="id_traditional_premium_room">Traditional Premium Room</a></li>
+                <li class="w-full"><a href="./heritage-room.html" class="navlink-dropdown"
+                    id="id_heritage_room">Heritage Room</a></li>
+                <li class="w-full"><a href="./royal-suite.html" class="navlink-dropdown" id="id_royal_suite">Royal
+                    Suite</a></li>
+              </ul>
+            </li>
+            <li class="caps dropdown nav-link group "><a href="./dine.html"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_dining">Dining<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./dine.html#baithak-restaurant" class="navlink-dropdown"
+                    id="id_baithak_restaurant">Baithak Restaurant</a></li>
+                <li class="w-full"><a href="./dine.html#k2-terrace-cafe" class="navlink-dropdown"
+                    id="id_k2_terrace_cafe">K2 Terrace Cafe</a></li>
+              </ul>
+            </li>
+            <li class="caps dropdown nav-link group "><a href="./facilities.html"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_facilities">Facilities<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./facilities.html#spa" class="navlink-dropdown" id="id_spa">Spa</a></li>
+                <li class="w-full"><a href="./facilities.html#gym" class="navlink-dropdown" id="id_gym">Gym</a></li>
+                <li class="w-full"><a href="./facilities.html#swimming-pool" class="navlink-dropdown"
+                    id="id_swimming_pool">Swimming Pool</a></li>
+                <li class="w-full"><a href="./facilities.html#gift-shop" class="navlink-dropdown"
+                    id="id_gift_shop">Gift Shop</a></li>
+                <li class="w-full"><a href="https://babermahalvilas.com/at-your-service" class="navlink-dropdown"
+                    id="id_our_services">Our Services</a></li>
+              </ul>
+            </li>
+            <li class="caps dropdown nav-link group "><a href="./traveldesk.html"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_travel desk">Travel&nbsp;Desk<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./day-trip.html" class="navlink-dropdown" id="id_day_trip">Day Trip</a>
+                </li>
+                <li class="w-full"><a href="./flights.html" class="navlink-dropdown" id="id_flights">Flights</a></li>
+                <li class="w-full"><a href="./car-rental.html" class="navlink-dropdown" id="id_car_rental">Car
+                    Rental</a></li>
+                <li class="w-full"><a href="./day-hike.html" class="navlink-dropdown" id="id_day_hikes">Day Hikes</a>
+                </li>
+              </ul>
+            </li>
+            <li class="caps block w-full group "><a href="./gallery.html"
+                class="nav-link relative underline-hover-effect" id="id_gallery">Gallery</a></li>
+            <li class="caps block w-full group "><a href="./contact.html"
+                class="nav-link relative underline-hover-effect" id="id_contact">Contact</a></li>
+          </ul>
+          <a href="https://www.babermahal.com/" target="_blank"
+            class="caps text-white/80 hover:text-white text-sm sm:text-base lg:text-base 2xl:text-lg transition-all duration-300 ease-linear vilas-italic">Baber
+            Mahal Revisited
+          </a>
+        </div>
+        <div class="flex items-center justify-center gap-4 xl:hidden">
+          <button type="menu" id="toggleButton" class="text-white focus:outline-none p-2" aria-label="Toggle Button"
+            title="Toggle">
+            <i id="hamburgerIcon" class="fa-solid fa-bars text-white text-sm sm:text-base md:text-lg lg:text-xl"></i>
+            <i id="closeIcon"
+              class="hidden fa-solid fa-xmark text-white text-sm sm:text-base md:text-lg lg:text-xl"></i>
+          </button>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <div id="overlay" class="fixed inset-0 bg-dark opacity-50 z-10 hidden"></div>
-  <nav id="navLinks"
-    class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-dark transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full">
-    <div class="relative">
-      <div
-        class="absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
-        style="background-image: url('./svg/building.svg')"></div>
+<div id="overlay" class="fixed inset-0 bg-dark opacity-50 z-10 hidden"></div>
+<nav id="navLinks"
+  class="fixed left-0 top-0 w-60 h-screen bg-dark transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full">
+  <div class="relative">
+    <!-- <div
+      class="filter-white absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
+      style="background-image: url('./svg/building.svg')"></div> -->
 
-      <div class="flex items-center justify-center">
-        <a href="#" aria-label="Logo">
-          <img src="./img/logo.svg" alt="Logo" class="w-full h-28 object-contain rounded-full p-2" />
-        </a>
-      </div>
-
-      <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="About">About <i
-              class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 left-full bg-transparent flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl">
-            <li class="w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Our Story">Our Story</a>
-            </li>
-            <li class="w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Our History">The History</a>
-            </li>
-            <li class="w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Our Property">The Property</a>
-            </li>
-          </ul>
-        </li>
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="Rooms">Rooms <i
-              class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl">
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Traditional Room">
-                Traditional Room
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Traditional Suite">
-                Traditional Suite
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Heritage Suite">
-                Heritage Suite
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
-                Royal Suite
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="Dining">
-            Dining <i class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Jyunar">
-                Jyunar
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
-                Surya Bar
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="Facilities">
-            Facilities <i class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Spa"> Spa </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Gym"> Gym </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Swimming Pool">
-                Swimming Pool
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Gift Shop">
-                Gift Shop
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Other facilities">
-                Other Facilities
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="caps dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="Travel Desk">
-            Travel Desk <i class="fa-solid fa-chevron-right"></i></a>
-          <ul
-            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Day Trip">
-                Day Trip
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Flights">
-                Flights
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Car Rentals">
-                Car Rentals
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Day Hikes">
-                Day Hikes
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="caps block w-full">
-          <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
-        </li>
-        <li class="caps block w-full">
-          <a href="#" class="nav-link" aria-label="Contact">Contact</a>
-        </li>
-        <!-- <a href="https://www.babermahal.com/" target="_blank"
-              class="mt-4 mb-4 w-4/5 mx-auto text-center caps text-white text-xs bg-white/20 border border-white/50 px-4 py-2 rounded-full hover:bg-white/40 transition-all duration-300 ease-linear">Baber
-              Mahal Revisited</a> -->
-        <a href="#"
-          class="mt-4 caps text-center w-full md:hidden bg-green-600 text-dark px-4 py-2 rounded-xl text-lg tracking-wider"
-          aria-label="Book Now" title="Book">
-          <i class="mr-2 fa-solid fa-calendar-check"></i>
-          Book Now
-        </a>
-      </ul>
+    <div class="flex items-center justify-center">
+      <a href="#" aria-label="Logo">
+        <img src="https://babermahalvilas.com/images/preference/l8ttf-logo.png" alt="Logo"
+          class="w-full h-28 object-contain rounded-full p-2" />
+      </a>
     </div>
-  </nav>
+    <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
+      <li class="caps dropdown nav-link "><a href="./index.html#baber-mahal-vilas"
+          class="flex items-center justify-between w-full" id="id_about">About</a></li>
+      <li class="caps dropdown nav-link "><a href="./room.html" class="flex items-center justify-between w-full"
+          id="id_rooms">Rooms</a></li>
+      <li class="caps dropdown nav-link "><a href="./dine.html" class="flex items-center justify-between w-full"
+          id="id_dining">Dining</a></li>
+      <li class="caps dropdown nav-link "><a href="./facilities.html" class="flex items-center justify-between w-full"
+          id="id_facilities">Facilities</a></li>
+      <li class="caps dropdown nav-link "><a href="./traveldesk.html" class="flex items-center justify-between w-full"
+          id="id_travel desk">Travel Desk</a></li>
+      <li class="caps block w-full "><a href="./gallery.html" class="nav-link" id="id_gallery">Gallery </a></li>
+      <li class="caps block w-full "><a href="./contact.html" class="nav-link" id="id_contact">Contact </a></li>
+    </ul>
+
+  </div>
+</nav>
 
   <div
     class="responsive-banner relative w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-screen overflow-hidden group">
@@ -804,10 +607,11 @@
   </section>
 
   <footer class="py-12 px-0 mx-0 mb-0 pb-0 bg-dark relative">
-    <div class="container mx-auto z-10 px-4 pb-72 2xl:pb-96 relative">
+    <div class="container mx-auto z-10 px-4 pb-32 sm:pb-44 md:pb-52 lg:pb-72 2xl:pb-96 relative">
       <div class="grid grid-cols-1 gap-4 z-10 pt-5">
         <div class="w-full mb-5">
-          <h4 class="caps group flex items-center justify-center flex-col text-xl md:text-2xl text-white mb-8">
+          <h4
+            class="caps group flex items-center justify-center flex-col text-base sm:text-xl md:text-2xl text-white mb-8">
             Contact Address
             <div
               class="mt-1 w-20 group-hover:w-32 h-[2px] rounded-full bg-white/80 transition-all duration-300 ease-linear">
@@ -816,64 +620,64 @@
           <ul class="flex items-center justify-center flex-col gap-4">
             <li>
               <a href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
-                class="inline-block text-base md:text-lg leading-loose text-white hover:underline" target="_blank"
-                rel="noopener noreferrer" aria-label="Tanka Prasad Sadak, Kathmandu">
-                <i class="mr-2 fa-solid fa-map-marker-alt"></i>
+                class="inline-block text-sm sm:text-base md:text-lg leading-loose text-white hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="Tanka Prasad Sadak, Kathmandu">
+                <i class="mr-2 fa-solid fa-map-marker-alt text-sm sm:text-base md:text-lg"></i>
                 Tanka Prasad Sadak, Kathmandu
               </a>
             </li>
-            <li class="text-white">
-              <i class="mr-2 fa-solid fa-phone-volume"></i>
-              <a href="tel:+977015348747" class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5348747">
+            <li class="text-white text-center">
+              <i class="mr-2 fa-solid fa-phone-volume text-sm sm:text-base md:text-lg"></i>
+
+              <a href="tel:+977-01-5348747 "
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5348747 ">
                 +977-01-5348747
               </a>
-              /
-              <a href="tel:+977015350914" class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5350914">
+              / <a href="tel:+97701 5350914 "
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977- 5350914 ">
                 5350914
               </a>
-              /
-              <a href="tel:+977015357655" class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5357655">
+              / <a href="tel:+97701 5357655 "
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977- 5357655 ">
                 5357655
               </a>
-              /
-              <a href="tel:+977014248747" class="number inline-block text-base md:text-lg leading-loose hover:underline"
-                target="_blank" rel="noopener noreferrer" aria-label="+977-01-4248747">
+              / <a href="tel:+97701 4248747"
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977- 4248747">
                 4248747
               </a>
             </li>
             <li>
-              <a href="mailto:info@babermahal.com"
-                class="inline-block text-base md:text-lg leading-loose text-white hover:underline" target="_blank"
-                rel="noopener noreferrer" aria-label="info@babermahal.com">
-                <i class="mr-2 fa-solid fa-envelope"></i>
+              <a href="mailto:  info@babermahal.com"
+                class="inline-block text-sm sm:text-base md:text-lg leading-loose text-white hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="  info@babermahal.com">
+                <i class="mr-2 fa-solid fa-envelope text-sm sm:text-base md:text-lg"></i>
                 info@babermahal.com
               </a>
             </li>
           </ul>
           <div class="flex items-center justify-center md:gap-2 flex-row mt-6">
+
             <a href="https://www.facebook.com/babermahalvilas/" target="_blank" rel="noopener noreferrer"
               class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
               aria-label="Facebook link">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
+
             <a href="https://www.instagram.com/BaberMahalVilas" target="_blank" rel="noopener noreferrer"
               class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-              aria-label="Instagram link">
+              aria-label="Facebook link">
               <i class="fa-brands fa-instagram"></i>
             </a>
+
             <a href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np" target="_blank"
               rel="noopener noreferrer"
               class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-              aria-label="Linkedin link">
+              aria-label="Facebook link">
               <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
-              aria-label="Youtube link">
-              <i class="fa-brands fa-youtube"></i>
             </a>
           </div>
         </div>
@@ -881,42 +685,39 @@
 
       <div class="mt-8 container mx-auto flex justify-between items-center flex-col text-white gap-4">
         <div class="flex items-center flex-col md:flex-row gap-4">
-          <p class="text-center text-base caps capitalize">
-            © Baber Mahal <em class="text-inherit">Vilas</em>
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            | All rights reserved |
+          <p class="text-center text-xs md:text-sm lg:text-base caps capitalize">
+            © Baber Mahal Vilas 2024 | All rights reserved |
           </p>
           <div class="flex items-center justify-center gap-4">
-            <span class="text-xs md:text-base capitalize caps text-white">We accept</span>
+            <span class="text-xs md:text-sm lg:text-base capitalize caps text-white">We accept</span>
             <ul class="flex items-center justify-center gap-0">
               <li>
-                <img src="./img/visa/visa.png" class="w-10 h-4 object-contain" alt="visa" />
+                <img src="./img/visa/visa.png" class="w-10 h-4 object-contain" alt="visa">
               </li>
               <li>
-                <img src="./img/visa/union.png" class="w-10 h-4 object-contain" alt="union" />
+                <img src="./img/visa/union.png" class="w-10 h-4 object-contain" alt="union">
               </li>
               <li>
-                <img src="./img/visa/mastercard.png" class="w-10 h-4 object-contain" alt="mastercard" />
+                <img src="./img/visa/mastercard.png" class="w-10 h-4 object-contain" alt="mastercard">
               </li>
               <li>
-                <img src="./img/visa/amex.png" class="w-10 h-4 object-contain" alt="amex" />
+                <img src="./img/visa/amex.png" class="w-10 h-4 object-contain" alt="amex">
               </li>
             </ul>
           </div>
         </div>
         <p class="text-base caps capitalize mt-4 md:mt-0">
           Developed by:
-          <a href="https://longtail.info" target="_blank" class="relative group" aria-label="Longtail e-Media">
+          <a href="https://www.purnashrestha.com.np/" target="_blank" class="relative group"
+            aria-label="Purna Shrestha">
             <label
               class="absolute bottom-0 -right-0 w-full h-[1px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"></label>
-            Longtail e-Media</a>
+            Purna Shrestha</a>
         </p>
       </div>
 
       <div
-        class="white-filter pointer-events-none select-none absolute bottom-0 bg-no-repeat bg-contain w-full h-full bg-bottom opacity-50"
+        class="white-filter pointer-events-none select-none absolute inset-0 bottom-0 bg-no-repeat bg-contain w-[90%] lg:w-full h-full bg-bottom mx-auto opacity-50"
         style="background-image: url('./img/arts/building.png')"></div>
     </div>
   </footer>
