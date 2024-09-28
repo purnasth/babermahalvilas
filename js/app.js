@@ -6,54 +6,54 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.getElementById("overlay");
   // const header = document.querySelector(".blur-bg");
 
-  // let lastScrollTop = 0;
-  // const navbar = document.querySelector("header");
-
-  // window.addEventListener("scroll", function () {
-  //   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-  //   if (scrollTop > lastScrollTop) {
-  //     // Scroll Down
-  //     navbar.classList.add("-translate-y-full");
-  //   } else {
-  //     // Scroll Up
-  //     navbar.classList.remove("-translate-y-full");
-  //   }
-
-  //   lastScrollTop = scrollTop;
-  // });
   let lastScrollTop = 0;
-  const navbar = document.getElementById("navbar");
-  const dropdowns = document.querySelectorAll(".dropdown ul"); // Select all dropdown menus
+  const navbar = document.querySelector("header");
 
   window.addEventListener("scroll", function () {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop === 0) {
-      // At the top of the page: Show the navbar and restore dropdown position
-      navbar.classList.remove("-translate-y-full");
-
-      dropdowns.forEach((dropdown) => {
-        dropdown.style.top = "4.5rem"; // Restore dropdown position
-      });
-    } else if (scrollTop > lastScrollTop) {
-      // Scroll Down: Hide navbar and reset dropdown position
-      navbar.classList.add("-translate-y-full"); // Hide the navbar
-
-      dropdowns.forEach((dropdown) => {
-        dropdown.style.top = "4.5rem"; // Dropdown position for scroll down
-      });
+    if (scrollTop > lastScrollTop) {
+      // Scroll Down
+      navbar.classList.add("-translate-y-full");
     } else {
-      // Scroll Up: Hide the navbar completely, no need to show it
-      navbar.classList.add("-translate-y-full"); // Keep navbar hidden on scroll up
-
-      dropdowns.forEach((dropdown) => {
-        dropdown.style.top = "2.5rem"; // Dropdown position for scroll up
-      });
+      // Scroll Up
+      navbar.classList.remove("-translate-y-full");
     }
 
     lastScrollTop = scrollTop;
   });
+  // let lastScrollTop = 0;
+  // const navbar = document.getElementById("navbar");
+  // const dropdowns = document.querySelectorAll(".dropdown ul"); // Select all dropdown menus
+
+  // window.addEventListener("scroll", function () {
+  //   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  //   if (scrollTop === 0) {
+  //     // At the top of the page: Show the navbar and restore dropdown position
+  //     navbar.classList.remove("-translate-y-full");
+
+  //     dropdowns.forEach((dropdown) => {
+  //       dropdown.style.top = "4.5rem"; // Restore dropdown position
+  //     });
+  //   } else if (scrollTop > lastScrollTop) {
+  //     // Scroll Down: Hide navbar and reset dropdown position
+  //     navbar.classList.add("-translate-y-full"); // Hide the navbar
+
+  //     dropdowns.forEach((dropdown) => {
+  //       dropdown.style.top = "4.5rem"; // Dropdown position for scroll down
+  //     });
+  //   } else {
+  //     // Scroll Up: Hide the navbar completely, no need to show it
+  //     navbar.classList.add("-translate-y-full"); // Keep navbar hidden on scroll up
+
+  //     dropdowns.forEach((dropdown) => {
+  //       dropdown.style.top = "2.5rem"; // Dropdown position for scroll up
+  //     });
+  //   }
+
+  //   lastScrollTop = scrollTop;
+  // });
 
   toggleButton.addEventListener("click", function () {
     navLinks.classList.toggle("-translate-x-full");
