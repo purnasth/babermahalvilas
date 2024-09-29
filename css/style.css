@@ -28,27 +28,41 @@
     font-family: "Merriweather", serif;
   }
 
+  .caps {
+    font-variant: small-caps;
+  }
+
   p {
     @apply font-medium;
     font-family: "SUSE", sans-serif;
-
   }
 
   section {
     @apply py-12 sm:py-24 md:py-28 lg:py-36;
   }
 
+  .font-merriweather {
+    font-family: "Merriweather", serif;
+  }
+
+  .font-suse {
+    font-family: "SUSE", sans-serif;
+  }
+
   .nav-link {
-    @apply relative block w-full text-coffee-400 hover:bg-coffee-400 py-3 px-6 text-lg md:text-xl rounded-xl hover:text-coffee-700 transition-all duration-200 ease-in-out;
+    @apply relative block w-full text-coffee-400 hover:bg-coffee-400/50 backdrop-blur-sm py-3 px-3 text-lg md:text-xl rounded-xl hover:text-coffee-900 transition-all duration-200 ease-in-out;
+  }
+
+  a.nav-link,
+  .dropdown.nav-link>a,
+  .dropdown.nav-link h3 {
+    @apply caps;
   }
 
   .navlink-dropdown {
-    @apply w-full bg-coffee-400 text-coffee-700 hover:bg-coffee-700 hover:text-coffee-400 py-3 lg:px-2 text-lg md:text-xl rounded-xl transition-all duration-200 ease-in-out flex items-center justify-center flex-col gap-2;
+    @apply relative w-full text-coffee-400 text-lg md:text-xl transition-all duration-200 ease-in-out flex items-center justify-center flex-col gap-2;
   }
 
-  .caps {
-    font-variant: small-caps;
-  }
 
   .slider-overlay {
     @apply absolute inset-0 size-full bg-gradient-to-b from-transparent via-transparent to-black/60 z-10 pointer-events-none select-none;
