@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to Baber Mahal Vilas" />
+  <meta name="theme-color" content="#FFE9D2" />
+
+  <title>Baber Mahal Vilas</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./logo/favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.png" />
+  <link rel="manifest" href="./logo/site.webmanifest" />
+
+  <!-- Light gallery -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+
+  <link rel="stylesheet" href="./css/links.css" />
+  <link rel="stylesheet" href="./css/component.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="navbar"
+  class="h-16 sm:h-20 sticky md:fixed top-0 z-50 bg-dark md:bg-dark/60 w-full transition-all duration-1000 ease-in-out">
+  <div class="container mx-auto px-4 size-full">
+    <div class="flex justify-between items-center size-full">
+      <a href="./index.html" aria-label="Logo" class="">
+        <img id="logo" src="./img/logo.png" alt="Logo"
+          class="absolute top-0 w-24 h-16 md:w-32 md:h-20 object-contain" />
+      </a>
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-3">
+          <ul class="links hidden xl:flex items-start justify-start gap-1 md:gap-3">
+            <li class="caps dropdown nav-link group "><a href="#"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_about">About<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./index.html#baber-mahal-vilas" class="navlink-dropdown"
+                    id="id_our_story">Our Story</a></li>
+                <li class="w-full"><a href="./index.html#the-history" class="navlink-dropdown" id="id_the_history">The
+                    History</a></li>
+                <li class="w-full"><a href="./index.html#the-property" class="navlink-dropdown"
+                    id="id_the_property">The Property</a></li>
+              </ul>
+            </li>
+            <li class="caps dropdown nav-link group "><a href="./room.html"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_rooms">Rooms<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./traditional-room.html" class="navlink-dropdown"
+                    id="id_traditional_rooms">Traditional Rooms</a></li>
+                <li class="w-full"><a href="./traditional-room.html" class="navlink-dropdown"
+                    id="id_traditional_premium_room">Traditional Premium Room</a></li>
+                <li class="w-full"><a href="./heritage-room.html" class="navlink-dropdown"
+                    id="id_heritage_room">Heritage Room</a></li>
+                <li class="w-full"><a href="./royal-suite.html" class="navlink-dropdown" id="id_royal_suite">Royal
+                    Suite</a></li>
+              </ul>
+            </li>
+            <li class="caps dropdown nav-link group "><a href="./dine.html"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_dining">Dining<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./dine.html#baithak-restaurant" class="navlink-dropdown"
+                    id="id_baithak_restaurant">Baithak Restaurant</a></li>
+                <li class="w-full"><a href="./dine.html#k2-terrace-cafe" class="navlink-dropdown"
+                    id="id_k2_terrace_cafe">K2 Terrace Cafe</a></li>
+              </ul>
+            </li>
+            <li class="caps dropdown nav-link group "><a href="./facilities.html"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_facilities">Facilities<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./facilities.html#spa" class="navlink-dropdown" id="id_spa">Spa</a></li>
+                <li class="w-full"><a href="./facilities.html#gym" class="navlink-dropdown" id="id_gym">Gym</a></li>
+                <li class="w-full"><a href="./facilities.html#swimming-pool" class="navlink-dropdown"
+                    id="id_swimming_pool">Swimming Pool</a></li>
+                <li class="w-full"><a href="./facilities.html#gift-shop" class="navlink-dropdown"
+                    id="id_gift_shop">Gift Shop</a></li>
+                <li class="w-full"><a href="https://babermahalvilas.com/at-your-service" class="navlink-dropdown"
+                    id="id_our_services">Our Services</a></li>
+              </ul>
+            </li>
+            <li class="caps dropdown nav-link group "><a href="./traveldesk.html"
+                class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                id="id_travel desk">Travel&nbsp;Desk<i class="fa-solid fa-chevron-down text-xs"></i></a>
+              <ul
+                class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                <li class="w-full"><a href="./day-trip.html" class="navlink-dropdown" id="id_day_trip">Day Trip</a>
+                </li>
+                <li class="w-full"><a href="./flights.html" class="navlink-dropdown" id="id_flights">Flights</a></li>
+                <li class="w-full"><a href="./car-rental.html" class="navlink-dropdown" id="id_car_rental">Car
+                    Rental</a></li>
+                <li class="w-full"><a href="./day-hike.html" class="navlink-dropdown" id="id_day_hikes">Day Hikes</a>
+                </li>
+              </ul>
+            </li>
+            <li class="caps block w-full group "><a href="./gallery.html"
+                class="nav-link relative underline-hover-effect" id="id_gallery">Gallery</a></li>
+            <li class="caps block w-full group "><a href="./contact.html"
+                class="nav-link relative underline-hover-effect" id="id_contact">Contact</a></li>
+          </ul>
+          <a href="https://www.babermahal.com/" target="_blank"
+            class="caps text-white/80 hover:text-white text-sm sm:text-base lg:text-base 2xl:text-lg transition-all duration-300 ease-linear vilas-italic">Baber
+            Mahal Revisited
+          </a>
+        </div>
+        <div class="flex items-center justify-center gap-4 xl:hidden">
+          <button type="menu" id="toggleButton" class="text-white focus:outline-none p-2" aria-label="Toggle Button"
+            title="Toggle">
+            <i id="hamburgerIcon" class="fa-solid fa-bars text-white text-sm sm:text-base md:text-lg lg:text-xl"></i>
+            <i id="closeIcon"
+              class="hidden fa-solid fa-xmark text-white text-sm sm:text-base md:text-lg lg:text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="overlay" class="fixed inset-0 bg-dark opacity-50 z-10 hidden"></div>
+<nav id="navLinks"
+  class="fixed left-0 top-0 w-60 h-screen bg-dark transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full">
+  <div class="relative">
+    <!-- <div
+      class="filter-white absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
+      style="background-image: url('./svg/building.svg')"></div> -->
+
+    <div class="flex items-center justify-center">
+      <a href="#" aria-label="Logo">
+        <img src="./img/logo.png" alt="Logo"
+          class="w-full h-28 object-contain rounded-full p-2" />
+      </a>
+    </div>
+    <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
+      <li class="caps dropdown nav-link "><a href="./index.html#baber-mahal-vilas"
+          class="flex items-center justify-between w-full" id="id_about">About</a></li>
+      <li class="caps dropdown nav-link "><a href="./room.html" class="flex items-center justify-between w-full"
+          id="id_rooms">Rooms</a></li>
+      <li class="caps dropdown nav-link "><a href="./dine.html" class="flex items-center justify-between w-full"
+          id="id_dining">Dining</a></li>
+      <li class="caps dropdown nav-link "><a href="./facilities.html" class="flex items-center justify-between w-full"
+          id="id_facilities">Facilities</a></li>
+      <li class="caps dropdown nav-link "><a href="./traveldesk.html" class="flex items-center justify-between w-full"
+          id="id_travel desk">Travel Desk</a></li>
+      <li class="caps block w-full "><a href="./gallery.html" class="nav-link" id="id_gallery">Gallery </a></li>
+      <li class="caps block w-full "><a href="./contact.html" class="nav-link" id="id_contact">Contact </a></li>
+    </ul>
+
+  </div>
+</nav>
+
+  <div
+    class="responsive-banner relative w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-screen overflow-hidden group">
+    <img src="https://babermahalvilas.pages.dev/img/banner/7.webp" alt="Gallery"
+      class="zoom-image w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-screen object-cover" draggable="false" />
+    <div class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/50 to-black/20"></div>
+    <div
+      class="pointer-events-none absolute left-0 bottom-0 text-center bg-gradient-to-t from-black/80 to-black/0 w-full py-4">
+      <div class="max-w-xl text-gradient mx-auto space-y-4 pt-6 md:pt-12 pb-6 text-white hidden sm:block">
+        <h3 class="caps text-lg font-bold sm:font-medium sm:text-2xl md:text-5xl leading-snug">
+          Facilities
+        </h3>
+        <p class="hidden md:block px-8 text-base 2xl:text-base text-white/70 italic font-light">
+          We offer a wide range of facilities to make your stay as comfortable
+          from a spa to a gym to a swimming pool to gift shop.
+        </p>
+      </div>
+      <nav class="flex items-center justify-center w-full" aria-label="Breadcrumb">
+        <ul class="inline-flex items-center space-x-3 text-white">
+          <li class="inline-flex items-center">
+            <a class="text-white/80 caps pointer-events-auto hover-outline text-sm md:text-lg" href="./index.html">
+              Home</a>
+          </li>
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="txt-lg me-2.5"
+            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+            <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+          </svg>
+          <li aria-current="page">
+            <h2 class="caps text-sm md:text-base font-title tracking-wider">
+              Facilities
+            </h2>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+<section class="px-2 sm:px-0 xl:px-4">
+    <div class="xl:container mx-auto">
+      <div class="text-center space-y-3 md:space-y-6 sm:px-3 xl:px-24">
+        <h3 class="italic capitalize text-base sm:text-xl md:text-2xl xl:text-2xl leading-snug xl:leading-snug text-justify xl:text-center px-4 sm:px-0">
+          We offer a wide range of facilities to make your stay as comfortable
+          as possible. From spa to gym to swimming pool to gift shop, we have
+          it all.
+        </h3>
+      </div>
+    </div>
+    <div class="container mx-auto mt-8 sm:mt-16 md:mt-20 space-y-16 xl:space-y-32 px-0 xl:px-4">
+      <div id="spa">
+        <div class="w-full h-72 sm:h-96 md:h-[30rem] lg:h-[32rem] xl:h-screen relative group zoom-wrapper">
+          <img src="https://babermahalvilas.com/images/subpackage/mPQoN-EIoXD-spa2.jpg" alt="Sankha-103"
+            class="zoom-image size-full object-cover" draggable="false" />
+        </div>
+        <div class="px-6 lg:px-12 xl:px-20 mt-12">
+          <div class="col-span-2 space-y-6">
+            <h3 class="text-xl xl:text-3xl leading-snug caps capitalize">
+              Spa
+            </h3>
+            <p class="text-justify md:text-pretty text-sm md:text-base font-medium md:font-light text-dark/80">
+              Our spa is a place where you can relax and rejuvenate. We offer
+              a variety of treatments to help you feel your best. Whether you
+              are looking for a massage, facial, or body treatment, we have
+              something for everyone. Our experienced therapists will help you
+              choose the perfect treatment for your needs.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-6">
+              <div class="col-span-2">
+                <div id="spa-gallery" class="mt-6 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear">
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/2YKOy-UAyv6-3.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/2YKOy-UAyv6-3.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/2YKOy-UAyv6-3.jpg" alt="SPA"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/OoXvY-bgAvW-1.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/OoXvY-bgAvW-1.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/OoXvY-bgAvW-1.jpg" alt="Spa"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/r89j8-tciPQ-2.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/r89j8-tciPQ-2.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/r89j8-tciPQ-2.jpg"
+                      alt="Spa"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/AkS4f-fFVJ9-4.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/AkS4f-fFVJ9-4.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/AkS4f-fFVJ9-4.jpg"
+                      alt="Spa"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-1">
+                <div class="mt-6 p-4 border shadow-md">
+                  <div class="testimonials">
+                    <div
+                      class="flex flex-col gap-4 relative transition-all duration-150 ease-linear max-h-64 overflow-y-auto">
+                      <p class="text-justify text-pretty text-black/90 text-sm md:text-base mr-3 review">
+                        "I had a great experience at the spa. The staff was
+                        friendly and professional, and the treatment was
+                        top-notch. I left feeling relaxed and rejuvenated. I
+                        would highly recommend this spa to anyone looking for
+                        a little pampering."
+                      </p>
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-base text-black font-bold">
+                          - Purna
+                        </h4>
+                        <span class="text-sm italic text-black/80">- via Tripadvisor</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <a href="https://wa.me/+9779801084724" target="_blank" rel="noopener noreferrer"
+                    class="caps mt-4 group inline-flex items-center justify-center gap-4 bg-dark/50 hover:bg-dark/80 text-white border border-dark/80 hover:border-white shadow-md px-6 py-2 transition-all duration-300 ease-linear">
+                    Reserve
+                    <i class="fa-regular fa-clipboard group-hover:translate-x-2 transition-all duration-300"></i>
+                  </a>
+                  <p class="mt-5">
+                    Call us at
+
+                    <a href="tel:+977015348747" class="text-base font-semibold hover:underline" target="_blank"
+                      rel="noopener noreferrer" aria-label="+977-01-5348747">
+                      +977-01-5348747</a>
+                    /
+                    <a href="tel:+977015350914" class="text-base font-semibold hover:underline" target="_blank"
+                      rel="noopener noreferrer" aria-label="+977-01-5350914">
+                      5350914</a>
+
+                    for direct booking.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="gym">
+        <div class="w-full h-72 sm:h-96 md:h-[30rem] lg:h-[32rem] xl:h-screen relative group zoom-wrapper">
+          <img src="https://babermahalvilas.com/images/subpackage/UEli7-UjWBX-gym1.jpg" alt="Sankha-103"
+            class="zoom-image size-full object-cover" draggable="false" />
+        </div>
+        <div class="px-6 lg:px-12 xl:px-20 mt-12">
+          <div class="col-span-2 space-y-6">
+            <h3 class="text-xl xl:text-3xl leading-snug caps capitalize">
+              Gym
+            </h3>
+            <p class="text-justify md:text-pretty text-sm md:text-base font-medium md:font-light text-dark/80">
+              Our gym is equipped with state-of-the-art equipment to help you
+              stay in shape while you are away from home. Whether you are
+              looking to lift weights, do cardio, or take a fitness class, we
+              have everything you need to stay fit and healthy.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-6">
+              <div class="col-span-2">
+                <div id="gym-gallery" class="mt-6 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear">
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/jeCYj-4.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/jeCYj-4.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/jeCYj-4.jpg" alt="Gym"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/KcQJa-3.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/KcQJa-3.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/KcQJa-3.jpg" alt="Gym"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/KbrxQ-2.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/KbrxQ-2.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/KbrxQ-2.jpg" alt="Gym"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/jeCYj-4.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/jeCYj-4.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/jeCYj-4.jpg" alt="Gym"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-1">
+                <div class="mt-6 p-4 border shadow-md">
+                  <div class="testimonials">
+                    <div
+                      class="flex flex-col gap-4 relative transition-all duration-150 ease-linear max-h-64 overflow-y-auto">
+                      <p class="text-justify text-pretty text-black/90 text-sm md:text-base mr-3 review">
+                        "I had a great experience at the gym. The equipment
+                        was top-notch, and the staff was friendly and helpful.
+                        I was able to get a great workout in and felt great
+                        afterwards. I would highly recommend this gym to
+                        anyone looking to stay in shape while traveling."
+                      </p>
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-base text-black font-bold">
+                          - Purna
+                        </h4>
+                        <span class="text-sm italic text-black/80">- via Booking.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <a href="https://wa.me/+9779801084724" target="_blank" rel="noopener noreferrer"
+                    class="caps mt-4 group inline-flex items-center justify-center gap-4 bg-dark/50 hover:bg-dark/80 text-white border border-dark/80 hover:border-white shadow-md px-6 py-2 transition-all duration-300 ease-linear">
+                    Reserve
+                    <i class="fa-regular fa-clipboard group-hover:translate-x-2 transition-all duration-300"></i>
+                  </a>
+                  <p class="mt-5">
+                    Call us at
+
+                    <a href="tel:+977015348747" class="text-base font-semibold hover:underline" target="_blank"
+                      rel="noopener noreferrer" aria-label="+977-01-5348747">
+                      +977-01-5348747</a>
+                    /
+                    <a href="tel:+977015350914" class="text-base font-semibold hover:underline" target="_blank"
+                      rel="noopener noreferrer" aria-label="+977-01-5350914">
+                      5350914</a>
+
+                    for direct booking.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="swimming-pool">
+        <div class="w-full h-72 sm:h-96 md:h-[30rem] lg:h-[32rem] xl:h-screen relative group zoom-wrapper">
+          <img src="https://babermahalvilas.com/images/package/galleryimages/hMdmV-2.jpg" alt="Sankha-103"
+            class="zoom-image size-full object-cover" draggable="false" />
+        </div>
+        <div class="px-6 lg:px-12 xl:px-20 mt-12">
+          <div class="col-span-2 space-y-6">
+            <h3 class="text-xl xl:text-3xl leading-snug caps capitalize">
+              Swimming Pool
+            </h3>
+            <p class="text-justify md:text-pretty text-sm md:text-base font-medium md:font-light text-dark/80">
+              Our swimming pool is the perfect place to relax and unwind.
+              Whether you want to take a dip in the pool or just relax by the
+              water, our pool is the perfect place to spend a sunny afternoon.
+              We also offer poolside service so you can enjoy a refreshing
+              drink while you soak up the sun.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-6">
+              <div class="col-span-2">
+                <div id="swimming-gallery" class="mt-6 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear">
+                  <a href="https://babermahalvilas.com/images/subpackage/pwKqE-4pLvq-pool3.jpg"
+                    data-src="https://babermahalvilas.com/images/subpackage/pwKqE-4pLvq-pool3.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/subpackage/pwKqE-4pLvq-pool3.jpg"
+                      alt="Swimming Pool"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/hMdmV-2.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/hMdmV-2.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/hMdmV-2.jpg"
+                      alt="Swimming Pool"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/V2MRt-1.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/V2MRt-1.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/V2MRt-1.jpg"
+                      alt="Swimming Pool"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.com/images/package/galleryimages/x1eAs-3.jpg"
+                    data-src="https://babermahalvilas.com/images/package/galleryimages/x1eAs-3.jpg"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.com/images/package/galleryimages/x1eAs-3.jpg"
+                      alt="Swimming Pool"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-1">
+                <div class="mt-6 p-4 border shadow-md">
+                  <div class="testimonials">
+                    <div
+                      class="flex flex-col gap-4 relative transition-all duration-150 ease-linear max-h-64 overflow-y-auto">
+                      <p class="text-justify text-pretty text-black/90 text-sm md:text-base mr-3 review">
+                        "I had a great experience at the gym. The equipment
+                        was top-notch, and the staff was friendly and helpful.
+                        I was able to get a great workout in and felt great
+                        afterwards. I would highly recommend this gym to
+                        anyone looking to stay in shape while traveling."
+                      </p>
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-base text-black font-bold">
+                          - Purna
+                        </h4>
+                        <span class="text-sm italic text-black/80">- via Booking.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <a href="https://wa.me/+9779801084724" target="_blank" rel="noopener noreferrer"
+                    class="caps mt-4 group inline-flex items-center justify-center gap-4 bg-dark/50 hover:bg-dark/80 text-white border border-dark/80 hover:border-white shadow-md px-6 py-2 transition-all duration-300 ease-linear">
+                    Reserve
+                    <i class="fa-regular fa-clipboard group-hover:translate-x-2 transition-all duration-300"></i>
+                  </a>
+                  <p class="mt-5">
+                    Call us at
+
+                    <a href="tel:+977015348747" class="text-base font-semibold hover:underline" target="_blank"
+                      rel="noopener noreferrer" aria-label="+977-01-5348747">
+                      +977-01-5348747</a>
+                    /
+                    <a href="tel:+977015350914" class="text-base font-semibold hover:underline" target="_blank"
+                      rel="noopener noreferrer" aria-label="+977-01-5350914">
+                      5350914</a>
+
+                    for direct booking.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="gift-shop">
+        <div class="w-full h-72 sm:h-96 md:h-[30rem] lg:h-[32rem] xl:h-screen relative group zoom-wrapper">
+          <img src="https://babermahalvilas.pages.dev/img/banner/5.webp" alt="Sankha-103"
+            class="zoom-image size-full object-cover" draggable="false" />
+        </div>
+        <div class="px-6 lg:px-12 xl:px-20 mt-12">
+          <div class="col-span-2 space-y-6">
+            <h3 class="text-xl xl:text-3xl leading-snug caps capitalize">
+              Gift Shop
+            </h3>
+            <p class="text-justify md:text-pretty text-sm md:text-base font-medium md:font-light text-dark/80">
+              Our gift shop is the perfect place to find unique souvenirs and
+              gifts for your loved ones. We offer a variety of items,
+              including local handicrafts, jewelry, clothing, and more
+              available at Baber Mahal Revisited.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-6">
+              <div class="col-span-2">
+                <div id="gift-gallery" class="mt-6 w-full grid grid-cols-1 md:grid-cols-2 gap-4 transition-linear">
+                  <a href="https://babermahalvilas.pages.dev/img/banner/5.webp"
+                    data-src="https://babermahalvilas.pages.dev/img/banner/5.webp"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.pages.dev/img/banner/5.webp" alt="Gift Shop"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.pages.dev/img/banner/5.webp"
+                    data-src="https://babermahalvilas.pages.dev/img/banner/5.webp"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.pages.dev/img/banner/5.webp" alt="Gift Shop"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.pages.dev/img/banner/5.webp"
+                    data-src="https://babermahalvilas.pages.dev/img/banner/5.webp"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.pages.dev/img/banner/5.webp" alt="Gift Shop"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                  <a href="https://babermahalvilas.pages.dev/img/banner/5.webp"
+                    data-src="https://babermahalvilas.pages.dev/img/banner/5.webp"
+                    class="group gallery-item overflow-hidden transition-all duration-200 ease-linear cursor-pointer relative">
+                    <img src="https://babermahalvilas.pages.dev/img/banner/5.webp" alt="Gift Shop"
+                      class="contrast-100 group-hover:contrast-125 size-full h-52 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+                      loading="lazy" draggable="false" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-1">
+                <div class="mt-6 p-4 border shadow-md">
+                  <div class="testimonials">
+                    <div
+                      class="flex flex-col gap-4 relative transition-all duration-150 ease-linear max-h-64 overflow-y-auto">
+                      <p class="text-justify text-pretty text-black/90 text-sm md:text-base mr-3 review">
+                        "I had a great experience at the gift shop. The staff
+                        was friendly and helpful, and the selection of items
+                        was amazing. I was able to find the perfect gift for
+                        my loved ones. I would highly recommend this gift shop
+                        to anyone looking for unique souvenirs."
+                      </p>
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-base text-black font-bold">
+                          - Purna
+                        </h4>
+                        <span class="text-sm italic text-black/80">- via Booking.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <a href="https://wa.me/+9779801084724" target="_blank" rel="noopener noreferrer"
+                    class="caps mt-4 group inline-flex items-center justify-center gap-4 bg-dark/50 hover:bg-dark/80 text-white border border-dark/80 hover:border-white shadow-md px-6 py-2 transition-all duration-300 ease-linear">
+                    Reserve
+                    <i class="fa-regular fa-clipboard group-hover:translate-x-2 transition-all duration-300"></i>
+                  </a>
+                  <p class="mt-5">
+                    Call us at
+
+                    <a href="tel:+977015348747" class="text-base font-semibold hover:underline" target="_blank"
+                      rel="noopener noreferrer" aria-label="+977-01-5348747">
+                      +977-01-5348747</a>
+                    /
+                    <a href="tel:+977015350914" class="text-base font-semibold hover:underline" target="_blank"
+                      rel="noopener noreferrer" aria-label="+977-01-5350914">
+                      5350914</a>
+
+                    for direct booking.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 px-0 mx-0 mb-0 pb-0 bg-dark relative">
+    <div class="container mx-auto z-10 px-4 pb-32 sm:pb-44 md:pb-52 lg:pb-72 2xl:pb-96 relative">
+      <div class="grid grid-cols-1 gap-4 z-10 pt-5">
+        <div class="w-full mb-5">
+          <h4
+            class="caps group flex items-center justify-center flex-col text-base sm:text-xl md:text-2xl text-white mb-8">
+            Contact Address
+            <div
+              class="mt-1 w-20 group-hover:w-32 h-[2px] rounded-full bg-white/80 transition-all duration-300 ease-linear">
+            </div>
+          </h4>
+          <ul class="flex items-center justify-center flex-col gap-4">
+            <li>
+              <a href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
+                class="inline-block text-sm sm:text-base md:text-lg leading-loose text-white hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="Tanka Prasad Sadak, Kathmandu">
+                <i class="mr-2 fa-solid fa-map-marker-alt text-sm sm:text-base md:text-lg"></i>
+                Tanka Prasad Sadak, Kathmandu
+              </a>
+            </li>
+            <li class="text-white text-center">
+              <i class="mr-2 fa-solid fa-phone-volume text-sm sm:text-base md:text-lg"></i>
+
+              <a href="tel:+977-01-5348747 "
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5348747 ">
+                +977-01-5348747
+              </a>
+              / <a href="tel:+97701 5350914 "
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977- 5350914 ">
+                5350914
+              </a>
+              / <a href="tel:+97701 5357655 "
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977- 5357655 ">
+                5357655
+              </a>
+              / <a href="tel:+97701 4248747"
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977- 4248747">
+                4248747
+              </a>
+            </li>
+            <li>
+              <a href="mailto:  info@babermahal.com"
+                class="inline-block text-sm sm:text-base md:text-lg leading-loose text-white hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="  info@babermahal.com">
+                <i class="mr-2 fa-solid fa-envelope text-sm sm:text-base md:text-lg"></i>
+                info@babermahal.com
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center justify-center md:gap-2 flex-row mt-6">
+
+            <a href="https://www.facebook.com/babermahalvilas/" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Facebook link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/BaberMahalVilas" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Facebook link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np" target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Facebook link">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 container mx-auto flex justify-between items-center flex-col text-white gap-4">
+        <div class="flex items-center flex-col md:flex-row gap-4">
+          <p class="text-center text-xs md:text-sm lg:text-base caps capitalize">
+            © Baber Mahal Vilas 2024 | All rights reserved |
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <span class="text-xs md:text-sm lg:text-base capitalize caps text-white">We accept</span>
+            <ul class="flex items-center justify-center gap-0">
+              <li>
+                <img src="./img/visa/visa.png" class="w-10 h-4 object-contain" alt="visa">
+              </li>
+              <li>
+                <img src="./img/visa/union.png" class="w-10 h-4 object-contain" alt="union">
+              </li>
+              <li>
+                <img src="./img/visa/mastercard.png" class="w-10 h-4 object-contain" alt="mastercard">
+              </li>
+              <li>
+                <img src="./img/visa/amex.png" class="w-10 h-4 object-contain" alt="amex">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-base caps capitalize mt-4 md:mt-0">
+          Developed by:
+          <a href="https://www.purnashrestha.com.np/" target="_blank" class="relative group"
+            aria-label="Purna Shrestha">
+            <label
+              class="absolute bottom-0 -right-0 w-full h-[1px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"></label>
+            Purna Shrestha</a>
+        </p>
+      </div>
+
+      <div
+        class="white-filter pointer-events-none select-none absolute inset-0 bottom-0 bg-no-repeat bg-contain w-[90%] lg:w-full h-full bg-bottom mx-auto opacity-50"
+        style="background-image: url('./img/arts/building.png')"></div>
+    </div>
+  </footer>
+
+  <a href="https://41615.staygrid.com/webreservation/index/index/hidHotelIdWebOut/QV5TX0ZSczM0XzQxNjE1X0Y1dGVyOTA4N3NfKWRoZl9kcnRlcjdfNDE2MTVfaGdmaF9nXmQ4NTQ=/hidLanguageId/1/"
+    target="_blank"
+    class="group merriweather caps fixed right-0 top-24 z-40 flex items-center justify-center gap-1 text-sm px-3 py-2 bg-white/40 border border-white hover:bg-white shadow-md hover:shadow-2xl transition-all duration-300 ease-linear"
+    rel="noopener noreferrer" aria-label="Reservation">
+    Reservation
+  </a>
+
+  <div id="whatsapp-icon" class="fixed right-5 bottom-6 z-[99] flex items-center justify-center gap-1">
+    <div
+      class="size-10 rounded-full bg-white/90 hover:bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-150 ease-in-out p-2">
+      <a href="https://wa.me/+9779801084724" target="_blank" class="p-2" rel="noopener noreferrer"
+        aria-label="whatsapp-icon">
+        <i class="fa-brands fa-whatsapp text-3xl text-green-600"></i>
+      </a>
+    </div>
+  </div>
+
+  <button id="backToTopBtn"
+    class="z-30 fixed bottom-6 right-16 size-10 mx-auto bg-dark/40 hover:bg-dark text-white border border-white rounded-full shadow-lg hidden transition-all duration-300">
+    ↑
+  </button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- LightGallery JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.min.js"></script>
+  <!-- Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const galleryIds = [
+        "spa-gallery",
+        "gym-gallery",
+        "swimming-gallery",
+        "gift-gallery",
+      ];
+
+      galleryIds.forEach((id) => {
+        const galleryElement = document.getElementById(id);
+        if (galleryElement) {
+          lightGallery(galleryElement, {
+            plugins: [lgThumbnail, lgFullscreen],
+            thumbnail: true,
+            fullscreen: true,
+          });
+        }
+      });
+    });
+  </script>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

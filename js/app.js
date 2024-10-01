@@ -3,21 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const svgIcon = document.getElementById("svgIcon");
   const navLinks = document.getElementById("navLinks");
   const overlay = document.getElementById("overlay");
-
-  let lastScrollTop = 0;
-  const navbar = document.querySelector("header");
-
-  window.addEventListener("scroll", function () {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-      navbar.classList.add("-translate-y-full");
-    } else {
-      navbar.classList.remove("-translate-y-full");
-    }
-
-    lastScrollTop = scrollTop;
-  });
+  const header = document.querySelector(".blur-bg");
 
   toggleButton.addEventListener("click", function () {
     navLinks.classList.toggle("-translate-x-full");
@@ -32,71 +18,56 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Select the Back to Top button
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// Show/Hide button after 100vh scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > window.innerHeight) {
+    backToTopBtn.classList.remove("hidden");
+  } else {
+    backToTopBtn.classList.add("hidden");
+  }
+});
+
+// Scroll to top when button is clicked
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
 // for dropdown
-// document.addEventListener("DOMContentLoaded", function () {
-//   var links = document.querySelectorAll(".dropdown > a");
-//   var dropdowns = document.querySelectorAll(".dropdown");
-
-//   document.addEventListener("click", function (event) {
-//     var isInsideDropdown = false;
-
-//     dropdowns.forEach(function (dropdown) {
-//       if (dropdown.contains(event.target)) {
-//         isInsideDropdown = true;
-//       }
-//     });
-
-//     if (!isInsideDropdown) {
-//       dropdowns.forEach(function (dropdown) {
-//         dropdown.classList.remove("active");
-//       });
-//     }
-//   });
-
-//   links.forEach(function (link) {
-//     link.addEventListener("click", function (event) {
-//       event.preventDefault();
-//       var parentLi = link.parentElement;
-//       dropdowns.forEach(function (dropdown) {
-//         if (dropdown !== parentLi) {
-//           dropdown.classList.remove("active");
-//         }
-//       });
-
-//       parentLi.classList.toggle("active");
-//     });
-//   });
-// });
 document.addEventListener("DOMContentLoaded", function () {
   let dropdowns = document.querySelectorAll(".dropdown");
   let timeout;
 
   function closeAllDropdowns() {
     dropdowns.forEach(function (dropdown) {
-      dropdown
-        .querySelector(".drop")
-        .classList.add("translate-x-full", "opacity-0", "invisible");
-      dropdown
-        .querySelector(".drop")
-        .classList.remove("translate-x-0", "opacity-100", "visible");
-    });
-  }
-
-  dropdowns.forEach(function (dropdown) {
-    dropdown.addEventListener("mouseenter", function () {
-      clearTimeout(timeout);
-      closeAllDropdowns();
-      let dropMenu = dropdown.querySelector(".drop");
-      dropMenu.classList.add("translate-x-0", "opacity-100", "visible");
-      dropMenu.classList.remove("translate-x-full", "opacity-0", "invisible");
+      if (dropdown.contains(event.target)) {
+        isInsideDropdown = true;
+      }
     });
 
-    dropdown.addEventListener("mouseleave", function () {
-      let dropMenu = dropdown.querySelector(".drop");
-      timeout = setTimeout(function () {
-        dropMenu.classList.add("translate-x-full", "opacity-0", "invisible");
-        dropMenu.classList.remove("translate-x-0", "opacity-100", "visible");
-      }, 500);
+    if (!isInsideDropdown) {
+      dropdowns.forEach(function (dropdown) {
+        dropdown.classList.remove("active");
+      });
+    }
+  });
+
+  links.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      var parentLi = link.parentElement;
+      dropdowns.forEach(function (dropdown) {
+        if (dropdown !== parentLi) {
+          dropdown.classList.remove("active");
+        }
+      });
+
+      parentLi.classList.toggle("active");
     });
   });
 });
@@ -122,19 +93,30 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $(".rooms-carousel").owlCarousel({
-    items: 1,
+    // items: 1,
+    // loop: true,
+    // autoplay: true,
+    // autoplayTimeout: 5000,
+    // autoplayHoverPause: true,
+    // animateOut: "fadeOut",
+    // smartSpeed: 1000,
+    // dots: false,
+    // nav: true,
+    // navText: [
+    //   '<i class="fa-solid fa-chevron-left text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
+    //   '<i class="fa-solid fa-chevron-right text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
+    // ],
     loop: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    animateOut: "fadeOut",
-    smartSpeed: 1000,
-    dots: false,
     nav: true,
-    navText: [
-      '<i class="fa-solid fa-chevron-left text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
-      '<i class="fa-solid fa-chevron-right text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
-    ],
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 8000,
+    items: 1,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    mouseDrag: true,
+    touchDrag: true,
+    navText: ["<i>&#8592;</i>", "<i>&#8594;</i>"],
   });
 });
 
@@ -149,13 +131,13 @@ $(document).ready(function () {
     autoplayHoverPause: false,
     responsive: {
       0: {
-        items: 1,
+        items: 1, // Set 1 item for mobile devices
       },
       768: {
-        items: 2,
+        items: 2, // Set 2 items for tablets
       },
       992: {
-        items: 2,
+        items: 2, // Keep 2 items for larger screens
       },
     },
   });
@@ -170,3 +152,31 @@ function startVideo() {
   var backgroundVideo = document.getElementById("backgroundVideo");
   backgroundVideo.play();
 }
+
+// for the dynamic italic for Baber Mahal <em>Vilas</em>
+document.querySelectorAll(".vilas-italic").forEach((el) => {
+  // Use regex to split by any number of spaces, ensuring only actual words are captured
+  let words = el.textContent.trim().split(/\s+/);
+  if (words.length >= 3) {
+    words[2] = `<em class="the-vilas">${words[2]}</em>`;
+    el.innerHTML = words.join(" ");
+  }
+});
+
+// ! lenis scroll : for the smooth scroll
+// Initialize Lenis for slower smooth scroll
+const lenis = new Lenis({
+  duration: 2, // Slower duration (increase this value for slower scroll)
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
+  smooth: true, // Enable smooth scrolling
+  smoothWheel: true, // Smooth out the wheel scroll
+  wheelMultiplier: 0.5, // Reduce the scroll speed (lower values slow it down)
+});
+
+// Trigger the scroll animation frame
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to Baber Mahal Vilas" />
+  <meta name="theme-color" content="#FFE9D2" />
+
+  <title>Baber Mahal Vilas</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./logo/favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon.png" />
+  <link rel="manifest" href="./logo/site.webmanifest" />
+
+  <link rel="stylesheet" href="./css/links.css" />
+  <link rel="stylesheet" href="./css/component.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="navbar"
+    class="h-16 sm:h-20 sticky md:fixed top-0 z-50 bg-dark md:bg-dark/60 w-full transition-all duration-1000 ease-in-out">
+    <div class="container mx-auto px-4 size-full">
+      <div class="flex justify-between items-center size-full">
+        <a href="./index.html" aria-label="Logo" class="">
+          <img id="logo" src="./img/logo.png" alt="Logo"
+            class="absolute top-0 w-24 h-16 md:w-32 md:h-20 object-contain" />
+        </a>
+        <div class="flex items-center gap-2">
+          <div class="flex items-center gap-3">
+            <ul class="links hidden xl:flex items-start justify-start gap-1 md:gap-3">
+              <li class="caps dropdown nav-link group "><a href="#"
+                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  id="id_about">About<i class="fa-solid fa-chevron-down text-xs"></i></a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="w-full"><a href="./index.html#baber-mahal-vilas" class="navlink-dropdown"
+                      id="id_our_story">Our Story</a></li>
+                  <li class="w-full"><a href="./index.html#the-history" class="navlink-dropdown" id="id_the_history">The
+                      History</a></li>
+                  <li class="w-full"><a href="./index.html#the-property" class="navlink-dropdown"
+                      id="id_the_property">The Property</a></li>
+                </ul>
+              </li>
+              <li class="caps dropdown nav-link group "><a href="./room.html"
+                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  id="id_rooms">Rooms<i class="fa-solid fa-chevron-down text-xs"></i></a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="w-full"><a href="./traditional-room.html" class="navlink-dropdown"
+                      id="id_traditional_rooms">Traditional Rooms</a></li>
+                  <li class="w-full"><a href="./traditional-room.html" class="navlink-dropdown"
+                      id="id_traditional_premium_room">Traditional Premium Room</a></li>
+                  <li class="w-full"><a href="./heritage-room.html" class="navlink-dropdown"
+                      id="id_heritage_room">Heritage Room</a></li>
+                  <li class="w-full"><a href="./royal-suite.html" class="navlink-dropdown" id="id_royal_suite">Royal
+                      Suite</a></li>
+                </ul>
+              </li>
+              <li class="caps dropdown nav-link group "><a href="./dine.html"
+                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  id="id_dining">Dining<i class="fa-solid fa-chevron-down text-xs"></i></a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="w-full"><a href="./dine.html#baithak-restaurant" class="navlink-dropdown"
+                      id="id_baithak_restaurant">Baithak Restaurant</a></li>
+                  <li class="w-full"><a href="./dine.html#k2-terrace-cafe" class="navlink-dropdown"
+                      id="id_k2_terrace_cafe">K2 Terrace Cafe</a></li>
+                </ul>
+              </li>
+              <li class="caps dropdown nav-link group "><a href="./facilities.html"
+                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  id="id_facilities">Facilities<i class="fa-solid fa-chevron-down text-xs"></i></a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="w-full"><a href="./facilities.html#spa" class="navlink-dropdown" id="id_spa">Spa</a></li>
+                  <li class="w-full"><a href="./facilities.html#gym" class="navlink-dropdown" id="id_gym">Gym</a></li>
+                  <li class="w-full"><a href="./facilities.html#swimming-pool" class="navlink-dropdown"
+                      id="id_swimming_pool">Swimming Pool</a></li>
+                  <li class="w-full"><a href="./facilities.html#gift-shop" class="navlink-dropdown"
+                      id="id_gift_shop">Gift Shop</a></li>
+                  <li class="w-full"><a href="https://babermahalvilas.com/at-your-service" class="navlink-dropdown"
+                      id="id_our_services">Our Services</a></li>
+                </ul>
+              </li>
+              <li class="caps dropdown nav-link group "><a href="./traveldesk.html"
+                  class="flex items-center justify-between gap-1 w-full relative underline-hover-effect"
+                  id="id_travel desk">Travel&nbsp;Desk<i class="fa-solid fa-chevron-down text-xs"></i></a>
+                <ul
+                  class="drop absolute -top-3/4 md:top-[4rem] left-full md:left-0 bg-dark/60 flex items-start justify-center gap-2 flex-col invisible w-full md:min-w-40 ml-2 md:ml-0">
+                  <li class="w-full"><a href="./day-trip.html" class="navlink-dropdown" id="id_day_trip">Day Trip</a>
+                  </li>
+                  <li class="w-full"><a href="./flights.html" class="navlink-dropdown" id="id_flights">Flights</a></li>
+                  <li class="w-full"><a href="./car-rental.html" class="navlink-dropdown" id="id_car_rental">Car
+                      Rental</a></li>
+                  <li class="w-full"><a href="./day-hike.html" class="navlink-dropdown" id="id_day_hikes">Day Hikes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="caps block w-full group "><a href="./gallery.html"
+                  class="nav-link relative underline-hover-effect" id="id_gallery">Gallery</a></li>
+              <li class="caps block w-full group "><a href="./contact.html"
+                  class="nav-link relative underline-hover-effect" id="id_contact">Contact</a></li>
+            </ul>
+            <a href="https://www.babermahal.com/" target="_blank"
+              class="caps text-white/80 hover:text-white text-sm sm:text-base lg:text-base 2xl:text-lg transition-all duration-300 ease-linear vilas-italic">Baber
+              Mahal Revisited
+            </a>
+          </div>
+          <div class="flex items-center justify-center gap-4 xl:hidden">
+            <button type="menu" id="toggleButton" class="text-white focus:outline-none p-2" aria-label="Toggle Button"
+              title="Toggle">
+              <i id="hamburgerIcon" class="fa-solid fa-bars text-white text-sm sm:text-base md:text-lg lg:text-xl"></i>
+              <i id="closeIcon"
+                class="hidden fa-solid fa-xmark text-white text-sm sm:text-base md:text-lg lg:text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="overlay" class="fixed inset-0 bg-dark opacity-50 z-10 hidden"></div>
+  <nav id="navLinks"
+    class="fixed left-0 top-0 w-60 h-screen bg-dark transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full">
+    <div class="relative">
+      <!-- <div
+      class="filter-white absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
+      style="background-image: url('./svg/building.svg')"></div> -->
+
+      <div class="flex items-center justify-center">
+        <a href="#" aria-label="Logo">
+          <img src="./img/logo.png" alt="Logo" class="w-full h-28 object-contain rounded-full p-2" />
+        </a>
+      </div>
+      <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
+        <li class="caps dropdown nav-link "><a href="./index.html#baber-mahal-vilas"
+            class="flex items-center justify-between w-full" id="id_about">About</a></li>
+        <li class="caps dropdown nav-link "><a href="./room.html" class="flex items-center justify-between w-full"
+            id="id_rooms">Rooms</a></li>
+        <li class="caps dropdown nav-link "><a href="./dine.html" class="flex items-center justify-between w-full"
+            id="id_dining">Dining</a></li>
+        <li class="caps dropdown nav-link "><a href="./facilities.html" class="flex items-center justify-between w-full"
+            id="id_facilities">Facilities</a></li>
+        <li class="caps dropdown nav-link "><a href="./traveldesk.html" class="flex items-center justify-between w-full"
+            id="id_travel desk">Travel Desk</a></li>
+        <li class="caps block w-full "><a href="./gallery.html" class="nav-link" id="id_gallery">Gallery </a></li>
+        <li class="caps block w-full "><a href="./contact.html" class="nav-link" id="id_contact">Contact </a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div
+    class="responsive-banner relative w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-screen overflow-hidden group">
+    <img src="./img/vilas/hotel.webp" alt="Gallery"
+      class="zoom-image w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-screen object-cover" draggable="false" />
+    <div class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/50 to-black/20"></div>
+    <div
+      class="pointer-events-none absolute left-0 bottom-0 text-center bg-gradient-to-t from-black/80 to-black/0 w-full py-4">
+      <div class="max-w-xl text-gradient mx-auto space-y-4 pt-6 md:pt-12 pb-6 text-white hidden sm:block">
+        <h3 class="caps text-lg font-bold sm:font-medium sm:text-2xl md:text-5xl leading-snug">
+          Contact Us
+        </h3>
+        <p class="hidden md:block px-8 text-base 2xl:text-base text-white/70 italic font-light">
+          Experience the Rana style of living - Baber Mahal Vilas
+        </p>
+      </div>
+      <nav class="flex items-center justify-center w-full" aria-label="Breadcrumb">
+        <ul class="inline-flex items-center space-x-3 text-white">
+          <li class="inline-flex items-center">
+            <a class="text-white/80 caps pointer-events-auto hover-outline text-sm md:text-lg" href="./index.html">
+              Home</a>
+          </li>
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="txt-lg me-2.5"
+            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+            <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+          </svg>
+          <li aria-current="page">
+            <h2 class="caps text-sm md:text-base font-title tracking-wider">
+              Contact Us
+            </h2>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section>
+    <div class="container mx-auto px-5">
+      <div class="px-4 py-2 flex items-center justify-center flex-col md:mb-5 lg:mb-10 text-dark">
+        <h2 class="caps text-3xl md:text-5xl mb-2">Contact</h2>
+        <p class="text-base max-w-lg text-center capitalize">
+          Contact us to know more about Baber Mahal
+          <em class="text-inherit">Vilas</em>
+        </p>
+      </div>
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-y-6 xl:gap-6">
+        <div class="col-span-2 sticky top-12 h-full order-2 xl:order-1">
+          <div class="border border-gold p-2">
+            <div class="bg-goldLight/20 p-4 md:p-8 undefined border border-gold">
+              <p class="text-sm md:text-lg mb-6 md:mb-12 hidden">
+                Can't find the contact and information you're looking for?
+                Write to us via this quick form.
+              </p>
+              <form class="flex flex-wrap justify-between" id="form_contact">
+                <div class="relative w-full md:w-1/2">
+                  <ul class="py-2 md:py-8 flex flex-col">
+                    <li class="w-full pr-2">
+                      <label for="name" class="text-sm md:text-base text-black/80">Full Name</label>
+                      <input name="name" type="text" id="name"
+                        class="text-base md:text-xl w-full md:mt-2 py-1 sm:py-2 border-b border-black/20 focus:outline-none focus:border-gold bg-transparent text-black rounded-none" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="relative w-full md:w-1/2">
+                  <ul class="py-2 md:py-8 flex flex-col">
+                    <li class="w-full pr-2">
+                      <label for="email" class="text-sm md:text-base text-black/80">Email Address</label>
+                      <input name="email" type="email" id="email"
+                        class="text-base md:text-xl w-full md:mt-2 py-1 sm:py-2 border-b border-black/20 focus:outline-none focus:border-gold bg-transparent text-black rounded-none" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="relative w-full md:w-1/2">
+                  <ul class="py-2 md:py-8 flex flex-col">
+                    <li class="w-full pr-2">
+                      <label for="contact" class="text-sm md:text-base text-black/80">Contact Number</label>
+                      <input name="contact" type="tel" id="contact"
+                        class="text-base md:text-xl w-full md:mt-2 py-1 sm:py-2 border-b border-black/20 focus:outline-none focus:border-gold bg-transparent text-black rounded-none" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="relative w-full md:w-1/2">
+                  <ul class="py-2 md:py-8 flex flex-col">
+                    <li class="w-full pr-2">
+                      <label for="subject" class="text-sm md:text-base text-black/80">Subject</label>
+                      <input name="subject" type="text" id="subject"
+                        class="text-base md:text-xl w-full md:mt-2 py-1 sm:py-2 border-b border-black/20 focus:outline-none focus:border-gold bg-transparent text-black rounded-none" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="relative w-full md:w-1/2">
+                  <ul class="py-2 md:py-8 flex flex-col">
+                    <li class="w-full pr-2">
+                      <label for="message" class="text-sm md:text-base text-black/80">Message</label>
+                      <textarea name="message" id="message" rows="2"
+                        class="text-xl w-full lg:w-[200%] md:mt-2 py-1 sm:py-2 border-b border-black/30 focus:outline-none focus:border-gold bg-transparent text-black rounded-none"></textarea>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="w-full mt-4 group">
+                  <button type="submit" class="w-auto bg-dark text-white px-6 py-2 rounded-full hover-outline text-lg"
+                    id="submit" title="Send Message" aria-label="Send Message">
+                    <span class="flex items-center justify-center gap-0">Send Message</span>
+                  </button>
+                </div>
+                <div id="result_msg" class="text-green-600 p-4 w-full font-bold italic"></div>
+              </form>
+            </div>
+            <div class="Toastify"></div>
+          </div>
+        </div>
+        <div class="col-span-1 order-1 xl:order-2">
+          <div class="flex flex-col items-center text-center gap-4">
+            <a href="/"><img src="https://babermahalvilas.com/images/preference/l8ttf-logo.png" alt="Baber Mahal Vilas"
+                class="w-28 h-20 md:w-44 md:h-32 object-contain" style="
+                    filter: brightness(0) saturate(100%) invert(0%) sepia(0%)
+                      saturate(7449%) hue-rotate(190deg) brightness(107%)
+                      contrast(96%);
+                  " /></a>
+            <ul class="flex items-center justify-center flex-col gap-1">
+              <li>
+                <a href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9" class="inline-block text-sm hover:underline"
+                  target="_blank" rel="noopener noreferrer" aria-label="Tanka Prasad Sadak, Kathmandu">
+                  Tanka Prasad Sadak, Kathmandu
+                </a>
+              </li>
+              <li class="">
+                <a href="tel:+977-01-5348747 " class="number inline-block text-sm hover:underline" target="_blank"
+                  rel="noopener noreferrer" aria-label="+977-01-5348747 ">
+                  +977-01-5348747
+                </a>
+
+                /
+                <a href="tel:+977 1 5350914 " class="number inline-block text-sm hover:underline" target="_blank"
+                  rel="noopener noreferrer" aria-label=" 5350914 ">
+                  5350914
+                </a>/                <a href="tel:+977 1 5357655 " class="number inline-block text-sm hover:underline" target="_blank"
+                  rel="noopener noreferrer" aria-label=" 5357655 ">
+                  5357655
+                </a>/
+                <a href="tel:+977 1 4248747" class="number inline-block text-sm hover:underline" target="_blank"
+                  rel="noopener noreferrer" aria-label=" 4248747">
+                  4248747
+                </a>
+              </li>
+              <li>
+                <a href="mailto:  info@babermahal.com" class="inline-block text-sm hover:underline" target="_blank"
+                  rel="noopener noreferrer" aria-label="  info@babermahal.com">
+                  info@babermahal.com
+                </a>
+              </li>
+            </ul>
+            <ul class="flex items-center justify-center gap-4 text-2xl my-3 mb-6">
+              <li class="group">
+                <a rel="noreferrer noopener" aria-label="Facebook" title="facebook"
+                  href="https://www.facebook.com/babermahalvilas/" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+
+              </li>
+              <li class="group">
+                <a rel="noreferrer noopener" aria-label="Facebook" title="instagram"
+                  href="https://www.instagram.com/BaberMahalVilas" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+
+              </li>
+              <li class="group">
+                <a rel="noreferrer noopener" aria-label="Facebook" title="linkdin"
+                  href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+
+              </li>
+            </ul>
+            .
+            <div class="p-4 border shadow-md">
+              <div class="testimonials">
+                <div
+                  class="flex flex-col gap-4 relative transition-all duration-150 ease-linear max-h-64 overflow-y-auto">
+                  <p class="text-justify text-pretty text-black/90 text-sm md:text-base mr-3 review">
+
+                    We had a great time as a family. Very tasteful decor in Victorian era and comfortable suites!
+                    Central location makes it close to most places of attraction. The staff at the reception were
+                    excellent. Sweetie, Sudikshya and Rupes thank you for making our Stay comfortable. We certainly will
+                    visit again.
+
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <h4 class="text-base text-black font-bold">Purna Shrestha</h4>
+                    <a href="#" target="_blank"> <span class="text-sm italic text-black/80">- via Trip
+                        Advisor</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            .
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.734409804463!2d85.31993567545348!3d27.694602426053425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19afde62a401%3A0x859f71fc5ccb7c71!2sBaber%20Mahal%20Vilas%20-%20The%20Heritage%20Hotel!5e0!3m2!1sen!2snp!4v1725881371912!5m2!1sen!2snp"
+      width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <footer class="py-12 px-0 mx-0 mb-0 pb-0 bg-dark relative">
+    <div class="container mx-auto z-10 px-4 pb-32 sm:pb-44 md:pb-52 lg:pb-72 2xl:pb-96 relative">
+      <div class="grid grid-cols-1 gap-4 z-10 pt-5">
+        <div class="w-full mb-5">
+          <h4
+            class="caps group flex items-center justify-center flex-col text-base sm:text-xl md:text-2xl text-white mb-8">
+            Contact Address
+            <div
+              class="mt-1 w-20 group-hover:w-32 h-[2px] rounded-full bg-white/80 transition-all duration-300 ease-linear">
+            </div>
+          </h4>
+          <ul class="flex items-center justify-center flex-col gap-4">
+            <li>
+              <a href="https://maps.app.goo.gl/MTGh5x8QTaoFvzRG9"
+                class="inline-block text-sm sm:text-base md:text-lg leading-loose text-white hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="Tanka Prasad Sadak, Kathmandu">
+                <i class="mr-2 fa-solid fa-map-marker-alt text-sm sm:text-base md:text-lg"></i>
+                Tanka Prasad Sadak, Kathmandu
+              </a>
+            </li>
+            <li class="text-white text-center">
+              <i class="mr-2 fa-solid fa-phone-volume text-sm sm:text-base md:text-lg"></i>
+
+              <a href="tel:+977-01-5348747 "
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977-01-5348747 ">
+                +977-01-5348747
+              </a>
+              / <a href="tel:+97701 5350914 "
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977- 5350914 ">
+                5350914
+              </a>
+              / <a href="tel:+97701 5357655 "
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977- 5357655 ">
+                5357655
+              </a>
+              / <a href="tel:+97701 4248747"
+                class="number inline-block text-sm sm:text-base md:text-lg leading-loose hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="+977- 4248747">
+                4248747
+              </a>
+            </li>
+            <li>
+              <a href="mailto:  info@babermahal.com"
+                class="inline-block text-sm sm:text-base md:text-lg leading-loose text-white hover:underline"
+                target="_blank" rel="noopener noreferrer" aria-label="  info@babermahal.com">
+                <i class="mr-2 fa-solid fa-envelope text-sm sm:text-base md:text-lg"></i>
+                info@babermahal.com
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center justify-center md:gap-2 flex-row mt-6">
+
+            <a href="https://www.facebook.com/babermahalvilas/" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Facebook link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/BaberMahalVilas" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Facebook link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/company/babermahalvilas/?originalSubdomain=np" target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center w-8 h-8 mr-3 border-solid border-white border-[1px] rounded-full text-white hover:bg-white hover:text-dark sm:mr-4 lg:mr-3 xl:mr-4 transition-all duration-200 ease-in-out"
+              aria-label="Facebook link">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 container mx-auto flex justify-between items-center flex-col text-white gap-4">
+        <div class="flex items-center flex-col md:flex-row gap-4">
+          <p class="text-center text-xs md:text-sm lg:text-base caps capitalize">
+            © Baber Mahal Vilas 2024 | All rights reserved |
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <span class="text-xs md:text-sm lg:text-base capitalize caps text-white">We accept</span>
+            <ul class="flex items-center justify-center gap-0">
+              <li>
+                <img src="./img/visa/visa.png" class="w-10 h-4 object-contain" alt="visa">
+              </li>
+              <li>
+                <img src="./img/visa/union.png" class="w-10 h-4 object-contain" alt="union">
+              </li>
+              <li>
+                <img src="./img/visa/mastercard.png" class="w-10 h-4 object-contain" alt="mastercard">
+              </li>
+              <li>
+                <img src="./img/visa/amex.png" class="w-10 h-4 object-contain" alt="amex">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-base caps capitalize mt-4 md:mt-0">
+          Developed by:
+          <a href="https://www.purnashrestha.com.np/" target="_blank" class="relative group"
+            aria-label="Purna Shrestha">
+            <label
+              class="absolute bottom-0 -right-0 w-full h-[1px] bg-white group-hover:scale-x-0 origin-left transition-all duration-300 ease-linear"></label>
+            Purna Shrestha</a>
+        </p>
+      </div>
+
+      <div
+        class="white-filter pointer-events-none select-none absolute inset-0 bottom-0 bg-no-repeat bg-contain w-[90%] lg:w-full h-full bg-bottom mx-auto opacity-50"
+        style="background-image: url('./img/arts/building.png')"></div>
+    </div>
+  </footer>
+
+  <a href="https://41615.staygrid.com/webreservation/index/index/hidHotelIdWebOut/QV5TX0ZSczM0XzQxNjE1X0Y1dGVyOTA4N3NfKWRoZl9kcnRlcjdfNDE2MTVfaGdmaF9nXmQ4NTQ=/hidLanguageId/1/"
+    target="_blank"
+    class="group merriweather caps fixed right-0 top-24 z-40 flex items-center justify-center gap-1 text-sm px-3 py-2 bg-white/40 border border-white hover:bg-white shadow-md hover:shadow-2xl transition-all duration-300 ease-linear"
+    rel="noopener noreferrer" aria-label="Reservation">
+    Reservation
+  </a>
+
+  <div id="whatsapp-icon" class="fixed right-5 bottom-6 z-[99] flex items-center justify-center gap-1">
+    <div
+      class="size-10 rounded-full bg-white/90 hover:bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-150 ease-in-out p-2">
+      <a href="https://wa.me/+9779801084724" target="_blank" class="p-2" rel="noopener noreferrer"
+        aria-label="whatsapp-icon">
+        <i class="fa-brands fa-whatsapp text-3xl text-green-600"></i>
+      </a>
+    </div>
+  </div>
+
+  <button id="backToTopBtn"
+    class="z-30 fixed bottom-6 right-16 size-10 mx-auto bg-dark/40 hover:bg-dark text-white border border-white rounded-full shadow-lg hidden transition-all duration-300">
+    ↑
+  </button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
+
+  <script src="./js/app.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var base_url = $('base').attr('url');
+      $('#form_contact').validate({
+        errorElement: 'span',
+        errorClass: 'validate-has-error text-red-600',
+        rules: {
+          name: { required: true },
+          email: { required: true, email: true },
+          contact: { required: true },
+          subject: { required: true },
+          message: { required: true }
+        },
+        messages: {
+          name: { required: "Please enter your Name." },
+          email: { required: "Please enter your Email Address." },
+          contact: { required: "Please enter your Phone Number." },
+          subject: { required: "Please enter your Subject." },
+          message: { required: "Please enter your Message." }
+        },
+        submitHandler: function (form) {
+          // var recaptcha = $("#g-recaptcha-response").val();
+          // if (recaptcha === "") {
+          //     event.preventDefault();
+          //     alert("Please check the recaptcha");
+          //     return false;
+          // }
+          var Frmval = $("form#form_contact").serialize();
+          $("button#submit").attr("disabled", "true").text('Processing...');
+          $.ajax({
+            type: "POST",
+            dataType: "JSON",
+            url: base_url + "enquery_mail.php",
+            data: "action=forcoment&" + Frmval,
+            success: function (data) {
+              var msg = eval(data);
+              $("button#submit").removeAttr("disabled").text('Submit Message');
+              $('div#result_msg').html(msg.message).css('display', 'block').fadeOut(10000);
+              $("form#frm_contact")[0].reset();
+            }
+          });
+          return false;
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>
