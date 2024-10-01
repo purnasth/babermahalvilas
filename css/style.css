@@ -16,7 +16,11 @@
   }
 
   ::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
+    @apply bg-coffee-700 rounded-full border border-solid border-coffee-400;
+=======
     @apply bg-dark rounded-full border border-solid border-white;
+>>>>>>> caa70050f35de63fd90fb49eda869ff90fadf51c
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -28,16 +32,46 @@
   body {
     /* @apply bg-dark; */
     font-family: "Merriweather", serif;
+<<<<<<< HEAD
+  }
+
+  .caps {
+    font-variant: small-caps;
+  }
+
+  p {
+    @apply font-medium;
+    font-family: "SUSE", sans-serif;
+=======
     /* font-family: "Times New Roman", Times, serif; */
     /* font-size: 18px; */
+>>>>>>> caa70050f35de63fd90fb49eda869ff90fadf51c
   }
 
   section {
     @apply py-12 sm:py-24 md:py-28 lg:py-32;
   }
 
+  .font-merriweather {
+    font-family: "Merriweather", serif;
+  }
+
+  .font-suse {
+    font-family: "SUSE", sans-serif;
+  }
+
   .nav-link {
+<<<<<<< HEAD
+    @apply relative block w-full text-coffee-400 hover:bg-coffee-400/50 backdrop-blur-sm py-3 px-3 text-lg rounded-xl hover:text-coffee-900 transition-all duration-200 ease-in-out;
+  }
+
+  a.nav-link,
+  .dropdown.nav-link>a,
+  .dropdown.nav-link h3 {
+    @apply caps;
+=======
     @apply capitalize relative block w-full text-white/80 hover:text-white py-3 px-3 text-base 2xl:text-[1.3rem] rounded-xl transition-all duration-200 ease-in-out;
+>>>>>>> caa70050f35de63fd90fb49eda869ff90fadf51c
   }
 
   .nav-link>a {
@@ -48,11 +82,20 @@
     @apply w-full capitalize text-white bg-dark/80 hover:bg-white/80 hover:text-dark py-3 lg:py-2 lg:px-2 text-sm rounded-xl transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
   } */
   .navlink-dropdown {
+<<<<<<< HEAD
+    @apply relative w-full text-coffee-400 text-lg transition-all duration-200 ease-in-out flex items-center justify-center flex-col gap-2;
+  }
+
+
+  .slider-overlay {
+    @apply absolute inset-0 size-full bg-gradient-to-b from-transparent via-transparent to-black/60 z-10 pointer-events-none select-none;
+=======
     @apply capitalize text-white bg-dark/0 hover:bg-white/50 hover:text-dark py-3 lg:py-2 lg:px-4 text-sm xl:text-sm 2xl:text-base transition-all duration-200 ease-in-out flex items-center lg:items-start justify-center flex-col gap-2;
   }
 
   .caps {
     font-variant: small-caps;
+>>>>>>> caa70050f35de63fd90fb49eda869ff90fadf51c
   }
 
   .merriweather {

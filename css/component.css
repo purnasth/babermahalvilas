@@ -26,6 +26,13 @@ li.active>.drop {
   font-variant: "small-caps";
 }
 
+<<<<<<< HEAD
+.slider-carousel .owl-nav {
+  position: absolute;
+  left: 0;
+  bottom: 1.5rem;
+  width: 100%;
+=======
 .owl-nav {
   position: absolute;
   top: 50%;
@@ -43,6 +50,7 @@ li.active>.drop {
   font-size: 2rem !important;
   opacity: 0.5;
   transition: all 0.3s;
+>>>>>>> caa70050f35de63fd90fb49eda869ff90fadf51c
 }
 
 .rooms-carousel .owl-nav {
@@ -52,21 +60,34 @@ li.active>.drop {
   width: 100%;
 }
 
+<<<<<<< HEAD
+.owl-nav button:hover {
+  background: transparent !important;
+}
+
+.slider-carousel.owl-carousel .owl-item.active img {
+  animation: zoomIn 5s ease-in-out;
+=======
 .rooms-carousel .owl-nav button:hover {
   background: transparent !important;
 }
 
 .rooms-carousel.owl-carousel .owl-item.active img {
   animation: zoomIn 8s ease-in-out;
+>>>>>>> caa70050f35de63fd90fb49eda869ff90fadf51c
 }
 
 @keyframes zoomIn {
   0% {
+<<<<<<< HEAD
+    transform: scale(1.2);
+=======
     transform: scale(1);
   }
 
   50% {
     transform: scale(1.1);
+>>>>>>> caa70050f35de63fd90fb49eda869ff90fadf51c
   }
 
   100% {
@@ -74,11 +95,16 @@ li.active>.drop {
   }
 }
 
+<<<<<<< HEAD
+
+@keyframes zoomImage {
+=======
 .zoomIn-image {
   animation: zoomIn 2s ease-in-out;
 }
 
 @keyframes zoomIn {
+>>>>>>> caa70050f35de63fd90fb49eda869ff90fadf51c
 
   0%,
   100% {
@@ -90,6 +116,60 @@ li.active>.drop {
   }
 }
 
+<<<<<<< HEAD
+.zoom-image {
+  animation: zoomImage 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* hamburger */
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #FFE9D2;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+}
+
+.ham3 .top {
+  stroke-dasharray: 20 130;
+  stroke-dashoffset: -10px;
+}
+
+.ham3 .middle {
+  stroke-dasharray: 40 140;
+}
+
+.ham3 .bottom {
+  stroke-dasharray: 20 205;
+  stroke-dashoffset: -10px;
+}
+
+.ham3:hover .top {
+  stroke-dasharray: 40 130;
+  stroke-dashoffset: 0px;
+}
+
+.ham3:hover .bottom {
+  stroke-dasharray: 40 205;
+  stroke-dashoffset: 0px;
+}
+
+.ham3.active .top {
+  stroke-dasharray: 75 130;
+  stroke-dashoffset: -63px;
+}
+
+.ham3.active .middle {
+  stroke-dashoffset: -102px;
+}
+
+.ham3.active .bottom {
+  stroke-dasharray: 110 205;
+  stroke-dashoffset: -86px;
+}
+=======
 .white-filter {
   filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1647%) hue-rotate(184deg) brightness(119%) contrast(100%);
 }
@@ -145,3 +225,4 @@ li.active>.drop {
   /* font-style: italic; */
   color: inherit;
 }
+>>>>>>> caa70050f35de63fd90fb49eda869ff90fadf51c
