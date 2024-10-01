@@ -71,7 +71,7 @@
     </div>
   </header>
 
-  <div id="overlay" class="fixed inset-0 bg-black/50 backdrop-blur z-10 hidden"></div>
+  <div id="overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-10 hidden"></div>
   <nav id="navLinks"
     class="fixed left-0 top-0 w-auto h-screen bg-coffee-700 transition-transform duration-300 ease-in-out z-[99] -translate-x-full">
     <div class="absolute inset-0 size-full bg-contain bg-repeat mix-blend-multiply opacity-20 -z-0 pointer-events-none"
@@ -208,44 +208,293 @@
         </div>
       </div>
 
-      <ul
-        class="w-48 links flex items-center justify-center gap-1 md:gap-8 flex-col">
+      <ul class="w-48 links flex items-center justify-center gap-1 md:gap-8 flex-col">
         <li class="block w-full">
           <a href="#" class="nav-link" aria-label="About">About</a>
         </li>
         <li class="dropdown nav-link">
-          <a href="#" class="flex items-center justify-between w-full" aria-label="Rooms">Rooms <i
-              class="fa-solid fa-chevron-right"></i></a>
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Rooms">
+            Rooms <i class="fa-solid fa-chevron-right"></i></a>
           <ul
-            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl">
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Traditional Room">
-                <h4>Traditional Room</h4>
-                <img src="https://www.babermahalvilas.com/images/package/JiQAV-bumpa.jpg" alt=""
-                  class="hidden lg:block w-full h-28 object-cover" />
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Traditional Suite">
-                <h4>Traditional Suite</h4>
-                <img src="https://www.babermahalvilas.com/images/package/MfzsV-chatra.jpg" alt=""
-                  class="hidden lg:block w-full h-28 object-cover" />
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Heritage Suite">
-                <h4>Heritage Suite</h4>
-                <img src="https://www.babermahalvilas.com/images/package/tAOZ7-dhvaja.jpg" alt=""
-                  class="hidden lg:block w-full h-28 object-cover" />
-              </a>
-            </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
-                <h4>Royal Suite</h4>
-                <img src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg" alt=""
-                  class="hidden lg:block w-full h-28 object-cover" />
-              </a>
-            </li>
+            class="drop absolute top-2 left-full transform -translate-y-1/4 flex items-center justify-center gap-10 flex-col invisible z-50 ml-2 md:ml-8 transition-all duration-300 pointer-events-none">
+
+            <div class="flex items-center justify-between gap-8">
+              <li class=" pointer-events-auto  w-full md:w-[26rem]">
+                <a href="#" class="navlink-dropdown overflow-hidden group" aria-label="Jyunar">
+                  <div
+                    class="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear">
+                  </div>
+                  <img src="./img/rooms/room1.webp" alt=""
+                    class="w-full h-72 object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear" />
+                  <div
+                    class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/80 to-black/0 group-hover:from-black/30 group-hover:via-black/60 group-hover:to-black/30 opacity-70 group-hover:opacity-100 z-0 transition-all duration-500 ease-linear">
+                  </div>
+                  <div
+                    class="z-10 absolute inset-0 size-full flex items-center justify-between flex-col text-white p-4 text-center">
+                    <ul
+                      class="-translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full border border-white/30 flex space-x-2 transition-all duration-500 ease-linear">
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M12 18l.01 0"></path>
+                          <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                          <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                          <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M8 16a3 3 0 0 1 -3 3"></path>
+                          <path d="M16 16a3 3 0 0 0 3 3"></path>
+                          <path d="M12 16v4"></path>
+                          <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z">
+                          </path>
+                          <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <circle cx="7" cy="7" r="2"></circle>
+                          <path
+                            d="M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25a.828.828 0 0 1 1.41.59V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5A2.251 2.251 0 0 0 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z">
+                          </path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0V0z"></path>
+                          <path
+                            d="M18.98 17H2v2h20v-2zM21 16c-.27-4.07-3.25-7.4-7.16-8.21A2.006 2.006 0 0 0 12 5a2.006 2.006 0 0 0-1.84 2.79C6.25 8.6 3.27 11.93 3 16h18zm-9-6.42c2.95 0 5.47 1.83 6.5 4.41h-13A7.002 7.002 0 0 1 12 9.58z">
+                          </path>
+                        </svg></li>
+                    </ul>
+                    <div
+                      class="max-w-sm px-12 translate-y-40 group-hover:translate-y-0 transition-all duration-500 ease-linear text-white">
+                      <h3
+                        class="scale-110 group-hover:scale-100 mb-24 group-hover:mb-3 text-xl font-medium  transition-all duration-500 ease-linear">
+                        Traditional Room</h3>
+                      <p
+                        class="opacity-0 group-hover:opacity-100 line-clamp-2 font-light text-xs transition-all duration-[550ms] ease-linear">
+                        The Traditional Rooms are designed to offer a comfortable stay with a touch of luxury.
+                      </p>
+                    </div><span
+                      class="translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm border border-white/30 transition-all duration-300 ease-linear">
+                      Starting USD 200
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="pointer-events-auto  w-full md:w-[26rem]">
+                <a href="#" class="navlink-dropdown overflow-hidden group" aria-label="Jyunar">
+                  <div
+                    class="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear">
+                  </div>
+                  <img src="./img/rooms/room2.webp" alt=""
+                    class="w-full h-72 object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear" />
+                  <div
+                    class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/80 to-black/0 group-hover:from-black/30 group-hover:via-black/60 group-hover:to-black/30 opacity-70 group-hover:opacity-100 z-0 transition-all duration-500 ease-linear">
+                  </div>
+                  <div
+                    class="z-10 absolute inset-0 size-full flex items-center justify-between flex-col text-white p-4 text-center">
+                    <ul
+                      class="-translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full border border-white/30 flex space-x-2 transition-all duration-500 ease-linear">
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M12 18l.01 0"></path>
+                          <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                          <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                          <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M8 16a3 3 0 0 1 -3 3"></path>
+                          <path d="M16 16a3 3 0 0 0 3 3"></path>
+                          <path d="M12 16v4"></path>
+                          <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z">
+                          </path>
+                          <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <circle cx="7" cy="7" r="2"></circle>
+                          <path
+                            d="M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25a.828.828 0 0 1 1.41.59V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5A2.251 2.251 0 0 0 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z">
+                          </path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0V0z"></path>
+                          <path
+                            d="M18.98 17H2v2h20v-2zM21 16c-.27-4.07-3.25-7.4-7.16-8.21A2.006 2.006 0 0 0 12 5a2.006 2.006 0 0 0-1.84 2.79C6.25 8.6 3.27 11.93 3 16h18zm-9-6.42c2.95 0 5.47 1.83 6.5 4.41h-13A7.002 7.002 0 0 1 12 9.58z">
+                          </path>
+                        </svg></li>
+                    </ul>
+                    <div
+                      class="max-w-sm px-12 translate-y-40 group-hover:translate-y-0 transition-all duration-500 ease-linear text-white">
+                      <h3
+                        class="scale-110 group-hover:scale-100 mb-24 group-hover:mb-3 text-xl font-medium  transition-all duration-500 ease-linear">
+                        Premium Room</h3>
+                      <p
+                        class="opacity-0 group-hover:opacity-100 line-clamp-2 font-light text-xs transition-all duration-[550ms] ease-linear">
+                        The Premium Rooms are designed to offer a comfortable stay with a touch of luxury.
+                      </p>
+                    </div><span
+                      class="translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm border border-white/30 transition-all duration-300 ease-linear">
+                      Starting USD 250
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </div>
+            <div class="flex items-center justify-between gap-8">
+              <li class=" pointer-events-auto  w-full md:w-[26rem]">
+                <a href="#" class="navlink-dropdown overflow-hidden group" aria-label="Jyunar">
+                  <div
+                    class="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear">
+                  </div>
+                  <img src="./img/rooms/room3.webp" alt=""
+                    class="w-full h-72 object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear" />
+                  <div
+                    class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/80 to-black/0 group-hover:from-black/30 group-hover:via-black/60 group-hover:to-black/30 opacity-70 group-hover:opacity-100 z-0 transition-all duration-500 ease-linear">
+                  </div>
+                  <div
+                    class="z-10 absolute inset-0 size-full flex items-center justify-between flex-col text-white p-4 text-center">
+                    <ul
+                      class="-translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full border border-white/30 flex space-x-2 transition-all duration-500 ease-linear">
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M12 18l.01 0"></path>
+                          <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                          <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                          <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M8 16a3 3 0 0 1 -3 3"></path>
+                          <path d="M16 16a3 3 0 0 0 3 3"></path>
+                          <path d="M12 16v4"></path>
+                          <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z">
+                          </path>
+                          <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <circle cx="7" cy="7" r="2"></circle>
+                          <path
+                            d="M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25a.828.828 0 0 1 1.41.59V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5A2.251 2.251 0 0 0 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z">
+                          </path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0V0z"></path>
+                          <path
+                            d="M18.98 17H2v2h20v-2zM21 16c-.27-4.07-3.25-7.4-7.16-8.21A2.006 2.006 0 0 0 12 5a2.006 2.006 0 0 0-1.84 2.79C6.25 8.6 3.27 11.93 3 16h18zm-9-6.42c2.95 0 5.47 1.83 6.5 4.41h-13A7.002 7.002 0 0 1 12 9.58z">
+                          </path>
+                        </svg></li>
+                    </ul>
+                    <div
+                      class="max-w-sm px-12 translate-y-40 group-hover:translate-y-0 transition-all duration-500 ease-linear text-white">
+                      <h3
+                        class="scale-110 group-hover:scale-100 mb-24 group-hover:mb-3 text-xl font-medium  transition-all duration-500 ease-linear">
+                        Heritage Room</h3>
+                      <p
+                        class="opacity-0 group-hover:opacity-100 line-clamp-2 font-light text-xs transition-all duration-[550ms] ease-linear">
+
+                        The Heritage Rooms are designed to offer a comfortable stay with a touch of luxury.
+                      </p>
+                    </div><span
+                      class="translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm border border-white/30 transition-all duration-300 ease-linear">
+                      Starting USD 300
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="pointer-events-auto  w-full md:w-[26rem]">
+                <a href="#" class="navlink-dropdown overflow-hidden group" aria-label="Jyunar">
+                  <div
+                    class="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear">
+                  </div>
+                  <img src="./img/rooms/room4.webp" alt=""
+                    class="w-full h-72 object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear" />
+                  <div
+                    class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/80 to-black/0 group-hover:from-black/30 group-hover:via-black/60 group-hover:to-black/30 opacity-70 group-hover:opacity-100 z-0 transition-all duration-500 ease-linear">
+                  </div>
+                  <div
+                    class="z-10 absolute inset-0 size-full flex items-center justify-between flex-col text-white p-4 text-center">
+                    <ul
+                      class="-translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full border border-white/30 flex space-x-2 transition-all duration-500 ease-linear">
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M12 18l.01 0"></path>
+                          <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                          <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                          <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M8 16a3 3 0 0 1 -3 3"></path>
+                          <path d="M16 16a3 3 0 0 0 3 3"></path>
+                          <path d="M12 16v4"></path>
+                          <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z">
+                          </path>
+                          <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <circle cx="7" cy="7" r="2"></circle>
+                          <path
+                            d="M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25a.828.828 0 0 1 1.41.59V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5A2.251 2.251 0 0 0 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z">
+                          </path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0V0z"></path>
+                          <path
+                            d="M18.98 17H2v2h20v-2zM21 16c-.27-4.07-3.25-7.4-7.16-8.21A2.006 2.006 0 0 0 12 5a2.006 2.006 0 0 0-1.84 2.79C6.25 8.6 3.27 11.93 3 16h18zm-9-6.42c2.95 0 5.47 1.83 6.5 4.41h-13A7.002 7.002 0 0 1 12 9.58z">
+                          </path>
+                        </svg></li>
+                    </ul>
+                    <div
+                      class="max-w-sm px-12 translate-y-40 group-hover:translate-y-0 transition-all duration-500 ease-linear text-white">
+                      <h3
+                        class="scale-110 group-hover:scale-100 mb-24 group-hover:mb-3 text-xl font-medium  transition-all duration-500 ease-linear">
+                        Royal Suite</h3>
+                      <p
+                        class="opacity-0 group-hover:opacity-100 line-clamp-2 font-light text-xs transition-all duration-[550ms] ease-linear">
+                        The Royal Suite is designed to offer a comfortable stay with a touch of luxury.
+                      </p>
+                    </div><span
+                      class="translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm border border-white/30 transition-all duration-300 ease-linear">
+                      Starting USD 400
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </div>
           </ul>
         </li>
 
@@ -253,8 +502,162 @@
           <a href="#" class="flex items-center justify-between w-full" aria-label="Dining">
             Dining <i class="fa-solid fa-chevron-right"></i></a>
           <ul
-            class="drop absolute -top-3/4 lg:-top-[550%] left-full flex items-start justify-center gap-10 flex-col invisible w-full md:w-[32rem] h-screen z-50 ml-2 md:ml-16">
-            <li class="block w-full">
+            class="drop absolute top-20 left-full transform -translate-y-1/2 flex items-center justify-center gap-10 flex-col invisible z-50 ml-2 md:ml-8 transition-all duration-300 pointer-events-none">
+
+            <div class="flex items-center justify-between gap-8">
+              <li class=" pointer-events-auto  w-full md:w-[26rem]">
+                <a href="#" class="navlink-dropdown overflow-hidden group" aria-label="Jyunar">
+                  <div
+                    class="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear">
+                  </div>
+                  <img src="./img/dine/dine.jpg" alt=""
+                    class="w-full h-72 object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear" />
+                  <div
+                    class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/80 to-black/0 group-hover:from-black/30 group-hover:via-black/60 group-hover:to-black/30 opacity-70 group-hover:opacity-100 z-0 transition-all duration-500 ease-linear">
+                  </div>
+                  <div
+                    class="z-10 absolute inset-0 size-full flex items-center justify-between flex-col text-white p-4 text-center">
+                    <ul
+                      class="-translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full border border-white/30 flex space-x-2 transition-all duration-500 ease-linear">
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M12 18l.01 0"></path>
+                          <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                          <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                          <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M8 16a3 3 0 0 1 -3 3"></path>
+                          <path d="M16 16a3 3 0 0 0 3 3"></path>
+                          <path d="M12 16v4"></path>
+                          <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z">
+                          </path>
+                          <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <circle cx="7" cy="7" r="2"></circle>
+                          <path
+                            d="M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25a.828.828 0 0 1 1.41.59V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5A2.251 2.251 0 0 0 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z">
+                          </path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0V0z"></path>
+                          <path
+                            d="M18.98 17H2v2h20v-2zM21 16c-.27-4.07-3.25-7.4-7.16-8.21A2.006 2.006 0 0 0 12 5a2.006 2.006 0 0 0-1.84 2.79C6.25 8.6 3.27 11.93 3 16h18zm-9-6.42c2.95 0 5.47 1.83 6.5 4.41h-13A7.002 7.002 0 0 1 12 9.58z">
+                          </path>
+                        </svg></li>
+                    </ul>
+                    <div
+                      class="max-w-sm px-12 translate-y-40 group-hover:translate-y-0 transition-all duration-500 ease-linear text-white">
+                      <h3
+                        class="scale-110 group-hover:scale-100 mb-24 group-hover:mb-3 text-xl font-medium  transition-all duration-500 ease-linear">
+                        Baithak Restaurant</h3>
+                      <p
+                        class="opacity-0 group-hover:opacity-100 line-clamp-2 font-light text-xs transition-all duration-[550ms] ease-linear">
+                        An all day dining inside the hotel premises. Offers delicious Nepali cuisine catered to our
+                        clients with an ambience of tradition and heritage.
+                      </p>
+                    </div><span
+                      class="translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm border border-white/30 transition-all duration-300 ease-linear">
+                      View Menu
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </div>
+            <div class="flex items-center justify-between gap-8">
+              <li class=" pointer-events-auto  w-full md:w-[26rem]">
+                <a href="#" class="navlink-dropdown overflow-hidden group" aria-label="Jyunar">
+                  <div
+                    class="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear">
+                  </div>
+                  <img src="https://babermahalvilas.com/images/subpackage/LvO4h-ON4z9-bar1.jpg" alt=""
+                    class="w-full h-72 object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear" />
+                  <div
+                    class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/80 to-black/0 group-hover:from-black/30 group-hover:via-black/60 group-hover:to-black/30 opacity-70 group-hover:opacity-100 z-0 transition-all duration-500 ease-linear">
+                  </div>
+                  <div
+                    class="z-10 absolute inset-0 size-full flex items-center justify-between flex-col text-white p-4 text-center">
+                    <ul
+                      class="-translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full border border-white/30 flex space-x-2 transition-all duration-500 ease-linear">
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M12 18l.01 0"></path>
+                          <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                          <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                          <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                          stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M8 16a3 3 0 0 1 -3 3"></path>
+                          <path d="M16 16a3 3 0 0 0 3 3"></path>
+                          <path d="M12 16v4"></path>
+                          <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z">
+                          </path>
+                          <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <circle cx="7" cy="7" r="2"></circle>
+                          <path
+                            d="M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25a.828.828 0 0 1 1.41.59V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5A2.251 2.251 0 0 0 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z">
+                          </path>
+                        </svg></li>
+                      <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                          viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill="none" d="M0 0h24v24H0V0z"></path>
+                          <path
+                            d="M18.98 17H2v2h20v-2zM21 16c-.27-4.07-3.25-7.4-7.16-8.21A2.006 2.006 0 0 0 12 5a2.006 2.006 0 0 0-1.84 2.79C6.25 8.6 3.27 11.93 3 16h18zm-9-6.42c2.95 0 5.47 1.83 6.5 4.41h-13A7.002 7.002 0 0 1 12 9.58z">
+                          </path>
+                        </svg></li>
+                    </ul>
+                    <div
+                      class="max-w-sm px-12 translate-y-40 group-hover:translate-y-0 transition-all duration-500 ease-linear text-white">
+                      <h3
+                        class="scale-110 group-hover:scale-100 mb-24 group-hover:mb-3 text-xl font-medium  transition-all duration-500 ease-linear">
+                        K2 Terrace Cafe
+                      </h3>
+                      <p
+                        class="opacity-0 group-hover:opacity-100 line-clamp-2 font-light text-xs transition-all duration-[550ms] ease-linear">
+
+                        A small quaint bar inside the hotel premises that offers our top of the line collection of
+                        Drinks.
+                      </p>
+                    </div><span
+                      class="translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm border border-white/30 transition-all duration-300 ease-linear">
+                      View Menu
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </li>
+
+        <!-- <li class="dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Dining">
+            Dining <i class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute top-16 left-full transform -translate-y-1/2 flex items-center justify-center gap-10 flex-col invisible w-full md:w-[28rem] z-50 ml-2 md:ml-8 transition-all duration-300 pointer-events-none">
+
+            <li class="pointer-events-auto">
               <a href="#" class="navlink-dropdown overflow-hidden group" aria-label="Jyunar">
                 <div
                   class="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear">
@@ -307,7 +710,7 @@
                       </svg></li>
                   </ul>
                   <div
-                    class="max-w-sm px-4 translate-y-56 group-hover:translate-y-0 transition-all duration-500 ease-linear text-white">
+                    class="max-w-sm px-12 translate-y-40 group-hover:translate-y-0 transition-all duration-500 ease-linear text-white">
                     <h3
                       class="scale-110 group-hover:scale-100 mb-24 group-hover:mb-3 text-xl font-medium  transition-all duration-500 ease-linear">
                       Baithak Restaurant</h3>
@@ -322,15 +725,76 @@
                 </div>
               </a>
             </li>
-            <li class="block w-full">
-              <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
-                <h4>Surya Bar</h4>
-                <img src="https://www.babermahalvilas.com/assets/userfiles/images/bar1.jpg" alt=""
-                  class="hidden lg:block w-full h-52 object-cover" />
+            <li class="pointer-events-auto">
+              <a href="#" class="navlink-dropdown overflow-hidden group" aria-label="Jyunar">
+                <div
+                  class="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear">
+                </div>
+                <img src="https://babermahalvilas.com/images/subpackage/LvO4h-ON4z9-bar1.jpg" alt=""
+                  class="w-full h-72 object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear" />
+                <div
+                  class="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/80 to-black/0 group-hover:from-black/30 group-hover:via-black/60 group-hover:to-black/30 opacity-70 group-hover:opacity-100 z-0 transition-all duration-500 ease-linear">
+                </div>
+                <div
+                  class="z-10 absolute inset-0 size-full flex items-center justify-between flex-col text-white p-4 text-center">
+                  <ul
+                    class="-translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full border border-white/30 flex space-x-2 transition-all duration-500 ease-linear">
+                    <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 18l.01 0"></path>
+                        <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                        <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                        <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                      </svg></li>
+                    <li class="text-xl"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round" class="text-white" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M8 16a3 3 0 0 1 -3 3"></path>
+                        <path d="M16 16a3 3 0 0 0 3 3"></path>
+                        <path d="M12 16v4"></path>
+                        <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z">
+                        </path>
+                        <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
+                      </svg></li>
+                    <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <circle cx="7" cy="7" r="2"></circle>
+                        <path
+                          d="M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25a.828.828 0 0 1 1.41.59V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5A2.251 2.251 0 0 0 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z">
+                        </path>
+                      </svg></li>
+                    <li class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 24 24" class="text-white" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M18.98 17H2v2h20v-2zM21 16c-.27-4.07-3.25-7.4-7.16-8.21A2.006 2.006 0 0 0 12 5a2.006 2.006 0 0 0-1.84 2.79C6.25 8.6 3.27 11.93 3 16h18zm-9-6.42c2.95 0 5.47 1.83 6.5 4.41h-13A7.002 7.002 0 0 1 12 9.58z">
+                        </path>
+                      </svg></li>
+                  </ul>
+                  <div
+                    class="max-w-sm px-12 translate-y-40 group-hover:translate-y-0 transition-all duration-500 ease-linear text-white">
+                    <h3
+                      class="scale-110 group-hover:scale-100 mb-24 group-hover:mb-3 text-xl font-medium  transition-all duration-500 ease-linear">
+                      K2 Terrace Cafe</h3>
+                    <p
+                      class="opacity-0 group-hover:opacity-100 line-clamp-2 font-light text-xs transition-all duration-[550ms] ease-linear">
+                      A small quaint bar inside the hotel premises that offers our top of the line collection of Drinks.
+                    </p>
+                  </div><span
+                    class="translate-y-12 group-hover:translate-y-0 group-hover:bg-black/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm border border-white/30 transition-all duration-300 ease-linear">
+                    View Menu
+                  </span>
+                </div>
               </a>
             </li>
           </ul>
-        </li>
+        </li> -->
 
         <!-- <li class="block w-full">
             <a href="#" class="nav-link" aria-label="Spa">Spa</a>

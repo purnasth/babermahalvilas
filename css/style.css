@@ -50,7 +50,7 @@
   }
 
   .nav-link {
-    @apply relative block w-full text-coffee-400 hover:bg-coffee-400/50 backdrop-blur-sm py-3 px-3 text-lg md:text-xl rounded-xl hover:text-coffee-900 transition-all duration-200 ease-in-out;
+    @apply relative block w-full text-coffee-400 hover:bg-coffee-400/50 backdrop-blur-sm py-3 px-3 text-lg rounded-xl hover:text-coffee-900 transition-all duration-200 ease-in-out;
   }
 
   a.nav-link,
@@ -60,7 +60,7 @@
   }
 
   .navlink-dropdown {
-    @apply relative w-full text-coffee-400 text-lg md:text-xl transition-all duration-200 ease-in-out flex items-center justify-center flex-col gap-2;
+    @apply relative w-full text-coffee-400 text-lg transition-all duration-200 ease-in-out flex items-center justify-center flex-col gap-2;
   }
 
 
