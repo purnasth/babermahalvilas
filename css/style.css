@@ -68,6 +68,11 @@
     @apply absolute inset-0 size-full bg-gradient-to-b from-transparent via-transparent to-black/60 z-10 pointer-events-none select-none;
   }
 
+
+  .is-checked {
+    @apply bg-coffee-800 text-coffee-400;
+  }
+
   /* #navLinks::-webkit-scrollbar-track {
     @apply bg-coffee-400;
   }

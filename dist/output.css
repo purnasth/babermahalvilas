@@ -667,6 +667,10 @@ section {
   }
 }
 
+.font-merriweather {
+  font-family: "Merriweather", serif;
+}
+
 .nav-link {
   position: relative;
   display: block;
@@ -734,6 +738,13 @@ a.nav-link,
   --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to);
   --tw-gradient-to: rgb(0 0 0 / 0.6) var(--tw-gradient-to-position);
+}
+
+.is-checked {
+  --tw-bg-opacity: 1;
+  background-color: rgb(94 48 35 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 233 210 / var(--tw-text-opacity));
 }
 
 /* #navLinks::-webkit-scrollbar-track {
@@ -860,6 +871,10 @@ a.nav-link,
 
 .top-\[88px\] {
   top: 88px;
+}
+
+.bottom-1\/2 {
+  bottom: 50%;
 }
 
 .-z-0 {
@@ -1076,6 +1091,10 @@ a.nav-link,
   margin-top: 2rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1112,9 +1131,9 @@ a.nav-link,
   height: 2.5rem;
 }
 
-.size-12 {
-  width: 3rem;
-  height: 3rem;
+.size-11 {
+  width: 2.75rem;
+  height: 2.75rem;
 }
 
 .size-auto {
@@ -1125,11 +1144,6 @@ a.nav-link,
 .size-full {
   width: 100%;
   height: 100%;
-}
-
-.size-11 {
-  width: 2.75rem;
-  height: 2.75rem;
 }
 
 .h-1 {
@@ -1352,6 +1366,14 @@ a.nav-link,
   max-width: 20rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
 .origin-left {
   transform-origin: left;
 }
@@ -1471,6 +1493,10 @@ a.nav-link,
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.scroll-pt-28 {
+  scroll-padding-top: 7rem;
 }
 
 .scroll-pt-6 {
@@ -1734,6 +1760,11 @@ a.nav-link,
   border-color: rgb(192 133 82 / var(--tw-border-opacity));
 }
 
+.border-coffee-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(137 87 55 / var(--tw-border-opacity));
+}
+
 .border-coffee-800\/80 {
   border-color: rgb(94 48 35 / 0.8);
 }
@@ -1741,10 +1772,6 @@ a.nav-link,
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(17 17 17 / var(--tw-border-opacity));
-}
-
-.border-dark\/40 {
-  border-color: rgb(17 17 17 / 0.4);
 }
 
 .border-dark\/80 {
@@ -1767,6 +1794,15 @@ a.nav-link,
 
 .border-white\/60 {
   border-color: rgb(255 255 255 / 0.6);
+}
+
+.border-coffee-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(94 48 35 / var(--tw-border-opacity));
+}
+
+.border-coffee-800\/50 {
+  border-color: rgb(94 48 35 / 0.5);
 }
 
 .bg-black\/50 {
@@ -1850,6 +1886,15 @@ a.nav-link,
 
 .bg-white\/90 {
   background-color: rgb(255 255 255 / 0.9);
+}
+
+.bg-coffee-500\/20 {
+  background-color: rgb(218 180 157 / 0.2);
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/src\/assets\/graphics\/flowers\.webp\'\)\] {
@@ -2138,10 +2183,6 @@ a.nav-link,
 
 .pr-2 {
   padding-right: 0.5rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
 }
 
 .pt-5 {
@@ -2647,13 +2688,13 @@ a.nav-link,
   background-color: rgb(218 180 157 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-coffee-800\/80:hover {
+  background-color: rgb(94 48 35 / 0.8);
+}
+
 .hover\:bg-dark:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-dark\/20:hover {
-  background-color: rgb(17 17 17 / 0.2);
 }
 
 .hover\:bg-dark\/80:hover {
@@ -3246,6 +3287,11 @@ a.nav-link,
     line-height: 1rem;
   }
 
+  .md\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
   .md\:font-light {
     font-weight: 300;
   }
@@ -3472,5 +3518,10 @@ a.nav-link,
   .\32xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
