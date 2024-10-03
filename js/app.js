@@ -1,6 +1,6 @@
 $(function () {
   // Load components
-  $("#navbar-placeholder").load("./components/navbar.html", function () {
+  $("#navbar-component").load("./components/navbar.html", function () {
     // Navbar-specific JavaScript goes here
 
     // Variables for toggle functionality
@@ -70,57 +70,29 @@ $(function () {
   });
 
   // Load footer and set current year
-  $("#footer-placeholder").load("./components/footer.html", function () {
+  $("#footer-component").load("./components/footer.html", function () {
     $("#current-year").text(new Date().getFullYear());
   });
+
+  $("#whatsapp-component").load("./components/whatsapp.html");
+
+  $("#revisited-component").load("./components/revisited.html");
 });
 
-// Initialize carousels
-$(".slider-carousel").owlCarousel({
-  items: 1,
-  loop: true,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: true,
-  animateOut: "fadeOut",
-  smartSpeed: 1000,
-  dots: false,
-  nav: true,
-  navText: [
-    '<i class="fa-solid fa-chevron-left text-base bg-coffee-700/30 text-white px-4 py-2 rounded-full opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-white"></i>',
-    '<i class="fa-solid fa-chevron-right text-base bg-coffee-700/30 text-white px-4 py-2 rounded-full opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-400"></i>',
-  ],
-});
+// lenis smooth scroll
+$(function () {
+  const lenis = new Lenis({
+    duration: 2.5, // Slower duration (increase this value for slower scroll)
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true,
+    smoothWheel: true,
+    wheelMultiplier: 0.85, // Reduce the scroll speed (lower values slow it down)
+  });
 
-$(".rooms-carousel").owlCarousel({
-  items: 1,
-  loop: true,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: true,
-  animateOut: "fadeOut",
-  smartSpeed: 1000,
-  dots: false,
-  nav: true,
-  navText: [
-    '<i class="fa-solid fa-chevron-left text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
-    '<i class="fa-solid fa-chevron-right text-base bg-coffee-700 text-coffee-400 px-4 py-2 rounded-xl opacity-60 hover:opacity-100 transition-all duration-150 ease-in-out border border-coffee-600"></i>',
-  ],
-});
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
 
-var owl = $(".testimonial.owl-carousel");
-owl.owlCarousel({
-  items: 1,
-  loop: true,
-  margin: 20,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  autoplayHoverPause: false,
-  responsive: {
-    0: { items: 1 },
-    768: { items: 2 },
-    992: { items: 2 },
-  },
+  requestAnimationFrame(raf);
 });
-
-$(".owl-dots").css("display", "none");
